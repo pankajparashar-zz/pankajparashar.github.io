@@ -1,4 +1,4 @@
-[Personal Website](http://pankajparashar.com)
+[Personal website](http://pankajparashar.com)
 ------------------
 
 **v4 - February 02, 2013**
@@ -9,13 +9,9 @@
 
 ![Pankaj Parashar](http://res.cloudinary.com/dw9fem4ki/image/upload/v1391268052/https_github-camo_global_ssl_fastly_net_18ab1842d8956b12ebe1c2e02519120483b87030_687474703a2f2f73332e616d617a6f6e6177732e636f6d2f666f6e746c6f766572732d6173736574732d70726f64756374696f6e2f3734392d6f726967696e616c_pucehc.png "Personal Website v3")
 
----
-
 **v2 - December 20, 2012**
 
 ![Pankaj Parashar](http://res.cloudinary.com/dw9fem4ki/image/upload/v1391268127/http_onepagelove_wpengine_netdna-cdn_com_wp-content_uploads_gravity_forms_1-e6fef9602ee538adb7069defe12f9dc0_2013_03_website-1150_bwuaxo.png "Personal Website v2")
-
----
 
 **v1 - January 01, 2012**
 
