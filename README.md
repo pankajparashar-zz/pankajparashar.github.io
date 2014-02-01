@@ -3,7 +3,7 @@
 
 **v4 - February 02, 2013**
 
-![Pankaj Parashar](http://res.cloudinary.com/dw9fem4ki/image/upload/v1391268222/Screen_Shot_2014-02-01_at_8_48_47_PM_tvw9be.png "Personal Website v4")
+![Pankaj Parashar](http://res.cloudinary.com/dw9fem4ki/image/upload/bo_1px_solid_rgb:ccc/v1391275180/Screen_Shot_2014-02-01_at_8_48_47_PM_tvw9be_x0uu8b.png "Personal Website v4")
 
 **v3 - November 04, 2013**
 
