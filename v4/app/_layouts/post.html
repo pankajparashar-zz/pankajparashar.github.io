@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<article>
+    <h2 class="post__title"><a class="post__title--link" href="{{ page.url }}">{{ page.title }}</a></h2>
+    <small class="post__date">{{ page.date | date: "%A, %B %d, %Y" }}</small>
+    <small class="post__time">{{ page.content | number_of_words | append: '.0' | divided_by: 180 }}</small>
+    {% if page.excerpt %}
+        <p class="post__excerpt">{{ page.excerpt }}</p>
+    {% endif %}
+    {{ content }}
+    <p>Did you enjoy reading this article? I'd love to hear your thoughts. Shoot me an <a href="mailto:email@pankajparashar.com">email</a> or send me a <a href="https://twitter.com/intent/tweet?via=pankajparashar&text={{ page.title }}">tweet</a> if you've got any comments.</p>
+</article>

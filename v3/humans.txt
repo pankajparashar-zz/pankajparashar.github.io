@@ -1,0 +1,77 @@
+
+
+     _____)                   __    __)                        
+   /                   /)    (, )  /                           
+  /   ___   _______   //  _     | /   _ __  _/_     __   _  _  
+ /     / ) (_)(_)(_/_(/__(/_    |/  _(/_/ (_(__(_(_/ (__(/_/_)_
+(____ /         .-/             |                              
+               (_/                 Hand-crafted since 2009
+
+
+    The humans.txt file explains the team, technology, and graphic assets 
+    behind this site.
+
+_______________________________________________________________________________
+
+PEOPLE
+
+This website was hand-crafted by Google Ventures.
+
+Braden Kowitz
+Interaction design, web development
+http://www.gv.com/team/braden-kowitz
+
+Daniel Burka
+Visual design, web development
+http://www.gv.com/team/daniel-burka
+
+Jake Knapp
+Content, page layout
+http://www.gv.com/team/jake-knapp
+
+John Zeratsky
+Content, copywriting, information architecture
+http://www.gv.com/team/john-zeratsky
+
+Laura Melahn
+Content, copywriting
+http://www.gv.com/team/laura-melahn
+
+Michael Margolis
+User research
+http://www.gv.com/team/michael-margolis
+
+_______________________________________________________________________________
+
+TECHNOLOGY
+
+WordPress
+http://wordpress.org/
+
+jQuery
+http://jquery.com/
+
+SVG.JS
+http://www.svgjs.com/
+
+History.js
+https://github.com/browserstate/history.js
+
+LESS
+http://lesscss.org/
+
+Github
+https://github.com/
+
+_______________________________________________________________________________
+
+GRAPHIC ASSETS
+
+Brandon Grotesque (font)
+https://typekit.com/fonts/brandon-grotesque
+
+Open Sans (font)
+https://typekit.com/fonts/open-sans
+
+Entypo (icons)
+http://www.entypo.com/

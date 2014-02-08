@@ -1,0 +1,705 @@
+ /*
+    ================================================
+    Author: Pankaj Parashar
+    Author URI: pankajparashar.com
+
+    Version: 3.0
+    Tags: HTML5, CSS3, Typography, Responsive, Content-First
+
+    License: GPL
+    License URI: //gnu.org/copyleft/gpl.html
+    ================================================
+      
+    Color Scheme:
+    -------------
+    light grey - #eee
+    yellow     - #fc6
+    red        - #f66
+    blue       - #6cf
+    black      - #555
+
+    Table of Contents:
+    ------------------
+    01 Sensible Defaults
+    02 Typography
+       - Rendering
+       - Ligatures
+       - Families
+       - Headings
+       - Links
+       - Paragraphs, Lists, and More
+    03 Forms & Buttons
+    04 Basic Layout
+    05 Header
+    06 Ads
+    07 Blog Posts
+    08 Blog Archives
+    09 Speaking
+    10 About
+    11 Media Queries
+       - 600 up
+       - 900 up
+       - 1200 up
+       - 1400 up
+       - 1500 up
+       - 1800 up
+       - 2000 up
+       - 2400 up
+    ================================================
+*/
+
+*, 
+*::before, 
+*::after {
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    margin: 0; padding: 0;
+
+    outline: 0px solid #c00;
+}
+
+html,
+body {
+
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body  {
+
+    color: #574742;
+}
+
+/*
+ * Make Your Web Pages More Legible With Ligatures and Kerning Pairs
+ * http://demosthenes.info/blog/547/Make-Your-Web-Pages-More-Legible-With-CSS3-Ligatures-and-Kerning-Pairs
+ * By Dudley Storey
+ */
+
+@media screen and (max-width : 720px) {
+
+    body { 
+
+        font-size: 100%;
+        text-rendering: optimizeSpeed; 
+    } 
+}
+
+@media screen and (max-width : 1024px) {
+
+    body { 
+
+        text-rendering: optimizeLegibility; 
+    } 
+}
+
+@media screen and (min-width : 1280px) {
+
+    body { 
+
+        font-size: 115%;
+    } 
+}
+
+@media screen and (min-width : 1366px) {
+
+    body { 
+
+        font-size: 125%;
+        text-rendering: optimizeLegibility; 
+    } 
+}
+
+@media screen and (min-width : 1440px) {
+
+    body { 
+
+        font-size: 125%;
+    } 
+}
+
+@media screen and (min-width : 1680px) {
+
+    body { 
+
+        font-size: 125%;
+    } 
+}
+
+@media screen and (min-width : 1920px) {
+
+    body { 
+
+        font-size: 145%;
+    } 
+}
+
+@media screen and (min-width : 2560px) {
+
+    body { 
+
+        font-size: 155%;
+    } 
+}
+
+@media screen and (min-width : 2880px) {
+
+    body { 
+
+        font-size: 165%;
+    } 
+}
+
+/* 
+    Styles for setting up a baseline grid or also known as the vertical rhythm.
+    Thanks to the excellent writeup by Joshua Hibbert - http://joshnh.com/2011/08/03/how-to-set-up-a-baseline-grid/
+    EM Baseline Generator - http://joshnh.com/tools/em-baseline-generator.html 
+*/
+
+h1,
+h2,
+h3 {
+
+    color: #333;
+    font-weight: 700;
+}
+
+h1 {
+
+    font-size: 2.5em;
+    margin-bottom: 1.25em;
+    margin-top: 0;
+    color: #444;
+    font-weight: 400;
+}
+
+h2 {
+
+    font-size: 1.85em;
+    font-family: "Warnock-Pro", "Calluna", serif;
+    line-height: 1.3333333333333333;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #07E;
+}
+
+h3 {
+
+    font-size: 1.5em;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+p,
+blockquote {
+
+    margin: 0 0 1.5em;
+    line-height: 1.5;
+
+    white-space: pre;               /* CSS 2.0 */
+    white-space: pre-wrap;          /* CSS 2.1 */
+    white-space: pre-line;          /* CSS 3.0 */
+
+    white-space: -moz-pre-wrap;     /* Mozilla */
+    white-space:   -o-pre-wrap;     /* Opera 7 */
+    white-space:  -hp-pre-wrap;     /* HP Printers */
+
+        word-wrap: break-word;      /* IE 5+ */
+    overflow-wrap: break-word;
+    
+         word-break: break-word;
+    
+    -webkit-font-feature-settings: 'pnum=1,lnum=1,dlig=1,liga=1,frac=1';
+       -moz-font-feature-settings: 'liga', 'dlig';
+        -ms-font-feature-settings: 'liga', 'dlig';
+         -o-font-feature-settings: 'liga', 'dlig';
+           font-feature-settings: 'pnum=1,lnum=1,dlig=1,liga=1,frac=1';
+}
+
+dl, 
+dt, 
+dd {
+
+    line-height: 1.5;
+}
+
+dt {
+
+    color: #333;
+    font-weight: 700;
+}
+
+dd {
+
+    margin: 0 0 1.5em;
+} 
+
+/*
+ * Generic styles
+ * ==============
+ */
+
+a:link,
+a:visited {
+
+    color: #07e;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active { color: #39b28e; }
+
+strong { 
+
+    font-weight: 700; 
+    color: #333;
+}
+
+img {
+
+    max-width: 100%;
+        width: 100%;
+
+    border: 1px solid #ccc;
+}
+
+figcaption {
+
+    font-size: 85%;
+    line-height: 1.8;
+
+    margin-top: .5em;
+    color: #666;
+}
+
+/* 
+ * Shout out to Jeff Starr
+ * http://perishablepress.com/perfect-pre-tags/
+ * --------------------------------------------
+ */
+
+code, 
+samp, 
+kbd {
+
+    font-size: 1em;
+    font-family: "Monaco", "Consolas", "Courier New", Courier, monospace, sans-serif;
+
+    text-align: left;
+    color: #555;
+}
+
+
+header {
+    
+    background-color: #eef7ff;
+    position: relative;
+    border-bottom: 1px solid rgb(197, 223, 234);
+}
+
+header::after {
+  
+    content: none;
+    display: block;
+    position: absolute;
+    
+    top: 100%;
+    left: 50%;
+  
+    width: 0; 
+    height: 0; 
+
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-top: 1em solid #111;    
+}
+
+.header__about {
+
+    text-align: left;
+    font-size: 115%;
+    font-weight: 300;
+    color: #444;
+    margin-bottom: 1.5em;
+    width: 60%;
+    display: inline-block;
+    letter-spacing: .5px;
+}
+
+.social {
+
+    width: 25%;
+    text-align: left;
+    float: right;
+}
+
+.social__icon {
+
+    width: auto;
+    list-style: none;
+    margin-right: 2em;
+    text-align: left;
+    padding-left: 3em;
+    margin-bottom: 1.5em;
+
+    background-position: 0 center;
+    background-size: 2.5em auto;
+    background-repeat: no-repeat;
+}
+
+.codepen { background-image: url(../img/social/codepen.svg); }
+.github  { background-image: url(../img/social/github.svg);  }
+.twitter { background-image: url(../img/social/twitter.svg); }
+
+.codepen:hover { background-image: url(../img/social/codepen-hover.svg); }
+.github:hover  { background-image: url(../img/social/github-hover.svg); }
+.twitter:hover { background-image: url(../img/social/twitter-hover.svg); }
+
+.social__icon--link {
+    
+    color: #DA2020 !important;
+    border: 0px solid #c00;
+    line-height: 1.25;
+    display: block;
+    
+    text-transform: capitalize;
+    letter-spacing: .5px;
+}
+
+.sub-text { 
+
+    color: #999;
+    font-style: normal; 
+    padding: 0 .1em;
+    line-height: 1.5;
+}
+
+.social__icon--link:hover,
+.social__icon--link:hover ~ .sub-text {
+
+    transition: .5s;
+    opacity: 1;
+    color: #333;
+}
+
+aside {
+
+    width: 20%;
+    float: left;
+}
+
+article {
+
+    width: 80%;
+    display: inline-block;
+}  
+
+@media screen and (max-width : 1024px) {
+
+    aside {
+
+        width: 100%;
+        display: block;
+    }
+
+    article {
+
+        width: 100%;
+        display: block;
+    } 
+
+    .meta {
+
+        text-align: left;
+        margin-bottom: 2.5em;
+    }
+
+    .meta__question {
+
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+        background-color: #333;
+        color: #eee;
+        padding: .5em;
+    }
+
+    .meta__answer {
+
+        display: block;
+        width: 100%;
+        margin-bottom: 1em;
+        background-color: #eee;
+        color: #333;
+        padding: .5em;
+    }   
+}
+
+.description {
+
+    width: 100%;
+    float: right;
+    display: block;
+    margin: 0 0 1.5em;
+}
+
+.description__info,
+.description__features {
+
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.description__features { 
+
+   float: right 
+}
+
+@media screen and (max-width : 880px) {
+
+    .header__about {
+
+        width: 100%;
+        display: block;
+    }
+
+    .social {
+
+        width: 100%;
+        text-align: left;
+        float: none;
+        display: block;
+        margin-top: 2.5em;
+    }
+
+    .description__info,
+    .description__features {
+
+        width: 100%;
+    }
+}
+
+footer {
+    
+    padding: 4em 5em 5.5em;
+    background-position: 0 0;
+    background-color: #eef7ff;
+    color: #555;
+    
+    border-top: 1px solid rgb(197, 223, 234);
+}
+
+footer::before {
+  
+    content: none;
+    display: block;
+    position: absolute;
+    
+    bottom: 100%;
+    left: 50%;
+  
+    width: 0; 
+    height: 0; 
+
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-bottom: 1em solid #111;   
+}
+
+.footer__contact {
+
+    text-align: center;
+    font-size: 125%;
+    font-weight: 300;  
+    
+    color: #555;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width : 720px) {
+
+    .header__about,
+    .footer__contact {
+    
+        font-size: 100%;
+    }
+
+    footer::before {
+  
+        content: '';
+
+        bottom: 100%;
+        left: 50%;
+
+        margin-left: -.5em;
+
+        border-left: .75em solid transparent;
+        border-right: .75em solid transparent;
+        border-bottom: .75em solid #111;   
+    }
+}
+
+.co-ordinates { color: #C00000 !important; }
+.email-id     { color: #F5B100 !important; }
+.no-wrap      { white-space: nowrap; }
+.special      { font-size: 80%; margin-right: .5em; }
+.lang         { margin-right: 1em; }
+
+/*
+ * Cutom Styles
+ * ------------
+ */
+
+@media screen and (max-width : 1024px) {
+
+    section,
+    header,
+    footer { 
+
+        padding: 3em 2em;
+    }
+}
+
+@media screen and (max-width : 720px) {
+
+    header,
+    section,
+    footer { 
+
+        padding: 3em 1em;
+    }
+
+    h1 {
+
+        font-size: 2.25em;
+    }
+
+    footer {
+
+        padding: 2.5em 1em .5em;
+    }
+}
+
+@media screen and (min-width : 1025px) {
+
+    section,
+    header,
+    footer { 
+
+        padding: 5em;
+    }
+
+    header {
+
+        padding-bottom: 3.5em;
+    }
+
+    footer { 
+
+        padding: 3em 5em 1.5em;
+    }
+}
+
+.logo {
+    
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: block;
+    width: 100%;
+}
+
+.logo__variant {
+
+    width: 48%;
+    display: inline-block;
+    
+    padding: 1em;
+}
+
+.logo__variant:nth-child(even) {
+
+    float: right;
+}
+
+.logo__variant img { border: none;}
+
+.light { 
+
+    background: #fff;   
+    background-image: radial-gradient(circle, #fff 10%, #eee);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 26px 0 rgba(0, 0, 0, 0.05) inset, 
+                0 1px 16px 0 rgba(0, 0, 0, 0.04) inset, 
+                0 2px 6px 0 rgba(0, 0, 0, 0.08) inset;
+}
+
+.dark { 
+
+    background: #333;
+    background-image: radial-gradient(circle, #333 10%, #000);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 26px 0 rgba(0, 0, 0, 0.05) inset, 
+                0 1px 16px 0 rgba(0, 0, 0, 0.04) inset, 
+                0 2px 6px 0 rgba(0, 0, 0, 0.08) inset;
+}
+
+@media screen and (max-width : 720px) {
+
+    .logo__variant {
+
+        display: block;
+        width: 100%;
+        float: none;
+        margin-bottom: 2em;
+    }
+
+    .footer__contact {
+
+        margin-bottom: 1.5em;
+    }
+}
+
+hr {
+
+    display: block;
+    width: 100px;
+    margin: 2.5em auto;
+    height: 1px;
+    border: none;
+    background: #999;
+}
+
+footer ul { overflow: hidden; text-align: center; margin-bottom: 1.5em;}
+
+footer li {
+display: inline-block;
+margin: 0 1em;
+}
+
+footer li a { text-transform: uppercase; font-family: calluna-sans; font-size: 85%; font-weight: normal;}
+
+
+code {
+background: #F3F6FB;
+border: solid 1px #E7EAEE;
+border-top: solid 1px #DBDDE2;
+border-left: solid 1px #E2E5E9;
+display: block;
+padding: 10px;
+font-size: 16px;
+color: #3AC;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+overflow: auto;
+}
+
+pre {
+    margin-top: -1.5em;
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}

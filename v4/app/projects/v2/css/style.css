@@ -1,0 +1,1079 @@
+ /*
+  ================================================
+  Handcrafted by Pankaj Parashar
+  Last updated on 08.05.2013
+  http://elliotjaystocks.com/theme/518a6270aa707a572f000c43/stylesheets/style.css
+  ================================================
+  Contents:
+    01 Sensible Defaults
+    02 Typography
+       - Rendering
+       - Ligatures
+       - Families
+       - Headings
+       - Links
+       - Paragraphs, Lists, and More
+    03 Forms & Buttons
+    04 Basic Layout
+    05 Header
+    06 Ads
+    07 Blog Posts
+    08 Blog Archives
+    09 Speaking
+    10 About
+    11 Media Queries
+       - 600 up
+       - 900 up
+       - 1200 up
+       - 1400 up
+       - 1500 up
+       - 1800 up
+       - 2000 up
+       - 2400 up
+  ================================================
+  */
+
+
+
+/* =============
+   Global Styles
+   ============= */
+
+*, ::after, ::before 
+{ 	
+	/* 
+		Box sizing for all the elements including pseudo elements.
+		Paul Irish explains why we should declare National Box Sizing Day - http://paulirish.com/2012/box-sizing-border-box-ftw/
+	*/
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box; 
+	        box-sizing: border-box;  
+}
+
+/* 
+	CSS3 keyframe animations - animate.css by Daniel Eden : http://daneden.me/animate/.
+	Animation syntax derived from Chris Coyier's article - http://css-tricks.com/snippets/css/keyframe-animation-syntax/
+	Single keyframe animation coined by Lea Verou - http://lea.verou.me/2012/12/animations-with-one-keyframe/ 
+*/
+
+@-webkit-keyframes bounceInDown 
+{
+	  0% { opacity: 0; -webkit-transform: translateY(-2000px); }
+	 60% { opacity: 1; -webkit-transform:    translateY(30px); }
+
+	 80% { -webkit-transform: translateY(-10px); }
+	100% { -webkit-transform:     translateY(0); }
+}
+
+@-moz-keyframes bounceInDown 
+{
+	  0% { opacity: 0; -moz-transform: translateY(-2000px); }
+	 60% { opacity: 1; -moz-transform:    translateY(30px); }
+
+	 80% { -moz-transform: translateY(-10px); }
+	100% { -moz-transform:     translateY(0); }
+}
+
+@-o-keyframes bounceInDown 
+{
+	  0% { opacity: 0; -o-transform: translateY(-2000px); }
+	 60% { opacity: 1; -o-transform:    translateY(30px); }
+
+	 80% { -o-transform: translateY(-10px); }
+	100% { -o-transform:     translateY(0); }
+}
+
+@keyframes bounceInDown 
+{
+	  0% { opacity: 0; transform: translateY(-2000px); }
+	 60% { opacity: 1; transform:    translateY(30px); }
+
+	 80% { transform: translateY(-10px); }
+	100% { transform:     translateY(0); }
+}
+
+@-webkit-keyframes loading { 100% { -webkit-transform: rotate(360deg); } }
+   @-moz-keyframes loading { 100% {    -moz-transform: rotate(360deg); } }
+     @-o-keyframes loading { 100% { 	 -o-transform: rotate(360deg); } }
+        @keyframes loading { 100% { 		transform: rotate(360deg); } }
+
+
+/* 
+	Styles for overriding the default text selection color.
+	Brian Gardner explains it how - http://www.briangardner.com/text-selection-color/
+*/
+
+::-moz-selection { background: #f80; color: #000; text-shadow: none; }
+     ::selection { background: #f80; color: #000; text-shadow: none; }
+
+h1::-moz-selection 
+{
+	background: #f9d949;
+	color: #000;
+}	 
+
+h1::selection  
+{
+	-webkit-text-stroke: 1px #000;
+	
+	background: transparent;
+	color: transparent;
+}	 
+
+/* 
+	Styles for setting up a baseline grid or also known as the vertical rhythm.
+	Thanks to the excellent writeup by Joshua Hibbert - http://joshnh.com/2011/08/03/how-to-set-up-a-baseline-grid/
+	EM Baseline Generator - http://jsfiddle.net/joshnh/tJH96/ 
+*/
+
+h1 
+{
+    font-size: 3em;
+    line-height: 1.233333333;
+    margin-bottom: 0.15em;
+}
+
+h2 
+{
+    font-size: 2.25em;
+    line-height: 1.333333333;
+    margin-bottom: 0.666666666em;
+}
+
+h3 
+{
+    font-size: 1.5em;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+h4 
+{
+    font-size: 1.3125em;
+    line-height: 1.142857142;
+    margin-bottom: 1.142857142em;
+}
+
+h5 
+{
+    font-size: 1.125em;
+    line-height: 1.333333333;
+    margin-bottom: 1.333333333em;
+}
+
+h6 
+{
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+p, blockquote
+{
+	font-size: 1em;
+	margin: 0 0 1.5em;
+	line-height: 1.5;
+
+	white-space: pre;           	/* CSS 2.0 */
+	white-space: pre-wrap;      	/* CSS 2.1 */
+	white-space: pre-line;      	/* CSS 3.0 */
+
+	white-space: -moz-pre-wrap; 	/* Mozilla */
+	white-space:   -o-pre-wrap; 	/* Opera 7 */
+	white-space:     -pre-wrap; 	/* Opera 4-6 */
+	white-space:  -hp-pre-wrap; 	/* HP Printers */
+
+	    word-wrap: break-word;      /* IE 5+ */
+	overflow-wrap: break-word;
+    
+	 -ms-word-break: break-all;
+	     word-break: break-all;
+	     word-break: break-word;
+
+	-webkit-hyphens: auto;
+	   -moz-hyphens: auto;
+	        hyphens: auto;
+                    
+   -webkit-hyphenate-before: 2;
+    -webkit-hyphenate-after: 3;
+            hyphenate-lines: 3;
+
+	text-rendering: optimizeLegibility;
+	
+	-webkit-font-feature-settings: 'liga', 'dlig';
+	   -moz-font-feature-settings: 'liga', 'dlig';
+	    -ms-font-feature-settings: 'liga', 'dlig';
+	     -o-font-feature-settings: 'liga', 'dlig';
+	        font-feature-settings: 'liga', 'dlig';
+	
+	-webkit-font-smoothing: antialiased;
+}
+
+blockquote
+{
+	padding: 0 1.5em;
+	margin-bottom: 3.5em;
+	margin-top: -1.5em;
+	border: 1px solid rgba(0,0,0,.1);
+	border-left: 8px solid #08c;
+
+	color: #666;
+	background-color: whiteSmoke;
+
+	font-family: "Skolar", "Gill Sans", Palatino, Georgia, serif;
+}
+
+blockquote > p { padding: 0; margin: 0; line-height: 180%; }
+
+dl, ol, ul 
+{
+    font-size: 1em;
+    margin: 0 0 1.5em;
+    padding: 0;
+}
+
+dd, dt, li 
+{
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+a:link, a:active, a:visited, a:focus
+{
+	-webkit-tap-highlight-color: hsl(32, 100%, 50%, .5);
+	        tap-highlight-color: hsl(32, 100%, 50%, .5);
+}
+
+strong { -webkit-text-stroke: .5px; }
+
+code
+{
+	font-family: monospace;
+	padding: 0 0 .25em;
+}
+
+ins 		{ display: none !important; }
+canvas 		{ -ms-touch-action: double-tap-zoom; }
+
+/* 
+	Remove dotted lines on links
+	http://css-tricks.com/removing-the-dotted-outline/ 
+*/
+
+a 							{ outline: 0; }
+a:hover, a:active, a:focus 	{ outline: 0; }
+object, embed 				{ outline: 0; }
+input::-moz-focus-inner 	{ border:  0; }
+
+/*
+	Loading animation (w/o gif)
+*/
+
+.loading 
+{
+	display: block;
+	margin: 0 auto;
+
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: transparent;
+	
+	border-top: 4px solid #333;
+	border-right: 4px solid #333;
+	border-bottom: 4px solid #ccc;
+	border-left: 4px solid #ccc;
+	
+	-webkit-animation: loading 1s infinite linear;	
+	   -moz-animation: loading 1s infinite linear;	
+	     -o-animation: loading 1s infinite linear;	
+	        animation: loading 1s infinite linear;	
+}
+
+/* ===========
+   Body Styles
+   =========== */
+
+body
+{
+	color: #333;
+	font-family: "Chaparral-Pro", "Gill Sans", Palatino, Georgia, serif;
+
+	min-width: 320px;
+	max-width: 1920px;
+
+	margin: 0 auto;
+	
+	text-rendering: optimizeLegibility;
+	
+	padding: 3em 8.33333333% 0;
+
+	-webkit-text-stroke: .2px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-backface-visibility: hidden;
+	
+    box-shadow: inset 0 .2em .5em -.3em #000;
+}
+
+/* 
+	Chrome frame styles
+	The following piece of code is straight out of h5bp.
+*/
+
+.chromeframe
+{
+	margin: -1em 0 1.5em;
+	background: #ffc;
+	color: #000;
+	padding: 0.5em .5em;
+	text-align: center;
+	box-shadow: 0 1px 3px rgba(0,0,0, 0.2);
+}
+
+.chromeframe:hover		{ box-shadow: 1px 1px 5px rgba(0, 0, 0, .3); }			
+.chromeframe a 			{ border-bottom: 1px dashed #999; }
+.chromeframe a:hover 	{ border-bottom: 1px solid #999; }
+
+/* =============
+   Header Styles
+   ============= */
+
+header 		
+{ 
+	height: auto; 
+	padding-bottom: 3.5em;
+	
+}
+
+/* ------------------------ 
+   Header Navigation Styles
+   ======================== */
+
+header > nav > ul 					{ width: 100%; overflow: hidden; }
+header > nav > ul > li 				{ width: 50%; float: left; display: inline-block; } 
+header > nav > ul > li:nth-child(2) { text-align: right; }
+
+.logo 							
+{ 
+	font-size: 150%;
+	text-decoration: none; 
+	color: #333; 
+	opacity: .8; 
+} 	
+
+.twitter 
+{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+
+    background-image: url("../img/sprite.png");
+  	background-position: -10px -10px;
+
+    background-origin: padding-box;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 2.25em auto;
+    display: inline-block;
+    font-size: 120%;
+    height: 1.5em;
+    line-height: 1.5;
+    margin: 0.25em 0 0.12em;
+    opacity: 0.8;
+    width: 2em;
+    text-align:left;
+    color: #08c;
+    padding-left:2.2em;
+    padding-top: .25em;
+	
+	-webkit-transition: all .5s ease-in-out 0;
+	   -moz-transition: all .5s ease-in-out 0;
+	     -o-transition: all .5s ease-in-out 0;
+	        transition: all .5s ease-in-out 0;
+}
+
+.twitter:hover, .logo:hover { opacity: 1; }
+
+.twitter:hover 
+{	
+	-webkit-transition: all .5s ease-in-out 0;
+	   -moz-transition: all .5s ease-in-out 0;
+	     -o-transition: all .5s ease-in-out 0;
+	        transition: all .5s ease-in-out 0;
+
+	padding-left:2.2em;
+    text-align: left;
+    width: 5.25em;
+}
+
+/* Title */
+header > h1 					{ text-align: center; margin: .5em 0 0; -webkit-text-stroke: 0.5px; font-weight: bold; 
+
+	-webkit-animation-name: fadeInDown;
+	   -moz-animation-name: fadeInDown;
+	     -o-animation-name: fadeInDown;
+	        animation-name: fadeInDown;
+
+	-webkit-animation-duration: 2s;
+	   -moz-animation-duration: 2s;
+	     -o-animation-duration: 2s;
+	        animation-duration: 2s;
+
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+
+
+
+}
+
+/* Sub Title */
+header > p  					
+{ 
+	text-align: center; 
+	color: #666; 
+
+		-webkit-animation-name: fadeInUp;
+	   -moz-animation-name: fadeInUp;
+	     -o-animation-name: fadeInUp;
+	        animation-name: fadeInUp;
+
+	-webkit-animation-duration: 2s;
+	   -moz-animation-duration: 2s;
+	     -o-animation-duration: 2s;
+	        animation-duration: 2s;
+
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+
+}
+
+/* ==============
+   Section Styles
+   ============== */
+
+section > article { margin: 0 0 5em; }
+
+p > a, .mag a
+{
+	color: #08c;
+
+	border-bottom: 1px solid #09c;
+	margin: -.1em 0;
+	padding: 0;
+	position: relative;
+	text-decoration: none;
+
+	-webkit-transition: all .5s ease-in-out 0;
+	   -moz-transition: all .5s ease-in-out 0;
+	     -o-transition: all .5s ease-in-out 0;
+	        transition: all .5s ease-in-out 0;
+}
+
+p > a:hover, .mag a:hover
+{
+	-webkit-transition: all .5s ease-in-out 0;
+	   -moz-transition: all .5s ease-in-out 0;
+	     -o-transition: all .5s ease-in-out 0;
+	        transition: all .5s ease-in-out 0;
+
+	border-bottom: 1px solid #aaa;
+	color: #000;
+	background-color: #fc6;
+}
+
+/* --------------- 
+   Magazine Styles
+   =============== */
+
+.mag 
+{ 
+	margin-left: -10%; 
+	margin-right: -10%; 
+}
+
+.mag > ul 
+{ 
+	position: relative;
+	
+	background-color: whiteSmoke;
+	padding: 0 8.33333333%; 
+	box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.1);
+	border-bottom: #ddd solid 1px;
+}
+
+.mag > ul > li 
+{ 
+	margin: 1.5em 0; 
+	overflow: hidden; 
+	display: inline-block; 
+	padding: .5em 3em 1em; 
+	width: 49%; 
+	vertical-align: top;
+}
+
+.mag > ul > li:nth-child(even)	{ padding-right: 0em; text-align: right; }
+.mag > ul > li:nth-child(odd) 	{ border-right: #ddd 1px solid; padding-left: 0em; }
+
+.mag > ul > li > h3 
+{
+	margin: 10px 0 .5em;
+	color: #f43c12;
+}
+
+.mag > ul > li > p 			{ color: #333; }
+
+/* ------------------ 
+   Experiments Styles
+   ================== */
+
+.experiments > ul { margin: 5em -10% 0; font-size: 85%; background: #f0f0f0;}
+
+.experiments > ul > li 
+{
+	
+	float:left;
+	overflow: hidden;
+	border-top: solid 1px #e6e6e6;
+	vertical-align: top;
+	border: solid 1px #e6e6e6;
+
+width: 50%;
+border-bottom: 1px solid #e3e3e3;
+border-right: 1px solid #e3e3e3;
+
+
+}
+
+.experiments > ul > li:last-child { margin-bottom: 7em}
+
+.experiments > ul > li > a 
+{
+  
+  margin: 0;
+padding: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+text-decoration: none;
+
+display: block;
+float: left;
+width: 100%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+background: #f0f0f0;
+color: #1a1a1a;
+}
+
+.experiments > ul > li:nth-child(even) > a { padding: 2em 0% 2em 8.333333333%; }
+.experiments > ul > li:nth-child(odd) > a { padding: 2em 0 2em 16%;}
+
+
+.experiments > ul > li > a:hover {
+background: #f85338;
+color: #fff;
+}
+
+abbr { text-transform: lowercase; color: #666; }
+
+.experiments > ul > li > a > h3 {
+
+margin-bottom: .5em}
+
+
+.experiments > ul > li > a:hover > span {
+color: #1a1a1a;
+}
+
+.experiments > ul > li > a > span {
+color: #808080;
+float: left;
+clear: both;
+}
+/* ------------- 
+   Skills Styles
+   ============= */
+
+.skills > ul { overflow: hidden }
+
+.skills > ul > li
+{
+	width: 50%;
+	overflow: hidden;
+	float: left;
+	padding-right: 3.33333%;
+	padding-bottom:0;
+	position: relative;
+	margin: 1em 0 0;
+}
+
+.skills > ul > li:nth-child(even) 	{ padding-left: 3%; padding-right: 0; }
+.skills > ul > li:last-child 		{ margin: 1em 0; }
+
+.skills > ul > li > h3 				{ color: #f44; }
+
+dl
+{
+	width: 100%;
+	margin-bottom: 2.1em;
+}
+
+dt
+{
+	margin: 1.5em 0 0 0;
+	line-height: 1.5em;
+}
+
+dt:first-child { margin-top: 0; }
+
+dd
+{
+	background:#efefef;
+	background: -moz-linear-gradient(center top, rgba(0, 0, 0, 0.2), transparent 10%) repeat scroll 0 0 #EFEFEF;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset, 0 1px rgba(255, 255, 255, 0.6);
+	height: 0.7em;
+	padding: 0;
+	width: 100%;
+}
+
+dd > p
+{
+	height: 100%;
+	border-radius: 3px;
+	padding: 0;
+	margin: 0;
+	text-indent: -9999px
+}
+
+dt > span
+{
+	color: #aaa;
+	text-indent: right;
+	float: right;
+}
+
+/* ============= 
+   Footer Styles
+   ============= */
+
+footer
+{
+	background-color: whiteSmoke;
+	padding-top: 3em;
+	margin: 1.5em -10% 0em;
+	
+	box-shadow: inset 0 1px 5px 0 rgba(0,0,0,.25);
+}
+
+footer.project 
+{
+	margin-top: 0;
+	padding-top: 0;
+}
+
+/* ------------
+   Books Styles
+   ============ */
+
+.books 		{ padding:1em 8.5% 1em; }
+.books ul 	{ margin-top:2.5em; overflow: hidden; }
+
+.books li 	
+{
+	width: 46.5%;
+	overflow: hidden;
+	float: left;
+	padding-right: 3.5%;
+	position: relative;
+	margin-bottom:1.5em;
+}
+
+.books li:nth-child(even) { padding-right: 0%; margin-left: 3.5%; float: right; }
+
+.books li img 
+{
+	width: 7em;
+	height: 9em;
+	margin-right: 4%;
+	margin-bottom: 1em;
+	float: left;
+	background-color:#333;
+	border:5px solid #fff;
+
+	-webkit-box-shadow: 0 1px 5px black;
+	   -moz-box-shadow: 0 1px 5px black;
+            box-shadow: 0 1px 5px black;
+}
+
+.books li h4 
+{ 
+	margin-bottom: 0.5em; 
+	border-bottom: 1px solid #ccc; 
+	font-size: 1em; 
+	color: #f80;
+	padding-bottom: .25em; 
+	line-height: 1.25;
+}
+
+.books li img:hover 
+{
+	-webkit-transition: 1.5s ease-in;
+	   -moz-transition: 1.5s ease-in;
+         -o-transition: 1.5s ease-in;
+            transition: 1.5s ease-in;
+
+	-webkit-filter: grayscale(100%);
+	   -moz-filter: grayscale(100%);
+			filter: gray;
+}
+
+/* --------------
+   Contact Styles
+   ============== */
+
+.contact
+{
+	background-color:#f44;
+	padding:2.5em 8.5% 1em;	
+
+	color:#000;	
+	overflow-x:hidden;
+	-webkit-text-stroke: 0px;
+}
+
+
+.search { width: 100%; background: #fff; padding: 0 8.3333333%; }
+
+input {
+  font-size: 1.5em;
+  text-align: left;
+  font-family: "chaparral-pro";
+  border:0;
+  padding: 1.25em 0 1.1em;
+  display: block;
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+input:focus {
+  outline: 0;
+}
+/* Back to top animation. */
+
+.top 
+{
+	z-index:100;
+	width: 70px;
+	height: 70px;
+	position:absolute;
+	margin-top:-3.5em;
+	background-color:#fff;
+	right:8.33333%;
+	text-indent:-9999em;
+	cursor: pointer;
+	border-radius: 50%;
+	padding-bottom:1em;
+	border:1px thin #000;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat, repeat;
+		background-position: -0px -100px;
+
+
+	-webkit-transition: all 0.4s ease;
+	   -moz-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+}
+
+.top:hover 
+{
+	-webkit-transition: all 0.4s ease;
+	   -moz-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+		background-position: -0px -214px;
+
+}
+
+/* ----------------
+   Copyright Styles
+   ================ */
+
+.copyright
+{
+	background-color:#c01d2b;
+	color:#000;
+
+	padding:1em 8.5% 1em;
+	box-shadow: inset 0 0px 5px rgba(0,0,0,0.5);
+	overflow-x: hidden;
+
+	width: 100%;
+
+	-webkit-text-stroke: 0px;
+}
+
+.left 	
+{ 
+	width: 65%; 
+	float: left; 
+	text-align: left; 
+}
+
+.left > a:after { content: "Pankaj Parashar"; }
+
+.right 	
+{ 
+	width: 35%; 
+	float: right; 
+	text-align: right; 
+}
+
+.copyright > p { margin-bottom: 0; }
+.contact > p > a, .copyright > p > a { color: #fff; border-bottom: none; 
+
+	
+	margin: -.1em 0;
+	padding: 0;
+	position: relative;
+	text-decoration: none;
+
+
+}
+
+
+.contact > p > a:hover, .copyright > p > a:hover { color: #000; 
+	border-bottom: none;
+	margin: -.1em 0;
+	padding: 0;
+	position: relative;
+	text-decoration: none;
+
+
+
+}
+
+/* ==============
+   Awards section
+   ============== */
+
+.opl 
+{ 
+	position: fixed; 
+	top: 25%; 
+	left: 0; 
+	z-index: 1;
+	width: 73px; 
+	height: 56px; 
+	text-indent: -9999px; 
+	display: block; 
+	background: url(../img/sprite.png) no-repeat;
+	background-position: -10px -286px; 
+}
+
+/* ========================================
+   Media queries for responsive breakpoints
+   ----------------------------------------
+   1440px - 15" MacBook Pro
+   1366px - Windows Laptop 
+   1280px - 13" MacBook Pro
+   1024px - iPad
+   0720px - Galaxy SIII
+   ======================================== */
+
+@media only screen and (min-width : 1440px) { body { font-size: 180%; } }
+@media only screen and (max-width : 1366px) { body { font-size: 150%; } }
+@media only screen and (max-width : 1280px) { body { font-size: 130%; } }
+@media only screen and (max-width : 1024px) { body { font-size: 120%; } }
+
+@media only screen and (max-width :  720px) 
+{ 
+	body 	{ font-size: 100%; padding: .25em .5em 0;  font-family: "ff-tisa-web-pro"; } 
+	h1 		{ font-size: 2.2em; margin-bottom: 1.5em; line-height: 2; } 
+	h2 		{ font-size: 1.8em; }
+	blockquote { padding: 0 .5em 0 1em; }
+	p { line-height: 1.8; }
+
+	.search { width: 100%; background: #fff; padding: 0 .5em; }
+	input {
+	  font-size: 130%;
+	  font-family: inherit;
+	  text-align: left;
+	  padding: 1em 0.5em 1em;
+	}
+
+	/* Awards section */
+	.opl 	{ display: none; }
+
+	/* Magazine section */
+	.mag 	{ margin-left: -.5em; margin-right: -.5em; }
+	.mag > ul { padding: 1em 1em 0; }
+	.mag > ul > li { width: 100%; margin-top: 0em; margin-bottom: 0em; padding-top: 0; padding-bottom: 1em; }
+
+	.mag > ul > li:nth-child(even)	{ text-align: left; padding-left: 0; padding-top: .5em; }
+	.mag > ul > li:nth-child(odd) 	{ border-bottom: #ddd 1px solid; border-right: 0; padding-right: 0; }
+
+	.mag > ul > li > a { border-bottom: none; }
+
+	/* Experiments section */
+	.experiments > ul { margin: 0; }
+	.experiments > ul > li { width: 100%; }
+
+	.experiments > ul > li:nth-child(even) > a { padding: 2em 5% 2em; }
+	.experiments > ul > li:nth-child(odd) > a { padding: 2em 5% 2em;}
+
+	/* Skills section */
+	.skills > ul > li { width: 100%; }
+
+	.skills > ul > li:nth-child(odd)  { padding-right: 0; }
+	.skills > ul > li:nth-child(even) { padding-left: 0; }
+	
+	.skills > ul > li:nth-child(3) { display: none; }
+	.skills > ul > li:nth-child(4) { display: none; }
+
+	/* Footer section */
+	footer { margin: 1.5em -.5em 0em; }
+
+	/* Books section */
+	.books { padding: 1em .5em 1em; }
+	.books > ul > li { width: 100%; }
+	.books > ul > li > h4 { font-size: 1.2em; }
+
+	/* Contact section */
+	.contact 	{ padding: 2.5em .5em 1em; }
+	.top 		{ margin-top: -4.5em; }
+
+	/* Copyright section */
+	.copyright 	{ padding: 1em .5em 1em;   }
+
+	.left { width: 100%; text-align: center; margin-bottom: 1.5em; }
+	.left > a:after { content: "PP."; }
+
+	.right { width: 100%; text-align: center; }
+}
+
+@media only screen and (max-width :  480px) { body { font-size: 100%; } }
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	-moz-animation-name: fadeInUp;
+	-o-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	-moz-animation-name: fadeInDown;
+	-o-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+}
+
+/* http://demosthenes.info/blog/547/Make-Your-Web-Pages-More-Legible-With-CSS3-Ligatures-and-Kerning-Pairs */
+
+body { text-rendering: optimizeLegibility; }
+@media and (max-device-width : 480px) {
+body { text-rendering: optimizeSpeed; }
+}
