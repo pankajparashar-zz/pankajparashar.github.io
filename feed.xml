@@ -4,7 +4,7 @@
 	<title>Pankaj Parashar</title>
 	<link href="http://pankajparashar.com/"/>
 	<link type="application/atom+xml" rel="self" href="http://pankajparashar.com/feed.xml"/>
-	<updated>2014-02-08T22:19:18+05:30</updated>
+	<updated>2014-02-08T22:56:33+05:30</updated>
 	<id>http://pankajparashar.com/</id>
 	<author>
 		<name>Pankaj Parashar</name>
@@ -177,7 +177,7 @@ Login to your domain name registrar and create a &lt;code&gt;A&lt;/code&gt; reco
 &lt;p&gt;I understand that no build tool would ever be able to meet the outrageous demands of the list above. However, I started with a &lt;a href=&quot;https://github.com/pankajparashar/grulp&quot;&gt;project on Github&lt;/a&gt; to compile a list of ready-to-use grunt/gulp plugins that accomplishes most of the tasks.&lt;/p&gt;
 
 &lt;p&gt;&lt;figure&gt;
-    &lt;img alt=&quot;Grulp&quot; src=&quot;http://res.cloudinary.com/dw9fem4ki/image/upload/v1391267025/grulp-github-project_gmjmw2.png&quot; style=&quot;border-bottom: 1px solid #eee; padding: 0 0 0 0em;&quot;&gt;
+    &lt;img alt=&quot;Grulp&quot; src=&quot;http://res.cloudinary.com/dw9fem4ki/image/upload/v1391875671/Grulp_d1t3u6.png&quot; style=&quot;border-bottom: 1px solid #eee; padding: 0 0 0 0em;&quot;&gt;
     &lt;figcaption&gt;&lt;a href=&quot;https://github.com/pankajparashar/grulp&quot;&gt;Grulp&lt;/a&gt; - List of ready-to-use grunt/gulp plugins to build your next web project.&lt;/figcaption&gt;
 &lt;/figure&gt;&lt;/p&gt;
 </content>
