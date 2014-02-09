@@ -12,8 +12,18 @@
         ============================
         Link prefetching is a browser mechanism, which utilizes browser idle time to download or prefetch
         documents that the user might visit in the near future.
-        <link rel="prefetch" href="//ajax.googleapis.com">
-        <link rel="prefetch" href="//res.cloudinary.com"> -->
+        Prerender : Identifies a webpage to load in the background, in case the user wants to navigate to it next
+        Prefetch : Identifies a resource file, such as an image or a CSS stylesheet, to be downloaded into the cache
+        DNS-Prefetch : Identifies a DNS query to resolve the background, so that requests can occur more quickly -->
+        <link rel="dns-prefetch" href="//ajax.googleapis.com">
+        <link rel="dns-prefetch" href="//res.cloudinary.com">
+        <link rel="prerender" href="//pankajparashar.com/projects">
+
+        <!-- | Flip ahead browsing |
+        ============================
+        Flip ahead allows you to explore favorite websites like you would a magazine. -->
+        <link rel="next" href="/page/2">
+        <link rel="prev" href="/">
 
         <!-- | Internet Explorer Meta Header |
         ======================================
@@ -86,13 +96,16 @@
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@pankajparashar">
         <meta name="twitter:title" content="Pankaj Parashar">
-        <meta name="twitter:description" content="Hello. I am Pankaj Parashar, a front-end designer and web developer from Mumbai, India.">
+        <meta name="twitter:description" content="Developer. Designer. Writer.">
         <meta name="twitter:creator" content="@pankajparashar">
         <meta name="twitter:image:src" content="http://pankajparashar.com/img/logo.png">
         <meta name="twitter:domain" content="pankajparashar.com">
 
         <!-- RSS Feeds -->
         <link rel="alternate" type="application/rss+xml" title="Pankaj Parashar" href="/feed.xml">
+
+        <!-- Bing webmaster tools -->
+        <meta name="msvalidate.01" content="487AEF186C6F028EB596ABCAA4EF040B" />
     </head>
 
     <!--
@@ -123,13 +136,15 @@
     -->
 
     <body>
+        <!-- Microdata markup added by Google Structured Data Markup Helper. -->
+
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <header role="banner">
 
-    <h1 class="header__title"><a href="/" class="header__title--link">Pankaj Parashar</a></h1>
+    <h1 class="header__title"><a href="/" class="header__title--link" itemprop="author" itemscope itemtype="http://schema.org/Person">Pankaj Parashar</a></h1>
     <h2 class="header__subtitle">Developer. Designer. Writer.</h2>
 
     <a href="http://twitter.com/pankajparashar" class="header__follow">Follow @pankajparashar</a>
@@ -158,13 +173,13 @@
     <small class="post__date"><a href="http://pankajparashar.github.io/color-stack/">pankajparashar.github.io/color-stack</a></small>
     <p>A collection of awesome and ready-made color palettes featuring popular websites with ready to use hexadecimal color codes for your next front-end project.</p>
     <figure>
-        <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391350548/http_pankajparashar_com_img_projects_color-stack_d2mt8w.png" style="border:1px solid #ccc;">
+        <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391875675/Color_Stack_jh8liu.png" style="border:1px solid #ccc;">
         <figcaption>Screenshot of Color Stack's homepage grabbed on November 10, 2013. Also got featured on Sideprojects Web3Canvas on Jul 13, 2013.</figcaption>
     </figure>
     <h3>Typeface &amp; Layout</h3>
-    <p>Set in Proxima Nova, designed by Mark Simonson Studios and embedded via FontDeck. Designed and conceived using Flexbox, an experimental CSS box-model layout technique.</p>
+    <p>Set in Minion Pro, designed by Robert Slimbach and embedded via Typekit. Designed and conceived using Flexbox, an experimental CSS box-model layout technique.</p>
     <figure>
-        <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391350797/http_pankajparashar_com_img_projects_minion-pro_gsklef.png">
+        <img src="http://cdn.myfonts.net/s/aw/1440x720/198/0/101761.png">
         <figcaption>Typeface set in Minion Pro Caption from Adobe in action. Screenshot grabbed from MyFonts.</figcaption>
     </figure>
 </article></p>
@@ -174,8 +189,8 @@
     <small class="post__date"><a href="http://pankajparashar.github.io/nerdy-python/">pankajparashar.github.io/nerdy-python</a></small>
     <p>A collection of style guides and best practices for popular programming languages to write perfect, performance-oriented, memory-efficient and consistent code.</p>
     <figure>
-        <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391351609/http_pankajparashar_com_img_projects_nerdy_hnaq1h.png" style="border:1px solid #eee;border-left:none">
-        <figcaption></figcaption>
+        <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391875669/Nerdy_Project_ybh6n2.png" style="border:1px solid #eee;border-left:none">
+        <figcaption>Screenhot of Nerdy Python, HTML and CSS amalgamated into a single collage.</figcaption>
     </figure>
 </article></p>
 
@@ -184,14 +199,14 @@
     <small class="post__date"><a href="http://pankajparashar.com/">pankajparashar.com</a></small>
     <p>My personal online space built using HTML5, CSS3 and JavaScript, completely free and open-source with the code available on Github for your forking pleasure.</p>
     <figure>
-        <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/c_crop,h_450/v1391351875/screenshot_bqqynt.png">
+        <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391875675/Personal_Website_m7oezj.png">
         <figcaption>Screenshot of v4 generated by PlaceIt by Breezi</figcaption>
     </figure>
-    <figure>
-        <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391352698/Screen_Shot_2014-02-02_at_8_20_10_PM_czhivi.png">
+    <!--<figure>
+        <img src="/img/logo/logo.png">
         <figcaption>Logo, Design, Branding and Illustration courtesy of ingenious @sokratus. Images available in both .png and .svg format. Vectors generated by Sketch from Bohemian Coding.</figcaption>
-    </figure>
-    <blockquote><p>Got any interesting idea or a project to talk about? drop me a line on email@pankajparashar.com.</p></blockquote>
+    </figure>-->
+    <blockquote><p>Got any interesting idea or a project to talk about? send me a tweet or drop me a line on <a href="mailto:email@pankajparashar.com">email@pankajparashar.com</a>.</p></blockquote>
 </article></p>
 
         </section>
@@ -206,6 +221,7 @@
         <script src="/_bower_components/jquery/jquery.min.js"></script>
         <script src="/js/libs/jquery.hypher.js"></script>
         <script src="/js/libs/en-us.js"></script>
+        <script src="/js/libs/trmix.js"></script>
         <script src="/js/plugins.js"></script>
         <script src="/js/script.js"></script>
         <!-- endbuild -->

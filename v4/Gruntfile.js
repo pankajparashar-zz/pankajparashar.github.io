@@ -31,7 +31,7 @@ module.exports = function (grunt) {
       },
       jekyll: {
         files: [
-          '<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown}',
+          '<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown,xml}',
           '!<%= yeoman.app %>/_bower_components/**/*'
         ],
         tasks: ['jekyll:server']
@@ -93,8 +93,7 @@ module.exports = function (grunt) {
             // Running Jekyll also cleans the target directory.  Exclude any
             // non-standard `keep_files` here (e.g., the generated files
             // directory from Jekyll Picture Tag).
-            '!<%= yeoman.dist %>/.git*',
-            '!<%= yeoman.dist %>/projects/**'
+            '!<%= yeoman.dist %>/.git*'
           ]
         }]
       },
@@ -258,7 +257,6 @@ module.exports = function (grunt) {
             '_bower_components/jquery/jquery.js',
             '*.ico',
             '*.png',
-            '*.xml',
             'CNAME',
             '<%= yeoman.dist %>/projects/**'
           ],

@@ -12,8 +12,18 @@
         ============================
         Link prefetching is a browser mechanism, which utilizes browser idle time to download or prefetch
         documents that the user might visit in the near future.
-        <link rel="prefetch" href="//ajax.googleapis.com">
-        <link rel="prefetch" href="//res.cloudinary.com"> -->
+        Prerender : Identifies a webpage to load in the background, in case the user wants to navigate to it next
+        Prefetch : Identifies a resource file, such as an image or a CSS stylesheet, to be downloaded into the cache
+        DNS-Prefetch : Identifies a DNS query to resolve the background, so that requests can occur more quickly -->
+        <link rel="dns-prefetch" href="//ajax.googleapis.com">
+        <link rel="dns-prefetch" href="//res.cloudinary.com">
+        <link rel="prerender" href="//pankajparashar.com/projects">
+
+        <!-- | Flip ahead browsing |
+        ============================
+        Flip ahead allows you to explore favorite websites like you would a magazine. -->
+        <link rel="next" href="/page/2">
+        <link rel="prev" href="/">
 
         <!-- | Internet Explorer Meta Header |
         ======================================
@@ -86,13 +96,16 @@
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@pankajparashar">
         <meta name="twitter:title" content="Pankaj Parashar">
-        <meta name="twitter:description" content="Hello. I am Pankaj Parashar, a front-end designer and web developer from Mumbai, India.">
+        <meta name="twitter:description" content="Developer. Designer. Writer.">
         <meta name="twitter:creator" content="@pankajparashar">
         <meta name="twitter:image:src" content="http://pankajparashar.com/img/logo.png">
         <meta name="twitter:domain" content="pankajparashar.com">
 
         <!-- RSS Feeds -->
         <link rel="alternate" type="application/rss+xml" title="Pankaj Parashar" href="/feed.xml">
+
+        <!-- Bing webmaster tools -->
+        <meta name="msvalidate.01" content="487AEF186C6F028EB596ABCAA4EF040B" />
     </head>
 
     <!--
@@ -123,13 +136,15 @@
     -->
 
     <body>
+        <!-- Microdata markup added by Google Structured Data Markup Helper. -->
+
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <header role="banner">
 
-    <h1 class="header__title"><a href="/" class="header__title--link">Pankaj Parashar</a></h1>
+    <h1 class="header__title"><a href="/" class="header__title--link" itemprop="author" itemscope itemtype="http://schema.org/Person">Pankaj Parashar</a></h1>
     <h2 class="header__subtitle">Developer. Designer. Writer.</h2>
 
     <a href="http://twitter.com/pankajparashar" class="header__follow">Follow @pankajparashar</a>
@@ -174,10 +189,10 @@
 <p>If you use some kind of a pre-processor in your workflow to write your HTML, CSS or JavaScript, the compilation of code into its raw form naturally becomes the first step of any build task.</p>
 
 <ul>
-<li><a href="#8">HAML</a> / <a href="#9">MarkDown</a> / <a href="#10">Jade</a> / <a href="#11">Slim</a> to HTML.</li>
-<li><a href="#12">Sass</a> / <a href="#12">SCSS</a> / <a href="#13">LESS</a> / <a href="#14">Stylus</a> to CSS.</li>
-<li><a href="#">Compass</a> / <a href="#">Bourbon</a> to CSS.</li>
-<li><a href="#15">CoffeeScript</a> / <a href="#16">LiveScript</a> / <a href="#17">TypeScript</a> to JavaScript.</li>
+<li><a href="http://haml.info/">HAML</a> / <a href="https://daringfireball.net/projects/markdown/">MarkDown</a> / <a href="http://jade-lang.com/">Jade</a> / <a href="http://jade-lang.com/">Slim</a> to HTML.</li>
+<li><a href="http://sass-lang.com/">Sass</a> / <a href="http://sass-lang.com/">SCSS</a> / <a href="http://lesscss.org/">LESS</a> / <a href="http://learnboost.github.io/stylus/">Stylus</a> to CSS.</li>
+<li><a href="http://compass-style.org/">Compass</a> / <a href="http://bourbon.io/">Bourbon</a> to CSS.</li>
+<li><a href="http://coffeescript.org/">CoffeeScript</a> / <a href="http://livescript.net/">LiveScript</a> / <a href="http://www.typescriptlang.org/">TypeScript</a> to JavaScript.</li>
 </ul>
 
 
@@ -248,11 +263,11 @@
 
 <h3>Grulp Project</h3>
 
-<p>I understand that no build tool would ever be able to meet the outrageous demands of the list above. However, I started with a project on Github to compile a list of ready-to-use grunt/gulp plugins that accomplishes most of the tasks.</p>
+<p>I understand that no build tool would ever be able to meet the outrageous demands of the list above. However, I started with a <a href="https://github.com/pankajparashar/grulp">project on Github</a> to compile a list of ready-to-use grunt/gulp plugins that accomplishes most of the tasks.</p>
 
 <p><figure>
-    <img alt="Grulp" src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391267025/grulp-github-project_gmjmw2.png" style="border-bottom: 1px solid #eee; padding: 0 0 0 0em;">
-    <figcaption>Grulp - List of ready-to-use grunt/gulp plugins to build your next web project.</figcaption>
+    <img alt="Grulp" src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391875671/Grulp_d1t3u6.png" style="border-bottom: 1px solid #eee; padding: 0 0 0 0em;">
+    <figcaption><a href="https://github.com/pankajparashar/grulp">Grulp</a> - List of ready-to-use grunt/gulp plugins to build your next web project.</figcaption>
 </figure></p>
 
     <p>Did you enjoy reading this article? I'd love to hear your thoughts. Shoot me an <a href="mailto:email@pankajparashar.com">email</a> or send me a <a href="https://twitter.com/intent/tweet?via=pankajparashar&text=My frontend build tool wishlist...">tweet</a> if you've got any comments.</p>
@@ -270,6 +285,7 @@
         <script src="/_bower_components/jquery/jquery.min.js"></script>
         <script src="/js/libs/jquery.hypher.js"></script>
         <script src="/js/libs/en-us.js"></script>
+        <script src="/js/libs/trmix.js"></script>
         <script src="/js/plugins.js"></script>
         <script src="/js/script.js"></script>
         <!-- endbuild -->

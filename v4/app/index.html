@@ -3,10 +3,10 @@ layout: default
 ---
 
 {% for post in paginator.posts %}
-    <article>
+    <article itemscope itemtype="http://schema.org/Article">
         {% if post.type == 'post' %}
-            <h2 class="post__title"><a class="post__title--link" href="{{ post.url }}">{{ post.title }}</a></h2>
-            <small class="post__date">{{ post.date | date: "%A, %B %d, %Y" }}</small>
+            <h2 class="post__title"><a class="post__title--link" href="{{ post.url }}" itemprop="name">{{ post.title }}</a></h2>
+            <small class="post__date" itemprop="datePublished" content="{{ post.date }}">{{ post.date | date: "%A, %B %d, %Y" }}</small>
             <small class="post__time">{{ post.content | number_of_words | append: '.0' | divided_by:180 }}</small>
             {% if post.excerpt %}
                 <p class="post__excerpt">{{ post.excerpt }}</p>

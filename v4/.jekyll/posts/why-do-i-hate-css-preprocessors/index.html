@@ -12,8 +12,18 @@
         ============================
         Link prefetching is a browser mechanism, which utilizes browser idle time to download or prefetch
         documents that the user might visit in the near future.
-        <link rel="prefetch" href="//ajax.googleapis.com">
-        <link rel="prefetch" href="//res.cloudinary.com"> -->
+        Prerender : Identifies a webpage to load in the background, in case the user wants to navigate to it next
+        Prefetch : Identifies a resource file, such as an image or a CSS stylesheet, to be downloaded into the cache
+        DNS-Prefetch : Identifies a DNS query to resolve the background, so that requests can occur more quickly -->
+        <link rel="dns-prefetch" href="//ajax.googleapis.com">
+        <link rel="dns-prefetch" href="//res.cloudinary.com">
+        <link rel="prerender" href="//pankajparashar.com/projects">
+
+        <!-- | Flip ahead browsing |
+        ============================
+        Flip ahead allows you to explore favorite websites like you would a magazine. -->
+        <link rel="next" href="/page/2">
+        <link rel="prev" href="/">
 
         <!-- | Internet Explorer Meta Header |
         ======================================
@@ -86,13 +96,16 @@
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@pankajparashar">
         <meta name="twitter:title" content="Pankaj Parashar">
-        <meta name="twitter:description" content="Hello. I am Pankaj Parashar, a front-end designer and web developer from Mumbai, India.">
+        <meta name="twitter:description" content="Developer. Designer. Writer.">
         <meta name="twitter:creator" content="@pankajparashar">
         <meta name="twitter:image:src" content="http://pankajparashar.com/img/logo.png">
         <meta name="twitter:domain" content="pankajparashar.com">
 
         <!-- RSS Feeds -->
         <link rel="alternate" type="application/rss+xml" title="Pankaj Parashar" href="/feed.xml">
+
+        <!-- Bing webmaster tools -->
+        <meta name="msvalidate.01" content="487AEF186C6F028EB596ABCAA4EF040B" />
     </head>
 
     <!--
@@ -123,13 +136,15 @@
     -->
 
     <body>
+        <!-- Microdata markup added by Google Structured Data Markup Helper. -->
+
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <header role="banner">
 
-    <h1 class="header__title"><a href="/" class="header__title--link">Pankaj Parashar</a></h1>
+    <h1 class="header__title"><a href="/" class="header__title--link" itemprop="author" itemscope itemtype="http://schema.org/Person">Pankaj Parashar</a></h1>
     <h2 class="header__subtitle">Developer. Designer. Writer.</h2>
 
     <a href="http://twitter.com/pankajparashar" class="header__follow">Follow @pankajparashar</a>
@@ -218,6 +233,7 @@
         <script src="/_bower_components/jquery/jquery.min.js"></script>
         <script src="/js/libs/jquery.hypher.js"></script>
         <script src="/js/libs/en-us.js"></script>
+        <script src="/js/libs/trmix.js"></script>
         <script src="/js/plugins.js"></script>
         <script src="/js/script.js"></script>
         <!-- endbuild -->

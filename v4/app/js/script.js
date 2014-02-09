@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-    $('article p, article li').hyphenate('en-us');
+    $('article p, article li, article p a, code').hyphenate('en-us');
 
     $('.post__time').text(function (index, value) {
         return Math.round(parseFloat(value));

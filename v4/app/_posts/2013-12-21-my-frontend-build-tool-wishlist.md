@@ -22,10 +22,10 @@ Hence, I have divided the build task into the following categories,
 
 If you use some kind of a pre-processor in your workflow to write your HTML, CSS or JavaScript, the compilation of code into its raw form naturally becomes the first step of any build task.
 
-- [HAML](#8) / [MarkDown](#9) / [Jade](#10) / [Slim](#11) to HTML.
-- [Sass](#12) / [SCSS](#12) / [LESS](#13) / [Stylus](#14) to CSS.
-- [Compass](#) / [Bourbon](#) to CSS.
-- [CoffeeScript](#15) / [LiveScript](#16) / [TypeScript](#17) to JavaScript.
+- [HAML](http://haml.info/) / [MarkDown](https://daringfireball.net/projects/markdown/) / [Jade](http://jade-lang.com/) / [Slim](http://jade-lang.com/) to HTML.
+- [Sass](http://sass-lang.com/) / [SCSS](http://sass-lang.com/) / [LESS](http://lesscss.org/) / [Stylus](http://learnboost.github.io/stylus/) to CSS.
+- [Compass](http://compass-style.org/) / [Bourbon](http://bourbon.io/) to CSS.
+- [CoffeeScript](http://coffeescript.org/) / [LiveScript](http://livescript.net/) / [TypeScript](http://www.typescriptlang.org/) to JavaScript.
 
 ### Linting
 
@@ -79,9 +79,9 @@ Some of the tasks that do not belong to any of the aforementioned categories are
 
 ### Grulp Project
 
-I understand that no build tool would ever be able to meet the outrageous demands of the list above. However, I started with a project on Github to compile a list of ready-to-use grunt/gulp plugins that accomplishes most of the tasks.
+I understand that no build tool would ever be able to meet the outrageous demands of the list above. However, I started with a [project on Github](https://github.com/pankajparashar/grulp) to compile a list of ready-to-use grunt/gulp plugins that accomplishes most of the tasks.
 
 <figure>
-    <img alt="Grulp" src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391267025/grulp-github-project_gmjmw2.png" style="border-bottom: 1px solid #eee; padding: 0 0 0 0em;">
-    <figcaption>Grulp - List of ready-to-use grunt/gulp plugins to build your next web project.</figcaption>
+    <img alt="Grulp" src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391875671/Grulp_d1t3u6.png" style="border-bottom: 1px solid #eee; padding: 0 0 0 0em;">
+    <figcaption>[Grulp](https://github.com/pankajparashar/grulp) - List of ready-to-use grunt/gulp plugins to build your next web project.</figcaption>
 </figure>

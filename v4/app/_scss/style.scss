@@ -196,6 +196,12 @@ pre code {
 
 code {
 	color: #F25111;
+	padding: 2px 4px;
+	font-size: 90%;
+	color: #C7254E;
+	background-color: #F9F2F4;
+	
+	border-radius: .25em;
 	font-family: 'ppp-541b3f951e7811776b489b09a9';
 }
 
@@ -256,6 +262,14 @@ figure {
 		text-align: center;
 		line-height: 1.75;
 	}
+
+p {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+}
 
 /* ==========================================================================
    Browse Happy prompt
@@ -542,7 +556,9 @@ footer[role="contentinfo"] {
 	}
 
 	.footer__top--link {
+		text-align: right;
 		float: right;
+		width: 7.5em;
 	}
 
 		.footer__top--link::after {

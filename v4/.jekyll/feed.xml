@@ -4,13 +4,96 @@
 	<title>Pankaj Parashar</title>
 	<link href="http://pankajparashar.com/"/>
 	<link type="application/atom+xml" rel="self" href="http://pankajparashar.com/feed.xml"/>
-	<updated>2014-02-06T22:29:28+05:30</updated>
+	<updated>2014-02-09T20:27:33+05:30</updated>
 	<id>http://pankajparashar.com/</id>
 	<author>
 		<name>Pankaj Parashar</name>
 		<email>email@pankajparashar.com</email>
 	</author>
 
+	
+		<entry>
+			<id>http://pankajparashar.com/posts/font-face-chrome-saga</id>
+			<link type="text/html" rel="alternate" href="http://pankajparashar.com/posts/font-face-chrome-saga"/>
+			<title>Font-face saga of Chrome</title>
+			<published>2014-02-09T00:00:00+05:30</published>
+			<updated>2014-02-09T00:00:00+05:30</updated>
+			<author>
+				<name>Pankaj Parashar</name>
+				<email>email@pankajparashar.com</email>
+			</author>
+			<content type="html">&lt;p&gt;Apparently, Google Chrome has been infected with a wierd bug that causes web fonts to randomly disappear and fallback to the default system fonts. Initially, I thought I was the only one facing this problem, becuase either hovering the text or reloading the page solved the issue.&lt;/p&gt;
+
+&lt;p&gt;But after stumbling across this &lt;a href=&quot;https://code.google.com/p/chromium/issues/detail?id=236298&quot;&gt;bug tracker&lt;/a&gt;, I realised that this bug not only affects me (I am on OS X Mavericks) but all other platforms as well. &lt;a href=&quot;http://blog.typekit.com/2014/02/04/chrome-bug-affecting-web-fonts/&quot;&gt;Typekit also clarified&lt;/a&gt; that this nothing to do with their font rendering service.&lt;/p&gt;
+
+&lt;p&gt;I am surprised that this issue crept through the stable release channel of both M31 and M32. Although it is not a security or stability issue, this bug affects the quality of text and it just so happens that we really need text on the Web!&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;The Chrome team is aware of the problem and has already fixed the bug. The bug fix will be in Chrome 33, which is planned for release in late February. If you’re still experiencing the issue in Chrome Canary (which has the bug fixed), please &lt;a href=&quot;https://code.google.com/p/chromium/issues/detail?id=236298&quot;&gt;let the Chrome team know in the bug report&lt;/a&gt;.&lt;/p&gt;&lt;/blockquote&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<id>http://pankajparashar.com/posts/custom-domain-github-pages</id>
+			<link type="text/html" rel="alternate" href="http://pankajparashar.com/posts/custom-domain-github-pages"/>
+			<title>Github pages with custom domain</title>
+			<published>2014-02-08T00:00:00+05:30</published>
+			<updated>2014-02-08T00:00:00+05:30</updated>
+			<author>
+				<name>Pankaj Parashar</name>
+				<email>email@pankajparashar.com</email>
+			</author>
+			<content type="html">&lt;p&gt;Github provides two types of pages,&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User pages&lt;/li&gt;
+&lt;li&gt;Project pages&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;User pages&lt;/h3&gt;
+
+&lt;p&gt;It is nothing but a Github repository with a special name &lt;code&gt;username.github.io&lt;/code&gt; and all the contents of this repository must be in the &lt;code&gt;master&lt;/code&gt; branch. For example, &lt;a href=&quot;https://github.com/pankajparashar/pankajparashar.github.io&quot;&gt;pankajparashar.github.io&lt;/a&gt; is a repository for user pages under my Github username, &lt;a href=&quot;https://github.com/pankajparashar&quot;&gt;pankajparashar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;By default, the user pages are available under the url, &lt;code&gt;http://username.github.io&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Project pages&lt;/h3&gt;
+
+&lt;p&gt;Project pages are project specific files lying in the &lt;code&gt;gh-pages&lt;/code&gt; branch of the repository. These pages can be accessed via the url &lt;code&gt;username.github.io/repository_name&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;Repository&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;Color&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;Stack&lt;/span&gt;  
+&lt;span class=&quot;nt&quot;&gt;URL&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;://&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pankajparashar&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.github.io&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;color-stack&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Custom domain&lt;/h3&gt;
+
+&lt;p&gt;Now, coming to the meat of the article, custom domain can be set for both user and project pages. Moreover, the steps to setup the domain also remains the same for both the categories. However, this article will only deal with setting up custom domain for the user pages only.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;br/&gt;
+Create the repository &lt;code&gt;username.github.io&lt;/code&gt; on Github. For reference, check my &lt;a href=&quot;https://github.com/pankajparashar/pankajparashar.github.io&quot;&gt;user repository on Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;br/&gt;
+Add a CNAME file containing the custom domain name that you want to map. In my case, the &lt;a href=&quot;https://github.com/pankajparashar/pankajparashar.github.io/blob/master/CNAME&quot;&gt;CNAME&lt;/a&gt; file contains, &lt;code&gt;pankajparashar.com&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;br/&gt;
+Login to your domain name registrar and create a &lt;code&gt;A&lt;/code&gt; record that maps the domain to the Github&#39;s IP address - &lt;code&gt;204.232.175.78&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;There is no guarantee that this IP address will remain the same forever. Indeed, github has changed its value in the past. Presumably github will notify users appropriately before any future changes. If they do change it, you&#39;ll have to adjust the configuration at your DNS registrar accordingly.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Theoretically it can take 30 mins to 2 hours for the DNS propagation to complete, but in my experience this change took 1 full day to reflect. Once the propagation is complete, whenever you visit &lt;code&gt;pankajparashar.github.io&lt;/code&gt; you will be redirected to my custom domain &lt;code&gt;pankajparashar.com&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The interesting part is that all the project pages are also being redirected under the same &lt;a href=&quot;http://en.wikipedia.org/wiki/Top-level_domain&quot;&gt;Top-Level domain&lt;/a&gt;. This is fantastic, because for years I have been trying to bring all my projects and the personal website under the same domain. This process makes my entire workflow completely seamless.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;My Color Stack project, available at the url &lt;a href=&quot;http://pankajparashar.github.io/color-stack&quot;&gt;pankajparashar.github.io/color-stack&lt;/a&gt; is now automatically being redirected to &lt;a href=&quot;http://pankajparashar.github.io/color-stack&quot;&gt;pankajparashar.com/color-stack&lt;/a&gt;.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;By the way, this tweet from &lt;a href=&quot;https://twitter.com/jackrugile&quot;&gt;@jackrugile&lt;/a&gt; triggered me to write this piece,&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/jackrugile&quot;&gt;@jackrugile&lt;/a&gt; CNAME for user pages only and then the project pages (gh-pages) will automatically appear under the domain name set in the file.&lt;/p&gt;&lt;br&gt;&amp;mdash; Pankaj Parashar, &lt;a href=&quot;https://twitter.com/pankajparashar/statuses/432094472902430721&quot;&gt;February 8, 2014&lt;/a&gt;&lt;/blockquote&gt;
+
+</content>
+		</entry>
 	
 		<entry>
 			<id>http://pankajparashar.com/posts/my-frontend-build-tool-wishlist</id>
@@ -37,10 +120,10 @@
 &lt;p&gt;If you use some kind of a pre-processor in your workflow to write your HTML, CSS or JavaScript, the compilation of code into its raw form naturally becomes the first step of any build task.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#8&quot;&gt;HAML&lt;/a&gt; / &lt;a href=&quot;#9&quot;&gt;MarkDown&lt;/a&gt; / &lt;a href=&quot;#10&quot;&gt;Jade&lt;/a&gt; / &lt;a href=&quot;#11&quot;&gt;Slim&lt;/a&gt; to HTML.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#12&quot;&gt;Sass&lt;/a&gt; / &lt;a href=&quot;#12&quot;&gt;SCSS&lt;/a&gt; / &lt;a href=&quot;#13&quot;&gt;LESS&lt;/a&gt; / &lt;a href=&quot;#14&quot;&gt;Stylus&lt;/a&gt; to CSS.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Compass&lt;/a&gt; / &lt;a href=&quot;#&quot;&gt;Bourbon&lt;/a&gt; to CSS.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#15&quot;&gt;CoffeeScript&lt;/a&gt; / &lt;a href=&quot;#16&quot;&gt;LiveScript&lt;/a&gt; / &lt;a href=&quot;#17&quot;&gt;TypeScript&lt;/a&gt; to JavaScript.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://haml.info/&quot;&gt;HAML&lt;/a&gt; / &lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot;&gt;MarkDown&lt;/a&gt; / &lt;a href=&quot;http://jade-lang.com/&quot;&gt;Jade&lt;/a&gt; / &lt;a href=&quot;http://jade-lang.com/&quot;&gt;Slim&lt;/a&gt; to HTML.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sass-lang.com/&quot;&gt;Sass&lt;/a&gt; / &lt;a href=&quot;http://sass-lang.com/&quot;&gt;SCSS&lt;/a&gt; / &lt;a href=&quot;http://lesscss.org/&quot;&gt;LESS&lt;/a&gt; / &lt;a href=&quot;http://learnboost.github.io/stylus/&quot;&gt;Stylus&lt;/a&gt; to CSS.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://compass-style.org/&quot;&gt;Compass&lt;/a&gt; / &lt;a href=&quot;http://bourbon.io/&quot;&gt;Bourbon&lt;/a&gt; to CSS.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://coffeescript.org/&quot;&gt;CoffeeScript&lt;/a&gt; / &lt;a href=&quot;http://livescript.net/&quot;&gt;LiveScript&lt;/a&gt; / &lt;a href=&quot;http://www.typescriptlang.org/&quot;&gt;TypeScript&lt;/a&gt; to JavaScript.&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -111,11 +194,11 @@
 
 &lt;h3&gt;Grulp Project&lt;/h3&gt;
 
-&lt;p&gt;I understand that no build tool would ever be able to meet the outrageous demands of the list above. However, I started with a project on Github to compile a list of ready-to-use grunt/gulp plugins that accomplishes most of the tasks.&lt;/p&gt;
+&lt;p&gt;I understand that no build tool would ever be able to meet the outrageous demands of the list above. However, I started with a &lt;a href=&quot;https://github.com/pankajparashar/grulp&quot;&gt;project on Github&lt;/a&gt; to compile a list of ready-to-use grunt/gulp plugins that accomplishes most of the tasks.&lt;/p&gt;
 
 &lt;p&gt;&lt;figure&gt;
-    &lt;img alt=&quot;Grulp&quot; src=&quot;http://res.cloudinary.com/dw9fem4ki/image/upload/v1391267025/grulp-github-project_gmjmw2.png&quot; style=&quot;border-bottom: 1px solid #eee; padding: 0 0 0 0em;&quot;&gt;
-    &lt;figcaption&gt;Grulp - List of ready-to-use grunt/gulp plugins to build your next web project.&lt;/figcaption&gt;
+    &lt;img alt=&quot;Grulp&quot; src=&quot;http://res.cloudinary.com/dw9fem4ki/image/upload/v1391875671/Grulp_d1t3u6.png&quot; style=&quot;border-bottom: 1px solid #eee; padding: 0 0 0 0em;&quot;&gt;
+    &lt;figcaption&gt;&lt;a href=&quot;https://github.com/pankajparashar/grulp&quot;&gt;Grulp&lt;/a&gt; - List of ready-to-use grunt/gulp plugins to build your next web project.&lt;/figcaption&gt;
 &lt;/figure&gt;&lt;/p&gt;
 </content>
 		</entry>
@@ -164,11 +247,11 @@
 				<name>Pankaj Parashar</name>
 				<email>email@pankajparashar.com</email>
 			</author>
-			<content type="html">&lt;p&gt;Thanks to Chris Coyier, for offering me the opportunity to write for &lt;a href=&quot;#&quot;&gt;CSS-Tricks&lt;/a&gt; once again. This article also got featured on,&lt;/p&gt;
+			<content type="html">&lt;p&gt;Thanks to Chris Coyier, for offering me the opportunity to write for &lt;a href=&quot;http://css-tricks.com/&quot;&gt;CSS-Tricks&lt;/a&gt; once again. This article also got featured on,&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Web Design &amp;amp; Development News - &lt;a href=&quot;#&quot;&gt;Collective #92&lt;/a&gt; by Codrops.&lt;/li&gt;
-&lt;li&gt;CSS Weekly - &lt;a href=&quot;#&quot;&gt;Issue #87&lt;/a&gt; by Zoran Jambor.&lt;/li&gt;
+&lt;li&gt;Web Design &amp;amp; Development News - &lt;a href=&quot;http://tympanus.net/codrops/collective/collective-92/&quot;&gt;Collective #92&lt;/a&gt; by Codrops.&lt;/li&gt;
+&lt;li&gt;CSS Weekly - &lt;a href=&quot;css-weekly.com/issue-87/&quot;&gt;Issue #87&lt;/a&gt; by Zoran Jambor.&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -176,7 +259,7 @@
     &lt;img src=&quot;http://res.cloudinary.com/dw9fem4ki/image/upload/v1386405482/OSX_style_Disk_Usage_CodePen_cn05rz.png&quot;&gt;
 &lt;/figure&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Read on CSS-Tricks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;css-tricks.com/html5-meter-element/&quot;&gt;Read on CSS-Tricks&lt;/a&gt;&lt;/p&gt;
 </content>
 		</entry>
 	
@@ -208,11 +291,11 @@
 				<name>Pankaj Parashar</name>
 				<email>email@pankajparashar.com</email>
 			</author>
-			<content type="html">&lt;p&gt;I wrote this article as a guest post for &lt;a href=&quot;#&quot;&gt;CSS-Tricks&lt;/a&gt; and also got featured on,&lt;/p&gt;
+			<content type="html">&lt;p&gt;I wrote this article as a guest post for &lt;a href=&quot;http://css-tricks.com/&quot;&gt;CSS-Tricks&lt;/a&gt; and also got featured on,&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Web Design &amp;amp; Development News - &lt;a href=&quot;#&quot;&gt;Collective #79&lt;/a&gt; by Codrops.&lt;/li&gt;
-&lt;li&gt;HTML5 Weekly - &lt;a href=&quot;#&quot;&gt;Issue #104&lt;/a&gt; by Peter Cooper.&lt;/li&gt;
+&lt;li&gt;Web Design &amp;amp; Development News - &lt;a href=&quot;http://tympanus.net/codrops/collective/collective-79/&quot;&gt;Collective #79&lt;/a&gt; by Codrops.&lt;/li&gt;
+&lt;li&gt;HTML5 Weekly - &lt;a href=&quot;http://html5weekly.com/issues/104&quot;&gt;Issue #104&lt;/a&gt; by Peter Cooper.&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -220,7 +303,7 @@
     &lt;img src=&quot;http://res.cloudinary.com/dw9fem4ki/image/upload/v1386423368/Skillset_using_HTML5_progress_bars_with_CSS3_animations_CodePen_vxmsie.png&quot;&gt;
 &lt;/figure&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Read on CSS-Tricks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://css-tricks.com/html5-progress-element/&quot;&gt;Read on CSS-Tricks&lt;/a&gt;&lt;/p&gt;
 </content>
 		</entry>
 	
@@ -308,11 +391,11 @@
 				<name>Pankaj Parashar</name>
 				<email>email@pankajparashar.com</email>
 			</author>
-			<content type="html">&lt;p&gt;I wrote this article as a contributing author for the &lt;a href=&quot;#&quot;&gt;TXP Magazine&lt;/a&gt; and was featured in &lt;a href=&quot;#&quot;&gt;Issue No #3&lt;/a&gt;. Big thanks to Destry Wion for proof reading this article!&lt;/p&gt;
+			<content type="html">&lt;p&gt;I wrote this article as a contributing author for the &lt;a href=&quot;http://txpmag.com/&quot;&gt;TXP Magazine&lt;/a&gt; and was featured in &lt;a href=&quot;http://txpmag.com/issues/3&quot;&gt;Issue No #3&lt;/a&gt;. Big thanks to Destry Wion for proof reading this article!&lt;/p&gt;
 
 &lt;blockquote&gt;&lt;p&gt;If you are looking for a perfect HTML5 template to kickstart your new project that should be fast, robust and cross-browser compatible, you do not have to look beyond the HTML5 Boilerplate. The world’s most popular frontend template is a result of the combined knowledge and effort of more than 100 developers, making it one of the most popular projects on GitHub. But before you skip this article to press the download button, you need to understand; what makes this framework so popular?&lt;/p&gt;&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Read on TXP Magazine&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://txpmag.com/meaningful-labour/dissecting-html5-boilerplate-40&quot;&gt;Read on TXP Magazine&lt;/a&gt;&lt;/p&gt;
 </content>
 		</entry>
 	
