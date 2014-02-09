@@ -4,13 +4,33 @@
 	<title>Pankaj Parashar</title>
 	<link href="http://pankajparashar.com/"/>
 	<link type="application/atom+xml" rel="self" href="http://pankajparashar.com/feed.xml"/>
-	<updated>2014-02-09T15:52:48+05:30</updated>
+	<updated>2014-02-09T19:48:54+05:30</updated>
 	<id>http://pankajparashar.com/</id>
 	<author>
 		<name>Pankaj Parashar</name>
 		<email>email@pankajparashar.com</email>
 	</author>
 
+	
+		<entry>
+			<id>http://pankajparashar.com/posts/font-face-chrome-saga</id>
+			<link type="text/html" rel="alternate" href="http://pankajparashar.com/posts/font-face-chrome-saga"/>
+			<title>Font-face saga of Chrome</title>
+			<published>2014-02-09T00:00:00+05:30</published>
+			<updated>2014-02-09T00:00:00+05:30</updated>
+			<author>
+				<name>Pankaj Parashar</name>
+				<email>email@pankajparashar.com</email>
+			</author>
+			<content type="html">&lt;p&gt;Apparently, Google Chrome has been infected with a wierd bug that causes web fonts to randomly disappear and fallback to the default system fonts. Initially, I thought I was the only one facing this problem, becuase either hovering the text or reloading the page solved the issue.&lt;/p&gt;
+
+&lt;p&gt;But after stumbling across this &lt;a href=&quot;https://code.google.com/p/chromium/issues/detail?id=236298&quot;&gt;bug tracker&lt;/a&gt;, I realised that this bug not only affects me (I am on OS X Mavericks) but all other platforms as well. &lt;a href=&quot;http://blog.typekit.com/2014/02/04/chrome-bug-affecting-web-fonts/&quot;&gt;Typekit also clarified&lt;/a&gt; that this nothing to do with their font rendering service.&lt;/p&gt;
+
+&lt;p&gt;I am surprised that this issue crept through the stable release channel of both M31 and M32. Although it is not a security or stability issue, this bug affects the quality of text and it just so happens that we really need text on the Web!&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;The Chrome team is aware of the problem and has already fixed the bug. The bug fix will be in Chrome 33, which is planned for release in late February. If you’re still experiencing the issue in Chrome Canary (which has the bug fixed), please &lt;a href=&quot;https://code.google.com/p/chromium/issues/detail?id=236298&quot;&gt;let the Chrome team know in the bug report&lt;/a&gt;.&lt;/p&gt;&lt;/blockquote&gt;
+</content>
+		</entry>
 	
 		<entry>
 			<id>http://pankajparashar.com/posts/custom-domain-github-pages</id>
