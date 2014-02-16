@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" class="no-js">
+    <head>
+        <!-- | Character Encoding |
+        ===========================
+        1. Authors are encouraged to use UTF-8, as its the most friendly for internationalization.
+        2. This <meta> element must be inside the <head> element within the first-512 bytes of the page. -->
+        <meta charset="utf-8">
+
+        <!-- | HTML5 Link Prefetch |
+        ============================
+        Link prefetching is a browser mechanism, which utilizes browser idle time to download or prefetch
+        documents that the user might visit in the near future.
+        Prerender : Identifies a webpage to load in the background, in case the user wants to navigate to it next
+        Prefetch : Identifies a resource file, such as an image or a CSS stylesheet, to be downloaded into the cache
+        DNS-Prefetch : Identifies a DNS query to resolve the background, so that requests can occur more quickly -->
+        <link rel="dns-prefetch" href="//ajax.googleapis.com">
+        <link rel="dns-prefetch" href="//res.cloudinary.com">
+        <link rel="prerender" href="//pankajparashar.com/projects">
+
+        <!-- | Flip ahead browsing |
+        ============================
+        Flip ahead allows you to explore favorite websites like you would a magazine. -->
+        <link rel="next" href="/page/2">
+        <link rel="prev" href="/">
+
+        <!-- | Internet Explorer Meta Header |
+        ======================================
+        The X-UA-Compatible meta tag allows web authors to choose what version of Internet Explorer the
+        page should be rendered as. Edge mode tells Internet Explorer to display content in the highest
+        mode available. -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!--
+          For blog posts - use the title of the article
+          else - use the default title.
+        -->
+        <title>My votes for "The Net Awards 2014" - by Pankaj Parashar</title>
+
+        <!-- | SEO Meta Tag |
+        =====================
+        A page's descriptionription meta tag gives Google and other search engines a summary of what the page is about.
+        Source : Google's Search Engine Optimisation Guide (PDF) -->
+        <meta name="description" content="Hello. I am Pankaj Parashar, a 24yrs old front-end designer and web developer from Mumbai, India.">
+
+        <!-- | Mobile Viewport Meta Tag |
+        =================================
+        device-width  = Occupy full width of the screen in its current orientation
+        initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+        maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- | Stylesheet |
+        ===================
+        normalize.css : Modern day alternative to CSS resets by Nicolas Galagher/Jonathan Neal
+        style.css : Site specific stylesheet -->
+        <link rel="stylesheet" href="/css/main.755e.css"/>
+
+        <!-- | Favicons |
+        =================
+        Generated using Real Favicon Generator
+        Source : realfavicongenerator.net -->
+        <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160">
+
+        <!-- | Windows 8 Metro UI Tiles |
+        =================================
+        Generated using Modern IE
+        Source : buildmypinnedsite.com -->
+        <meta name="application-name" content="Pankaj Parashar">
+        <meta name="msapplication-TileColor" content="#ffc40d">
+        <meta name="msapplication-TileImage" content="mstile-144x144.png">
+        <meta name="msapplication-square70x70logo" content="mstile-70x70.png">
+        <meta name="msapplication-square150x150logo" content="mstile-150x150.png">
+        <meta name="msapplication-square310x310logo" content="mstile-310x310.png">
+
+        <!-- | Twitter Cards |
+        ======================
+        Validator : dev.twitter.com/docs/cards/validation/validator -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@pankajparashar">
+        <meta name="twitter:title" content="Pankaj Parashar">
+        <meta name="twitter:description" content="Developer. Designer. Writer.">
+        <meta name="twitter:creator" content="@pankajparashar">
+        <meta name="twitter:image:src" content="http://pankajparashar.com/img/logo.png">
+        <meta name="twitter:domain" content="pankajparashar.com">
+
+        <!-- RSS Feeds -->
+        <link rel="alternate" type="application/rss+xml" title="Pankaj Parashar" href="/feed.xml">
+
+        <!-- Bing webmaster tools -->
+        <meta name="msvalidate.01" content="487AEF186C6F028EB596ABCAA4EF040B" />
+    </head>
+
+    <!--
+    ______           _         _  ______                   _
+    | ___ \         | |       (_) | ___ \                 | |
+    | |_/ /_ _ _ __ | | ____ _ _  | |_/ /_ _ _ __ __ _ ___| |__   __ _ _ __
+    |  __/ _` | '_ \| |/ / _` | | |  __/ _` | '__/ _` / __| '_ \ / _` | '__|
+    | | | (_| | | | |   < (_| | | | | | (_| | | | (_| \__ \ | | | (_| | |
+    \_|  \__,_|_| |_|_|\_\__,_| | \_|  \__,_|_|  \__,_|___/_| |_|\__,_|_|
+                             _/ |
+                            |__/
+
+    Giant ascii art embedded in every page of your site is how you
+    show other people that YOU CARE. Mainly I care about developers,
+    which is what I presume you are if you're all about viewing
+    the source. Clearly you're my kind of person.
+
+    This is v4, it's run through Jekyll, it's been fun to build,
+    there's always more to do, and you may notice that aside from
+    Google Analytics there is no JavaScript. None.
+
+    That's one way of many you keep your pages fast. I care about
+    keeping this site fast because your time is precious and I need
+    to get out of your way.
+
+    :: Pankaj Parashar
+
+    -->
+
+    <body>
+        <!-- Microdata markup added by Google Structured Data Markup Helper. -->
+
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header role="banner">
+
+    <h1 class="header__title"><a href="/" class="header__title--link" itemprop="author" itemscope itemtype="http://schema.org/Person">Pankaj Parashar</a></h1>
+    <h2 class="header__subtitle">Developer. Designer. Writer.</h2>
+
+    <a href="http://twitter.com/pankajparashar" class="header__follow">Follow @pankajparashar</a>
+
+    <p class="header__desc">Hello. I am 24yrs old frontend designer and web developer from <a href="https://maps.google.com/maps?q=mumbai,+india">Mumbai, India</a>.</p>
+    <p class="header__desc">Browse through some of my <a href="/projects">projects</a> or subscribe to the <a href="/feed.xml">RSS feed</a> of my blog here.</p>
+
+    <hr class="header__hr">
+
+    <p class="header__desc">Find me elsewhere,</p>
+    <ul class="header__social">
+        <li class="header__social--list"><a href="http://codepen.io/pankajparashar/" class="header__social--link">Codepen</a></li>
+        <li class="header__social--list"><a href="http://github.com/pankajparashar" class="header__social--link">Github</a></li>
+        <li class="header__social--list"><a href="mailto:email@pankajparashar.com" class="header__social--link">Email</a></li>
+    </ul>
+
+</header>
+
+
+        <!-- More info on WAI-ARIA roles
+             http://knowledge.onsubject.com/html-role-attributes/ -->
+        <section role="main">
+            <article>
+    <h2 class="post__title"><a class="post__title--link" href="/posts/net-awards-2014">My votes for "The Net Awards 2014"</a></h2>
+    <small class="post__date">Saturday, February 15, 2014</small>
+    <small class="post__time">5.933333333333334</small>
+    
+        <p class="post__excerpt">Who am I voting this summer for Net Awards 2014? Continue reading to get the answer...</p>
+    
+    <p><a href="http://danielmall.com/articles/net-awards-2014/">Dan Mall</a> started it, <a href="http://esbueno.noahstokes.com/post/76558190472/how-im-voting-for-the-net-awards">Noah Stokes</a> continued and I am simply following them! So before the voting closes, I though I'll pitch in with my voting as well.</p>
+
+<p><figure>
+    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1392485884/https_tinypng_com_web_output_q8o7q54cin800s69_png_the-net-awards-2014_dkm4aw.png">
+    <figcaption>Countdown to The Net Awards 2014. It will be help at London’s Grand Connaught Rooms on 9 May.</figcaption>
+</figure></p>
+
+<h3>TEAM AWARDS</h3>
+
+<p></p>
+
+
+<p><strong>New Agency of the Year</strong> - None<br/>
+Couldn't choose anyone as all the nominees this year were completely new to me. To be fair, I chose not to vote.</p>
+
+<p><strong>Team of the Year</strong> - Squarespace<br/>
+The folks at <a href="http://www.squarespace.com/">Squarespace</a> have done an incredible job in the past one year and their designs have always been a great source of inspiration for me.</p>
+
+<p><strong>Agency of the Year</strong> - FFFunction<br/>
+Hands down, <a href="http://fffunction.co/">FFFunction</a> beat everyone by a distance. If you are still unsure why, then you should checkout their list of achievments in 2013 on <a href="http://year.fffunction.co/">this site</a>.</p>
+
+<h3>INDIVIDUAL AWARDS</h3>
+
+<p></p>
+
+
+<p><strong>Entrepreneur of the Year</strong> - Evan Williams<br/>
+Serial entrepreneur <a href="https://medium.com/@ev">Evan Williams</a>, is the force behind Blogger, when he was at Google. Then he started with Twitter and now Medium. He sure as hell knows how to sell his products and deservedly earns my vote for Entrepreneur of the year award.</p>
+
+<p><strong>Emerging Talent of the Year</strong> - None<br/>
+No clue here, hence, would reserve my right to vote.</p>
+
+<p><strong>Young Developer of the Year</strong> - Harry Roberts<br/>
+I have been following <a href="http://csswizardry.com/">Harry</a> for years now and his work on <a href="http://inuitcss.com/">inuit.css</a> has been a great inspiration for me and I consider it an encyclopedia of CSS.</p>
+
+<p><strong>Young Designer of the Year</strong> - Dan Eden<br/>
+After watching <a href="http://daneden.me/">Dan</a> over the years publishing side projects, months after moths and now a full time designer at Dropbox, I had no doubt in my mind before casting the vote for this category.</p>
+
+<p><strong>Developer of the Year</strong> - Hakim El Hattab<br/>
+A tough group to chose from, but <a href="http://hakim.se/">Hakim</a> won it in the end. I still remember his experiment on <a href="http://jsfiddle.net/hakim/Ht6Ym/">3D rollover links</a> that I shamelessly copied for one of my projects. Since, then he has built great apps like, <a href="http://sketchtoy.com/">SketchToy</a>, <a href="http://lab.hakim.se/fokus/">Fokus</a> and <a href="http://slid.es/">Slides</a>.</p>
+
+<p><strong>Designer of the Year</strong> - Tim Van Damme<br/>
+My vote was decided on the day when I read <a href="http://maxvoltar.com/">Tim's</a> interview on <a href="http://thegreatdiscontent.com/tim-van-damme">The Great Discontent</a>. An incredible genuine guy with a such modest background. Didn't have to think twice before casting the vote.</p>
+
+<p><strong>Outstanding Contribution of the Year</strong> - Chris Coyier<br/>
+Having interacted with <a href="http://chriscoyier.net/">Chris</a>, while writing few guest posts on <a href="http://css-tricks.com/">CSS Tricks</a>, I am confident that he is doing a great job in serving the community by writing web design and development tutorials and articles on CSS Tricks.</p>
+
+<h3>COMMUNITY AWARDS</h3>
+
+<p></p>
+
+
+<p><strong>Podcast of the Year</strong> - Shoptalk<br/>
+Dave and Chris are funny and their guest list is very impressive. Also this is the only podcast that I listen to, hence, I am biased to vote for them.</p>
+
+<p><strong>Conference Talk of the Year</strong> - Mike Monteiro<br/>
+One of the most fearsome and outspoken man in the web industry, comes out to present, "How designers destroyed the world?". I am so overwhelmed with this talk, that I am embedding it here, so that you can watch it and become equally mesmerized.</p>
+
+<!-- FitMyVideo -->
+
+
+<div class="Flexible-container">
+    <iframe src="//player.vimeo.com/video/68470326?color=a05" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/68470326">Webstock '13: Mike Monteiro - How Designers Destroyed the World</a> from <a href="http://vimeo.com/webstock">Webstock</a> on <a href="https://vimeo.com">Vimeo</a>.</p> <p>You are directly responsible for what you put into the world. Yet every day designers all over the world work on projects without giving any thought or consideration to the impact that work has on the world around them. This needs to change.</p>
+</div>
+
+
+<p><strong>Grassroots Event of the Year</strong> - None<br/>
+Did not visit any of them and hence, I am not the right persone to vote for this category.</p>
+
+<h3>PROJECT AWARDS</h3>
+
+<p></p>
+
+
+<p><strong>Best Online Portfolio</strong> - Michiel de Graaf<br/>
+I love <a href="http://michieldegraaf.com/">Micheil's</a> portfolio website and enjoyed the amount of details described in each of his project, right from the typography to the different gradients of the same color.</p>
+
+<p><strong>Side Project of the Year</strong> - Can I Use<br/>
+I'm surprised this project is still in Beta, even after being available to devs for more than a year. It is amazingly useful and incredibly simple to understand. Hence, it gets my vote.</p>
+
+<p><strong>Demo of the Year</strong> - Chris Ruppel<br/>
+All the demos in this category are great but only few of them actually serve as a tutorial for developers to understand. I liked Chris's <a href="http://rupl.github.io/unfold/">CSS 3D Transforms</a> very much and loved how they were used to make your DOM elements jump out of the flatland.</p>
+
+<p><strong>Best Collaborative Project</strong> - The Techcrunch Redesign<br/>
+An all start-studded team assembled by Josh Clark including Dan Mall, Brad Frost, Jennifer Brook, Jonathan Stark and Kristina Frantz. The <a href="http://danielmall.com/articles/techcrunch-responsive-redesign/">Techcrunch Redesign</a> is an outcome of the efforts invested by a bunch of talented individuals.</p>
+
+<p><strong>Redesign of the Year</strong> - Flickr<br/>
+Yahoo’s ‘new photo experience’ is big, bold and beautiful. In the reanimating, user's photographs now take central stage. Gone, are acres of white space and text. Now, content shines as do the site’s social sharing mechanism and rightfully earns my vote.</p>
+
+<h3>TECHNOLOGY AWARDS</h3>
+
+<p></p>
+
+
+<p><strong>Game changer of the Year</strong> - Sass<br/>
+After <a href="http://pankajparashar.com/posts/why-do-i-hate-css-preprocessors/">avoiding CSS preprocessors</a> for year, I've grown in love with <a href="http://sass-lang.com/">Sass</a> and cannot imagine my CSS without it. Hence, this certainly is a game changer for me, if not for anyone else.</p>
+
+<p><strong>Best new web technology</strong> - BEM<br/>
+Although <a href="http://bem.info/">BEM</a> doesn't really qualify as a technology, but it surely has redfined the way I write CSS. Block Element Modifier was thought up by Yandex. It’s a front-end naming methodology for CSS. It lets you name your CSS, giving them meaning and transparency when examined by other developers.</p>
+
+<p><strong>Open Source project of the Year</strong> - Yeoman<br/>
+This one was easy! Having used <a href="http://yeoman.io/">Yeoman</a> for more than year now, I think I am in a perfect position to judge this app and in my mind this surely is a winner.</p>
+
+<p><strong>App of the Year</strong> - Sublime Text<br/>
+This one was a tough one for me; especially chosing between <a href="http://www.sublimetext.com/">Sublime Text</a> and <a href="http://hammerformac.com/">Hammer for Mac</a>. But Sublime Text emerged out as the winner solely because it is the best editor out there, IMO and all its competitors are nowhere close to where Sublime is right now.</p>
+
+<p>Bottoms up! Now time to wait for May 9th to see how many of them actually won the award.</p>
+
+    <p>Did you enjoy reading this article? I'd love to hear your thoughts. Shoot me an <a href="mailto:email@pankajparashar.com">email</a> or send me a <a href="https://twitter.com/intent/tweet?via=pankajparashar&text=My votes for "The Net Awards 2014"">tweet</a> if you've got any comments.</p>
+</article>
+
+        </section>
+
+        <footer role="contentinfo">
+    <input class="footer__search" type="search" placeholder="Search this website + press enter..." autocomplete="off" role="search">
+    <p class="footer__copyright">&copy;2014. Pankaj Parashar. <a class="footer__top--link" href="#" role="button">Back to top</a></p>
+</footer>
+
+
+        <script src="/js/script.ee62.js"></script>
+  </body>
+</html>
