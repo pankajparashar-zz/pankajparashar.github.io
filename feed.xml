@@ -4,13 +4,374 @@
 	<title>Pankaj Parashar</title>
 	<link href="http://pankajparashar.com/"/>
 	<link type="application/atom+xml" rel="self" href="http://pankajparashar.com/feed.xml"/>
-	<updated>2014-02-18T22:42:36+05:30</updated>
+	<updated>2014-02-20T22:12:09+05:30</updated>
 	<id>http://pankajparashar.com/</id>
 	<author>
 		<name>Pankaj Parashar</name>
 		<email>email@pankajparashar.com</email>
 	</author>
 
+	
+		<entry>
+			<id>http://pankajparashar.com/posts/unix-file-permissions</id>
+			<link type="text/html" rel="alternate" href="http://pankajparashar.com/posts/unix-file-permissions"/>
+			<title>Unix file permissions</title>
+			<published>2014-02-16T00:00:00+05:30</published>
+			<updated>2014-02-16T00:00:00+05:30</updated>
+			<author>
+				<name>Pankaj Parashar</name>
+				<email>email@pankajparashar.com</email>
+			</author>
+			<content type="html">&lt;p&gt;The file permissions on a typical Unix system looks like this,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ls -ld /usr/bin /usr/bin/cat
+drwxrwxr-x   3 root     bin         8704 Sep 23  2004 /usr/bin
+-r-xr-xr-x   1 bin      bin         9388 Jul 16  1997 /usr/bin/cat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The Unix file permissions can be visualized in two forms,&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Symbolic mode&lt;/li&gt;
+&lt;li&gt;Octal mode&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;&amp;gt; SYMBOLIC MODE
+
+-  --- --- ---
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   └── -- rw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;x/t/T&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;others &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;o&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   └── ------ rw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;x/s/S&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;groups &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;g&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   └── ---------- rw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;x/s/S&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;a user &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;u&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+└── -------------- file &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;: regular &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;-&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                              directory &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;d&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                              character special &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                              block special &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;b&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                              fifo &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;p&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                              symbolic link &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;l&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                              socket &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;1. Symbolic mode&lt;/h3&gt;
+
+&lt;p&gt;In bit mode, the permissions are represented using the characters &lt;code&gt;r&lt;/code&gt;, &lt;code&gt;w&lt;/code&gt;, &lt;code&gt;x&lt;/code&gt;, &lt;code&gt;s&lt;/code&gt;, &lt;code&gt;S&lt;/code&gt;, &lt;code&gt;t&lt;/code&gt;, &lt;code&gt;T&lt;/code&gt;. The table below expands more on what each character stands for,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;r -&amp;gt; Read
+w -&amp;gt; Write
+x -&amp;gt; Execute
+
+s -&amp;gt; Execute bit is ON and Set UID/GID bit is ON
+S -&amp;gt; Execute bit is OFF and Set UID/GID bit is ON
+
+t -&amp;gt; Execute bit is ON and Sticky bit is ON
+T -&amp;gt; Execute bit is OFF and Sticky bit is ON
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;When a specific permission for a file doesn&#39;t apply to any of the user/group/other, Unix uses the default character &lt;code&gt;-&lt;/code&gt; to represent the lack of permission.&lt;/p&gt;
+
+&lt;p&gt;For example,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;-r-xr-xrwx   1 joe      bin         9388 Jul 16  1997 /usr/bin/cat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Joe has read/write/execute permissions on the file &lt;code&gt;/usr/bin/cat&lt;/code&gt;. However, all the other users of the group &lt;code&gt;bin&lt;/code&gt; to which Joe belongs have read and execute permissions only. All other users outside the group &lt;code&gt;bin&lt;/code&gt; can also read and execute that file.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;The &lt;code&gt;root&lt;/code&gt; user is special. &lt;code&gt;root&lt;/code&gt; is granted &lt;code&gt;rwx&lt;/code&gt; to all directories and &lt;code&gt;rw&lt;/code&gt; to all files. On a file, if any of the 3x bits are set, then root has execute permission. This special permission is often disabled on network mounted filesystems.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;2. Octal mode&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;&amp;gt; OCTAL MODE
+
+0   0   0   0
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   └── -- r&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;4&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, w&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, x&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;others &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;o&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   └── ------ r&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;4&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, w&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, x&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;groups &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;g&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;   └── ---------- r&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;4&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, w&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, x&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;a user &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;u&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+└── -------------- suid&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;4&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, sgid&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, sticky&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In the octal mode, the permissions are defined by 4-octal digits. The value for each of the last three digits can be computed as follows,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;421
+rwx
+
+2^0 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1 –&amp;gt; eXecute
+2^1 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 2 –&amp;gt; Write
+2^2 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 4 -&amp;gt; Read
+
++-----+---+--------------------------+
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; rwx &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; 7 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; Read, write and execute  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; rw- &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; 6 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; Read, write              &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; r-x &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; 5 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; Read, and execute        &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; r-- &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; 4 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; Read,                    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; -wx &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; 3 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; Write and execute        &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; -w- &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; 2 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; Write                    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; --x &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; 1 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; Execute                  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; --- &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; 0 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; no permissions           &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
++------------------------------------+
+
++------------+------+-------+
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; Permission &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; Octal&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; Field &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
++------------+------+-------+
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; rwx------  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; 700  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; User  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; ---rwx---  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; 070  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; Group &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; ------rwx  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; 007  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; Other &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
++------------+------+-------+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The first digit also follows the same principle,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;suid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 4
+&lt;span class=&quot;nv&quot;&gt;sgid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 2
+&lt;span class=&quot;nv&quot;&gt;sticky&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;When a specific permission for a file doesn&#39;t apply to any of the user/group/other, Unix uses &lt;code&gt;0&lt;/code&gt; to represent the absence of all permissions for the corresponding user/group/other.&lt;/p&gt;
+
+&lt;p&gt;For example,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;4755
+----
+
+&lt;span class=&quot;nv&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Set UID bit is ON.
+&lt;span class=&quot;nv&quot;&gt;7&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;4&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; + write&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; + execute&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; permissions &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the user.
+&lt;span class=&quot;nv&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;4&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; + execute&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; permissions &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;group members.
+&lt;span class=&quot;nv&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;4&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; + execute&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; permissions &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;other members outside the group.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If the first of the four digits is &lt;code&gt;0&lt;/code&gt; then it means that the file doesn&#39;t have any of the setuid, setgid or sticky bit present on it. Generally, the leading &lt;code&gt;0&lt;/code&gt; can be omitted.&lt;/p&gt;
+
+&lt;h3&gt;The Special Bits&lt;/h3&gt;
+
+&lt;p&gt;&lt;br&gt;
+1. Set UID and Set GID bits&lt;/p&gt;
+
+&lt;p&gt;Apart from the usual &lt;code&gt;rwx&lt;/code&gt; bits, the UNIX permission system also has the &lt;code&gt;s&lt;/code&gt; bit which stands for SetUID for user or SetGID for group. For a file, if this bit is defined, then the &lt;code&gt;x&lt;/code&gt; is turned into &lt;code&gt;s&lt;/code&gt; for the corresponding user/group/others. For example,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;passwd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;shadow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;passwd&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-r--r--r--&lt;/span&gt;   &lt;span class=&quot;nt&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;root&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;sys&lt;/span&gt;        &lt;span class=&quot;nt&quot;&gt;14006&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;Jan&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:17&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;passwd&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-r--------&lt;/span&gt;   &lt;span class=&quot;nt&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;root&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;sys&lt;/span&gt;         &lt;span class=&quot;nt&quot;&gt;8281&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;Jan&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:18&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;shadow&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-r-sr-sr-x&lt;/span&gt;   &lt;span class=&quot;nt&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;root&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;sys&lt;/span&gt;        &lt;span class=&quot;nt&quot;&gt;96244&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;Sep&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;5&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;2001&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;passwd&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The &lt;code&gt;/etc/passwd&lt;/code&gt; file is writable only by &lt;code&gt;root&lt;/code&gt;. The &lt;code&gt;/etc/shadow&lt;/code&gt; file is where the passwords are stored and cannot be read by ordinary users.&lt;/p&gt;
+
+&lt;p&gt;But &lt;code&gt;joe&lt;/code&gt; wants to change his password. He can do that by running &lt;code&gt;/usr/bin/passwd&lt;/code&gt;. Notice those &lt;code&gt;r-s&lt;/code&gt; permissions. The passwd program has the suid and sgid bits set. This turns the x&#39;s into s&#39;s. The passwd program is owned by &lt;code&gt;root&lt;/code&gt;. When &lt;code&gt;joe&lt;/code&gt; runs it, it does not run as &lt;code&gt;joe&lt;/code&gt;. Instead, it runs as it owner which is &lt;code&gt;root&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;So the passwd program can change joe&#39;s password for him. The sgid bit works the same way, except it causes the passwd program to run with the group &lt;code&gt;sys&lt;/code&gt; instead of joe&#39;s group. The suid and sgid do not get their own position in the &lt;code&gt;ls&lt;/code&gt;. When the suid bit is set, &lt;code&gt;ls&lt;/code&gt; displays a &lt;code&gt;s&lt;/code&gt; rather than a &lt;code&gt;x&lt;/code&gt; for the owner execute permission.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+2. The Sticky Bit&lt;/p&gt;
+
+&lt;p&gt;If the sticky bit is set on a directory, mere write permission on the directory is no longer enough to remove the files. You must additionally own the file or own the directory.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;The &lt;code&gt;root&lt;/code&gt; user continues to be able to delete files from any directory regardless of the permissions.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;The sticky bit affects the &lt;code&gt;other&lt;/code&gt; execute bit in the &lt;code&gt;ls&lt;/code&gt; display. Except that it uses &lt;code&gt;t&lt;/code&gt; and &lt;code&gt;T&lt;/code&gt; rather than &lt;code&gt;s&lt;/code&gt; and &lt;code&gt;S&lt;/code&gt;. For example,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;drwxrwxrwt&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;       &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;          &lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Feb&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;43&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tmp&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In that &lt;code&gt;/tmp&lt;/code&gt; directory above, anyone can create new files. But because of the sticky bit, one user cannot delete another user&#39;s files.&lt;/p&gt;
+
+&lt;p&gt;Some examples using special bits,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;+------------------+
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;rwxrwxrwx     777 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; all permissions granted
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;rwxr-xr-x     755 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; group and others &lt;span class=&quot;nb&quot;&gt;read&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt; executable
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;rwx------     700 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; private file
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;rwsr-xr-x    4755 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;UID
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;rwxr-sr-x    2755 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;GID
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;rwxr-xr-t    1755 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; sticky bit
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;rwSw-xr-x    4655 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; setUID but not executable by user
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;rwxr-Sr-x    2745 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; getGID, but not executable by group members
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;rwxr-xr-T    1754 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; sticky bit, but not executable by others
++------------------+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Special cases&lt;/h3&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;strong&gt;What do &lt;code&gt;rwx&lt;/code&gt; really mean for a file?&lt;/strong&gt;&lt;br/&gt;
+For a file, &lt;code&gt;r&lt;/code&gt; and &lt;code&gt;w&lt;/code&gt; permissions are self-explanatory. The &lt;code&gt;x&lt;/code&gt; permission means that the user can run the file which either is an output from a compiler or a shell script.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What do &lt;code&gt;rwx&lt;/code&gt; really mean for a directory?&lt;/strong&gt;&lt;br/&gt;
+For a directory, things are a little more complex. A directory is a file too, and &lt;code&gt;r&lt;/code&gt; permission means you can read it. With &lt;code&gt;w&lt;/code&gt; permission you can create new files in the directory or remove old files.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;It sometimes surprises people that you can remove a file which you cannot read. The unix &lt;code&gt;rm&lt;/code&gt; command will test for that and issue a warning, but you can suppress that warning with &lt;code&gt;-f&lt;/code&gt;. And &lt;code&gt;rmdir&lt;/code&gt; will not even bother to check at all.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;But you really cannot do very much without &lt;code&gt;x&lt;/code&gt; permission. With directories, you usually have both read and execute permissions or neither. On a directory, &lt;code&gt;x&lt;/code&gt; is officially called &quot;search permission&quot;. You need &lt;code&gt;x&lt;/code&gt; to use a directory in a pathname. So if you try &lt;code&gt;cat /etc/passwd&lt;/code&gt;, you will need &lt;code&gt;x&lt;/code&gt; on &lt;code&gt;/&lt;/code&gt; and &lt;code&gt;/etc&lt;/code&gt;. You also need &lt;code&gt;x&lt;/code&gt; to cd into a directory.&lt;/p&gt;
+
+&lt;p&gt;Case 1 - Only &lt;code&gt;r&lt;/code&gt; permission on a directory&lt;br/&gt;
+You can use &lt;code&gt;ls&lt;/code&gt; to list the file names. But &lt;code&gt;ls -l&lt;/code&gt; will not work.&lt;/p&gt;
+
+&lt;p&gt;Case 2 - Only &lt;code&gt;w&lt;/code&gt; permission on a directory&lt;br/&gt;
+This is completely useless and grants nothing at all.&lt;/p&gt;
+
+&lt;p&gt;Case 3 - Only &lt;code&gt;x&lt;/code&gt; permission on a directory&lt;br/&gt;
+When you have &lt;code&gt;x&lt;/code&gt; permission but no &lt;code&gt;r&lt;/code&gt; permission on a directory then you can open files in the directory if you happen to know the file&#39;s name. You can &lt;code&gt;cd&lt;/code&gt; into the directory but cannot create a new file. Adding write permission will allow you to create files. And you can then delete files if you happen to know their name.&lt;/p&gt;
+
+&lt;h3&gt;How to get octal permissions for a file?&lt;/h3&gt;
+
+&lt;p&gt;File permissions in Linux can be displayed in octal format using Linux &lt;code&gt;stat&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;stat -c &lt;span class=&quot;s1&quot;&gt;&amp;#39;%A %a %n&amp;#39;&lt;/span&gt; *
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Replace * with the relevant directory or the exact filename&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;man stat
+-c  --format&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;FORMAT
+             use  the  specified  FORMAT instead of the default&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; output a newline after
+            each use of FORMAT
+%A  Access rights in human readable form          
+%a  Access rights in octal
+%n  File name
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;The umask command&lt;/h3&gt;
+
+&lt;p&gt;When a user creates a file or directory, it gets a default set of permissions. The user file-creation mode mask (&lt;code&gt;umask&lt;/code&gt;) is used to determine the file permissions for newly created files. It can be used to control the default file permission for new files. It is a four-digit octal number. A umask can be set or expressed using:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Symbolic values&lt;/li&gt;
+&lt;li&gt;Octal values&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Symbolic values&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A umask set to &lt;code&gt;u=rwx,g=rwx,o=&lt;/code&gt; will result in new files having the modes &lt;code&gt;-rw-rw----&lt;/code&gt;, and new directories having the modes &lt;code&gt;drwxrwx---&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;umask &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rwx,g&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rwx,o&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;umask&lt;/span&gt;
+0007
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir foo
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;touch bar
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ls -l
+drwxrwx--- 2 dave dave 512 Sep 1 20:59 foo
+-rw-rw---- 1 dave dave 0   Sep 1 20:59 bar
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Octal values&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The octal notation for the permissions masked out are,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;0 – Full permissions &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Read, Write, Execute&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+1 – Write and &lt;span class=&quot;nb&quot;&gt;read&lt;/span&gt;
+2 – Read and execute
+3 – Read only
+4 – Write and execute
+5 – Write only
+6 – Execute onlyadminadmin
+7 – No permissions
+
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;umask &lt;/span&gt;022
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir foo
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;touch bar
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ls -l
+drwxr-xr-x 2 dave dave 512 Aug 18 20:59 foo
+-rw-r--r-- 1 dave dave 0   Aug 18 20:59 bar
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Though umask value is the same for files and folders, but the calculation of file base permissions and directory base permissions are different.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;The minimum and maximum &lt;code&gt;umask&lt;/code&gt; value for a folder is &lt;code&gt;000&lt;/code&gt; and &lt;code&gt;777&lt;/code&gt;. The minimum and maximum &lt;code&gt;umask&lt;/code&gt; value for a file is &lt;code&gt;000&lt;/code&gt; and &lt;code&gt;666&lt;/code&gt;. This is because only scripts and binaries should have execute permissions, normal and regular files should have just read and write permissions. Directories require execute permissions for viewing the contents in it, so they can have &lt;code&gt;777&lt;/code&gt; as permissions.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;How the actual permissions are calculated from umask?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Suppose the umask value is &lt;code&gt;027&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;For directories, the permission is derived by doing octal subtraction of &lt;code&gt;027&lt;/code&gt; from the maximum possible value, &lt;code&gt;777&lt;/code&gt;. So the directory permission is &lt;code&gt;750&lt;/code&gt; when its created. Owner will get full permission, group gets execute and write permissions and others no permissions.&lt;/li&gt;
+&lt;li&gt;For files, the permission is derived by doing octal subtraction of &lt;code&gt;027&lt;/code&gt; from the maximum possible value, &lt;code&gt;666&lt;/code&gt;. So the file permission is &lt;code&gt;640&lt;/code&gt; when its created. Owner will get read &amp;amp; write permission, group gets read permission only, and others no permissions.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Find out the default umask&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;umask&lt;/span&gt;
+0022
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The preceding &lt;code&gt;0&lt;/code&gt; indicates there is no SUID/SGID/Sticky bit information set.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Some FAQ related to umask&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;1) How to set or change default &lt;code&gt;umask&lt;/code&gt; for all the new users? The &lt;code&gt;umask&lt;/code&gt; value can be set in &lt;code&gt;/etc/profile&lt;/code&gt; for all the new users.&lt;/p&gt;
+
+&lt;p&gt;2) How to set or change default &lt;code&gt;umask&lt;/code&gt; for existing users? For existing users you can edit &lt;code&gt;~/.bashrc&lt;/code&gt; file in their home directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Changing permissions with chmod&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;chmod&lt;/code&gt; command in Unix is abbreviated as &lt;strong&gt;CH&lt;/strong&gt;ange &lt;strong&gt;MOD&lt;/strong&gt;e. Chmod command is used to change permission for files and directories in Unix.&lt;/p&gt;
+
+&lt;p&gt;1) Symbolic method like &lt;code&gt;chmod +x filename&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;The who part can be:
+u  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;user&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+g  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;group&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+o  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;other&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+a  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;all&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;whatever is allowed by &lt;span class=&quot;nb&quot;&gt;umask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;subset of all&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+
+The operator can &lt;span class=&quot;nv&quot;&gt;be&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; or - or +
+&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;bits to bitlist&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+- &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;subtract bitlist from current bit
++ &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;add bitllist to current bits&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+The bitlist can be one of the following letters:
+r &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;read &lt;/span&gt;permission&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+w &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;write permission&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+x &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;execute permision&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+X &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;conditional execute permision&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+u &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;current permissions &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;user&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+g &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;current permissions &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;group&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+o &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;current permissions &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;others&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+s &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;uid or &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;gid&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+t &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;sticky bit&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;2) Octal method like &lt;code&gt;chmod 775 filename&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let us review some examples in both symbolic and octal representaions for files.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;+------------------------+-----------+
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; chmod &lt;span class=&quot;nv&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rwx,g&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rwx,o&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rx &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; chmod 775 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; chmod &lt;span class=&quot;nv&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rwx,g&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rx,o&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; chmod 750 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; chmod &lt;span class=&quot;nv&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rw,g&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;r,o&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;r     &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; chmod 644 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; chmod &lt;span class=&quot;nv&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rw,g&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;r,o&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;      &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; chmod 640 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; chmod &lt;span class=&quot;nv&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rw,go&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;         &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; chmod 600 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; chmod &lt;span class=&quot;nv&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rwx,go&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;        &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; chmod 700 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;
++------------------------+-----------+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+</content>
+		</entry>
 	
 		<entry>
 			<id>http://pankajparashar.com/posts/net-awards-2014</id>
@@ -420,7 +781,7 @@ Login to your domain name registrar and create a &lt;code&gt;A&lt;/code&gt; reco
 
 
 &lt;p&gt;&lt;figure&gt;
-    &lt;img src=&quot;http://res.cloudinary.com/dw9fem4ki/image/upload/v1386423368/Skillset_using_HTML5_progress_bars_with_CSS3_animations_CodePen_vxmsie.png&quot;&gt;
+    &lt;img src=&quot;http://res.cloudinary.com/dw9fem4ki/image/upload/v1391875665/Skillset_Progress_Bars_j6gvb3.png&quot;&gt;
 &lt;/figure&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://css-tricks.com/html5-progress-element/&quot;&gt;Read on CSS-Tricks&lt;/a&gt;&lt;/p&gt;
