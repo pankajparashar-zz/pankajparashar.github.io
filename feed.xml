@@ -4,13 +4,36 @@
 	<title>Pankaj Parashar</title>
 	<link href="http://pankajparashar.com/"/>
 	<link type="application/atom+xml" rel="self" href="http://pankajparashar.com/feed.xml"/>
-	<updated>2014-02-20T22:12:09+05:30</updated>
+	<updated>2014-02-24T20:46:41+05:30</updated>
 	<id>http://pankajparashar.com/</id>
 	<author>
 		<name>Pankaj Parashar</name>
 		<email>email@pankajparashar.com</email>
 	</author>
 
+	
+		<entry>
+			<id>http://pankajparashar.com/posts/github-hosted-comments</id>
+			<link type="text/html" rel="alternate" href="http://pankajparashar.com/posts/github-hosted-comments"/>
+			<title>Github hosted comments</title>
+			<published>2014-02-23T00:00:00+05:30</published>
+			<updated>2014-02-23T00:00:00+05:30</updated>
+			<author>
+				<name>Pankaj Parashar</name>
+				<email>email@pankajparashar.com</email>
+			</author>
+			<content type="html">&lt;p&gt;Although a bit old, &lt;a href=&quot;http://ivanzuzak.info/&quot;&gt;Ivan Zuzak&lt;/a&gt; has written about an
+interesting concept of using comments in issue tracker of Github hosted blog
+repository.&lt;/p&gt;
+
+&lt;p&gt;Before, starting this blog, I experimented with various techniques to support
+comments on blog post, but never thought about this unique concept. I am
+surprised that this technique hasn&#39;t become popular despite it coming to the
+fore almost 3yrs ago.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ll definitely consider them to use it on my blog, someday in future.&lt;/p&gt;
+</content>
+		</entry>
 	
 		<entry>
 			<id>http://pankajparashar.com/posts/unix-file-permissions</id>
@@ -731,8 +754,8 @@ Login to your domain name registrar and create a &lt;code&gt;A&lt;/code&gt; reco
 			<content type="html">&lt;p&gt;Thanks to Chris Coyier, for offering me the opportunity to write for &lt;a href=&quot;http://css-tricks.com/&quot;&gt;CSS-Tricks&lt;/a&gt; once again. This article also got featured on,&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Web Design &amp;amp; Development News - &lt;a href=&quot;http://tympanus.net/codrops/collective/collective-92/&quot;&gt;Collective #92&lt;/a&gt; by Codrops.&lt;/li&gt;
-&lt;li&gt;CSS Weekly - &lt;a href=&quot;css-weekly.com/issue-87/&quot;&gt;Issue #87&lt;/a&gt; by Zoran Jambor.&lt;/li&gt;
+&lt;li&gt;Web Design &amp;amp; Development News : &lt;a href=&quot;http://tympanus.net/codrops/collective/collective-92/&quot;&gt;Collective #92&lt;/a&gt; by Codrops.&lt;/li&gt;
+&lt;li&gt;CSS Weekly : &lt;a href=&quot;css-weekly.com/issue-87/&quot;&gt;Issue #87&lt;/a&gt; by Zoran Jambor.&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -756,7 +779,7 @@ Login to your domain name registrar and create a &lt;code&gt;A&lt;/code&gt; reco
 			</author>
 			<content type="html">&lt;p&gt;An overview of the current state of OpenType feature support in web browsers, based on the CSS syntax proposed by the latest draft of the CSS3 Fonts specification and the latest available version of each browser.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://ie.microsoft.com/testdrive/Graphics/opentype/&quot;&gt;IE11 Test Drive&lt;/a&gt; also showcases all the Open Type features using 3 different demonstrations.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://ie.microsoft.com/testdrive/Graphics/opentype/&quot;&gt;IE11 Test Drive&lt;/a&gt; also showcases all the Open Type features using 3 different demonstrations. Few other &lt;a href=&quot;http://typequest.org/&quot;&gt;useful&lt;/a&gt; &lt;a href=&quot;http://clagnut.com/sandbox/css3/&quot;&gt;links&lt;/a&gt; on this topic.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.typotheque.com/articles/opentype_features_in_web_browsers&quot;&gt;Read the article on Typotheque&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -775,8 +798,8 @@ Login to your domain name registrar and create a &lt;code&gt;A&lt;/code&gt; reco
 			<content type="html">&lt;p&gt;I wrote this article as a guest post for &lt;a href=&quot;http://css-tricks.com/&quot;&gt;CSS-Tricks&lt;/a&gt; and also got featured on,&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Web Design &amp;amp; Development News - &lt;a href=&quot;http://tympanus.net/codrops/collective/collective-79/&quot;&gt;Collective #79&lt;/a&gt; by Codrops.&lt;/li&gt;
-&lt;li&gt;HTML5 Weekly - &lt;a href=&quot;http://html5weekly.com/issues/104&quot;&gt;Issue #104&lt;/a&gt; by Peter Cooper.&lt;/li&gt;
+&lt;li&gt;Web Design &amp;amp; Development News : &lt;a href=&quot;http://tympanus.net/codrops/collective/collective-79/&quot;&gt;Collective #79&lt;/a&gt; by Codrops.&lt;/li&gt;
+&lt;li&gt;HTML5 Weekly : &lt;a href=&quot;http://html5weekly.com/issues/104&quot;&gt;Issue #104&lt;/a&gt; by Peter Cooper.&lt;/li&gt;
 &lt;/ul&gt;
 
 
