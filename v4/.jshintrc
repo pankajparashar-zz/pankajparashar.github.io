@@ -17,5 +17,5 @@
 	"smarttabs": true,
 	"sub": true,
 	"expr": true,
-	"globals": { "$": false, "jQuery": false }
+	"globals": { "$": false, "jQuery": false, "ga": true }
 }

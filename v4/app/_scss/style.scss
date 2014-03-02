@@ -1,4 +1,4 @@
- /*
+/*
 	================================================
 	Author: Pankaj Parashar
 	Author URI: pankajparashar.com
@@ -200,7 +200,7 @@ code {
 	font-size: 90%;
 	color: #C7254E;
 	background-color: #F9F2F4;
-	
+
 	border-radius: .25em;
 	font-family: 'ppp-541b3f951e7811776b489b09a9';
 }
@@ -265,10 +265,6 @@ figure {
 
 p {
   text-rendering: optimizeLegibility;
-  font-feature-settings: "kern";
-  -webkit-font-feature-settings: "kern";
-  -moz-font-feature-settings: "kern";
-  -moz-font-feature-settings: "kern=1";
 }
 
 /* ==========================================================================
@@ -308,7 +304,7 @@ h1, .alpha {
 
 h2, .beta {
 	font-size: 2.25em;
-	line-height: 1.3333333333333333;
+	line-height: 1.5;
 	margin-bottom: 0.6666666666666666em;
 }
 
@@ -411,13 +407,25 @@ header[role="banner"] {
 		color: #333 !important;
 		display: block;
 		font-size: 100%;
-		padding: 1em 10% .75em;
+		padding: 1em 0 .75em 10%;
 		text-decoration: none;
 		position: relative;
 		margin-bottom: 15%;
 		overflow: hidden;
 		text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
 	}
+
+        .header__follow--about {
+            position: absolute;
+            right: 0;
+			top: 0;
+			bottom: 0;
+            font-size: 1.5em;
+			background-color: #0a5;
+            background-color: rgba(0, 145, 72, 1);
+			border: 0 solid red;
+			padding: .35em .75em;
+        }
 
 		.header__follow:hover {
 			color: #1F282D;
@@ -491,6 +499,101 @@ header[role="banner"] {
 					color: #0a0;
 					text-decoration: underline;
 				}
+
+    .header__form {
+        margin-left: 10%;
+        margin-right: 12.5%;
+
+        position: relative;
+    }
+
+        .header__form--subscriber {
+            background: transparent;
+            border: 0;
+            outline: 0;
+
+            border-bottom: 1px dotted #9ab;
+            width: 100%;
+            color: #fff;
+
+            padding-bottom: .5em;
+            text-overflow: ellipsis;
+            letter-spacing: .5px;
+        }
+
+            .header__form--subscriber::-webkit-input-placeholder {
+                color: gray;
+                letter-spacing: 0;
+            }
+
+            .header__form--subscriber:-moz-placeholder {
+                /* Firefox 18- */
+                color: red;
+            }
+
+            .header__form--subscriber::-moz-placeholder {
+                /* Firefox 19+ */
+                color: red;
+            }
+
+            .header__form--subscriber:-ms-input-placeholder {
+               color: red;
+            }
+
+        .header__form--submit {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            background: transparent;
+            border: 0;
+            outline: 0;
+
+            color: gray;
+            transition: .5s;
+        }
+
+		.fa-stack-exchange { line-height: 1.25 !important; color: #fff; }
+
+        .header__form--subscriber:focus + .header__form--submit {
+            transition: .5s;
+            color: #F7931E;
+        }
+
+        .fusion_ad {
+            margin-left: 10%;
+            margin-right: 12.5%;
+        }
+
+            .fusionentire {
+                display: table;
+                height: 150px;
+                border: 0 solid #c03;
+                background-color: #2b303b;
+            }
+
+                .fusiontext {
+                    display: table-cell;
+                    border: 0 solid #c03;
+                    vertical-align: middle;
+                    padding-left: 1.5em;
+                    padding-right: 1em;
+                    line-height: 2;
+                }
+
+                .fusionimg {
+                    display: table-cell;
+                    vertical-align: top;
+                    border: 0 solid #c03;
+                    vertical-align: top;
+                    padding-left: 1em;
+                }
+
+            .powered {
+                margin-top: 1.5em;
+                display: block;
+                text-align: right;
+            }
 
 /* Footer */
 
@@ -593,7 +696,7 @@ section[role="main"] {
 			text-align: justify;
 		}
 
-		article ul {
+		article ul, article ol {
 		  margin-top: -.5em;
 		}
 
@@ -609,7 +712,7 @@ section[role="main"] {
 			color: #333;
 		}
 
-		.post__title, .link__title, .post__date, article > p, article h3, article ul {
+		.post__title, .link__title, .post__date, article > p, article h3, article ul, article ol {
 			max-width: 800px;
 			padding-left: 10%;
 		}
@@ -735,6 +838,29 @@ section[role="main"] {
 		box-shadow: 0 0 26px 0 rgba(0, 0, 0, 0.05) inset,0 1px 16px 0 rgba(0, 0, 0, 0.04) inset,0 2px 6px 0 rgba(0, 0, 0, 0.08) inset;
 	}
 
+	/* Flexible iFrame */
+
+	.Flexible-container {
+	    position: relative;
+	    padding-bottom: 56.25%;
+	    padding-top: 30px;
+	    height: 0;
+	    overflow: hidden;
+	    width: 100%;
+	    max-width: 800px;
+	    margin-bottom: 2.5em;
+	}
+
+	.Flexible-container iframe,
+	.Flexible-container object,
+	.Flexible-container embed {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -806,6 +932,13 @@ section[role="main"] {
 
 .clearfix:after {
 	clear: both;
+}
+
+/* Vimeo */
+
+.player .title,
+.player .sidedock {
+    display: none !important;
 }
 
 /* ==========================================================================
@@ -1005,7 +1138,7 @@ section[role="main"] {
 	article:first-child {
 
 	}
-	.post__title, .link__title, .post__date, article > p, article h3, article ul {
+	.post__title, .link__title, .post__date, article > p, article h3, article ul, article ol {
 		padding-left: 10%;
 	}
 
@@ -1027,7 +1160,7 @@ section[role="main"] {
 	body {
 		font-size: 100%;
 	}
-	p, article ul {
+	p, article ul, article ol {
 		font-size: 1em;
 	}
 	article li {
@@ -1036,7 +1169,7 @@ section[role="main"] {
 	.post__date, .post__time {
 		font-size: 100%;
 	}
-	.post__title, .link__title, .post__date, article > p, article h3, article ul, blockquote {
+	.post__title, .link__title, .post__date, article > p, article h3, article ul, article ol, blockquote {
 		padding-left: 5%;
 	}
 	header[role="banner"] {

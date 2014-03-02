@@ -20,8 +20,8 @@ future: true
 show_drafts: true
 
 permalink: /posts/:title
-paginate: 15
-paginate_path: 'page:num'
+paginate: 10
+paginate_path: 'page/:num'
 
 # Markdown library
 markdown: rdiscount
