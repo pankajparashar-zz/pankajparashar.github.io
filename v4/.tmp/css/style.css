@@ -1200,60 +1200,61 @@ article figure, article img, article blockquote, article pre, article code {
     padding-top: 3.5em;
   }
 
-  /* line 1112, ../../app/_scss/style.scss */
+  /* line 1113, ../../app/_scss/style.scss */
   .header__desc,
   .header__social,
-  .header__hr {
+  .header__hr,
+  .header__form {
     display: none;
   }
 
-  /* line 1116, ../../app/_scss/style.scss */
+  /* line 1117, ../../app/_scss/style.scss */
   .header__title,
   .header__subtitle {
     padding-left: 0;
     text-align: left;
   }
 
-  /* line 1120, ../../app/_scss/style.scss */
+  /* line 1121, ../../app/_scss/style.scss */
   .header__subtitle {
     margin-bottom: 3.5em;
   }
 
-  /* line 1124, ../../app/_scss/style.scss */
+  /* line 1125, ../../app/_scss/style.scss */
   .header__follow {
     padding-left: 10%;
     margin-bottom: 0;
   }
 
-  /* line 1129, ../../app/_scss/style.scss */
+  /* line 1130, ../../app/_scss/style.scss */
   section[role="main"] {
     width: 100%;
     margin-left: 0;
     padding-top: 3.5em;
   }
 
-  /* line 1135, ../../app/_scss/style.scss */
+  /* line 1136, ../../app/_scss/style.scss */
   article {
     padding-right: 10%;
   }
 
-  /* line 1141, ../../app/_scss/style.scss */
+  /* line 1142, ../../app/_scss/style.scss */
   .post__title, .link__title, .post__date, article > p, article h3, article ul, article ol {
     padding-left: 10%;
   }
 
-  /* line 1145, ../../app/_scss/style.scss */
+  /* line 1146, ../../app/_scss/style.scss */
   footer[role="contentinfo"] {
     width: 100%;
     margin-left: 0;
   }
 
-  /* line 1149, ../../app/_scss/style.scss */
+  /* line 1150, ../../app/_scss/style.scss */
   .footer__copyright {
     padding-right: 10%;
   }
 
-  /* line 1152, ../../app/_scss/style.scss */
+  /* line 1153, ../../app/_scss/style.scss */
   .footer__search {
     padding-left: 9%;
     padding-right: 10%;
@@ -1261,104 +1262,104 @@ article figure, article img, article blockquote, article pre, article code {
   }
 }
 @media screen and (max-width: 720px) {
-  /* line 1160, ../../app/_scss/style.scss */
+  /* line 1161, ../../app/_scss/style.scss */
   body {
     font-size: 100%;
   }
 
-  /* line 1163, ../../app/_scss/style.scss */
+  /* line 1164, ../../app/_scss/style.scss */
   p, article ul, article ol {
     font-size: 1em;
   }
 
-  /* line 1166, ../../app/_scss/style.scss */
+  /* line 1167, ../../app/_scss/style.scss */
   article li {
     margin-left: 1.5em;
   }
 
-  /* line 1169, ../../app/_scss/style.scss */
+  /* line 1170, ../../app/_scss/style.scss */
   .post__date, .post__time {
     font-size: 100%;
   }
 
-  /* line 1172, ../../app/_scss/style.scss */
+  /* line 1173, ../../app/_scss/style.scss */
   .post__title, .link__title, .post__date, article > p, article h3, article ul, article ol, blockquote {
     padding-left: 5%;
   }
 
-  /* line 1175, ../../app/_scss/style.scss */
+  /* line 1176, ../../app/_scss/style.scss */
   header[role="banner"] {
     margin-left: 0;
   }
 
-  /* line 1179, ../../app/_scss/style.scss */
+  /* line 1180, ../../app/_scss/style.scss */
   .header__title,
   .header__subtitle {
     padding-left: 0;
     margin-left: 5%;
   }
 
-  /* line 1183, ../../app/_scss/style.scss */
+  /* line 1184, ../../app/_scss/style.scss */
   .header__follow {
     padding-left: 5%;
   }
 
-  /* line 1186, ../../app/_scss/style.scss */
+  /* line 1187, ../../app/_scss/style.scss */
   .post__title {
     font-size: 1.75em;
   }
 
-  /* line 1189, ../../app/_scss/style.scss */
+  /* line 1190, ../../app/_scss/style.scss */
   article {
     padding-right: 5%;
   }
 
-  /* line 1192, ../../app/_scss/style.scss */
+  /* line 1193, ../../app/_scss/style.scss */
   .highlight {
     padding-left: 5%;
   }
 
-  /* line 1195, ../../app/_scss/style.scss */
+  /* line 1196, ../../app/_scss/style.scss */
   .link__title::after {
     content: none;
   }
 
-  /* line 1198, ../../app/_scss/style.scss */
+  /* line 1199, ../../app/_scss/style.scss */
   article li, article p {
     _text-align: left;
   }
 
-  /* line 1202, ../../app/_scss/style.scss */
+  /* line 1203, ../../app/_scss/style.scss */
   .footer__search,
   .footer__copyright {
     padding-left: 5%;
     padding-right: 5%;
   }
 
-  /* line 1206, ../../app/_scss/style.scss */
+  /* line 1207, ../../app/_scss/style.scss */
   .footer__pagination {
     padding-right: 5%;
   }
 
-  /* line 1209, ../../app/_scss/style.scss */
+  /* line 1210, ../../app/_scss/style.scss */
   .footer__search {
     font-size: 1.25em;
   }
 
-  /* line 1212, ../../app/_scss/style.scss */
+  /* line 1213, ../../app/_scss/style.scss */
   .post__date::after {
     content: '✶';
     padding: 0 .25em 0 .5em;
   }
 }
 @media screen and (max-height: 900px) {
-  /* line 1219, ../../app/_scss/style.scss */
+  /* line 1220, ../../app/_scss/style.scss */
   .header__desc:first-of-type {
     display: none;
   }
 }
 @media screen and (max-height: 768px) {
-  /* line 1226, ../../app/_scss/style.scss */
+  /* line 1227, ../../app/_scss/style.scss */
   .header__desc,
   .header__hr {
     display: none;
