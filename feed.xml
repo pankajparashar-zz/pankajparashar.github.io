@@ -4,13 +4,27 @@
 	<title>Pankaj Parashar</title>
 	<link href="http://pankajparashar.com/"/>
 	<link type="application/atom+xml" rel="self" href="http://pankajparashar.com/feed.xml"/>
-	<updated>2014-03-03T09:46:11+05:30</updated>
+	<updated>2014-03-08T15:46:38+05:30</updated>
 	<id>http://pankajparashar.com/</id>
 	<author>
 		<name>Pankaj Parashar</name>
 		<email>email@pankajparashar.com</email>
 	</author>
 
+	
+		<entry>
+			<id>http://pankajparashar.com/posts/codepen-rodeo-s03w01</id>
+			<link type="text/html" rel="alternate" href="http://pankajparashar.com/posts/codepen-rodeo-s03w01"/>
+			<title>S03W01 Codepen Rodeo - The Chili recipe</title>
+			<published>2014-03-08T00:00:00+05:30</published>
+			<updated>2014-03-08T00:00:00+05:30</updated>
+			<author>
+				<name>Pankaj Parashar</name>
+				<email>email@pankajparashar.com</email>
+			</author>
+			<content type="html">&lt;p&gt;My entry for this week&#39;s &lt;a href=&quot;http://blog.codepen.io/rodeo/season-three/&quot;&gt;Codepen rodeo challenge&lt;/a&gt; titled the &quot;The Chili recipe&quot;.&lt;/p&gt;
+</content>
+		</entry>
 	
 		<entry>
 			<id>http://pankajparashar.com/posts/rss-to-email</id>
