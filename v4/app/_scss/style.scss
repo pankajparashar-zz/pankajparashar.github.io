@@ -337,10 +337,7 @@ p {
 	font-size: 1.1em;
 	margin: 0 0 1.5em;
 	line-height: 1.8;
-	-webkit-hyphens: auto;
-	   -moz-hyphens: auto;
-		-ms-hyphens: auto;
-			hyphens: auto;
+	hyphens: auto;
 }
 
 dl,
@@ -528,16 +525,16 @@ header[role="banner"] {
 
             .header__form--subscriber:-moz-placeholder {
                 /* Firefox 18- */
-                color: red;
+                color: gray;
             }
 
             .header__form--subscriber::-moz-placeholder {
                 /* Firefox 19+ */
-                color: red;
+                color: gray;
             }
 
             .header__form--subscriber:-ms-input-placeholder {
-               color: red;
+               color: gray;
             }
 
         .header__form--submit {
@@ -859,6 +856,22 @@ section[role="main"] {
 	    left: 0;
 	    width: 100%;
 	    height: 100%;
+	}
+
+	/* Pace */
+
+	.pace .pace-progress {
+		background: #0a0;
+		position: fixed;
+		z-index: 2000;
+		top: 0;
+		left: 0;
+		height: 3px;
+		transition: width 1s;
+	}
+
+	.pace-inactive {
+		display: none;
 	}
 
 /* ==========================================================================
