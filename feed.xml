@@ -4,13 +4,26 @@
 	<title>Pankaj Parashar</title>
 	<link href="http://pankajparashar.com/"/>
 	<link type="application/atom+xml" rel="self" href="http://pankajparashar.com/feed.xml"/>
-	<updated>2014-03-23T20:08:42+05:30</updated>
+	<updated>2014-03-30T22:10:37+05:30</updated>
 	<id>http://pankajparashar.com/</id>
 	<author>
 		<name>Pankaj Parashar</name>
 		<email>email@pankajparashar.com</email>
 	</author>
 
+	
+		<entry>
+			<id>http://pankajparashar.com/posts/download-the-web-with-wget</id>
+			<link type="text/html" rel="alternate" href="http://pankajparashar.com/posts/download-the-web-with-wget"/>
+			<title>Download the web with WGET</title>
+			<published>2014-03-30T00:00:00+05:30</published>
+			<updated>2014-03-30T00:00:00+05:30</updated>
+			<author>
+				<name>Pankaj Parashar</name>
+				<email>email@pankajparashar.com</email>
+			</author>
+			<content type="html">Having recently discovered the power of wget command, I have written this article to remind myself the various ways we could use this command to download the world wide web.</content>
+		</entry>
 	
 		<entry>
 			<id>http://pankajparashar.com/posts/w3c-css-mistakes</id>
