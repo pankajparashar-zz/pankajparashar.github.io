@@ -4,13 +4,26 @@
 	<title>Pankaj Parashar</title>
 	<link href="http://pankajparashar.com/"/>
 	<link type="application/atom+xml" rel="self" href="http://pankajparashar.com/feed.xml"/>
-	<updated>2014-04-18T16:52:26+05:30</updated>
+	<updated>2014-05-03T23:29:46+05:30</updated>
 	<id>http://pankajparashar.com/</id>
 	<author>
 		<name>Pankaj Parashar</name>
 		<email>email@pankajparashar.com</email>
 	</author>
 
+	
+		<entry>
+			<id>http://pankajparashar.com/posts/modify-pseudo-elements-css</id>
+			<link type="text/html" rel="alternate" href="http://pankajparashar.com/posts/modify-pseudo-elements-css"/>
+			<title>Modify pseudo elements CSS via JS</title>
+			<published>2014-05-01T00:00:00+05:30</published>
+			<updated>2014-05-01T00:00:00+05:30</updated>
+			<author>
+				<name>Pankaj Parashar</name>
+				<email>email@pankajparashar.com</email>
+			</author>
+			<content type="html">Quite often I run into situations where I need to modify the CSS styles of the pseudo elements dynamically. This post shows you different ways in which it can be done!</content>
+		</entry>
 	
 		<entry>
 			<id>http://pankajparashar.com/posts/the-heartbleed-bug</id>
