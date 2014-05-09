@@ -4,13 +4,27 @@
 	<title>Pankaj Parashar</title>
 	<link href="http://pankajparashar.com/"/>
 	<link type="application/atom+xml" rel="self" href="http://pankajparashar.com/feed.xml"/>
-	<updated>2014-05-03T23:29:46+05:30</updated>
+	<updated>2014-05-09T23:07:38+05:30</updated>
 	<id>http://pankajparashar.com/</id>
 	<author>
 		<name>Pankaj Parashar</name>
 		<email>email@pankajparashar.com</email>
 	</author>
 
+	
+		<entry>
+			<id>http://pankajparashar.com/posts/reading-position-indicator</id>
+			<link type="text/html" rel="alternate" href="http://pankajparashar.com/posts/reading-position-indicator"/>
+			<title>Reading Position Indicator</title>
+			<published>2014-05-09T00:00:00+05:30</published>
+			<updated>2014-05-09T00:00:00+05:30</updated>
+			<author>
+				<name>Pankaj Parashar</name>
+				<email>email@pankajparashar.com</email>
+			</author>
+			<content type="html">&lt;p&gt;Thanks to &lt;a href=&quot;http://chriscoyier.net/&quot;&gt;Chris&lt;/a&gt;, I once again got the amazing opportunity to write this article as a guest author for &lt;a href=&quot;http://css-tricks.com/&quot;&gt;CSS-Tricks&lt;/a&gt; and also got featured on,&lt;/p&gt;
+</content>
+		</entry>
 	
 		<entry>
 			<id>http://pankajparashar.com/posts/modify-pseudo-elements-css</id>
