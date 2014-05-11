@@ -4,7 +4,7 @@
 	<title>Pankaj Parashar</title>
 	<link href="http://pankajparashar.com/"/>
 	<link type="application/atom+xml" rel="self" href="http://pankajparashar.com/feed.xml"/>
-	<updated>2014-05-10T12:18:51+05:30</updated>
+	<updated>2014-05-11T17:04:24+05:30</updated>
 	<id>http://pankajparashar.com/</id>
 	<author>
 		<name>Pankaj Parashar</name>
@@ -257,6 +257,20 @@ repository.&lt;/p&gt;
 				<email>email@pankajparashar.com</email>
 			</author>
 			<content type="html">&lt;p&gt;I wrote this article as a guest post for &lt;a href=&quot;http://css-tricks.com/&quot;&gt;CSS-Tricks&lt;/a&gt; and also got featured on,&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<id>http://pankajparashar.com/posts/jack-morgan-squared-logo</id>
+			<link type="text/html" rel="alternate" href="http://pankajparashar.com/posts/jack-morgan-squared-logo"/>
+			<title>Jack Morgan on Squared logo</title>
+			<published>2013-06-30T00:00:00+05:30</published>
+			<updated>2013-06-30T00:00:00+05:30</updated>
+			<author>
+				<name>Pankaj Parashar</name>
+				<email>email@pankajparashar.com</email>
+			</author>
+			<content type="html">&lt;p&gt;&lt;a href=&quot;http://jackwmorgan.com&quot;&gt;Jack Morgan&lt;/a&gt; did an awesome job in redesigning the brand/identity of &lt;a href=&quot;http://www.wearesquared.com/&quot;&gt;Squared&lt;/a&gt; (also known as &#39;We are Squared&#39;). In this article, Jack will take you through the brainstorming process of designing a logo (in great depth) in an attempt to create something brutally simple, yet tastefully inspired and instantly recognisable.&lt;/p&gt;
 </content>
 		</entry>
 	
