@@ -1,4 +1,4 @@
-// Avoid `console` errors in browsers that lack a console.
+/* Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
     var noop = function () {};
@@ -25,7 +25,7 @@
  *  Google Analytics Snippet
  *  Reference : https://developers.google.com/analytics/devguides/collection/gajs/
  *  Source    : http://mathiasbynens.be/notes/async-analytics-snippet
- */
+ *
 
 (function(i,s,o,g,r,a,m){
     i['GoogleAnalyticsObject']=r;
@@ -43,3 +43,5 @@
 
 ga('create', 'UA-27630966-2', 'pankajparashar.com');
 ga('send', 'pageview');
+
+*/

@@ -12,7 +12,7 @@ layout: default
             {% if post.excerpt %}
                 <p class="post__excerpt">{{ post.excerpt }}</p>
             {% endif %}
-            {{ post.content }}
+            <p><a href="{{ post.url }}">Continue reading »</a></p>
         {% elsif post.type == 'link' %}
             <h2 class="link__title"><a class="link__title--link" href="{{ post.link }}">{{ post.title }}</a></h2>
             {{ post.content }}
