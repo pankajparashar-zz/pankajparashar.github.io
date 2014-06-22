@@ -1,0 +1,15 @@
+# Site settings
+title: Pankaj Parashar - Developer. Designer. Writer.
+email: email@pankajparashar.com
+description: "Hello. I am Pankaj Parashar, 24yrs old front-end designer and web developer from Mumbai, India."
+baseurl: ""
+url: "http://pankajparashar.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Pagination
+paginate: 15
+permalink: /posts/:title
+paginate_path: 'page/:num'
