@@ -68,6 +68,7 @@ Some of the tasks that do not belong to any of the aforementioned categories are
 - Generate responsive images on demand at different resolutions for use with [PictureFill](https://github.com/scottjehl/picturefill) or [Srcset](http://www.w3.org/html/wg/drafts/srcset/w3c-srcset/).
 - Convert longhand CSS declarations to shorthand CSS equivalent.
 - Automatically add vendor prefixes to CSS properties.
+- Use Google's [Closure Stylesheets](https://code.google.com/p/closure-stylesheets/#Renaming) to rename CSS class names in the generated stylesheet, which helps reduce the size of the CSS that is eventually sent down to the user.
 - Arrange CSS properties in alphabetical order to [improve the performance of the selector](http://coding.smashingmagazine.com/2012/10/02/csscomb-tool-sort-css-properties/).
 - Convert assets like images and fonts to their equivalent base64 encoded data uris with the ability to choose the threshold size `(~4kb)`.
 - Integration with unit testing framework like [Mocha](http://visionmedia.github.io/mocha/) or [Jasmine](http://pivotal.github.io/jasmine/) or [QUnit](http://qunitjs.com/) in a headless browser like [PhantomJS](http://phantomjs.org/).

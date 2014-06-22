@@ -57,27 +57,27 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 62, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\0000362}}
 * {
   -webkit-box-sizing: border-box;
   outline: 0 solid #c0f;
 }
 
-/* line 67, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\0000367}}
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
 }
 
-/* line 74, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\0000374}}
 html,
 body {
   overflow-x: hidden;
   width: 100%;
 }
 
-/* line 80, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\0000380}}
 body {
   color: #574742;
 }
@@ -89,7 +89,7 @@ body {
   font-weight: 400;
 }
 
-/* line 93, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\0000393}}
 body {
   font-family: 'ppp-541b3f951e7811776b489b09a9';
 }
@@ -99,13 +99,13 @@ body {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 103, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003103}}
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 108, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003108}}
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -114,7 +114,7 @@ body {
 /*
  * A better looking default horizontal rule
  */
-/* line 117, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003117}}
 hr {
   display: block;
   height: 1px;
@@ -124,27 +124,23 @@ hr {
 }
 
 /* Placeholder */
-/* line 127, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003127}}
 input[type="search"]:focus::-webkit-input-placeholder {
+  -webkit-transition: .25s ease-in-out 0;
   transition: .25s ease-in-out 0;
   opacity: .5;
 }
 
-/* line 132, ../../app/_scss/style.scss */
-input[type="search"]:focus:-moz-placeholder {
-  /* Firefox 18- */
-  transition: .25s ease-in-out 0;
-  opacity: .5;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003132}}
 
-/* line 137, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003137}}
 input[type="search"]:focus::-moz-placeholder {
   /* Firefox 19+ */
   transition: .25s ease-in-out 0;
   opacity: .5;
 }
 
-/* line 142, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003142}}
 input[type="search"]:focus:-ms-input-placeholder {
   transition: .25s ease-in-out 0;
   opacity: .5;
@@ -154,7 +150,7 @@ input[type="search"]:focus:-ms-input-placeholder {
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
  */
-/* line 156, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003156}}
 audio,
 canvas,
 img,
@@ -167,7 +163,7 @@ video {
 /*
  * Remove default fieldset styles.
  */
-/* line 165, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003165}}
 fieldset {
   border: 0;
   margin: 0;
@@ -177,7 +173,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 175, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003175}}
 textarea {
   resize: vertical;
 }
@@ -185,7 +181,7 @@ textarea {
 /*
  * Pre code blocks
  */
-/* line 183, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003183}}
 pre {
   padding: 3% 3% 3% 0;
   margin-bottom: 1.5em;
@@ -193,7 +189,7 @@ pre {
   overflow-x: auto;
 }
 
-/* line 191, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003191}}
 pre code {
   background: none;
   padding: 0;
@@ -201,7 +197,7 @@ pre code {
   font-size: 85%;
 }
 
-/* line 198, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003198}}
 code {
   color: #F25111;
   padding: 2px 4px;
@@ -215,7 +211,7 @@ code {
 /*
  * Blockquote
  */
-/* line 213, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003213}}
 blockquote {
   color: #536b78;
   padding-left: 10%;
@@ -224,7 +220,7 @@ blockquote {
   background-color: whiteSmoke;
 }
 
-/* line 221, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003221}}
 blockquote > p {
   margin-bottom: 0;
 }
@@ -232,41 +228,43 @@ blockquote > p {
 /*
  * Anchors
  */
-/* line 229, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003229}}
 a {
   color: #0a5;
   text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out 0;
   transition: 0.2s ease-in-out 0;
 }
 
-/* line 237, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003237}}
 a:hover,
 a:focus,
 a:active {
   color: #0a0;
   text-decoration: underline;
+  -webkit-transition: 0.2s ease-in-out 0;
   transition: 0.2s ease-in-out 0;
 }
 
 /* Images */
-/* line 245, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003245}}
 figure {
   margin-bottom: 2.5em;
 }
 
-/* line 249, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003249}}
 figure:last-child {
   margin-bottom: 0;
 }
 
-/* line 253, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003253}}
 img {
   width: 100%;
   height: auto;
   margin: 1.5em 0 0;
 }
 
-/* line 259, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003259}}
 figcaption {
   padding: 1em;
   color: #999;
@@ -275,7 +273,7 @@ figcaption {
   line-height: 1.75;
 }
 
-/* line 267, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003267}}
 p {
   text-rendering: optimizeLegibility;
 }
@@ -283,7 +281,7 @@ p {
 /* ==========================================================================
    Browse Happy prompt
    ========================================================================== */
-/* line 275, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003275}}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -294,12 +292,12 @@ p {
 /* ==========================================================================
    Typography styles
    ========================================================================== */
-/* line 286, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003286}}
 html {
   font-size: 100%;
 }
 
-/* line 295, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003295}}
 h1, .alpha,
 h2, .beta,
 h3, .gamma,
@@ -310,21 +308,21 @@ h6, .zeta {
   margin: 0;
 }
 
-/* line 300, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003300}}
 h1, .alpha {
   font-size: 3em;
   line-height: 1;
   margin-bottom: 0.5em;
 }
 
-/* line 306, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003306}}
 h2, .beta {
   font-size: 2.25em;
   line-height: 1.5;
   margin-bottom: 0.6666666666666666em;
 }
 
-/* line 312, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003312}}
 h3, .gamma {
   font-size: 1.25em;
   line-height: 1;
@@ -332,36 +330,39 @@ h3, .gamma {
   margin-bottom: .5em;
 }
 
-/* line 319, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003319}}
 h4, .delta {
   font-size: 1.3125em;
   line-height: 1.1428571428571428;
   margin-bottom: 1.1428571428571428em;
 }
 
-/* line 325, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003325}}
 h5, .epsilon {
   font-size: 1.125em;
   line-height: 1.3333333333333333;
   margin-bottom: 1.3333333333333333em;
 }
 
-/* line 331, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003331}}
 h6, .zeta {
   font-size: 1em;
   line-height: 1.5;
   margin-bottom: 1.5em;
 }
 
-/* line 337, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003337}}
 p {
   font-size: 1.1em;
   margin: 0 0 1.5em;
   line-height: 1.8;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto;
 }
 
-/* line 346, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003346}}
 dl,
 ol,
 ul {
@@ -370,7 +371,7 @@ ul {
   padding: 0;
 }
 
-/* line 354, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003354}}
 dd,
 dt,
 li {
@@ -382,7 +383,7 @@ li {
    Author's custom styles
    ========================================================================== */
 /* Header */
-/* line 365, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003365}}
 header[role="banner"] {
   background: #1f282d;
   bottom: 0;
@@ -393,7 +394,7 @@ header[role="banner"] {
   font-size: 100%;
 }
 
-/* line 375, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003375}}
 .header__title {
   font-size: 2.5em;
   margin-left: 10%;
@@ -402,20 +403,20 @@ header[role="banner"] {
   letter-spacing: -.1px;
 }
 
-/* line 383, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003383}}
 .header__title--link {
   color: white !important;
   border-bottom: none;
   text-decoration: none;
 }
 
-/* line 389, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003389}}
 .header__title--link:hover {
   color: #0a5 !important;
   text-decoration: none;
 }
 
-/* line 394, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003394}}
 .header__subtitle {
   color: #9AB;
   font-size: 1em;
@@ -425,7 +426,7 @@ header[role="banner"] {
   letter-spacing: .25px;
 }
 
-/* line 403, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003403}}
 .header__follow {
   background: #0a5;
   color: #333 !important;
@@ -439,7 +440,7 @@ header[role="banner"] {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
 }
 
-/* line 416, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003416}}
 .header__follow--about {
   position: absolute;
   right: 0;
@@ -452,35 +453,37 @@ header[role="banner"] {
   padding: .35em .75em;
 }
 
-/* line 428, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003428}}
 .header__follow:hover {
   color: #1F282D;
   background-color: #0a4;
   text-decoration: none;
 }
 
-/* line 434, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003434}}
 .header__follow::before {
   content: '';
   position: absolute;
 }
 
-/* line 440, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003440}}
 .header__follow::after {
   content: '⟶';
   padding-left: 1.5em;
   opacity: 0;
+  -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
 
-/* line 447, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003447}}
 .header__follow:hover::after {
+  -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   opacity: 1;
   padding-left: .5em;
 }
 
-/* line 453, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003453}}
 .header__desc {
   color: #9AB;
   margin: 0 0 1.5em 10%;
@@ -490,7 +493,7 @@ header[role="banner"] {
   font-size: 100%;
 }
 
-/* line 462, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003462}}
 .header__hr {
   box-shadow: rgba(255, 255, 255, 0.07) 0 1px 0;
   border-bottom: 1px solid #121212;
@@ -498,52 +501,52 @@ header[role="banner"] {
   background-color: #121212;
 }
 
-/* line 469, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003469}}
 .header__social {
   margin: -1em 0 0 10%;
   list-style: none;
   font-size: 100%;
 }
 
-/* line 475, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003475}}
 .header__social--list {
   display: inline;
   margin-right: .75em;
 }
 
-/* line 480, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003480}}
 .header__social--list::after {
   content: ':';
   color: #9ab;
   padding-left: .75em;
 }
 
-/* line 486, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003486}}
 .header__social--list:last-child::after {
   content: none;
 }
 
-/* line 490, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003490}}
 .header__social--link {
   color: #0a5;
   letter-spacing: .5px;
   text-decoration: none;
 }
 
-/* line 496, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003496}}
 .header__social--link:hover {
   color: #0a0;
   text-decoration: underline;
 }
 
-/* line 501, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003501}}
 .header__form {
   margin-left: 10%;
   margin-right: 12.5%;
   position: relative;
 }
 
-/* line 508, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003508}}
 .header__form--subscriber {
   background: transparent;
   border: 0;
@@ -556,30 +559,26 @@ header[role="banner"] {
   letter-spacing: .5px;
 }
 
-/* line 522, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003522}}
 .header__form--subscriber::-webkit-input-placeholder {
   color: gray;
   letter-spacing: 0;
 }
 
-/* line 527, ../../app/_scss/style.scss */
-.header__form--subscriber:-moz-placeholder {
-  /* Firefox 18- */
-  color: gray;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003527}}
 
-/* line 532, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003532}}
 .header__form--subscriber::-moz-placeholder {
   /* Firefox 19+ */
   color: gray;
 }
 
-/* line 537, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003537}}
 .header__form--subscriber:-ms-input-placeholder {
   color: gray;
 }
 
-/* line 541, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003541}}
 .header__form--submit {
   position: absolute;
   top: 0;
@@ -588,28 +587,30 @@ header[role="banner"] {
   border: 0;
   outline: 0;
   color: gray;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
-/* line 554, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003554}}
 .fa-stack-exchange {
   line-height: 1.25 !important;
   color: #fff;
 }
 
-/* line 556, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003556}}
 .header__form--subscriber:focus + .header__form--submit {
+  -webkit-transition: .5s;
   transition: .5s;
   color: #F7931E;
 }
 
-/* line 561, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003561}}
 .fusion_ad {
   margin-left: 10%;
   margin-right: 12.5%;
 }
 
-/* line 566, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003566}}
 .fusionentire {
   display: table;
   height: 150px;
@@ -617,7 +618,7 @@ header[role="banner"] {
   background-color: #2b303b;
 }
 
-/* line 573, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003573}}
 .fusiontext {
   display: table-cell;
   border: 0 solid #c03;
@@ -627,7 +628,7 @@ header[role="banner"] {
   line-height: 2;
 }
 
-/* line 582, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003582}}
 .fusionimg {
   display: table-cell;
   vertical-align: top;
@@ -636,7 +637,7 @@ header[role="banner"] {
   padding-left: 1em;
 }
 
-/* line 590, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003590}}
 .powered {
   margin-top: 1.5em;
   display: block;
@@ -644,14 +645,14 @@ header[role="banner"] {
 }
 
 /* Footer */
-/* line 598, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003598}}
 footer[role="contentinfo"] {
   margin-left: 30%;
   background-color: #f2f4f5;
   padding-bottom: 1em;
 }
 
-/* line 604, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003604}}
 .footer__pagination {
   background-color: #fff;
   margin: 0;
@@ -663,27 +664,27 @@ footer[role="contentinfo"] {
   padding-right: 10%;
 }
 
-/* line 615, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003615}}
 .footer__pagination--links {
   max-width: 800px;
   text-align: right;
   width: 100%;
 }
 
-/* line 621, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003621}}
 .footer__pagination--disabled {
   color: #7792a1;
   background-color: #fff;
   font-weight: bold;
 }
 
-/* line 627, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003627}}
 .footer__pagination--disabled:hover {
   color: #7792a1;
   text-decoration: none;
 }
 
-/* line 632, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003632}}
 .footer__search {
   font-size: 1.5em;
   line-height: 1.5;
@@ -699,13 +700,13 @@ footer[role="contentinfo"] {
   border-top: 1px solid #eee;
 }
 
-/* line 648, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003648}}
 .footer__search:active,
 .footer__search:focus {
   outline: none;
 }
 
-/* line 652, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003652}}
 .footer__copyright {
   max-width: 800px;
   padding-left: 10%;
@@ -713,26 +714,26 @@ footer[role="contentinfo"] {
   font-size: 1em;
 }
 
-/* line 659, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003659}}
 .footer__top--link {
   text-align: right;
   float: right;
   width: 7.5em;
 }
 
-/* line 665, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003665}}
 .footer__top--link::after {
   content: '↾';
 }
 
 /* Main */
-/* line 671, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003671}}
 section[role="main"] {
   padding-top: 5em;
   margin: 0 0 0 30%;
 }
 
-/* line 676, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003676}}
 article {
   border-bottom: 1px solid #eee;
   padding: 5em 0 5em 0;
@@ -740,78 +741,78 @@ article {
   padding-right: 10%;
 }
 
-/* line 683, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003683}}
 article:first-child {
   padding-top: 0;
 }
 
-/* line 688, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003688}}
 article:last-child,
 article:last-of-type {
   border-bottom: none;
   padding-bottom: 2.5em;
 }
 
-/* line 693, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003693}}
 article p, article li {
   text-align: justify;
 }
 
-/* line 697, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003697}}
 article ul, article ol {
   margin-top: -.5em;
 }
 
-/* line 701, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003701}}
 article li {
   margin-left: 2.5em;
 }
 
-/* line 705, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003705}}
 article p:last-child {
   margin-bottom: 0;
 }
 
-/* line 709, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003709}}
 article h3 {
   color: #333;
 }
 
-/* line 713, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003713}}
 .post__title, .link__title, .post__date, article > p, article h3, article ul, article ol {
   max-width: 800px;
   padding-left: 10%;
 }
 
-/* line 718, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003718}}
 article figure, article img, article blockquote, article pre, article code {
   max-width: 800px;
 }
 
-/* line 722, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003722}}
 .post__excerpt {
   font-size: 1.2em !important;
   color: #666;
 }
 
-/* line 727, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003727}}
 .post__title {
   font-size: 2.25em;
   margin-bottom: .35em;
 }
 
-/* line 732, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003732}}
 .post__title--link {
   color: #333;
 }
 
-/* line 736, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003736}}
 .post__title--link:hover {
   color: #0a0;
   text-decoration: none;
 }
 
-/* line 742, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003742}}
 .post__date,
 .post__time {
   color: #9ab;
@@ -820,69 +821,69 @@ article figure, article img, article blockquote, article pre, article code {
   display: inline-block;
 }
 
-/* line 749, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003749}}
 .post__date::after {
   content: '✶';
   padding: 0 .5em 0 1em;
 }
 
-/* line 754, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003754}}
 .post__time::after {
   content: ' min read';
 }
 
-/* line 762, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003762}}
 .link__title {
   font-size: 1.5em;
   margin-bottom: 1.5em;
 }
 
-/* line 767, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003767}}
 .link__title--link {
   color: #333 !important;
   text-decoration: underline;
 }
 
-/* line 772, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003772}}
 .link__title--link:hover {
   color: #0a5 !important;
 }
 
-/* line 776, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003776}}
 .link__title::after {
   content: '⟶';
   padding-left: .5em;
   font-size: 85%;
 }
 
-/* line 782, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003782}}
 .link__title::after:hover {
   color: #0a5 !important;
 }
 
-/* line 786, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003786}}
 .projects {
   margin-top: -1.5em;
   padding-top: 0;
   border-bottom: none;
 }
 
-/* line 792, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003792}}
 .projects .post__title {
   margin-top: 1.5em;
 }
 
-/* line 796, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003796}}
 .projects .post__date {
   font-size: 100%;
 }
 
-/* line 800, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003800}}
 .projects .post__date::after {
   content: none;
 }
 
-/* line 804, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003804}}
 .logo {
   margin: 0;
   padding: 0;
@@ -893,30 +894,32 @@ article figure, article img, article blockquote, article pre, article code {
   list-style: none;
 }
 
-/* line 813, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003813}}
 .light {
   background: #FFF;
+  background-image: -webkit-radial-gradient(circle, #ffffff 10%, #eeeeee);
   background-image: radial-gradient(circle, #ffffff 10%, #eeeeee);
   border-top: 1px solid #ccc;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 26px 0 rgba(0, 0, 0, 0.05) inset, 0 1px 16px 0 rgba(0, 0, 0, 0.04) inset, 0 2px 6px 0 rgba(0, 0, 0, 0.08) inset;
 }
 
-/* line 821, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003821}}
 .logo__variant {
   width: 90%;
   display: inline-block;
   padding: 1em;
 }
 
-/* line 827, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003827}}
 .logo__variant:nth-child(even) {
   float: right;
 }
 
-/* line 831, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003831}}
 .dark {
   background: #333;
+  background-image: -webkit-radial-gradient(circle, #333333 10%, #000000);
   background-image: radial-gradient(circle, #333333 10%, #000000);
   border-top: 1px solid #ccc;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -924,7 +927,7 @@ article figure, article img, article blockquote, article pre, article code {
 }
 
 /* Flexible iFrame */
-/* line 841, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003841}}
 .Flexible-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -936,7 +939,7 @@ article figure, article img, article blockquote, article pre, article code {
   margin-bottom: 2.5em;
 }
 
-/* line 854, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003854}}
 .Flexible-container iframe,
 .Flexible-container object,
 .Flexible-container embed {
@@ -948,7 +951,7 @@ article figure, article img, article blockquote, article pre, article code {
 }
 
 /* Pace */
-/* line 864, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003864}}
 .pace .pace-progress {
   background: #0a0;
   position: fixed;
@@ -956,10 +959,11 @@ article figure, article img, article blockquote, article pre, article code {
   top: 0;
   left: 0;
   height: 3px;
+  -webkit-transition: width 1s;
   transition: width 1s;
 }
 
-/* line 874, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003874}}
 .pace-inactive {
   display: none;
 }
@@ -970,7 +974,7 @@ article figure, article img, article blockquote, article pre, article code {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 886, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003886}}
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -979,7 +983,7 @@ article figure, article img, article blockquote, article pre, article code {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 895, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003895}}
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -995,7 +999,7 @@ article figure, article img, article blockquote, article pre, article code {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 912, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003912}}
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1009,7 +1013,7 @@ article figure, article img, article blockquote, article pre, article code {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 925, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003925}}
 .invisible {
   visibility: hidden;
 }
@@ -1025,7 +1029,7 @@ article figure, article img, article blockquote, article pre, article code {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 942, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003942}}
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -1034,13 +1038,13 @@ article figure, article img, article blockquote, article pre, article code {
   /* 2 */
 }
 
-/* line 947, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003947}}
 .clearfix:after {
   clear: both;
 }
 
 /* Vimeo */
-/* line 954, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003954}}
 .player .title,
 .player .sidedock {
   display: none !important;
@@ -1057,44 +1061,44 @@ article figure, article img, article blockquote, article pre, article code {
  * By Dudley Storey
  */
 @media screen and (max-width: 720px) {
-  /* line 972, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003972}}
   body {
     font-size: 100%;
     text-rendering: optimizeSpeed;
   }
 }
 @media screen and (min-width: 721px) {
-  /* line 980, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003980}}
   body {
     text-rendering: optimizeLegibility;
   }
 }
 @media screen and (min-width: 1280px) {
-  /* line 987, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003987}}
   body {
     font-size: 115%;
   }
 }
 @media screen and (min-width: 1366px) {
-  /* line 994, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\00003994}}
   body {
     font-size: 115%;
   }
 }
 @media screen and (min-width: 1920px) {
-  /* line 1001, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031001}}
   body {
     font-size: 125%;
   }
 }
 @media screen and (min-width: 2560px) {
-  /* line 1009, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031009}}
   body {
     font-size: 135%;
   }
 }
 @media screen and (min-width: 2880px) {
-  /* line 1017, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031017}}
   body {
     font-size: 145%;
   }
@@ -1107,7 +1111,7 @@ article figure, article img, article blockquote, article pre, article code {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 1036, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031036}}
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1116,18 +1120,18 @@ article figure, article img, article blockquote, article pre, article code {
     text-shadow: none !important;
   }
 
-  /* line 1044, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031044}}
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 1048, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031048}}
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 1052, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031052}}
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -1135,37 +1139,37 @@ article figure, article img, article blockquote, article pre, article code {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 1061, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031061}}
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 1066, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031066}}
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 1071, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031071}}
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 1076, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031076}}
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 1080, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031080}}
   img {
     max-width: 100% !important;
   }
 
-  /* line 1086, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031086}}
   p,
   h2,
   h3 {
@@ -1173,7 +1177,7 @@ article figure, article img, article blockquote, article pre, article code {
     widows: 3;
   }
 
-  /* line 1092, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031092}}
   h2,
   h3 {
     page-break-after: avoid;
@@ -1181,33 +1185,33 @@ article figure, article img, article blockquote, article pre, article code {
 }
 /* Media Queries */
 @media screen and (max-width: 1024px) {
-  /* line 1100, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031100}}
   .header__title {
     font-size: 2.25em;
   }
 
-  /* line 1103, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031103}}
   .post__title {
     font-size: 2em;
   }
 
-  /* line 1106, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031106}}
   article {
     padding-right: 10%;
   }
 
-  /* line 1109, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031109}}
   .footer__copyright {
     padding-right: 10%;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 1115, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031115}}
   body {
     font-size: 100%;
   }
 
-  /* line 1118, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031118}}
   header[role="banner"] {
     width: 100%;
     bottom: auto;
@@ -1215,7 +1219,7 @@ article figure, article img, article blockquote, article pre, article code {
     padding-top: 3.5em;
   }
 
-  /* line 1127, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031127}}
   .header__desc,
   .header__social,
   .header__hr,
@@ -1223,158 +1227,159 @@ article figure, article img, article blockquote, article pre, article code {
     display: none;
   }
 
-  /* line 1131, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031131}}
   .header__title,
   .header__subtitle {
     padding-left: 0;
     text-align: left;
   }
 
-  /* line 1135, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031135}}
   .header__subtitle {
     margin-bottom: 3.5em;
   }
 
-  /* line 1139, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031139}}
   .header__follow {
     padding-left: 10%;
     margin-bottom: 0;
   }
 
-  /* line 1144, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031144}}
   section[role="main"] {
     width: 100%;
     margin-left: 0;
     padding-top: 3.5em;
   }
 
-  /* line 1150, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031150}}
   article {
     padding-right: 10%;
   }
 
-  /* line 1156, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031156}}
   .post__title, .link__title, .post__date, article > p, article h3, article ul, article ol {
     padding-left: 10%;
   }
 
-  /* line 1160, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031160}}
   footer[role="contentinfo"] {
     width: 100%;
     margin-left: 0;
   }
 
-  /* line 1164, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031164}}
   .footer__copyright {
     padding-right: 10%;
   }
 
-  /* line 1167, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031167}}
   .footer__search {
     padding-left: 9%;
     padding-right: 10%;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 720px) {
-  /* line 1175, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031175}}
   body {
     font-size: 100%;
   }
 
-  /* line 1178, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031178}}
   p, article ul, article ol {
     font-size: 1em;
   }
 
-  /* line 1181, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031181}}
   article li {
     margin-left: 1.5em;
   }
 
-  /* line 1184, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031184}}
   .post__date, .post__time {
     font-size: 100%;
   }
 
-  /* line 1187, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031187}}
   .post__title, .link__title, .post__date, article > p, article h3, article ul, article ol, blockquote {
     padding-left: 5%;
   }
 
-  /* line 1190, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031190}}
   header[role="banner"] {
     margin-left: 0;
   }
 
-  /* line 1194, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031194}}
   .header__title,
   .header__subtitle {
     padding-left: 0;
     margin-left: 5%;
   }
 
-  /* line 1198, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031198}}
   .header__follow {
     padding-left: 5%;
   }
 
-  /* line 1201, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031201}}
   .post__title {
     font-size: 1.75em;
   }
 
-  /* line 1204, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031204}}
   article {
     padding-right: 5%;
   }
 
-  /* line 1207, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031207}}
   .highlight {
     padding-left: 5%;
   }
 
-  /* line 1210, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031210}}
   .link__title::after {
     content: none;
   }
 
-  /* line 1213, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031213}}
   article li, article p {
     _text-align: left;
   }
 
-  /* line 1217, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031217}}
   .footer__search,
   .footer__copyright {
     padding-left: 5%;
     padding-right: 5%;
   }
 
-  /* line 1221, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031221}}
   .footer__pagination {
     padding-right: 5%;
   }
 
-  /* line 1224, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031224}}
   .footer__search {
     font-size: 1.25em;
   }
 
-  /* line 1227, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031227}}
   .post__date::after {
     content: '✶';
     padding: 0 .25em 0 .5em;
   }
 }
 @media screen and (max-height: 900px) {
-  /* line 1234, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031234}}
   .header__desc:first-of-type {
     display: none;
   }
 }
 @media screen and (max-height: 768px) {
-  /* line 1241, ../../app/_scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pankajparashar\/GitHub\/pankajparashar\.github\.io\/v4\/app\/_scss\/style\.scss}line{font-family:\000031241}}
   .header__desc,
   .header__hr {
     display: none;
