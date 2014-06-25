@@ -1,6 +1,6 @@
 ---
 layout: link
-title: Freelance writing Infogrpahics
+title: Freelance writing Infographics
 type: link
 link: http://www.expand2web.com/blog/copywriting-infographic/
 
