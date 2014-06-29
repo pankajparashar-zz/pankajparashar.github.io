@@ -473,6 +473,7 @@ fill: #fff;
 [role="main"] {
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: -webkit-linear-gradient(right, #fafafa 0%, #fafafa 50%, transparent 50%, transparent 100%);
+    background: -o-linear-gradient(right, #fafafa 0%, #fafafa 50%, transparent 50%, transparent 100%);
     background: -ms-linear-gradient(right, #fafafa 0%, #fafafa 50%, transparent 50%, transparent 100%);
     background: -moz-linear-gradient(right, #fafafa 0%, #fafafa 50%, transparent 50%, transparent 100%);
     background: linear-gradient(right, #fafafa 0%, #fafafa 50%, transparent 50%, transparent 100%);
