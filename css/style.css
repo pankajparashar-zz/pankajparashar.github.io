@@ -139,7 +139,7 @@ svg:not(:root) {
 pre {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.05);
-    padding: 1.5em 0 1.5em 999em;
+    padding: 0em 0 1.5em 999em;
     margin-left: -999em;  
     margin-bottom: 1.5em;  
 }
@@ -150,6 +150,7 @@ code {
     background-color: rgba(0, 0, 0, 0.05);
     padding: 2px 5px;
     font-size: 75%;
+    line-height: 1.5;
 }
 
 pre code {
@@ -267,6 +268,7 @@ h3 {
     font-size: 1em;
     line-height: 1.5;
     margin-bottom: 2.5em;
+    color: #333;
 }
 
 
@@ -617,6 +619,15 @@ fill: #fff;
 
 footer a:hover {color: #fff;}
 
+.footer__top--link::after {
+    content: '⟶';
+    display: inline-block;
+    -webkit-transform: rotate(-90deg) scale(.75);
+    -moz-transform: rotateX(-90deg) scale(.75);
+    -moz-transform: rotateX(-90deg) scale(.75);
+    -o-transform: rotateX(-90deg) scale(.75);
+    transform: rotateX(-90deg) scale(.75);
+}
 
 /* ----------------------------------- */
 
