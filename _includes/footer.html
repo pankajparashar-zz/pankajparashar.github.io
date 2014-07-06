@@ -1,5 +1,7 @@
 <footer role="contentinfo">
-    <input type="search" role="search" placeholder="Search this website + press enter..." autocomplete="off" class="footer__search">
+    <form action="http://google.com/search?q=" target="_blank" onsubmit="location.href = this.action + this.search.value + ' site:pankajparashar.com'; return false;" method="post">
+        <input type="search" role="search" placeholder="Search this website + press enter..." autocomplete="off" class="footer__search" name="search">
+    </form>
     <article class="footer__content">
         <h3 class="footer__content-title">About me           
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve" height="20px" width="20px" id="about">
