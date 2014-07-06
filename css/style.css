@@ -487,11 +487,12 @@ fill: #fff;
     }
 
         .post__date {
-            font-size: .75em;
+            font-size: .7em;
             color: #9ab;
             letter-spacing: 1px;
             text-transform: uppercase;
             display: block;
+            margin-bottom: .5em;
         }
 
         .link__title {
