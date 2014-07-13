@@ -23,12 +23,8 @@ Project pages are project specific files lying in the `gh-pages` branch of the r
 
 For example,
 
-{% highlight css %}
-
-Repository name -> Color Stack  
-URL -> http://pankajparashar.github.io/color-stack
-
-{% endhighlight %}
+<pre class="language-bash"><code>Repository name -> Color Stack  
+URL -> http://pankajparashar.github.io/color-stack</code></pre>
 
 ### Custom domain
 
@@ -53,4 +49,4 @@ The interesting part is that all the project pages are also being redirected und
 
 By the way, this tweet from [@jackrugile](https://twitter.com/jackrugile) triggered me to write this piece,
 
-<blockquote><p><a href="https://twitter.com/jackrugile">@jackrugile</a> CNAME for user pages only and then the project pages (gh-pages) will automatically appear under the domain name set in the file.</p><br>&mdash; Pankaj Parashar, <a href="https://twitter.com/pankajparashar/statuses/432094472902430721">February 8, 2014</a></blockquote>
+<blockquote><p><a href="https://twitter.com/jackrugile">@jackrugile</a> CNAME for user pages only and then the project pages (gh-pages) will automatically appear under the domain name set in the file.<br><br>&mdash; Pankaj Parashar, <a href="https://twitter.com/pankajparashar/statuses/432094472902430721">February 8, 2014</a></p></blockquote>

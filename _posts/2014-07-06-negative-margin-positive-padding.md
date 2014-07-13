@@ -45,33 +45,26 @@ Interestingly, this technique not only works for fixed-width containers but also
 
 Without a doubt, the next thing I hopped into are handy Sass-mixins to leverage this technique for your projects.
 
-<pre>
-    <code>
-@mixin align($num: 999em, $dir: 'left') {
+<pre class="language-scss"><code>@mixin align($num: 999em, $dir: 'left') {
     @if $dir == 'center' {
-      margin: 0 -#{$num};
-      padding: 0 #{$num};
+        margin: 0 -#{$num};
+        padding: 0 #{$num};
     }
     @else if $dir == 'middle' {
-      margin: -#{$num} 0;
-      padding: #{$num} 0;
+        margin: -#{$num} 0;
+        padding: #{$num} 0;
     }
     @else {
-      margin-#{$dir}: -#{$num};
-      padding-#{$dir}: #{$num};
+        margin-#{$dir}: -#{$num};
+        padding-#{$dir}: #{$num};
     }
 }</code></pre>
 
 .. and the usage of this mixin, for each type of variation,
 
-<pre><code>
-.left-align   { @include align($dir: 'left');   }
-.right-align  { @include align($dir: 'right');  }
-.center-align { @include align($dir: 'center'); }
-
-.top-align    { @include align($dir: 'top');    }
-.bottom-align { @include align($dir: 'bottom'); }
-.middle-align { @include align($dir: 'middle'); }
+<pre class="language-scss"><code>.left-align { 
+    @include align($dir: 'left');   
+}
 </code></pre>
 
 I would love to see a fork of this mixin, if you can make something better on [Sassmeister](http://sassmeister.com/gist/9fae345bb459fd0a7665) or [Gist](https://gist.github.com/pankajparashar/9fae345bb459fd0a7665).

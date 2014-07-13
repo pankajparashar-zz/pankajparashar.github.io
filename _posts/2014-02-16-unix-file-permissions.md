@@ -2,54 +2,40 @@
 layout: post
 title: Unix file permissions
 type: post
-excerpt: I have used Unix for the major portion of my professional career, yet I have always failed to understand the intricacies surrounding the file permissions system. This article is an attempt to dig deep and augment my understanding about them.
+excerpt: I have used Unix for the major portion of my professional career, yet I have always failed to understand the intricacies surrounding the file permissioning system. This article is an attempt to dig deep and augment my understanding about them.
 
 ---
 
 The file permissions on a typical Unix system looks like this,
 
-{% highlight sh %}
-
-$ ls -ld /usr/bin /usr/bin/cat
+<pre class="language-bash"><code>$ ls -ld /usr/bin /usr/bin/cat
 drwxrwxr-x   3 root     bin         8704 Sep 23  2004 /usr/bin
--r-xr-xr-x   1 bin      bin         9388 Jul 16  1997 /usr/bin/cat
-
-{% endhighlight %}
+-r-xr-xr-x   1 bin      bin         9388 Jul 16  1997 /usr/bin/cat</code></pre>
 
 The Unix file permissions can be visualized in two forms,
 
 1. Symbolic mode
 2. Octal mode
 
-{% highlight sh %}
-
-> SYMBOLIC MODE
-
+<pre class="language-bash"><code>> SYMBOLIC MODE
 -  --- --- ---
 |   |   |   |
 |   |   |   └── -- rw(x/t/T) for others (o)
-|   |   |   
 |   |   └── ------ rw(x/s/S) for groups (g)
-|   |   
 |   └── ---------- rw(x/s/S) for a user (u)
-|
 └── -------------- file type: regular (-)
                               directory (d)
                               character special (c)
                               block special (b)
                               fifo (p)
                               symbolic link (l)
-                              socket (s)
-
-{% endhighlight %}
+                              socket (s)</code></pre>
 
 ### 1. Symbolic mode
 
 In bit mode, the permissions are represented using the characters `r`, `w`, `x`, `s`, `S`, `t`, `T`. The table below expands more on what each character stands for,
 
-{% highlight sh %}
-
-r -> Read
+<pre class="language-bash"><code>r -> Read
 w -> Write
 x -> Execute
 
@@ -57,19 +43,13 @@ s -> Execute bit is ON and Set UID/GID bit is ON
 S -> Execute bit is OFF and Set UID/GID bit is ON
 
 t -> Execute bit is ON and Sticky bit is ON
-T -> Execute bit is OFF and Sticky bit is ON
-
-{% endhighlight %}
+T -> Execute bit is OFF and Sticky bit is ON</code></pre>
 
 When a specific permission for a file doesn't apply to any of the user/group/other, Unix uses the default character `-` to represent the lack of permission.
 
 For example,
 
-{% highlight sh %}
-
--r-xr-xrwx   1 joe      bin         9388 Jul 16  1997 /usr/bin/cat
-
-{% endhighlight %}
+<pre class="language-bash"><code>-r-xr-xrwx   1 joe      bin         9388 Jul 16  1997 /usr/bin/cat</code></pre>
 
 Joe has read/write/execute permissions on the file `/usr/bin/cat`. However, all the other users of the group `bin` to which Joe belongs have read and execute permissions only. All other users outside the group `bin` can also read and execute that file.
 
@@ -77,27 +57,17 @@ Joe has read/write/execute permissions on the file `/usr/bin/cat`. However, all 
 
 ### 2. Octal mode
 
-{% highlight sh %}
-
-> OCTAL MODE
-
+<pre class="language-bash"><code>> OCTAL MODE
 0   0   0   0
 |   |   |   |
 |   |   |   └── -- r(4), w(2), x(1) for others (o)
-|   |   |
 |   |   └── ------ r(4), w(2), x(1) for groups (g)
-|   |   
 |   └── ---------- r(4), w(2), x(1) for a user (u)
-|
-└── -------------- suid(4), sgid(2), sticky(1)
-
-{% endhighlight %}
+└── -------------- suid(4), sgid(2), sticky(1)</code></pre>
 
 In the octal mode, the permissions are defined by 4-octal digits. The value for each of the last three digits can be computed as follows,
 
-{% highlight sh %}
-
-421
+<pre class="language-bash"><code>421
 rwx
 
 2^0 = 1 –> eXecute
@@ -121,52 +91,38 @@ rwx
 | rwx------  | 700  | User  |
 | ---rwx---  | 070  | Group |
 | ------rwx  | 007  | Other |
-+------------+------+-------+
-
-{% endhighlight %}
++------------+------+-------+</code></pre>
 
 The first digit also follows the same principle,
 
-{% highlight sh %}
-
-suid = 4
+<pre class="language-bash"><code>suid = 4
 sgid = 2
-sticky = 1
-
-{% endhighlight %}
+sticky = 1</code></pre>
 
 When a specific permission for a file doesn't apply to any of the user/group/other, Unix uses `0` to represent the absence of all permissions for the corresponding user/group/other.
 
 For example,
 
-{% highlight sh %}
-
-4755
+<pre class="language-bash"><code>4755
 ----
 
 4 = Set UID bit is ON.
 7 = read(4) + write(2) + execute(1) permissions for the user.
 5 = read(4) + execute(1) permissions for group members.
-5 = read(4) + execute(1) permissions for other members outside the group.
-
-{% endhighlight %}
+5 = read(4) + execute(1) permissions for other members outside the group.</code></pre>
 
 If the first of the four digits is `0` then it means that the file doesn't have any of the setuid, setgid or sticky bit present on it. Generally, the leading `0` can be omitted.
 
 ### The Special Bits  
-<br>
+
 1. Set UID and Set GID bits
 
 Apart from the usual `rwx` bits, the UNIX permission system also has the `s` bit which stands for SetUID for user or SetGID for group. For a file, if this bit is defined, then the `x` is turned into `s` for the corresponding user/group/others. For example,
 
-{% highlight css %}
-
-$ ls -l /etc/passwd /etc/shadow /usr/bin/passwd
+<pre class="language-bash"><code>$ ls -l /etc/passwd /etc/shadow /usr/bin/passwd
 -r--r--r--   1 root     sys        14006 Jan 14 11:17 /etc/passwd
 -r--------   1 root     sys         8281 Jan 14 11:18 /etc/shadow
--r-sr-sr-x   3 root     sys        96244 Sep  5  2001 /usr/bin/passwd
-
-{% endhighlight %}
+-r-sr-sr-x   3 root     sys        96244 Sep  5  2001 /usr/bin/passwd</code></pre>
 
 The `/etc/passwd` file is writable only by `root`. The `/etc/shadow` file is where the passwords are stored and cannot be read by ordinary users.  
 
@@ -174,7 +130,6 @@ But `joe` wants to change his password. He can do that by running `/usr/bin/pass
 
 So the passwd program can change joe's password for him. The sgid bit works the same way, except it causes the passwd program to run with the group `sys` instead of joe's group. The suid and sgid do not get their own position in the `ls`. When the suid bit is set, `ls` displays a `s` rather than a `x` for the owner execute permission. 
 
-<br>
 2. The Sticky Bit
 
 If the sticky bit is set on a directory, mere write permission on the directory is no longer enough to remove the files. You must additionally own the file or own the directory. 
@@ -183,31 +138,23 @@ If the sticky bit is set on a directory, mere write permission on the directory 
 
 The sticky bit affects the `other` execute bit in the `ls` display. Except that it uses `t` and `T` rather than `s` and `S`. For example,
 
-{% highlight python %}
-
-drwxrwxrwt   5 root       root          1024 Feb 11 20:43 /tmp
-
-{% endhighlight %}
+<pre class="language-bash"><code>drwxrwxrwt   5 root       root          1024 Feb 11 20:43 /tmp</code></pre>
 
 In that `/tmp` directory above, anyone can create new files. But because of the sticky bit, one user cannot delete another user's files.
 
 Some examples using special bits,
 
-{% highlight sh %}
-
-+------------------+
-|rwxrwxrwx     777 | all permissions granted
-|rwxr-xr-x     755 | group and others read & executable
-|rwx------     700 | private file
-|rwsr-xr-x    4755 | set UID
-|rwxr-sr-x    2755 | set GID
-|rwxr-xr-t    1755 | sticky bit
-|rwSw-xr-x    4655 | setUID but not executable by user
-|rwxr-Sr-x    2745 | getGID, but not executable by group members
-|rwxr-xr-T    1754 | sticky bit, but not executable by others
-+------------------+
-
-{% endhighlight %}
+<pre class="language-bash"><code>+-------------------+
+| rwxrwxrwx     777 | all permissions granted
+| rwxr-xr-x     755 | group and others read & executable
+| rwx------     700 | private file
+| rwsr-xr-x    4755 | set UID
+| rwxr-sr-x    2755 | set GID
+| rwxr-xr-t    1755 | sticky bit
+| rwSw-xr-x    4655 | setUID but not executable by user
+| rwxr-Sr-x    2745 | getGID, but not executable by group members
+| rwxr-xr-T    1754 | sticky bit, but not executable by others
++-------------------+</code></pre>
 
 ### Special cases  
 <br>
@@ -234,10 +181,7 @@ When you have `x` permission but no `r` permission on a directory then you can o
 
 File permissions in Linux can be displayed in octal format using Linux `stat` command. 
 
-{% highlight sh %}
-
-$ stat -c '%A %a %n' *
-
+<pre class="language-bash"><code>$ stat -c '%A %a %n' *
 [Replace * with the relevant directory or the exact filename]
 
 $ man stat
@@ -246,9 +190,7 @@ $ man stat
             each use of FORMAT
 %A  Access rights in human readable form          
 %a  Access rights in octal
-%n  File name
-
-{% endhighlight %}
+%n  File name</code></pre>
 
 ### The umask command
 
@@ -261,26 +203,20 @@ When a user creates a file or directory, it gets a default set of permissions. T
 
 A umask set to `u=rwx,g=rwx,o=` will result in new files having the modes `-rw-rw----`, and new directories having the modes `drwxrwx---`.
 
-{% highlight sh %}
-
-$ umask u=rwx,g=rwx,o=
+<pre class="language-bash"><code>$ umask u=rwx,g=rwx,o=
 $ umask
 0007
 $ mkdir foo
 $ touch bar
 $ ls -l
 drwxrwx--- 2 dave dave 512 Sep 1 20:59 foo
--rw-rw---- 1 dave dave 0   Sep 1 20:59 bar
-
-{% endhighlight %}
+-rw-rw---- 1 dave dave 0   Sep 1 20:59 bar</code></pre>
 
 **Octal values**  
 
 The octal notation for the permissions masked out are,
 
-{% highlight sh %}
-
-0 – Full permissions (Read, Write, Execute)
+<pre class="language-bash"><code>0 – Full permissions (Read, Write, Execute)
 1 – Write and read
 2 – Read and execute
 3 – Read only
@@ -294,9 +230,7 @@ $ mkdir foo
 $ touch bar
 $ ls -l
 drwxr-xr-x 2 dave dave 512 Aug 18 20:59 foo
--rw-r--r-- 1 dave dave 0   Aug 18 20:59 bar
-
-{% endhighlight %}
+-rw-r--r-- 1 dave dave 0   Aug 18 20:59 bar</code></pre>
 
 Though umask value is the same for files and folders, but the calculation of file base permissions and directory base permissions are different.
 
@@ -311,12 +245,8 @@ Suppose the umask value is `027`.
 
 **Find out the default umask**
 
-{% highlight sh %}
-
-$ umask
-0022
-
-{% endhighlight %}
+<pre class="language-bash"><code>$ umask
+0022</code></pre>
 
 The preceding `0` indicates there is no SUID/SGID/Sticky bit information set.
 
@@ -332,9 +262,7 @@ The `chmod` command in Unix is abbreviated as **CH**ange **MOD**e. Chmod command
 
 1) Symbolic method like `chmod +x filename`.
 
-{% highlight sh %}
-
-The who part can be:
+<pre class="language-bash"><code>The who part can be:
 u  (user)
 g  (group)
 o  (other)
@@ -355,23 +283,17 @@ u (current permissions for user)
 g (current permissions for group)
 o (current permissions for others)
 s (set uid or set gid)
-t (sticky bit)
-
-{% endhighlight %}
+t (sticky bit)</code></pre>
 
 2) Octal method like `chmod 775 filename`.
 
 Let us review some examples in both symbolic and octal representaions for files.
 
-{% highlight sh %}
-
-+------------------------+-----------+
+<pre class="language-bash"><code>+------------------------+-----------+
 | chmod u=rwx,g=rwx,o=rx | chmod 775 |
 | chmod u=rwx,g=rx,o=    | chmod 750 |
 | chmod u=rw,g=r,o=r     | chmod 644 |
 | chmod u=rw,g=r,o=      | chmod 640 |
 | chmod u=rw,go=         | chmod 600 |
 | chmod u=rwx,go=        | chmod 700 |
-+------------------------+-----------+
-
-{% endhighlight %}
++------------------------+-----------+</code></pre>

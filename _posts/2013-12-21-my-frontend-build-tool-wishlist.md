@@ -10,11 +10,7 @@ Assuming, you have completed the development work on the frontend of your next w
 
 The typical build process of a project follows,
 
-{% highlight css %}
-
-Compilation > Linting > Concatenation > Compression > Miscellaneous
-
-{% endhighlight %}
+<pre class="language-bash"><code>Compilation > Linting > Concatenation > Compression > Miscellaneous</code></pre>
 
 Hence, I have divided the build task into the following categories,
 
