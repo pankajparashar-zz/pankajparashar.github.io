@@ -4,7 +4,7 @@ layout: default
 
 {% for post in paginator.posts %}
     <article itemtype="http://schema.org/Article" class="post">
-        <time itemprop="datePublished" content='{{ post.date | date: "%B %d, %Y" }}' class="post__date">{{ post.date | date: "%B %d, %Y" }}</time>
+        <time itemprop="datePublished" content='{{ post.date | date: "%d.%B.%Y" }}' class="post__date">{{ post.date | date: "%d.%b.%Y" }}</time>
         {% if post.type == 'post' %}
             <h2 clas="post__title"><a class="post__title--link" href="{{ post.url }}" itemprop="name">{{ post.title }}</a></h2>
             {% if post.excerpt %}
