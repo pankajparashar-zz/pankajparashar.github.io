@@ -744,14 +744,12 @@ transition: all 300ms cubic-bezier(0.325, -0.075, 0, 1.65);
 }
 
 #adpacks {
-    
-margin: 0 auto;
-
+    outline: 1px solid #eee;
     line-height: 1.5;
     position: absolute;
     top: 0;
     right: 0;
-    font-style: italic;
+    margin: 0 auto;
     background-color: rgba(255, 255, 255, .1);
 
     display: block;
@@ -760,6 +758,25 @@ margin: 0 auto;
     min-width: 160px;
     min-height: 130px;
     font-size: 14px;    
+
+                        -webkit-transition: all .25s ease;
+            -o-transition: all .25s ease;
+            -moz-transition: all .25s ease;
+            transition: all .25s ease;
+-webkit-transform: translateY(-101%);
+-moz-transform: translateY(-101%);
+-o-transform: translateY(-101%);
+-ms-transform: translateY(-101%);
+transform: translateY(-101%);
+}
+
+#adpacks:hover {
+                        -webkit-transition: all .25s ease;
+            -o-transition: all .25s ease;
+            -moz-transition: all .25s ease;
+            transition: all .25s ease;
+    outline: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, .5);
 }
 
 .adpacks-img { 
@@ -778,10 +795,11 @@ margin: 0 auto;
   display: block;
   margin-right: 145px;
   vertical-align: top;
+  line-height: 1.5;
 }
 .adpacks-poweredby {
     color: #0a5;
-padding-left: 10px;
+padding-left: 0px;
   display: block;
   text-align: left;
   margin-right: 145px;
@@ -790,7 +808,7 @@ position: relative;
 }
 
 .adpacks-poweredby::before {
-    content: '–';
+    content: none;
     text-decoration: none;
     position: absolute;
     left: 0;
@@ -802,13 +820,21 @@ position: relative;
     }
     #adpacks {
         position: relative;
-        outline: 1px solid #eee;
+        
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        transform: translateY(0%);
     }
     [role="main"] {
         background: #fff;
     }
 }
-@media screen and (max-width: 1151px) { 
+@media screen and (max-width: 1500px) { 
+
+        #adpacks {}
+
 }
 
 
