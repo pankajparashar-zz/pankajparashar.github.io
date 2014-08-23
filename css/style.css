@@ -154,12 +154,14 @@ code {
     padding: 2px 5px;
     font-size: .75em;
     line-height: 1.5;
+    word-break: break-all;
 }
 
 pre code {
     background-color: transparent;
     line-height: 1.5;
     font-size: 16px;
+    word-break: normal;
 }
 
 /**
@@ -309,13 +311,15 @@ aside {
 
 blockquote {
     color: #666;
-    background-color: #f9f9f9;
+    background-color: #f3f5f7;
     padding: 1.5em 1em .5em 999em;
     margin-left: -999em;
     margin-right: -1em;
     margin-bottom: 1.5em;
     font-size: 1em;   
 }
+
+blockquote p { margin-bottom: 1em; }
 
 figure {
     margin-bottom: 1.5em;
@@ -403,7 +407,7 @@ fill: #fff;
 
 .left-aligned {
   margin-left: -999em;
-  background-color: #f9f9f9;
+  background-color: #f3f5f7;
   padding: 1.5em 1em 1.5em 999em;
   text-align: left;
 }
@@ -412,7 +416,6 @@ fill: #fff;
 [role="banner"] {
     position: relative;
     padding: 2em;
-    background-color: #1F282D;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -459,15 +462,15 @@ fill: #fff;
 /* -------------- SECTION -------- */
 
 [role="main"] {
-    
     border-top: 1px solid #eee;
+
     position: relative;
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-    background: -webkit-linear-gradient(right, #f9f9f9 0%, #f9f9f9 50%, transparent 50%, transparent 100%);
-    background: -o-linear-gradient(right, #f9f9f9 0%, #f9f9f9 50%, transparent 50%, transparent 100%);
-    background: -ms-linear-gradient(right, #f9f9f9 0%, #f9f9f9 50%, transparent 50%, transparent 100%);
-    background: -moz-linear-gradient(right, #f9f9f9 0%, #f9f9f9 50%, transparent 50%, transparent 100%);
-    background: linear-gradient(right, #f9f9f9 0%, #f9f9f9 50%, transparent 50%, transparent 100%);
+    background: -webkit-linear-gradient(right, #f3f5f7 0%, #f3f5f7 50%, transparent 50%, transparent 100%);
+    background: -o-linear-gradient(right, #f3f5f7 0%, #f3f5f7 50%, transparent 50%, transparent 100%);
+    background: -ms-linear-gradient(right, #f3f5f7 0%, #f3f5f7 50%, transparent 50%, transparent 100%);
+    background: -moz-linear-gradient(right, #f3f5f7 0%, #f3f5f7 50%, transparent 50%, transparent 100%);
+    background: linear-gradient(right, #f3f5f7 0%, #f3f5f7 50%, transparent 50%, transparent 100%);
 }
 
     .post {
@@ -547,17 +550,6 @@ fill: #fff;
         .post__excerpt {
             font-size: 1.1em;
         }
-
-        .post__read-more {
-            position: relative;
-        }
-
-            .post__read-more::after {
-                content: ' ⟶';
-                text-decoration: none;
-                position: absolute;
-                right: -1.75em;
-            }
 
 .pagination { 
     max-width: 800px;
