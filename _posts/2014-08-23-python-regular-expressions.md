@@ -110,6 +110,9 @@ expressions,
 `+` - one or more characters  
 `*` - zero or more characters  
 `?` - zero or one character  
+`{n}` - repeat exactly n times  
+`{n,}` - repeat atleast n times or more  
+`{m, n}` - repease atleast m times but no more than n times  
 
 **Examples**  
 Match one or more characters using `+`
