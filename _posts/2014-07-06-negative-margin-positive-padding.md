@@ -31,21 +31,22 @@ Interestingly, this technique not only works for fixed-width containers but also
     b. Right aligned  
     `margin-right: -999em; padding-right: 999em;`  
     c. Center aligned  
-    `margin: 0 -999em; padding: 0 999em;`
+    `margin: 0 -999em; padding: 0 999em;`  
 
 2. Fixed/Fluid height container  
     a. Top aligned  
-    `margin-top: -999em; padding-top: 999em;`  
+    `margin-top: -999em; padding-top: 999em;`    
     b. Bottom aligned  
     `margin-bottom: -999em; padding-bottom: 999em;`  
     c. Middle aligned  
-    `margin: -999em 0; padding: 999em 0;`
+    `margin: -999em 0; padding: 999em 0;`  
 
 ### Mixins
 
 Without a doubt, the next thing I hopped into are handy Sass-mixins to leverage this technique for your projects.
 
-<pre class="language-scss"><code>@mixin align($num: 999em, $dir: 'left') {
+{% highlight css %}
+@mixin align($num: 999em, $dir: 'left') {
     @if $dir == 'center' {
         margin: 0 -#{$num};
         padding: 0 #{$num};
@@ -58,13 +59,15 @@ Without a doubt, the next thing I hopped into are handy Sass-mixins to leverage 
         margin-#{$dir}: -#{$num};
         padding-#{$dir}: #{$num};
     }
-}</code></pre>
+}
+{% endhighlight %}
 
 .. and the usage of this mixin, for each type of variation,
 
-<pre class="language-scss"><code>.left-align { 
-    @include align($dir: 'left');   
+{% highlight css %}
+.left-align {
+    @include align($dir: 'left');
 }
-</code></pre>
+{% endhighlight %}
 
 I would love to see a fork of this mixin, if you can make something better on [Sassmeister](http://sassmeister.com/gist/9fae345bb459fd0a7665) or [Gist](https://gist.github.com/pankajparashar/9fae345bb459fd0a7665).

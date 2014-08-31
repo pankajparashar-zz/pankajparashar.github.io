@@ -2,13 +2,14 @@
 layout: post
 title: Regular Expressions in Python
 type: post
-excerpt: Regular expressions are hard but this post is not going to make them seem harder. Instead it attempts to simplify the complications surrounding the world of regex.
-
+excerpt: Regular expressions are hard but this post is not going to make them appear harder. Instead it attempts to simplify the complications that surround the world of regex.
 ---
 
 In Python, the module that deals with regular expressions is called [re](https://docs.python.org/2/library/re.html).
 
-<pre class="language-python"><code>import re</code></pre>
+{% highlight python %}
+import re
+{% endhighlight %}
 
 ### Basic patterns
 
@@ -28,78 +29,91 @@ The power of regular expressions is that they can specify patterns, not just fix
 `[abc]` - Matches `a` or `b` or `c`  
 `[a-zA-Z0-9]` - Matches any letter from (`a` to `z`) or (`A` to `Z`) or (`0` to `9`)  
 `\A` - Matches only at the start of the string even in MULTILINE mode  
-`\Z` - Matches only at the end of the string even in MULTILINE mode
-`\b` - Matches only the beginning or end of the word
+`\Z` - Matches only at the end of the string even in MULTILINE mode  
+`\b` - Matches only the beginning or end of the word  
 
 > The `r` at the start of the pattern string designates a python **raw** string which passes through backslashes without change which is very handy for regular expressions (Java needs this feature badly!). I recommend that you always write pattern strings with the `r` just as a habit.
 
 **Examples**  
-Match ordinary characters like `iii`
-
-<pre class="language-python"><code>>>> match = re.search(r'iii', 'piiig') 
-'iii'</code></pre>
-
+Match ordinary characters like `iii`  
+{% highlight python %}
+>>> match = re.search(r'iii', 'piiig')
+'iii'
+{% endhighlight %}  
+  
 Match a single character using `.`
-
-<pre class="language-python"><code>>>> match = re.search(r'i.i', 'pirig') 
-'iri'</code></pre>
+{% highlight python %}
+>>> match = re.search(r'i.i', 'pirig')
+'iri'
+{% endhighlight %}
 
 Match any single letter, digit or underscore using `\w`
-
-<pre class="language-python"><code>>>> match = re.search(r'i\wi', 'piaig') 
-'iai'</code></pre>
+{% highlight python %}
+>>> match = re.search(r'i\wi', 'piaig')
+'iai'
+{% endhighlight %}
 
 Match any non-word character using `\W`
-
-<pre class="language-python"><code>>>> match = re.search(r'i\Wi', 'pi@ig') 
-'i@i'</code></pre>
+{% highlight python %}
+>>> match = re.search(r'i\Wi', 'pi@ig')
+'i@i'
+{% endhighlight %}
 
 Match a single whitespace character using `\s`
-
-<pre class="language-python"><code>>>> match = re.search(r'i\si', 'pi ig') 
-'i i'</code></pre>
+{% highlight python %}
+>>> match = re.search(r'i\si', 'pi ig')
+'i i'
+{% endhighlight %}
 
 Match any non-whitespace character using `\S`
-
-<pre class="language-python"><code>>>> match = re.search(r'i\Si', 'piAig') 
-'iAi'</code></pre>
+{% highlight python %}
+>>> match = re.search(r'i\Si', 'piAig')
+'iAi'
+{% endhighlight %}
 
 Match tab character using `\t`
-
-<pre class="language-python"><code>>>> match = re.search(r'i\ti', 'pi   ig') 
-'i\ti'</code></pre>
+{% highlight python %}
+>>> match = re.search(r'i\ti', 'pi   ig')
+'i\ti'
+{% endhighlight %}
 
 Match decimal digit using `\d`
-
-<pre class="language-python"><code>>>> match = re.search(r'i\di', 'pi9ig') 
-'i9i'</code></pre>
+{% highlight python %}
+>>> match = re.search(r'i\di', 'pi9ig')
+'i9i'
+{% endhighlight %}
 
 Match start of the string
-
-<pre class="language-python"><code>>>> match = re.search(r'^pii', 'piigpii') 
-'pii'</code></pre>
+{% highlight python %}
+>>> match = re.search(r'^pii', 'piigpii')
+'pii'
+{% endhighlight %}
 
 Match end of the string
-
-<pre class="language-python"><code>>>> match = re.search(r'pii$', 'piigpii') 
-'pii'</code></pre>
+{% highlight python %}
+>>> match = re.search(r'pii$', 'piigpii')
+'pii'
+{% endhighlight %}
 
 Match literal character `\n`
-
-<pre class="language-python"><code>>>> match = re.search(r'\.iig', 'pii.iig') 
-'.iig'</code></pre>
+{% highlight python %}
+>>> match = re.search(r'\.iig', 'pii.iig')
+'.iig'
+{% endhighlight %}
 
 Match any character in `a`, `b` or `c`
-
-<pre class="language-python"><code>>>> match = re.search(r'p[abc]g', 'pbg') 
-'pbg'</code></pre>
+{% highlight python %}
+>>> match = re.search(r'p[abc]g', 'pbg')
+'pbg'
+{% endhighlight %}
 
 Match any decimal digit between 0-9
+{% highlight python %}
+>>> match = re.search(r'p[0-9]g', 'p7g')
+'p7g'
+{% endhighlight %}
 
-<pre class="language-python"><code>>>> match = re.search(r'p[0-9]g', 'p7g') 
-'p7g'</code></pre>
-
-> Inside the square bracket `[]`, dot `.` means literal dot. Hence, no need to escape them. To use a dash `-` inside a square bracket 
+> Inside the square bracket `[]`, dot `.` means literal dot. Hence, no need to escape them. To use a dash `-` inside a square bracket
 without indicating a range, put it at the end of the possible values like, `[a-zA-Z-]`. An up-hat `(^)` at the start of a square-bracket set inverts it, so `[^ab]` means any char except 'a' or 'b'.
 
 ### Repetitions
@@ -116,19 +130,22 @@ expressions,
 
 **Examples**  
 Match one or more characters using `+`
-
-<pre class="language-python"><code>>>> match = re.search(r'pi+g', 'piiiig') 
-'piiiig'</code></pre>
+{% highlight python %}
+>>> match = re.search(r'pi+g', 'piiiig')
+'piiiig'
+{% endhighlight %}  
 
 Match zero or more characters using `*`
-
-<pre class="language-python"><code>>>> match = re.search(r'pi*g', 'pg') 
-'pg'</code></pre>
+{% highlight python %}
+>>> match = re.search(r'pi*g', 'pg')
+'pg'
+{% endhighlight %}
 
 Matche zero or one character using `?`
-
-<pre class="language-python"><code>>>> match = re.search(r'pi?g', 'piiiigpigpg') 
-'pig'</code></pre>
+{% highlight python %}
+>>> match = re.search(r'pi?g', 'piiiigpigpg')
+'pig'
+{% endhighlight %}
 
 > There is an extension to regular expression where you add a `?` at the end, such as `.*?` or `.+?`, changing them to be non-greedy. Now they stop as soon as they can. So to match a pattern like `<b>bold></b><i>italic</i>` we could use the regex `<.*?>` to get this `['<b>', '</b>', '<i>', '</i>']`
 
@@ -138,9 +155,11 @@ Matche zero or one character using `?`
 
 For example, lets find out all the occurences of email address from the given string,
 
-<pre class="language-python"><code>>>> string = 'purple alice@google.com, blah monkey bob@abc.com blah dishwasher'
+{% highlight python %}
+>>> string = 'purple alice@google.com, blah monkey bob@abc.com blah dishwasher'
 >>> re.findall(r'[\w.-]+@[\w]+\.[\w]+', string)
-['alice@google.com', 'bob@abc.com']</code></pre>
+['alice@google.com', 'bob@abc.com']
+{% endhighlight %}
 
 <figure>
     <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1408788930/regxper_dazjby.png">
@@ -149,9 +168,11 @@ For example, lets find out all the occurences of email address from the given st
 
 `compile()` compiles the regular expression into a regular expression object that can be used later with `.search()`, `.findall()` or `.match()`. If you are using the same regex repeatedly, then it is much efficient to compile the regex first and then apply it on strings.
 
-<pre class="language-python"><code>>>> pat = re.compile('^foo')
+{% highlight python %}
+>>> pat = re.compile('^foo')
 >>> pat.findall('foobar')
-['foo']</code></pre>
+['foo']
+{% endhighlight %}
 
 ### Optional flags
 
@@ -163,6 +184,8 @@ These are functions that take options to modify the behavior of the pattern matc
 
 **Example**  
 
-<pre class="language-python"><code>>>> pat = re.compile('^foo.', re.IGNORECASE | re.DOTALL | re.MULTILINE)
+{% highlight python %}
+>>> pat = re.compile('^foo.', re.IGNORECASE | re.DOTALL | re.MULTILINE)
 >>> pat.findall('Foo\nfOO\n')
-['Foo\n', 'fOO\n']</code></pre>
+['Foo\n', 'fOO\n']
+{% endhighlight %}

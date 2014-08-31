@@ -1,16 +1,35 @@
-<footer role="contentinfo">
+<footer role="contentinfo" class="footer">
+
     <form action="http://google.com/search?q=" target="_blank" onsubmit="location.href = this.action + this.search.value + ' site:pankajparashar.com'; return false;" method="post">
-        <input type="search" role="search" placeholder="Search this website + press enter..." autocomplete="off" class="footer__search" name="search">
+        <input type="search" role="search" placeholder="Search this website + press enter..." autocomplete="off" class="footer-search" name="search">
     </form>
-    <article class="footer__content">
-        <h3 class="footer__content-title">About me           
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve" height="20px" width="20px" id="about">
-                <path d="M49.5,5c-24.8,0-45,20.2-45,45c0,24.8,20.2,45,45,45c24.8,0,45-20.2,45-45C94.5,25.2,74.3,5,49.5,5z   M55.8,79.3H43.2V38.5h12.7V79.3z M49.4,33.5c-4,0-6.7-2.8-6.6-6.3c-0.1-3.7,2.6-6.4,6.7-6.4c4.1,0,6.7,2.8,6.8,6.4  C56.3,30.6,53.6,33.5,49.4,33.5z" fill="#0a5"/>
-            </svg>   
-        </h3>
-        <p>I am 24yrs old frontend developer from Mumbai, India. I <a href="/projects/">make things</a> for the web and write about them on <a href="/">my blog here</a>.</p>
-        <p>Got any interesting idea or a project to talk about or just want to say Hi? drop me a line on <a href="mailto:email@pankajparashar.com">email@pankajparashar.com</a>.</p>
-        <hr>
-        <p><span class="footer__copyright">©2014</span><a class="footer__top--link" href="#" role="button">Back to top</a></p>
-    </article>
+
+    <p class="footer-about">Hello. I am 24yrs old frontend designer and web developer from Mumbai, India. I <a href="/projects/">make things</a> for the web and write about them on <a href="/">my blog here</a>.
+
+    <aside class="footer-details">
+        <a class="email" href="mailto:email@pankajparashar.com">✉ email@pankajparashar.com</a>
+        <br>
+        <a class="rss" href="/feed.xml">⎙ RSS feeds</a><a class="sitemap" href="/sitemap.xml">♆ Sitemap</a> 
+        <br>
+        <span class="availability">⧰ Unavailable for project work</span>
+        <script async src="//cdn.adpacks.com/adpacks.js?zoneid=1386&serve=C6SI42Y&placement=pankajparashar" id="_adpacks_js"></script>
+    </aside>
+
+    <ul class="footer-social">
+        <li class="footer-socialIcon">
+            <a href="http://codepen.io/pankajparashar/" class="footer-socialIconLink">Codepen</a><span class="sub-text">my experiments</span>
+        </li>
+        <li class="footer-socialIcon">
+            <a href="https://github.com/pankajparashar" class="footer-socialIconLink">Github</a><span class="sub-text">my repositories</span>
+        </li>
+        <li class="footer-socialIcon">
+            <a href="https://twitter.com/pankajparashar" class="footer-socialIconLink">Twitter</a><span class="sub-text">my ramblings</span>
+        </li>
+    </ul>
+
+    <p class="footer-copyright">
+        <span class="footer-copyrightYear">©2014</span>
+        <a class="footer-backToTop" role="button" onClick="window.scrollTo(0,0);">Back to top</a>
+    </p>
+
 </footer>

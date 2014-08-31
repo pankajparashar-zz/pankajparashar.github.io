@@ -23,8 +23,10 @@ Project pages are project specific files lying in the `gh-pages` branch of the r
 
 For example,
 
-<pre class="language-bash"><code>Repository name -> Color Stack  
-URL -> http://pankajparashar.github.io/color-stack</code></pre>
+{% highlight sh %}
+Repository name -> Color Stack  
+URL -> http://pankajparashar.github.io/color-stack
+{% endhighlight %}
 
 ### Custom domain
 
