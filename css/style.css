@@ -113,11 +113,17 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
   -webkit-appearance: none; }
 
 figcaption {
-  font-size: 80%;
+  font-size: 90%;
   color: #9ab;
   word-spacing: 1px;
-  text-align: center;
-  padding: 0 1.5em; }
+  padding: 0 1.5em 0 0;
+  margin-bottom: 1em; }
+  figcaption::before {
+    content: '';
+    display: block;
+    width: 3em;
+    border-top: 3px solid #2C3031;
+    margin-bottom: 0.5em; }
 
 /**
  * Headings
@@ -159,7 +165,10 @@ blockquote p {
 
 figure {
   margin-bottom: 1.5em;
-  margin-right: -1em; }
+  margin-right: -1em;
+  background-color: #f3f5f7;
+  padding: 1.5em 0 0.5em 999em;
+  margin-left: -999em; }
 
 ::-moz-selection {
   background: #FFD454;
@@ -651,7 +660,7 @@ green     #859900  operators, other keywords
            -o-transition: all 0.3s ease-in-out 0;
               transition: all 0.3s ease-in-out 0; }
   .post-pubDate {
-    font-size: 0.7em;
+    font-size: 80%;
     color: #9ab;
     letter-spacing: 1.5px;
     text-transform: uppercase;
