@@ -13,6 +13,7 @@ Thanks to Chris Coyier, for offering me the opportunity to write for [CSS-Tricks
 
 <figure>
     <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391875666/OSX_Style_Disk_Usage_qevows.png">
+    <figcaption>OSX-style disk usage experiment created for the CSS-Tricks article.</figcaption>
 </figure>
 
 [Read on CSS-Tricks](css-tricks.com/html5-meter-element/)

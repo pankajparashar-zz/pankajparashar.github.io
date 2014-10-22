@@ -13,6 +13,7 @@ I wrote this article as a guest post for [CSS-Tricks](http://css-tricks.com/) an
 
 <figure>
     <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391875665/Skillset_Progress_Bars_j6gvb3.png">
+    <figcaption>Skillset progress bar experiment created for the CSS-Tricks article.</figcaption>
 </figure>
 
 [Read on CSS-Tricks](http://css-tricks.com/html5-progress-element/)

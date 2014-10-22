@@ -10,6 +10,7 @@ Little old, but [Boris Smus](http://smus.com/) introduced a minimal design conce
 
 <figure>
     <img src="https://res.cloudinary.com/dw9fem4ki/image/upload/v1399829270/http_dl_kraken_io_6aa0aa761ed41cb9ab48a6733695bf6f_business-card_iubybw.png" alt="Minimal Business Card">
+    <figcaption>Business card design experiment using HTML and CSS on CodePen.</figcaption>
 </figure>
 
 [View Experiment](http://codepen.io/pankajparashar/full/kdijF/)
