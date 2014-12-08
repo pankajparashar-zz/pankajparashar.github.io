@@ -1,6 +1,3 @@
----
-# Front matter comment to ensure Jekyll properly reads file
----
 
 @import "vars";
 @import "base";
@@ -15,28 +12,23 @@
  **/
 
 .header {
-    
-    border: 0px solid black;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 2em;
-    display: block;
-    background-color: #22313F;
-    color: #fff;
-    
+    padding: 2em 0em;
+    position: relative;
+
     &-title {
         margin-bottom: .5em;
     }
     &-titleLink {
-        color: #fff;
+        color: #F3F5F7;
         text-decoration: none;
         border-bottom: none;
         letter-spacing: 1px;
-        background-image: none;
     }
     &-titleLink:hover {
         color: $brand-color;
         border-bottom: none;
-        background-image: none;
     }
     &-subTitle {
         color: #9ab;
@@ -59,36 +51,39 @@
         width: 25px;
         height: 25px;
         position: absolute;
-        margin-left: 0.5em;
-        top: 0.5em;
+        margin-left: .5em;
+        top: .5em;
         vertical-align: baseline;
         transform: translateY(10px);
-        background-image: none;
-        
-        &Img {
-            fill: $brand-color;
-            
-            &:hover {
-                fill: #fff;
-            }
-        }
-        
+
         &:hover {
             text-decoration: none;
             border-bottom: none;
             cursor: pointer;
-            background-image: none;
         }
     }
-    &-description {
+    &-aboutImg{
+        fill: $brand-color;
+        transition: all 0.1s ease-in-out 0;
+
+        &:hover {
+            transition: all 0.1s ease-in-out 0;
+            fill: white;
+        }
+    }
+
+    &::before {
+        content: '';
         position: absolute;
-        width: 50%;
-        right: 0;
-        top: 0;
-        padding: 3em 3em 2em;
-        line-height: 2;
+        width: 100%;
         height: 100%;
-        background-color: lighten(#22313F, 5%);
+        outline: 1px solid red;
+        top: 0;
+        background-color: #2C3031;
+        z-index: -1;
+
+        margin: 0 -999em;
+        padding: 0 999em;
     }
 }
 
@@ -114,13 +109,11 @@
         position: relative;
         border-bottom: none;
         line-height: 2;
-        background-image: none;
 
         &:hover {
-            color: $brand-color;
+            color: #0a5;
             text-decoration: none;
             border-bottom: none;
-            background-image: none;
         }
         &:hover::before {
             visibility: visible;
@@ -134,7 +127,7 @@
             height: 2px;
             bottom: -5px;
             left: 0;
-            background-color: $brand-color;
+            background-color: #0a5;
             visibility: hidden;
             transform: scaleX(0);
             transition: all 0.3s ease-in-out 0;
@@ -146,16 +139,10 @@
         letter-spacing: 1.5px;
         text-transform: uppercase;
         display: block;
-        -moz-font-feature-settings:"lnum" 1; 
--moz-font-feature-settings:"lnum=1"; 
--ms-font-feature-settings:"lnum" 1; 
--o-font-feature-settings:"lnum" 1; 
--webkit-font-feature-settings:"lnum" 1; 
-font-feature-settings:"lnum" 1;
     }
     &-excerpt {
         font-size: 1.1em;
-        
+        color: #666;
     }
     &-readMore {}
     &-backToHome {
@@ -186,13 +173,11 @@ font-feature-settings:"lnum" 1;
         color: #333;
         letter-spacing: .5px;
         line-height: 2;
-        background-image: none;
 
         &:hover {
-            color: $brand-color;
-            border-bottom: 2px solid $brand-color;
+            color: #0a5;
+            border-bottom: 2px solid #0a5;
             text-decoration: none;
-            background-image: none;
         }
     }
 }
@@ -205,28 +190,33 @@ font-feature-settings:"lnum" 1;
  **/
 
 #adpacks {
+    outline: 1px solid #EEE;
     line-height: 1.5;
+    margin: 0 auto;
+    background-color: #F8FAFF;
     display: block;
-    
-    max-width: 375px;
-    height: 130px;
-    
-    font-size: 16px;
+    padding: 15px;
+    max-width: 350px;
+    min-width: 160px;
+    min-height: 130px;
+    font-size: 14px;
+    position: absolute;
     transition: all .25s ease 0;
+    right: 0;
+    top: -.5em;
     text-align: left;
 
     &:hover {
         transition: all .25s ease;
         outline: 1px solid #ddd;
-        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+        background-color: #F3F6FF;
     }
 }
 
 .adpacks-img {
     display: inline;
-    float: left;
+    float: right;
     border-bottom: none;
-    background-image: none;
 
     img {
         margin-bottom: 0;
@@ -235,7 +225,6 @@ font-feature-settings:"lnum" 1;
 
     &:hover {
         border-bottom: none !important;
-        background-image: none;
     }
 }
 
@@ -243,35 +232,31 @@ font-feature-settings:"lnum" 1;
     text-decoration: none;
     color: #778095;
     display: block;
-    margin-left: 145px;
+    margin-right: 145px;
     vertical-align: top;
     line-height: 1.5;
     border-bottom: none;
     text-align: left;
-    background-image: none;
 
     &:hover {
         color: #333 !important;
         border-bottom: none !important;
-        background-image: none;
     }
 }
 
 .adpacks-poweredby {
-    color: $brand-color;
+    color: #0a5;
     padding-left: 0px;
     display: block;
     margin-top: 3px;
     text-align: left;
-    margin-left: 145px;
+    margin-right: 145px;
     position: relative;
     border-bottom: none;
-    background-image: none;
 
     &:hover {
         color: #0a0 !important;
         border-bottom: none !important;
-        background-image: none;
     }
 }
 
@@ -291,7 +276,7 @@ font-feature-settings:"lnum" 1;
     &-prev {
         display: inline-block;
         float: left;
-        
+        background-color: whiteSmoke;
         padding: 0 .5em;
         margin-left: 0;
     }
@@ -301,31 +286,28 @@ font-feature-settings:"lnum" 1;
     &-prevLink--disabled {
         color: #999;
         border-bottom: none;
-        background-image: none;
 
         &:hover {
             color: #999;
             pointer: none;
             border-bottom: none;
-            background-image: none;
         }
     }
 
     &-next {
-        display: inline-block;   
+        display: inline-block;
+        background-color: whiteSmoke;
         padding: 0 .5em;
     }
     &-nextLink {}
     &-nextLink--disabled {
         color: #999;
         border-bottom: none;
-        background-image: none;
 
         &:hover {
             color: #999;
             pointer: none;
             border-bottom: none;
-            background-image: none;
         }
     }
 }
@@ -339,17 +321,15 @@ font-feature-settings:"lnum" 1;
 
 .footer {
     border-top: 1px solid #eee;
-    position: relative;
-    border-top: 1px solid #E5E5E5;
-    background-color: darken(#F3F5F7, 5%);
-    color: #6F7C82;
-    overflow: hidden;
-    
+    background-color: #2C3031;
+    color: #9ab;
+    padding-bottom: 1.5em;
+
     a {
         border-bottom: none;
 
         &:hover {
-            color: $brand-color;
+            color: white;
             border-bottom: 1px solid white;
         }
     }
@@ -367,10 +347,118 @@ font-feature-settings:"lnum" 1;
         line-height: 1.5;
         text-overflow: ellipsis;
         color: #333;
-        border-bottom: 1px solid #ECF0F2;
+    }
+    &-about {
+        max-width: 800px;
+        width: 100%;
+        margin: 3.5em auto 2.5em;
+        display: block;
+    }
+    &-details {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto 3.5em;
+        position: relative;
+    }
+    &-social {
+        width: 100%;
+        text-align: left;
+        display: block;
+
+        margin: 2.5em auto;
+        max-width: 800px;
+
+        &Icon {
+            width: 33.333333%;
+            list-style: none;
+            text-align: left;
+            margin-bottom: 1.5em;
+            float: left;
+            margin-left: 0;
+            background-color: #3c4243;
+            border: 2px solid #2C3031;
+            padding: .5em 1em .5em;
+
+            &:nth-child(1) {
+                text-align: left;
+                border-left: none;
+            }
+            &:nth-child(2) {
+                text-align: center;
+                border-left: none;
+                border-right: none;
+            }
+            &:nth-child(3) {
+                text-align: right;
+                border-right: none;
+            }
+
+            &Link {
+                line-height: 1;
+                display: inline-block;
+
+                text-transform: capitalize;
+
+                &:hover {
+                    border-bottom: none !important;
+                }
+            }
+        }
+    }
+    &-copyright {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &-copyrightYear {
+        &::after {
+            content: ' – Pankaj Parashar.';
+        }
+    }
+    &-backToTop {
+        float: right;
+        line-height: 1;
+        margin-top: .5em;
+
+        &:hover {
+            color: white;
+            border-bottom: 1px solid white;
+            cursor: pointer;
+        }
     }
 }
 
+.sub-text {
+    display: block;
+    color: #9ab;
+    font-style: normal;
+    padding: 0 .1em;
+    line-height: 1.5;
+}
+
+.social__icon--link:hover,
+.social__icon--link:hover ~ .sub-text {
+    transition: .5s;
+    opacity: 1;
+    color: #c03;
+}
+
+.email, .rss, .sitemap {
+    color: #9ab;
+
+    &:hover {
+        border-bottom: none !important;
+    }
+}
+
+.sitemap {
+    margin-left: 1em;
+}
+
+.availability {
+    color: #c04;
+    text-shadow: 0 1px rgba(0, 0, 0, .1);
+}
 
 /**
  * -------------
@@ -378,3 +466,31 @@ font-feature-settings:"lnum" 1;
  * -------------
  *
  **/
+
+@media screen and (max-width: 839px) {
+    .post, 
+    .footer-about,
+    .footer-details,
+    .footer-copyright,
+    .footer-social,
+    .header {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    figcaption {
+        line-height: 1.75;
+    }
+    #adpacks {
+        display: block;
+        position: relative;
+        margin-top: 2.5em;
+        margin-bottom: -1em;
+        text-align: left;
+    }
+    .footer-details {
+        text-align: center;
+    }
+    .header-about {
+        margin-top: -.25em;
+    }
+}

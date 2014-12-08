@@ -3,6 +3,7 @@ layout: link
 title: Jack Morgan on Squared logo
 type: link
 link: http://jackwmorgan.com/squared/
+
 ---
 
 [Jack Morgan](http://jackwmorgan.com) did an awesome job in redesigning the brand/identity of [Squared](http://www.wearesquared.com/) (also known as 'We are Squared'). In this article, Jack will take you through the brainstorming process of designing a logo (in great depth) in an attempt to create something brutally simple, yet tastefully inspired and instantly recognisable.
@@ -12,7 +13,4 @@ link: http://jackwmorgan.com/squared/
     <figcaption>The awesome Square corner depicting the Square logo created by Jack Morgan.</figcaption>
 </figure>
 
-Since the last time I published this, the Squared logo has been further rebranded by Jack Morgan. The link below has been 
-updated with the latest version followed by the original version.
-
-[Read more on Squared](http://jackwmorgan.com/rebranding-google-squared/) - [Original](http://jackwmorgan.com/squared/)
+[Read more on Squared](http://jackwmorgan.com/squared/)
