@@ -13,3 +13,8 @@ permalink: pretty
 paginate: 15
 permalink: /posts/:title
 paginate_path: 'page/:num'
+
+# Sass
+sass:
+  sass_dir: css
+  style: :compressed

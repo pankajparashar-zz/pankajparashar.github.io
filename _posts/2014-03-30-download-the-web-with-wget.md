@@ -61,3 +61,8 @@ $ wget ftp://cdn.pankajparashar.com/file.txt
 
 # FTP download using wget with username and password authentication.
 $ wget --ftp-user=USERNAME --ftp-password=PASSWORD ftp://cdn.pankajparashar.com/file.txt{% endhighlight %}
+
+<figure>
+    <img src="http://img.labnol.org/di/wget-mirror-site.png" title="WGET Cheatsheet">
+    <figcaption>WGET cheatsheet via @labnol - <a href="http://www.labnol.org/software/wget-command-examples/28750/">All the Wget Commands You Should Know</a></figcaption>
+</figure>
