@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Modify pseudo elements CSS via JS</title>
+
+    <meta name="description" content="Hello. I am Pankaj Parashar, 24yrs old front-end designer and web developer from Mumbai, India.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+    <body>
+        
+<header class="header" role="banner">
+    <h1 class="header-title">
+        <a href="/" title="Designer. Developer. Writer" class="header-titleLink" itemprop="author" itemscope itemtype="http://schema.org/Person">Pankaj Parashar</a>
+    </h1>
+    <p class="header-subTitle">Developer. Designer. Writer.
+        <label class="header-about" for="about">
+            <svg width="25px" height="25px" viewBox="0 0 100 100">
+                <path class="header-aboutImg" d="M50.4444444,0 C22.8888889,0 0.444444444,22.4444444 0.444444444,50 C0.444444444,77.5555556 22.8888889,100 50.4444444,100 C78,100 100.444444,77.5555556 100.444444,50 C100.444444,22.4444444 78,0 50.4444444,0 L50.4444444,0 Z M57.4444444,82.5555556 L43.4444444,82.5555556 L43.4444444,37.2222222 L57.5555556,37.2222222 L57.5555556,82.5555556 L57.4444444,82.5555556 Z M50.3333333,31.6666667 C45.8888889,31.6666667 42.8888889,28.5555556 43,24.6666667 C42.8888889,20.5555556 45.8888889,17.5555556 50.4444444,17.5555556 C55,17.5555556 57.8888889,20.6666667 58,24.6666667 C58,28.4444444 55,31.6666667 50.3333333,31.6666667 L50.3333333,31.6666667 Z"></path>
+            </svg>
+        </label>
+    </p>
+    <input type="checkbox" id="about">
+    <div class="header-description">
+        <h2 class="header-descriptionTitle">Hi. there..</h2>
+        <p>I'm 25yo frontend designer and web developer from Mumbai, India. I <a href="#">make things</a> for the web and write about them on <a href="#">my blog here</a>.</p>
+    </div>
+</header>
+
+
+        <section role="main">
+            <article itemtype="http://schema.org/Article" class="post">
+    <time itemprop="datePublished" content='01.May.2014' class="post-pubDate">01.May.2014</time>
+    <h2 class="post-title">
+        <a class="post-titleLink" href="" itemprop="name">Modify pseudo elements CSS via JS</a>
+    </h2>
+    <p class="post-excerpt">Quite often I run into situations where I need to modify the CSS styles of the pseudo elements dynamically. This post shows you different ways in which it can be done!</p>
+    <p>Sample markup and styles to start with,</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;red&quot;</span><span class="nt">&gt;</span>Hi, this is a plain-old, sad-looking paragraph tag.<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+<div class="highlight"><pre><code class="css"><span class="nc">.red</span><span class="o">:</span><span class="nd">:before</span> <span class="p">{</span>
+    <span class="k">content</span><span class="o">:</span> <span class="s1">&#39;red&#39;</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<blockquote>
+  <p><strong>Objective</strong><br />
+  To modify the color of the pseudo element - <code>.red::before</code> from <code>red</code> to <code>green</code>.</p>
+</blockquote>
+
+<p><strong>Method 1</strong><br />
+Write separate classes attached with psuedo element for each style and then using JavaScript or jQuery toggle between these classes.</p>
+
+<div class="highlight"><pre><code class="css"><span class="nc">.green</span><span class="o">:</span><span class="nd">:before</span> <span class="p">{</span>
+    <span class="k">content</span><span class="o">:</span> <span class="s1">&#39;green&#39;</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">green</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;green&#39;</span><span class="p">);</span></code></pre></div>
+
+<p><strong>Method 2</strong><br />
+Inject new styles to the existing document stylesheet directly either via JavaScript and the webpage will automatically reflect the new css.</p>
+
+<div class="highlight"><pre><code class="js"><span class="nb">document</span><span class="p">.</span><span class="nx">styleSheets</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">addRule</span><span class="p">(</span><span class="s1">&#39;.red::before&#39;</span><span class="p">,</span><span class="s1">&#39;color: green&#39;</span><span class="p">);</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">styleSheets</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">insertRule</span><span class="p">(</span><span class="s1">&#39;.red::before { color: green }&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span></code></pre></div>
+
+<p><strong>Method 3</strong><br />
+Create a new stylesheet and inject the modified rules to the newly created document stylesheet either via JavaScript or jQuery.</p>
+
+<div class="highlight"><pre><code class="js"><span class="c1">// Create a new style tag</span>
+<span class="kd">var</span> <span class="nx">style</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;style&quot;</span><span class="p">);</span>
+
+<span class="c1">// Append the style tag to head</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">head</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">style</span><span class="p">);</span>
+
+<span class="c1">// Grab the stylesheet object</span>
+<span class="nx">sheet</span> <span class="o">=</span> <span class="nx">style</span><span class="p">.</span><span class="nx">sheet</span>
+
+<span class="c1">// Use addRule or insertRule to inject styles</span>
+<span class="nx">sheet</span><span class="p">.</span><span class="nx">addRule</span><span class="p">(</span><span class="s1">&#39;.red::before&#39;</span><span class="p">,</span><span class="s1">&#39;color: green&#39;</span><span class="p">);</span>
+<span class="nx">sheet</span><span class="p">.</span><span class="nx">insertRule</span><span class="p">(</span><span class="s1">&#39;.red::before { color: green }&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span></code></pre></div>
+
+<p>or jQuery …</p>
+
+<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;&lt;style&gt;.red::before{color:green}&lt;/style&gt;&#39;</span><span class="p">).</span><span class="nx">appendTo</span><span class="p">(</span><span class="s1">&#39;head&#39;</span><span class="p">);</span></code></pre></div>
+
+<p><strong>Method 4</strong><br />
+At times you need the fetch the value of the property from the existing ruleset and then make the modifications based on some logic.</p>
+
+<div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">str</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">getComputedStyle</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.red&#39;</span><span class="p">),</span> <span class="s1">&#39;::before&#39;</span><span class="p">).</span><span class="nx">getPropertyValue</span><span class="p">(</span><span class="s1">&#39;content&#39;</span><span class="p">);</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">styleSheets</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">addRule</span><span class="p">(</span><span class="s1">&#39;.red::before&#39;</span><span class="p">,</span><span class="s1">&#39;content: &quot;&#39;</span> <span class="o">+</span> <span class="nx">str</span> <span class="o">+</span> <span class="nx">str</span> <span class="o">+</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">);</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">styleSheets</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">insertRule</span><span class="p">(</span><span class="s1">&#39;.red::before { content: &quot;&#39;</span> <span class="o">+</span> <span class="nx">str</span> <span class="o">+</span> <span class="nx">str</span> <span class="o">+</span> <span class="s1">&#39;&quot; }&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span></code></pre></div>
+
+<p><strong>Method 5</strong><br />
+We can alter a different DOM attribute of the element by combining it with the content property, we can change the content (but not other properties, like margin or color) of pseudo elements dynamically.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;red&quot;</span> <span class="na">data-attr=</span><span class="s">&quot;red&quot;</span><span class="nt">&gt;</span>Hi, this is plain-old, sad-looking paragraph tag.<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+<div class="highlight"><pre><code class="css"><span class="nc">.red</span><span class="o">:</span><span class="nd">:before</span> <span class="p">{</span>
+    <span class="k">content</span><span class="o">:</span> <span class="n">attr</span><span class="p">(</span><span class="n">data</span><span class="o">-</span><span class="n">attr</span><span class="p">);</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.red&#39;</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;data-attr&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">);</span></code></pre></div>
+
+    <p>Did you enjoy reading this article? I'd love to hear your thoughts. Shoot me an <a href="mailto:email@pankajparashar.com">email</a> or send me a <a href="https://twitter.com/intent/tweet?via=pankajparashar&text=Modify pseudo elements CSS via JS">tweet</a> if you've got any comments.</p>
+    <p><a href="/" class="post-backToHome">Back to Home</a></p>
+</article>
+        </section>
+
+        <footer role="contentinfo" class="footer">
+
+    <form action="http://google.com/search?q=" target="_blank" onsubmit="location.href = this.action + this.search.value + ' site:pankajparashar.com'; return false;" method="post">
+        <input type="search" role="search" placeholder="Search this website + press enter..." autocomplete="off" class="footer-search" name="search">
+    </form>
+    
+    <div class="footer-details">
+       <ul>
+           <li>
+                <dl>
+                    <dt>Find me elsewhere</dt>
+                    <dd><a href="http://codepen.io/pankajparashar">Codepen</a></dd>
+                    <dd><a href="http://github.com/pankajparashar">Github</a></dd>
+                    <dd><a href="http://twitter.com/pankajparashar">Twitter</a></dd>
+                    
+                    <dt>Miscellaneous</dt>
+                    <dd><a href="/feed.xml">RSS Feed</a> • <a href="/sitemap.xml">Sitemap</a></dd>
+                </dl>
+            </li><!--
+            --><li>
+               <p>Sponsored via Adpack</p>
+                <script async src="//cdn.adpacks.com/adpacks.js?zoneid=1386&serve=C6SI42Y&placement=pankajparashar" id="_adpacks_js"></script>
+            </li>
+        </ul>        
+    </div>
+
+    <div class="footer-copyright">
+        <p>Got any interesting idea or a project to talk about? drop me a line at <a href="#">email@pankajparashar.com</a> or send me a tweet at <a href="#">@pankajparashar</a>.</p>
+        <p>
+            <span class="footer-copyrightYear">©2014 — Pankaj Parashar</span> • <a class="footer-backToTop" role="button" onClick="window.scrollTo(0,0);">Back to top</a>
+        </p>
+    </div>
+</footer>
+    </body>
+</html>

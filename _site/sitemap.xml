@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/practical-aria-examples</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/pedantic-python</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/building-a-custom-element-with-polymer</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/introduction-to-polymer</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/python-regular-expressions</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/holy-grail-of-script-loading</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/designers-guide-to-dpi</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/negative-margin-positive-padding</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/random-colors-sass</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/geek-of-the-week</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/freelance-writing-infographics</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/minimal-business-card-design</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/reading-position-indicator</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/modify-pseudo-elements-css</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/the-heartbleed-bug</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/download-the-web-with-wget</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/w3c-css-mistakes</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/codepen-rodeo-s03w01</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/rss-to-email</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/github-hosted-comments</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/unix-file-permissions</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/net-awards-2014</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/font-face-chrome-saga</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/custom-domain-github-pages</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/my-frontend-build-tool-wishlist</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/css-selectors-level-3</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/effective-shorthand-css-techniques</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/the-html5-meter-element</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/open-type-font-features</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/the-html5-progress-element</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/jack-morgan-squared-logo</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/why-do-i-hate-css-preprocessors</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/getting-to-grips-with-the-html5-file-api</loc>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/posts/dissecting-html5-boilerplate-4.0</loc>
+      <priority>0.5</priority>
+    </url>
+  
+  
+    <url>
+      <loc>http://pankajparashar.com/feed.xml</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/index.html</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/projects/index.html</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/sitemap.xml</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/css/style.css</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/page/2/index.html</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+  
+    <url>
+      <loc>http://pankajparashar.com/page/3/index.html</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+  
+</urlset>

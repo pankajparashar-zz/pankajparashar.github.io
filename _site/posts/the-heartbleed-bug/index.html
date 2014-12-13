@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The HeartBleed bug</title>
+
+    <meta name="description" content="Hello. I am Pankaj Parashar, 24yrs old front-end designer and web developer from Mumbai, India.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+    <body>
+        
+<header class="header" role="banner">
+    <h1 class="header-title">
+        <a href="/" title="Designer. Developer. Writer" class="header-titleLink" itemprop="author" itemscope itemtype="http://schema.org/Person">Pankaj Parashar</a>
+    </h1>
+    <p class="header-subTitle">Developer. Designer. Writer.
+        <label class="header-about" for="about">
+            <svg width="25px" height="25px" viewBox="0 0 100 100">
+                <path class="header-aboutImg" d="M50.4444444,0 C22.8888889,0 0.444444444,22.4444444 0.444444444,50 C0.444444444,77.5555556 22.8888889,100 50.4444444,100 C78,100 100.444444,77.5555556 100.444444,50 C100.444444,22.4444444 78,0 50.4444444,0 L50.4444444,0 Z M57.4444444,82.5555556 L43.4444444,82.5555556 L43.4444444,37.2222222 L57.5555556,37.2222222 L57.5555556,82.5555556 L57.4444444,82.5555556 Z M50.3333333,31.6666667 C45.8888889,31.6666667 42.8888889,28.5555556 43,24.6666667 C42.8888889,20.5555556 45.8888889,17.5555556 50.4444444,17.5555556 C55,17.5555556 57.8888889,20.6666667 58,24.6666667 C58,28.4444444 55,31.6666667 50.3333333,31.6666667 L50.3333333,31.6666667 Z"></path>
+            </svg>
+        </label>
+    </p>
+    <input type="checkbox" id="about">
+    <div class="header-description">
+        <h2 class="header-descriptionTitle">Hi. there..</h2>
+        <p>I'm 25yo frontend designer and web developer from Mumbai, India. I <a href="#">make things</a> for the web and write about them on <a href="#">my blog here</a>.</p>
+    </div>
+</header>
+
+
+        <section role="main">
+            <article itemtype="http://schema.org/Article" class="post">
+    <time itemprop="datePublished" content='12.April.2014' class="post-pubDate">12.Apr.2014</time>
+    <h2 class="post-title">
+        <a class="post-titleLink" href="" itemprop="name">The HeartBleed bug</a>
+    </h2>
+    <p class="post-excerpt">The encryption flaw that punctured the heart of the Internet and has left almost two-thirds of the world's websites vulnerable to attack by hackers.</p>
+    <p>This <a href="http://heartbleed.com/">bug</a> was discovered on April 07, 2014, by Neel Mehta from Google Security and the team of security engineers (Riku, Antti and Matti) from Codenomicon and has affacted v1.0.1 and 1.0.2-beta releases of OpenSSL including 1.0.1f and 1.0.2-beta1.</p>
+
+<p><a href="http://xkcd.com/1354/">XKCD does a better job</a> of explaining a lay man’s version of the bug. For a more technical description, I would recommend reading <a href="http://blog.cloudflare.com/answering-the-critical-question-can-you-get-private-ssl-keys-using-heartbleed">Cloudfare’s</a> version of explanation. They even had a <a href="https://www.cloudflarechallenge.com/heartbleed">challenge page</a> setup to lure hackers to expose the vulnerabilities of the web server by hacking in to the private key of the SSL certificate.</p>
+
+<p>Within 3 hours, <a href="https://twitter.com/indutny">Fedor Indutny</a>, a core team member of Node.js <a href="https://twitter.com/indutny/statuses/454761620259225600">cracked</a> the encryption and made the <a href="https://gist.github.com/indutny/a11c2568533abcf8b9a1">RSA key public</a>. Someone also added a bounty on <a href="https://news.ycombinator.com/item?id=7573679">Hacker News</a> for whoever published and confirmed successful completion of this challenge.</p>
+
+<p><strong>The Bug</strong></p>
+
+<p>The Heartbleed bug, revealed on Monday, was the product of a fluke introduced by a young German researcher. He admitted that he had unintentionally introduced the bug on New Year’s Eve 2011 while working on bug fixes for OpenSSL.</p>
+
+<p>The bug was missing a bound check in the handling of the TLS heartbeat extension that can be used to reveal up to 64k of memory to a connected client or server. The precise flaw in the source code is illustrated <a href="https://github.com/openssl/openssl/commit/96db9023b881d7cd9f379b0c154650d6c108e9a3#diff-2">here</a> on Github, touted as a billion dollar mistake due to poor coding implementation which resulted into this bug.</p>
+
+    <p>Did you enjoy reading this article? I'd love to hear your thoughts. Shoot me an <a href="mailto:email@pankajparashar.com">email</a> or send me a <a href="https://twitter.com/intent/tweet?via=pankajparashar&text=The HeartBleed bug">tweet</a> if you've got any comments.</p>
+    <p><a href="/" class="post-backToHome">Back to Home</a></p>
+</article>
+        </section>
+
+        <footer role="contentinfo" class="footer">
+
+    <form action="http://google.com/search?q=" target="_blank" onsubmit="location.href = this.action + this.search.value + ' site:pankajparashar.com'; return false;" method="post">
+        <input type="search" role="search" placeholder="Search this website + press enter..." autocomplete="off" class="footer-search" name="search">
+    </form>
+    
+    <div class="footer-details">
+       <ul>
+           <li>
+                <dl>
+                    <dt>Find me elsewhere</dt>
+                    <dd><a href="http://codepen.io/pankajparashar">Codepen</a></dd>
+                    <dd><a href="http://github.com/pankajparashar">Github</a></dd>
+                    <dd><a href="http://twitter.com/pankajparashar">Twitter</a></dd>
+                    
+                    <dt>Miscellaneous</dt>
+                    <dd><a href="/feed.xml">RSS Feed</a> • <a href="/sitemap.xml">Sitemap</a></dd>
+                </dl>
+            </li><!--
+            --><li>
+               <p>Sponsored via Adpack</p>
+                <script async src="//cdn.adpacks.com/adpacks.js?zoneid=1386&serve=C6SI42Y&placement=pankajparashar" id="_adpacks_js"></script>
+            </li>
+        </ul>        
+    </div>
+
+    <div class="footer-copyright">
+        <p>Got any interesting idea or a project to talk about? drop me a line at <a href="#">email@pankajparashar.com</a> or send me a tweet at <a href="#">@pankajparashar</a>.</p>
+        <p>
+            <span class="footer-copyrightYear">©2014 — Pankaj Parashar</span> • <a class="footer-backToTop" role="button" onClick="window.scrollTo(0,0);">Back to top</a>
+        </p>
+    </div>
+</footer>
+    </body>
+</html>
