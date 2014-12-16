@@ -11,7 +11,7 @@ In Python, the module that deals with regular expressions is called [re](https:/
 import re
 {% endhighlight %}
 
-### Basic patterns
+#### Basic patterns
 
 The power of regular expressions is that they can specify patterns, not just fixed characters. Here are the most basic patterns used for pattern matching,
 
@@ -32,14 +32,15 @@ The power of regular expressions is that they can specify patterns, not just fix
 `\Z` - Matches only at the end of the string even in MULTILINE mode  
 `\b` - Matches only the beginning or end of the word  
 
-> The `r` at the start of the pattern string designates a python **raw** string which passes through backslashes without change which is very handy for regular expressions (Java needs this feature badly!). I recommend that you always write pattern strings with the `r` just as a habit.
+> The `r` at the start of the pattern string designates a python raw string which passes through backslashes without change which is very handy for regular expressions (Java needs this feature badly!). I recommend that you always write pattern strings with the `r` just as a habit.
 
 **Examples**  
+
 Match ordinary characters like `iii`  
 {% highlight python %}
 >>> match = re.search(r'iii', 'piiig')
 'iii'
-{% endhighlight %}  
+{% endhighlight %}
   
 Match a single character using `.`
 {% highlight python %}
@@ -116,7 +117,7 @@ Match any decimal digit between 0-9
 > Inside the square bracket `[]`, dot `.` means literal dot. Hence, no need to escape them. To use a dash `-` inside a square bracket
 without indicating a range, put it at the end of the possible values like, `[a-zA-Z-]`. An up-hat `(^)` at the start of a square-bracket set inverts it, so `[^ab]` means any char except 'a' or 'b'.
 
-### Repetitions
+#### Repetitions
 
 It becomes quite tediuos to represent a repeating pattern. Fortunately, regex handles this gracefully with the following
 expressions,
@@ -149,7 +150,7 @@ Matche zero or one character using `?`
 
 > There is an extension to regular expression where you add a `?` at the end, such as `.*?` or `.+?`, changing them to be non-greedy. Now they stop as soon as they can. So to match a pattern like `<b>bold></b><i>italic</i>` we could use the regex `<.*?>` to get this `['<b>', '</b>', '<i>', '</i>']`
 
-### .search() and .findall() and .compile()
+#### .search() and .findall() and .compile()
 
 `findall()` matches all occurrences of a pattern in a string, but `search()` finds only the first occurrence of the pattern within the string while traversing from left-to-right.
 
@@ -174,7 +175,7 @@ For example, lets find out all the occurences of email address from the given st
 ['foo']
 {% endhighlight %}
 
-### Optional flags
+#### Optional flags
 
 These are functions that take options to modify the behavior of the pattern match. The option flag is added as an extra argument to the `search()` or `findall()` etc., e.g. `re.search(pat, str, re.IGNORECASE)`. Flags are available in the re module under two names, a long name such as `IGNORECASE` and a short, one-letter form such as `I`. Multiple flags can be specified by bitwise OR-ing them; `re.I | re.M` sets both the I and M flags.
 

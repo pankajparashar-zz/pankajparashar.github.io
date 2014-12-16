@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Random colors in Sass
+title: Random Colors in Sass
 type: post
 excerpt: Randomly generating numbers in Sass is easy using the random() function that was released in v3.3. Interestingly, we can extend this concept to randomly generate colors as well.
 
@@ -52,7 +52,8 @@ To counter this problem, [I created a string template](https://twitter.com/panka
 }
 {% endhighlight %}
 
-### Scalable
+  
+#### Scalable
 The above code is good if you are sparingly using this concept, however, it is always better we can improvise this idea into a scalable solution with much more color format options and easy-to-use configuration. 
 
 Let's create a random color component using Sass maps,

@@ -1,9 +1,8 @@
 ---
 layout: post
-title: My frontend build tool wishlist...
+title: Frontend build tool wishlist
 type: post
 excerpt: For quite a long time now, I have been toying around an idea of a perfect build tool to deploy front-end projects. This article is all about my wishlist from such a tool.
-
 ---
 
 Assuming, you have completed the development work on the frontend of your next web project and are ready to deploy it in production. A typical project involves concatenating and minifying the assets, checking the code for errors, compressing the images and testing it across different combination and breed of browsers, devices and operating system. So, here goes my wishlist,
@@ -16,7 +15,7 @@ Compilation > Linting > Concatenation > Compression > Miscellaneous
 
 Hence, I have divided the build task into the following categories,
 
-### Compilation
+#### Compilation
 
 If you use some kind of a pre-processor in your workflow to write your HTML, CSS or JavaScript, the compilation of code into its raw form naturally becomes the first step of any build task.
 
@@ -25,21 +24,21 @@ If you use some kind of a pre-processor in your workflow to write your HTML, CSS
 - [Compass](http://compass-style.org/) / [Bourbon](http://bourbon.io/) to CSS.
 - [CoffeeScript](http://coffeescript.org/) / [LiveScript](http://livescript.net/) / [TypeScript](http://www.typescriptlang.org/) to JavaScript.
 
-### Linting
+#### Linting
 
 Linting refers to validating your code against errors, suspicous code and checking if the code corresponds to a certain style guidelines.
 
 - Lint all `.html`, `.css` and `.js` files.
 - Should have the ability to configure linting rules and flexiblity to add new style guidelines rules.
 
-### Concatenation
+#### Concatenation
 
 Concatenation combines several files of the same type into a single file so that you can reduce the number of HTTP requests to the server.
 
 - Combining `.css` and `.js` files separately with added flexiblity to choose the order in which the files are merged.
 - Sprite all background images into a single image file and update the CSS code with the correct background url and position value of each image.
 
-### Compression
+#### Compression
 
 Compression helps reduce the overall size of the resource being transferred across the network. Following are some of the ways we can achieve compression,
 
@@ -48,7 +47,7 @@ Compression helps reduce the overall size of the resource being transferred acro
 - Generate source maps for CSS and JS files to define an exact mapping between the production code and the authored code.
 - Remove unused CSS rulesets.
 
-### Hashing
+#### Hashing
 
 Using hash-ed filenames in addition to the Expiry headers, can help bust the cache without worrying about old assets wreaking havoc on your site.
 
@@ -57,7 +56,7 @@ Using hash-ed filenames in addition to the Expiry headers, can help bust the cac
 - It should also have the ability to choose a pre-defined algorithm like [MD5](http://en.wikipedia.org/wiki/MD5), [SHA1](http://en.wikipedia.org/wiki/SHA-1), [SHA2](http://en.wikipedia.org/wiki/SHA-2) etc. or a custom algorithm to generate the hash value.
 - An added flexibility to define the number of characters, salt of the output value.
 
-### Miscellaneous
+#### Miscellaneous
 
 Some of the tasks that do not belong to any of the aforementioned categories are below,
 
@@ -76,7 +75,7 @@ Some of the tasks that do not belong to any of the aforementioned categories are
 - Identify all the links (both external/internal) that no-longer exists or doesn't return HTTP 200.
 - Generate documentation of the entire project supported with CSS Style Guides and JavaScript functions.
 
-### Grulp Project
+#### Grulp Project
 
 I understand that no build tool would ever be able to meet the outrageous demands of the list above. However, I started with a [project on Github](https://github.com/pankajparashar/grulp) to compile a list of ready-to-use grunt/gulp plugins that accomplishes most of the tasks.
 

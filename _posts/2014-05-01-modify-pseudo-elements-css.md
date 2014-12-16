@@ -1,9 +1,8 @@
 ---
 layout: post
-title: Modify pseudo elements CSS via JS
+title: Modify pseudo element styles with JavaScript
 type: post
 excerpt: Quite often I run into situations where I need to modify the CSS styles of the pseudo elements dynamically. This post shows you different ways in which it can be done!
-
 ---
 
 Sample markup and styles to start with,
@@ -19,8 +18,8 @@ Sample markup and styles to start with,
 }
 {% endhighlight %}
 
-> **Objective**  
-  To modify the color of the pseudo element - `.red::before` from `red` to `green`.
+> Objective -  
+To modify the color of the pseudo element - `.red::before` from `red` to `green`.
 
 **Method 1**  
 Write separate classes attached with psuedo element for each style and then using JavaScript or jQuery toggle between these classes.

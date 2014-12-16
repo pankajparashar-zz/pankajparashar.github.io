@@ -3,21 +3,19 @@ layout: post
 title: Github pages with custom domain
 type: post
 excerpt: Setup custom domain on the user page and then all the project pages of Github repositories will automatically appear under the same url.
-
 ---
 
-Github provides two types of pages,
-
-- User pages
+Github provides two types of pages,  
+- User pages  
 - Project pages
 
-### User pages
+#### User pages
 
 It is nothing but a Github repository with a special name `username.github.io` and all the contents of this repository must be in the `master` branch. For example, [pankajparashar.github.io](https://github.com/pankajparashar/pankajparashar.github.io) is a repository for user pages under my Github username, [pankajparashar](https://github.com/pankajparashar).
 
 By default, the user pages are available under the url, `http://username.github.io`.
 
-### Project pages
+#### Project pages
 
 Project pages are project specific files lying in the `gh-pages` branch of the repository. These pages can be accessed via the url `username.github.io/repository_name`.
 
@@ -28,7 +26,7 @@ Repository name -> Color Stack
 URL -> http://pankajparashar.github.io/color-stack
 {% endhighlight %}
 
-### Custom domain
+#### Custom domain
 
 Now, coming to the meat of the article, custom domain can be set for both user and project pages. Moreover, the steps to setup the domain also remains the same for both the categories. However, this article will only deal with setting up custom domain for the user pages only.
 

@@ -3,7 +3,6 @@ layout: link
 title: Reading Position Indicator
 type: link
 link: http://css-tricks.com/reading-position-indicator/
-
 ---
 
 Thanks to [Chris](http://chriscoyier.net/), I once again got the amazing opportunity to write this article as a guest author for [CSS-Tricks](http://css-tricks.com/) and also got featured on,
@@ -15,5 +14,3 @@ Thanks to [Chris](http://chriscoyier.net/), I once again got the amazing opportu
     <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1398621227/examples_dglnrr.png" style="border:1px solid #ddd">
     <figcaption>a. <a href="http://paulstamatiou.com/">Stammy's</a> blog uses a red color progress bar b. <a href="http://benfrain.com/">Ben Frain's</a> website displays the number of words left c. <a href="http://ia.net/">Information Architects</a> show "minutes left" to indicate the current reading position.</figcaption>
 </figure>
-
-[Read on CSS-Tricks](http://css-tricks.com/reading-position-indicator/)

@@ -31,7 +31,7 @@ The Unix file permissions can be visualized in two forms,
                               symbolic link (l)
                               socket (s){% endhighlight %}
 
-### 1. Symbolic mode
+#### 1. Symbolic mode
 
 In bit mode, the permissions are represented using the characters `r`, `w`, `x`, `s`, `S`, `t`, `T`. The table below expands more on what each character stands for,
 
@@ -55,7 +55,7 @@ Joe has read/write/execute permissions on the file `/usr/bin/cat`. However, all 
 
 > The `root` user is special. `root` is granted `rwx` to all directories and `rw` to all files. On a file, if any of the 3x bits are set, then root has execute permission. This special permission is often disabled on network mounted filesystems.
 
-### 2. Octal mode
+#### 2. Octal mode
 
 {% highlight sh %}> OCTAL MODE
 0   0   0   0
@@ -113,9 +113,7 @@ For example,
 
 If the first of the four digits is `0` then it means that the file doesn't have any of the setuid, setgid or sticky bit present on it. Generally, the leading `0` can be omitted.
 
-### The Special Bits  
-
-1. Set UID and Set GID bits
+#### Set UID and Set GID bits
 
 Apart from the usual `rwx` bits, the UNIX permission system also has the `s` bit which stands for SetUID for user or SetGID for group. For a file, if this bit is defined, then the `x` is turned into `s` for the corresponding user/group/others. For example,
 
@@ -130,7 +128,7 @@ But `joe` wants to change his password. He can do that by running `/usr/bin/pass
 
 So the passwd program can change joe's password for him. The sgid bit works the same way, except it causes the passwd program to run with the group `sys` instead of joe's group. The suid and sgid do not get their own position in the `ls`. When the suid bit is set, `ls` displays a `s` rather than a `x` for the owner execute permission. 
 
-2. The Sticky Bit
+#### The Sticky Bit
 
 If the sticky bit is set on a directory, mere write permission on the directory is no longer enough to remove the files. You must additionally own the file or own the directory. 
 
@@ -156,7 +154,8 @@ Some examples using special bits,
 | rwxr-xr-T    1754 | sticky bit, but not executable by others
 +-------------------+{% endhighlight %}
 
-### Special cases  
+#### Special cases  
+
 **What do `rwx` really mean for a file?**  
 For a file, `r` and `w` permissions are self-explanatory. The `x` permission means that the user can run the file which either is an output from a compiler or a shell script. 
 
@@ -167,6 +166,7 @@ For a directory, things are a little more complex. A directory is a file too, an
 
 But you really cannot do very much without `x` permission. With directories, you usually have both read and execute permissions or neither. On a directory, `x` is officially called "search permission". You need `x` to use a directory in a pathname. So if you try `cat /etc/passwd`, you will need `x` on `/` and `/etc`. You also need `x` to cd into a directory.   
 
+{% highlight sh %}
 Case 1 - Only `r` permission on a directory  
 You can use `ls` to list the file names. But `ls -l` will not work. 
 
@@ -175,8 +175,9 @@ This is completely useless and grants nothing at all.
 
 Case 3 - Only `x` permission on a directory  
 When you have `x` permission but no `r` permission on a directory then you can open files in the directory if you happen to know the file's name. You can `cd` into the directory but cannot create a new file. Adding write permission will allow you to create files. And you can then delete files if you happen to know their name.
+{% endhighlight %}
 
-### How to get octal permissions for a file?
+#### How to get octal permissions for a file?
 
 File permissions in Linux can be displayed in octal format using Linux `stat` command. 
 
@@ -191,7 +192,7 @@ $ man stat
 %a  Access rights in octal
 %n  File name{% endhighlight %}
 
-### The umask command
+#### The umask command
 
 When a user creates a file or directory, it gets a default set of permissions. The user file-creation mode mask (`umask`) is used to determine the file permissions for newly created files. It can be used to control the default file permission for new files. It is a four-digit octal number. A umask can be set or expressed using:
 

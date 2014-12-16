@@ -3,7 +3,6 @@ layout: link
 title: Holy Grail of Script Loading
 type: link
 link: http://www.html5rocks.com/en/tutorials/speed/script-loading/
-
 ---
 
 Well, if you think loading script in HTML is as simple as including the `script` tag then you need to 
@@ -14,5 +13,3 @@ with each of them and how to circumvent problems.
 Obviously, there is no clear winner as each method comes with its own set of baggage. But,
 nevertheless the style of writing is extremely simple yet the depth of topic is immense which 
 is exactly what I like about Jake's writing.
-
-[Read the article](http://www.html5rocks.com/en/tutorials/speed/script-loading/)

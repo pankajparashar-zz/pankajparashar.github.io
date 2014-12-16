@@ -1,46 +1,36 @@
 ---
 layout: default
-title: Pankaj Parashar - Designer. Developer. Writer.
 ---
 
 {% for post in paginator.posts %}
-    <article itemscope itemtype="http://schema.org/Article" class="post">
-        <time itemprop="datePublished" content='{{ post.date | date: "%d.%B.%Y" }}' class="post-pubDate">{{ post.date | date: "%d.%b.%Y" }}</time>
-        {% if post.type == 'post' %}
-            <h2 clas="post-title">
-                <a class="post-titleLink" href="{{ post.url }}" itemprop="name" title="{{ post.title }}">{{ post.title }}</a>
-            </h2>
-            <p class="post-excerpt">{{ post.excerpt }}</p>
-            <p><a href="{{ post.url }}" class="post-readMore">Continue reading</a></p>
-        {% elsif post.type == 'link' %}
-            <h3 class="link-title">
-                <a class="link-titleLink" href="{{ post.link }}"  itemprop="name" title="{{ post.title }}">{{ post.title }}</a>
-            </h3>
-            {{ post.content }}
-       {% endif %}
-    </article>
+<article>
+    <time datetime="{{ post.date | date: '%d-%b-%Y' }}">{{ post.date | date: "%d.%b.%Y" }}</time>
+    {% if post.type == 'post' %}
+    <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    <p style="font-size:1.1em;color:#666">{{ post.excerpt }}</p>
+    <p><a href="{{ post.url }}">Continue reading ›</a></p>
+    {% elsif post.type == 'link' %}
+    <h3><a href="{{ post.link | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+    {{ post.content }}
+    <p><a href="{{ post.link }}">Read more ›</a></p>
+    {% endif %}
+</article>
 {% endfor %}
 
-<meta itemprop="articleSection" content="section">
-<meta itemprop="articleBody" content="article">
-
-<ul class="pagination">
-    <li class="pagination-prev">
-        {% if paginator.previous_page %}
-            {% if paginator.previous_page == 1 %}
-                <a href="/" class="pagination-prevLink" title="Previous">‹ Prev</a>
-            {% else %}
-                <a href="{{ paginator.previous_page_path }}" class="pagination-prevLink" title="Previous">‹ Prev</a>
-            {% endif %}
+<nav>
+    {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+            <a href="/" style="float:left">‹ Prev</a>
         {% else %}
-            <a class="pagination-prevLink--disabled" title="Previous">‹ Prev</a>
+            <a href="{{ paginator.previous_page_path }}" style="float:left">‹ Prev</a>
         {% endif %}
-    </li>
-    <li class="pagination-next">
-        {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path }}" class="pagination-nextLink" title="Next">Next ›</a>
-        {% else %}
-            <a class="pagination-nextLink--disabled" title="Next">Next ›</a>
-        {% endif %}
-    </li>
-</ul>
+    {% else %}
+            <a style="float:left">‹ Prev</a>
+    {% endif %}
+       
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" style="float:right">Next ›</a>
+    {% else %}
+        <a style="float:right">Next ›</a>
+    {% endif %}
+</nav>

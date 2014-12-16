@@ -1,9 +1,8 @@
 ---
 layout: link
-title: W3C mistakes in the Design of CSS
+title: Mistakes in the Design of CSS by W3C
 type: link
 link: http://wiki.csswg.org/ideas/mistakes
-
 ---
 
 I'm glad that the [CSS working group](http://wiki.csswg.org/main) wiki compiled
