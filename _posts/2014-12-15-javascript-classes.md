@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript Classes
 type: post
-excerpt: It shouldn't come as surprise that JavaScript doesn't have classes! However, the language has potent enough to match any OO-language and has the ammunition to functionally represent OOP concepts.
+excerpt: It shouldn't come as surprise that JavaScript doesn't have classes! However, the language is potent enough to match any OO-language and has the ammunition to functionally represent OOP concepts.
 ---
 
 JavaScript has first-class functions, which means that we can treat functions like objects, return or pass them from other functions, just like any other object. This offers us the ability to re-create class-like semantics in JavaScript with functions. In this article, we'll focus on these features,

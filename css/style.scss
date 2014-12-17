@@ -15,7 +15,7 @@
 #adpacks {
     line-height: 1.5;
     display: block;
-    font-size: 16px;
+    
     
     &::before {
         content: 'Sponsored via Apacks';
@@ -40,4 +40,8 @@
 
 .adpacks-poweredby {
     display: block;
+}
+
+.adpacks-text, .adpacks-poweredby{
+    font-size: 95%;
 }
