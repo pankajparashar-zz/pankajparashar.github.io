@@ -4,7 +4,26 @@ title: Projects by Pankaj Parashar
 ---
 
 <article class="post">
-    <p class="post__excerpt">Browse through some of my side projects and experiments focused on the exploration of latest web technologies like HTML5, CSS3 and jQuery.</p>
+   <p class="post__excerpt">Browse through some of my side projects and experiments focused on the exploration of latest web technologies like HTML5, CSS3 and jQuery.</p>
+    <h2 class="post__title" style="margin-bottom:0em">Pedantic series</h2>
+    <small style="margin-bottom:1.5em;display:block"><a href="http://pedantic-python.readme.io">pedantic-python.readme.io</a></small>
+    <p>A collection of style guides and best practices for popular programming languages to write perfect, performance-oriented, memory-efficient and consistent code.</p>
+    <figure>
+        <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1418549469/pedantic_asnj0p.png" style="border:1px solid #eee;border-left:none">
+        <figcaption>Screenhot of Pedantic Python, HTML, CSS and JS amalgamated into a single collage.</figcaption>
+    </figure>
+    <h3>Made via</h3>
+    <p><a href="https://readme.io/">Readme.io</a> - A collaborative developer hub to write your API or code by the incredible folks at <a href="http://phileasandfogg.com/">Phileas and Fogg</a>.</p>
+    <ul>
+        <li>Pedantic Python - <a href="http://pedantic-python.readme.io/">http://pedantic-python.readme.io/</a></li>
+        <li>Pedantic CSS - <a href="http://pedantic-css.readme.io/">http://pedantic-css.readme.io/</a></li>
+        <li>Pedantic HTML - <a href="http://pedantic-html.readme.io/">http://pedantic-html.readme.io/</a></li>
+        <li>Pedantic JS - <a href="http://pedantic-js.readme.io/">http://pedantic-js.readme.io/</a></li>
+    </ul>
+</article>
+
+<article class="post">
+    
     <h2 class="post__title" style="margin-bottom:0em">Color Stack</h2>
     <small style="margin-bottom:1.5em;display:block"><a href="http://pankajparashar.github.io/color-stack/">pankajparashar.github.io/color-stack</a></small>
     <p>A collection of awesome and ready-made color palettes featuring popular websites with ready to use hexadecimal color codes for your next front-end project.</p>
@@ -20,15 +39,6 @@ title: Projects by Pankaj Parashar
     </figure>
 </article>
 
-<article class="post">
-    <h2 class="post__title" style="margin-bottom:0em">Nerdy Project</h2>
-    <small style="margin-bottom:1.5em;display:block"><a href="http://pankajparashar.github.io/nerdy-python/">pankajparashar.github.io/nerdy-python</a></small>
-    <p>A collection of style guides and best practices for popular programming languages to write perfect, performance-oriented, memory-efficient and consistent code.</p>
-    <figure>
-        <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391875669/Nerdy_Project_ybh6n2.png" style="border:1px solid #eee;border-left:none">
-        <figcaption>Screenhot of Nerdy Python, HTML and CSS amalgamated into a single collage.</figcaption>
-    </figure>
-</article>
 
 <article class="post">
     <h2 class="post__title" style="margin-bottom:0em">Personal Website</h2>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Connect Four - A game by pankajparashar</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Connect Four</h1>
+        <p>Just need two players and a mouse to play with! First player to connect four consecutive blocks in any direction, wins — via <a href="http://pankajparashar.com/">@pankajparashar</a>.</p>
+        <output>Player 1's turn</output>
+        <button class="js-reset">Reset</button>
+
+        <script src='js/jquery-2.1.1.min.js'></script>
+        <script src="js/script.js"></script>
+        <script>
+            $(document).ready(function(){
+                var game = $.fn.connectFour({ 
+                    rows: 4,
+                    cols: 7,
+                    countTo: 4,
+                    activePlayer: 1
+                });
+                game.init();
+            });
+        </script>
+    </body>
+</html>

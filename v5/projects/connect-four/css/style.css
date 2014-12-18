@@ -1,0 +1,302 @@
+@import url(http://fonts.googleapis.com/css?family=Antic+Slab);
+
+/*
+ * Cosmetic styles
+ *
+ */
+
+body {
+    font-family: 'Antic Slab', sans-serif;
+    position: relative;
+    max-width: 800px;
+    margin: 5em auto 0;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+p {
+  color: #525868;
+  font-size: 1.25em;
+  margin-bottom: 5em;
+  line-height: 2;
+}
+
+p::before {
+  content: '';
+  width: 6em;
+  height: .25em;
+  display: block;
+  background-color: rgba(163, 22, 58, 1);  
+  margin-bottom: .5em;
+}
+
+a {
+    color: rgba(163, 22, 58, 1);
+}
+
+    a:hover {
+        color: rgba(109, 0, 35, 1);
+    }
+
+/*
+ * Game starts here!
+ *
+ */
+
+.js-reset {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5em;
+    height: 35px;
+    color: white;
+    background-color: rgba(220, 49, 81, 1);
+    font-family: 'Antic Slab', sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+}
+
+    .js-reset:hover {
+        background-color: rgba(109, 0, 35, 1);
+    }
+
+    .js-reset:focus,
+    .js-reset:active {
+        border: 0;
+        outline: 0;
+    }
+
+output {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 8em;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(109, 0, 35, 1);
+    color: white;
+    border-radius: 5px 5px 0 0;
+    
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.grid {  
+    background-color: rgba(163, 22, 58, 1);
+    background-size: 10px 10px;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0) 45%, #fff 49%, #e03218 51%, rgba(0, 0, 0, 0) 55%);
+
+    border-spacing: 1em;
+    border-collapse: separate;
+    border-radius: 5px;
+
+    position: relative;
+    margin: auto;
+}
+
+    .grid-row:not(:last-child) {
+        margin-right: 1em;
+    }
+
+    .grid-col:not(:last-child) {
+        margin-bottom: 1em;
+    }
+
+    .grid-col {
+        width: 6em;
+        height: 6em;  
+    }
+
+.grid-cell {
+    border-radius: 3px;
+    transition: .5s ease-in-out;
+    background-color: rgba(109, 0, 35, 1);
+
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+    .grid-cell:not(:disabled):hover,
+    .grid-cell:not(:disabled):focus {
+        transition: .5s ease-in-out;
+        background-color: rgba(235, 164, 178, 1);
+        cursor: pointer;
+    }
+
+.player1 {
+    background-color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 3px; 
+    
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    
+    -webkit-animation-name: flipInY;
+            animation-name: flipInY;
+}
+
+    .player1::before,
+    .player1::after {
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 10px;
+        background-color: black;
+        border-radius: 3px;  
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transition: .5s ease-in-out;
+    }
+
+    .player1::before {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+
+    .player1::after {
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+    }
+
+.player2 {
+    background-color: rgba(220, 49, 81, 1);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 3px;  
+    
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    
+    -webkit-animation-name: flipInY;
+            animation-name: flipInY;  
+}
+
+    .player2::before {
+        content: '';
+        border-radius: 100%;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 10px solid white;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+.game-end {
+    -webkit-animation: animate-stripes 5s linear infinite;
+            animation: animate-stripes 5s linear infinite;
+}
+
+/*
+ * Keyframe animations
+ *
+ */
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes flipInY {
+    0% {
+        -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+    }
+    60% {
+        -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, -5deg);
+    }
+    100% {
+        -webkit-transform: perspective(1000px);
+    }
+}
+
+@keyframes flipInY {
+    0% {
+        transform: perspective(1000px) rotate3d(0, 1, 0, 90deg);
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(1000px) rotate3d(0, 1, 0, -20deg);
+        transition-timing-function: ease-in;
+    }
+    60% {
+        transform: perspective(1000px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        transform: perspective(1000px) rotate3d(0, 1, 0, -5deg);
+    }
+    100% {
+        transform: perspective(1000px);
+    }
+}
+
+@-webkit-keyframes animate-stripes {
+    100% { background-position: -200px 0px; }
+}
+
+@keyframes animate-stripes {
+    100% { background-position: -200px 0px; }
+}

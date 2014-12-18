@@ -9,7 +9,7 @@ excerpt: Quite often I run into situations where I need to modify the CSS styles
 Sample markup and styles to start with,
 
 {% highlight html %}
-<p class="red">Hi, this is plain-old, sad-looking paragraph tag.</p>
+<p class="red">Hi, this is a plain-old, sad-looking paragraph tag.</p>
 {% endhighlight %}
 
 {% highlight css %}
@@ -35,7 +35,7 @@ Write separate classes attached with psuedo element for each style and then usin
 {% highlight js %}
 $('p').removeClass('red').addClass('green');
 {% endhighlight %}
-
+  
 **Method 2**  
 Inject new styles to the existing document stylesheet directly either via JavaScript and the webpage will automatically reflect the new css.
 
@@ -47,7 +47,6 @@ document.styleSheets[0].insertRule('.red::before { color: green }', 0);
 **Method 3**  
 Create a new stylesheet and inject the modified rules to the newly created document stylesheet either via JavaScript or jQuery.
 
-JavaScript -
 {% highlight js %}
 // Create a new style tag
 var style = document.createElement("style");
@@ -63,7 +62,8 @@ sheet.addRule('.red::before','color: green');
 sheet.insertRule('.red::before { color: green }', 0);
 {% endhighlight %}
 
-jQuery -
+or jQuery ...
+
 {% highlight js %}
 $('<style>.red::before{color:green}</style>').appendTo('head');
 {% endhighlight %}

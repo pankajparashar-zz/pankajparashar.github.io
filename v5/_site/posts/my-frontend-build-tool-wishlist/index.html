@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My frontend build tool wishlist...</title>
+
+    <meta name="description" content="I'm 25yo frontend designer and web developer from Mumbai, India. I make things for the web and write about them on my blog here.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+    <body>
+        
+<header class="header" role="banner">
+    <h1 class="header-title">
+        <a href="/" title="Designer. Developer. Writer" class="header-titleLink" itemprop="author" itemscope itemtype="http://schema.org/Person">Pankaj Parashar</a>
+    </h1>
+    <p class="header-subTitle">Developer. Designer. Writer.
+        <label class="header-about" for="about">
+            <svg width="25px" height="25px" viewBox="0 0 100 100">
+                <path class="header-aboutImg" d="M50.4444444,0 C22.8888889,0 0.444444444,22.4444444 0.444444444,50 C0.444444444,77.5555556 22.8888889,100 50.4444444,100 C78,100 100.444444,77.5555556 100.444444,50 C100.444444,22.4444444 78,0 50.4444444,0 L50.4444444,0 Z M57.4444444,82.5555556 L43.4444444,82.5555556 L43.4444444,37.2222222 L57.5555556,37.2222222 L57.5555556,82.5555556 L57.4444444,82.5555556 Z M50.3333333,31.6666667 C45.8888889,31.6666667 42.8888889,28.5555556 43,24.6666667 C42.8888889,20.5555556 45.8888889,17.5555556 50.4444444,17.5555556 C55,17.5555556 57.8888889,20.6666667 58,24.6666667 C58,28.4444444 55,31.6666667 50.3333333,31.6666667 L50.3333333,31.6666667 Z"></path>
+            </svg>
+        </label>
+    </p>
+    <input type="checkbox" id="about">
+    <div class="header-description">
+        <h2 class="header-descriptionTitle">Hi. there..</h2>
+        <p>I'm 25yo frontend designer and web developer from Mumbai, India. I <a href="/projects">make things</a> for the web and write about them on <a href="/">my blog here</a>.</p>
+    </div>
+</header>
+
+
+        <section role="main">
+            <article itemtype="http://schema.org/Article" class="post">
+    <time itemprop="datePublished" content='21.December.2013' class="post-pubDate">21.Dec.2013</time>
+    <h2 class="post-title">
+        <a class="post-titleLink" href="" itemprop="name">My frontend build tool wishlist...</a>
+    </h2>
+    <p class="post-excerpt">For quite a long time now, I have been toying around an idea of a perfect build tool to deploy front-end projects. This article is all about my wishlist from such a tool.</p>
+    <p>Assuming, you have completed the development work on the frontend of your next web project and are ready to deploy it in production. A typical project involves concatenating and minifying the assets, checking the code for errors, compressing the images and testing it across different combination and breed of browsers, devices and operating system. So, here goes my wishlist,</p>
+
+<p>The typical build process of a project follows,</p>
+
+<div class="highlight"><pre><code class="sh">Compilation &gt; Linting &gt; Concatenation &gt; Compression &gt; Miscellaneous</code></pre></div>
+
+<p>Hence, I have divided the build task into the following categories,</p>
+
+<h3 id="compilation">Compilation</h3>
+
+<p>If you use some kind of a pre-processor in your workflow to write your HTML, CSS or JavaScript, the compilation of code into its raw form naturally becomes the first step of any build task.</p>
+
+<ul>
+  <li><a href="http://haml.info/">HAML</a> / <a href="https://daringfireball.net/projects/markdown/">MarkDown</a> / <a href="http://jade-lang.com/">Jade</a> / <a href="http://jade-lang.com/">Slim</a> to HTML.</li>
+  <li><a href="http://sass-lang.com/">Sass</a> / <a href="http://sass-lang.com/">SCSS</a> / <a href="http://lesscss.org/">LESS</a> / <a href="http://learnboost.github.io/stylus/">Stylus</a> to CSS.</li>
+  <li><a href="http://compass-style.org/">Compass</a> / <a href="http://bourbon.io/">Bourbon</a> to CSS.</li>
+  <li><a href="http://coffeescript.org/">CoffeeScript</a> / <a href="http://livescript.net/">LiveScript</a> / <a href="http://www.typescriptlang.org/">TypeScript</a> to JavaScript.</li>
+</ul>
+
+<h3 id="linting">Linting</h3>
+
+<p>Linting refers to validating your code against errors, suspicous code and checking if the code corresponds to a certain style guidelines.</p>
+
+<ul>
+  <li>Lint all <code>.html</code>, <code>.css</code> and <code>.js</code> files.</li>
+  <li>Should have the ability to configure linting rules and flexiblity to add new style guidelines rules.</li>
+</ul>
+
+<h3 id="concatenation">Concatenation</h3>
+
+<p>Concatenation combines several files of the same type into a single file so that you can reduce the number of HTTP requests to the server.</p>
+
+<ul>
+  <li>Combining <code>.css</code> and <code>.js</code> files separately with added flexiblity to choose the order in which the files are merged.</li>
+  <li>Sprite all background images into a single image file and update the CSS code with the correct background url and position value of each image.</li>
+</ul>
+
+<h3 id="compression">Compression</h3>
+
+<p>Compression helps reduce the overall size of the resource being transferred across the network. Following are some of the ways we can achieve compression,</p>
+
+<ul>
+  <li>Compress all the <code>.png</code>, <code>.jpg</code>, <code>.gif</code> and <code>.svg</code> images with the ability to choose the compression/optimization level.</li>
+  <li>Minify the <code>.html</code>, <code>.css</code> and the <code>.js</code> document with optional features like add banner, keep special comments and report useful statistics at the end of the process.</li>
+  <li>Generate source maps for CSS and JS files to define an exact mapping between the production code and the authored code.</li>
+  <li>Remove unused CSS rulesets.</li>
+</ul>
+
+<h3 id="hashing">Hashing</h3>
+
+<p>Using hash-ed filenames in addition to the Expiry headers, can help bust the cache without worrying about old assets wreaking havoc on your site.</p>
+
+<ul>
+  <li>Rename assets (<code>.css</code>, <code>.js</code> and images embedded in CSS) with hash-ed filenames to bust the cache and update the references in the source code.</li>
+  <li>Hashed filename can be a prefix, suffix or a custom naming pattern scheme.</li>
+  <li>It should also have the ability to choose a pre-defined algorithm like <a href="http://en.wikipedia.org/wiki/MD5">MD5</a>, <a href="http://en.wikipedia.org/wiki/SHA-1">SHA1</a>, <a href="http://en.wikipedia.org/wiki/SHA-2">SHA2</a> etc. or a custom algorithm to generate the hash value.</li>
+  <li>An added flexibility to define the number of characters, salt of the output value.</li>
+</ul>
+
+<h3 id="miscellaneous">Miscellaneous</h3>
+
+<p>Some of the tasks that do not belong to any of the aforementioned categories are below,</p>
+
+<ul>
+  <li>Add banner at the top of <code>.html</code>, <code>.css</code> and <code>.js</code> files indicating the license, author and the version no of the file with the ability to automatically increment the no. after every iteration.</li>
+  <li>Resize images to a predetermined width/height to avoid excessive image resize/decode work on the client-side in the browser.</li>
+  <li>Generate responsive images on demand at different resolutions for use with <a href="https://github.com/scottjehl/picturefill">PictureFill</a> or <a href="http://www.w3.org/html/wg/drafts/srcset/w3c-srcset/">Srcset</a>.</li>
+  <li>Convert longhand CSS declarations to shorthand CSS equivalent.</li>
+  <li>Automatically add vendor prefixes to CSS properties.</li>
+  <li>Use Google’s <a href="https://code.google.com/p/closure-stylesheets/#Renaming">Closure Stylesheets</a> to rename CSS class names in the generated stylesheet, which helps reduce the size of the CSS that is eventually sent down to the user.</li>
+  <li>Arrange CSS properties in alphabetical order to <a href="http://coding.smashingmagazine.com/2012/10/02/csscomb-tool-sort-css-properties/">improve the performance of the selector</a>.</li>
+  <li>Convert assets like images and fonts to their equivalent base64 encoded data uris with the ability to choose the threshold size <code>(~4kb)</code>.</li>
+  <li>Integration with unit testing framework like <a href="http://visionmedia.github.io/mocha/">Mocha</a> or <a href="http://pivotal.github.io/jasmine/">Jasmine</a> or <a href="http://qunitjs.com/">QUnit</a> in a headless browser like <a href="http://phantomjs.org/">PhantomJS</a>.</li>
+  <li>Automatically push static assets (like images) embedded in HTML directly to CDN (like <a href="http://aws.amazon.com/s3/">Amazon S3</a> or <a href="http://aws.amazon.com/cloudfront/">CloudFront</a> and update the new url in the source files.</li>
+  <li>Automatically generate device screenshots on various combination of browsers and operating system via <a href="http://www.browserstack.com/screenshots/api">BrowserStack’s Screenshot API</a>.</li>
+  <li>Run through Google’s <a href="https://developers.google.com/speed/pagespeed/">Pagespeed Optimizer API</a> and the <a href="http://tools.pingdom.com/">Pingdom Tools API</a> to gather Network Utilisation, Web Page Performance audit and other useful statistics that helps you gather significant information about the performance of your website.</li>
+  <li>Identify all the links (both external/internal) that no-longer exists or doesn’t return HTTP 200.</li>
+  <li>Generate documentation of the entire project supported with CSS Style Guides and JavaScript functions.</li>
+</ul>
+
+<h3 id="grulp-project">Grulp Project</h3>
+
+<p>I understand that no build tool would ever be able to meet the outrageous demands of the list above. However, I started with a <a href="https://github.com/pankajparashar/grulp">project on Github</a> to compile a list of ready-to-use grunt/gulp plugins that accomplishes most of the tasks.</p>
+
+<figure>
+    <img alt="Grulp" src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391875671/Grulp_d1t3u6.png" />
+    <figcaption><a href="https://github.com/pankajparashar/grulp">Grulp</a> - List of ready-to-use grunt/gulp plugins to build your next web project.</figcaption>
+</figure>
+
+    <p>Did you enjoy reading this article? I'd love to hear your thoughts. Shoot me an <a href="mailto:email@pankajparashar.com">email</a> or send me a <a href="https://twitter.com/intent/tweet?via=pankajparashar&text=My frontend build tool wishlist...">tweet</a> if you've got any comments.</p>
+    <p><a href="/" class="post-backToHome">Back to Home</a></p>
+</article>
+        </section>
+
+        <footer role="contentinfo" class="footer">
+
+    <form action="http://google.com/search?q=" target="_blank" onsubmit="location.href = this.action + this.search.value + ' site:pankajparashar.com'; return false;" method="post">
+        <input type="search" role="search" placeholder="Search this website + press enter..." autocomplete="off" class="footer-search" name="search">
+    </form>
+    
+    <div class="footer-details">
+       <ul>
+           <li>
+                <dl>
+                    <dt>Find me elsewhere</dt>
+                    <dd><a href="http://codepen.io/pankajparashar">Codepen</a></dd>
+                    <dd><a href="http://github.com/pankajparashar">Github</a></dd>
+                    <dd><a href="http://twitter.com/pankajparashar">Twitter</a></dd>
+                    
+                    <dt>Miscellaneous</dt>
+                    <dd><a href="/feed.xml">RSS Feed</a> • <a href="/sitemap.xml">Sitemap</a></dd>
+                </dl>
+            </li><!--
+            --><li>
+               <p>Sponsored via Adpack</p>
+                <script async src="//cdn.adpacks.com/adpacks.js?zoneid=1386&serve=C6SI42Y&placement=pankajparashar" id="_adpacks_js"></script>
+            </li>
+        </ul>        
+    </div>
+
+    <div class="footer-copyright">
+        <p>Got any interesting idea or a project to talk about? drop me a line at <a href="mailto:email@pankajparashar.com">email@pankajparashar.com</a> or send me a tweet at <a href="http://twitter.com/pankajparashar">@pankajparashar</a>.</p>
+        <p>
+            <span class="footer-copyrightYear">©2014 — Pankaj Parashar</span> • <a class="footer-backToTop" role="button" onClick="window.scrollTo(0,0);">Back to top</a>
+        </p>
+    </div>
+</footer>
+    </body>
+</html>

@@ -10,6 +10,7 @@ link: http://jackwmorgan.com/squared/
 
 <figure>
     <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1399802574/SQUARED-Launch-Billboard_huflok.png" alt="">
+    <figcaption>The awesome Square corner depicting the Square logo created by Jack Morgan.</figcaption>
 </figure>
 
 [Read more on Squared](http://jackwmorgan.com/squared/)

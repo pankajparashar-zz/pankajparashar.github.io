@@ -10,10 +10,8 @@ Assuming, you have completed the development work on the frontend of your next w
 
 The typical build process of a project follows,
 
-{% highlight css %}
-
+{% highlight sh %}
 Compilation > Linting > Concatenation > Compression > Miscellaneous
-
 {% endhighlight %}
 
 Hence, I have divided the build task into the following categories,

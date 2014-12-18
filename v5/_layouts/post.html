@@ -1,11 +1,14 @@
 ---
 layout: default
 ---
+
 <article itemtype="http://schema.org/Article" class="post">
-    <time itemprop="datePublished" content='{{ post.date | date: "%B %d, %Y" }}' class="post__date">{{ page.date | date: "%B %d, %Y" }}</time>
-    <h2 clas="post__title"><a class="post__title--link" href="{{ post.url }}" itemprop="name">{{ page.title }}</a></h2>
-    <p class="post__excerpt">{{ page.excerpt }}</p>
+    <time itemprop="datePublished" content='{{ page.date | date: "%d.%B.%Y" }}' class="post-pubDate">{{ page.date | date: "%d.%b.%Y" }}</time>
+    <h2 class="post-title">
+        <a class="post-titleLink" href="{{ post.url }}" itemprop="name">{{ page.title }}</a>
+    </h2>
+    <p class="post-excerpt">{{ page.excerpt }}</p>
     {{ content }}
     <p>Did you enjoy reading this article? I'd love to hear your thoughts. Shoot me an <a href="mailto:email@pankajparashar.com">email</a> or send me a <a href="https://twitter.com/intent/tweet?via=pankajparashar&text={{ page.title }}">tweet</a> if you've got any comments.</p>
-    <p>⟵ <a href="/">Back to Home</a></p>
+    <p><a href="/" class="post-backToHome">Back to Home</a></p>
 </article>
