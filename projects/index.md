@@ -1,14 +1,13 @@
 ---
 layout: default
-title: Projects - by Pankaj Parashar
+title: Projects — Pankaj Parashar
 ---
 
 <article>
-      <blockquote>
-       <p>Browse through some of my side projects and experiments focused on the exploration of latest web technologies like HTML5, CSS3 and jQuery.</p>   
-      </blockquote>
+    <blockquote>
+        <p>Browse through some of my side projects and experiments focused on the exploration of latest web technologies like HTML5, CSS3 and jQuery.</p>   
+    </blockquote>
 </article>
-
 
 <article>   
     <h2>Pedantic Series</h2>
@@ -21,6 +20,15 @@ title: Projects - by Pankaj Parashar
         <p>Languages,<br><a href="http://pedantic-python.readme.io/">Python</a>, <a href="http://pedantic-css.readme.io/">CSS</a>, <a href="http://pedantic-html.readme.io/">HTML</a> and <a href="http://pedantic-js.readme.io/">JavaScript</a>.</p>
     </blockquote>
     <p>Made with <a href="https://readme.io/">Readme.io</a>, developed by the awesome folks at <a href="http://phileasandfogg.com/">Phileas & Fogg</a>.</p>
+</article>
+
+<article>
+    <h2><a href="http://pankajparashar.com/connect-four/">Connect Four</a></h2>
+    <p>Just need two players and a mouse to play with! First player to connect four consecutive blocks in any direction, wins. Built using HTML5, CSS3 and JavaScript with bonus unit test cases written in Qunit.</p>
+    <figure>
+        <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1418907523/connect-four_ikpadu.png" alt="Connect Four">
+        <figcaption>Connect Four - Two players game in action.</figcaption>
+    </figure>
 </article>
 
 <article>
@@ -61,8 +69,7 @@ title: Projects - by Pankaj Parashar
 
 <article>
    <blockquote>
-        <p>Got any interesting idea or a project to talk about? drop me a line at email@pankajparashar.com or send me a tweet at @pankajparashar.</p>       
-        
+        <p>Got any interesting idea or a project to talk about? drop me a line at email@pankajparashar.com or send me a tweet at @pankajparashar.</p>               
    </blockquote>    
    <p><a href="/">‹ Back to Home</a></p>
 </article>
