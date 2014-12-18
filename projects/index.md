@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Projects — Pankaj Parashar
+title: Projects — by Pankaj Parashar
 ---
 
 <article>
