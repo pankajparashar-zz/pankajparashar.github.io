@@ -6,16 +6,15 @@
 @import "base";
 
 /**
- * ------
- * ADPACK
- * ------
+ * -------
+ * ADPACKS
+ * -------
  *
  **/
 
 #adpacks {
     line-height: 1.5;
     display: block;
-    
     
     &::before {
         content: 'Sponsored via Apacks';
@@ -24,7 +23,7 @@
         margin-bottom: 1em;
     }
     
-    @media screen and (max-width: 800px) { padding-top: 1em; }
+    @media screen and (max-width: 800px) { padding-top: 2em; }
 }
 
 .adpacks-img {
@@ -39,9 +38,9 @@
 }
 
 .adpacks-poweredby {
-    display: block;
+    display: none;
 }
 
-.adpacks-text, .adpacks-poweredby{
-    font-size: 95%;
+.adpacks-text, .adpacks-poweredby {
+    font-size: 90%;
 }

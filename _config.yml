@@ -15,7 +15,7 @@ markdown: kramdown
 permalink: pretty
 
 # Pagination
-paginate: 15
+paginate: 5
 permalink: /posts/:title
 paginate_path: 'page/:num'
 
