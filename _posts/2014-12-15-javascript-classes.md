@@ -151,3 +151,10 @@ console.log(student1 instanceof Student); // true
 `Student` is a child of class `Parent` and automatically inherits all the members of the parent class. We make an explicit call to the parent class constructor using `Person.call` and make sure that the prototype inherits from `Person`. This type of inheritance is called `Prototypal inheritance`.
 
 Using these concepts in your JavaScript module will bring modularity in your code and certainly improve the way you write JavaScript. I wish I knew these concepts back when I started with JavaScript!
+
+> I realized that [@getify](http://getify.me/) had written an interesting article on [JavaScript objects](http://davidwalsh.name/javascript-objects) explaining
+why **Prototypal Inheritance** is an awkard term for JavaScript and we should rather refer to **Behavior Delegation**. The article is divided into series of posts,  
+  
+- Part 1: JS Objects: [Inherited a Mess](http://davidwalsh.name/javascript-objects)  
+- Part 2: JS Objects: [Distractions](http://davidwalsh.name/javascript-objects-distractions)  
+- Part 3: JS Objects: [De"construct"ion](http://davidwalsh.name/javascript-objects-deconstruction)  
