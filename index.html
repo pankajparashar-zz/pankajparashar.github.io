@@ -3,13 +3,13 @@ layout: default
 ---
 
 {% for post in paginator.posts %}
-<article>
-    <time datetime="{{ post.date | date: '%d-%b-%Y' }}">{{ post.date | date: "%b %d, %Y" }}</time>
+<article itemscope itemtype="http://schema.org/Article">
+    <time itemprop="datePublished" content="{{ post.date | date: '%d-%b-%Y' }}" datetime="{{ post.date | date: '%d-%b-%Y' }}">{{ post.date | date: "%b %d, %Y" }}</time>
     {% if post.type == 'post' %}
-    <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-    <p style="font-size:1.1em;color:#666">{{ post.excerpt }}</p>
+    <h2 itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    <p style="font-size:1.1em;color:#666" itemprop="articleBody">{{ post.excerpt }}</p>
     {{ post.content }}
-    <p><a href="{{ post.url | prepend: site.baseurl }}">Permalink</a> &nbsp;•&nbsp; <a href="https://twitter.com/intent/tweet?url={{ post.url | prepend: site.baseurl }}&via=pankajparashar&text={{ post.title }}">Share</a></p>
+    <p><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">Permalink</a> &nbsp;•&nbsp; <a href="https://twitter.com/intent/tweet?url={{ post.url | prepend: site.baseurl }}&via=pankajparashar&text={{ post.title }}">Share</a></p>
     {% elsif post.type == 'link' %}
     <h3><a href="{{ post.link | prepend: site.baseurl }}">{{ post.title }}</a></h3>
     {{ post.content }}
