@@ -213,7 +213,7 @@ input[type=checkbox] {
     display: none;
     
     & + .info {
-        display: none;
+        display: block;
     }    
     
     &:checked + .info {

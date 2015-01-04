@@ -13,7 +13,7 @@
  **/
 
 #adpacks {
-    line-height: 1.5;
+    line-height: 1.75;
     display: block;
     
     &::before {
@@ -41,6 +41,14 @@
     display: none;
 }
 
-.adpacks-text, .adpacks-poweredby {
-    font-size: 90%;
+.adpacks-text {
+    _margin-top: -.1em;
+    font-size: 85%;
+    text-overflow: ellipsis;
+    display: block;
+    height: 4.5em;
+    
+    &::after {
+        content: '..';
+    }
 }
