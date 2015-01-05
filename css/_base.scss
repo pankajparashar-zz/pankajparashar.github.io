@@ -207,6 +207,7 @@ hr {
     width: 4em;
     display: block;
     margin-bottom: .5em;
+    text-align: left;
 }
 
 input[type=checkbox] { 
@@ -298,6 +299,7 @@ section {
     background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(50%, #fff), color-stop(50%, transparent), to(transparent));
     background: -webkit-linear-gradient(left, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
     background: -moz-linear-gradient(left, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
+    background: -ms-linear-gradient(left, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
     background: -o-linear-gradient(left, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
     background: linear-gradient(left, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
 }
