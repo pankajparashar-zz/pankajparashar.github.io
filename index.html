@@ -28,23 +28,6 @@ layout: default
     {% else %}
             <a style="float:left">‹ Prev</a>
     {% endif %}
-      
-      <!--
-       
-{% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      {% if page == 1 %}
-      <li><a class="current--page" href="{{ / | prepend: site.baseurl | prepend: site.url }}">{{ page }}</a></li>
-      {% else %}
-      <li><a class="current--page" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page | prepend: site.url }}">{{ page }}</a></li>
-      {% endif %}
-    {% elsif page == 1 %}
-      <li><a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">{{ page }}</a></li>
-    {% else %}
-      <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page | prepend: site.url }}">{{ page }}</a></li>
-    {% endif %}
-  {% endfor %}       
-       -->
        
        
     {% if paginator.next_page %}

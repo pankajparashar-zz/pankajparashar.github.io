@@ -42,7 +42,7 @@ I don’t want to add additional tools or libraries to my existing workflow. I p
 
 #### Maintenance and Debugging
 
-For a team of CSS developers, do you really expect each one of them to know Sass/LESS? If no, then what happens if another developer wants to edit the CSS file but doesn’t know Sass?</q>
+For a team of CSS developers, do you really expect each one of them to know Sass/LESS? If no, then what happens if another developer wants to edit the CSS file but doesn’t know Sass?
 
 Debugging is even harder; when you know that the developer tool of the browser shows you the code and the line number of the css file. Do you want to manually trace the piece of code in your Sass file?
 
