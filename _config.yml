@@ -23,3 +23,7 @@ paginate_path: 'page/:num'
 sass:
   sass_dir: css
   style: :compressed
+  
+# Plugins
+gems:
+  - jekyll-sitemap
