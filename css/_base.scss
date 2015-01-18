@@ -290,7 +290,7 @@ svg:hover path {
     border: 1px solid #eee;
     background: #fff;
     
-    @media screen and (max-width: 800px) { padding: 2.5em 1em 1em; }
+    @media screen and (max-width: 800px) { padding: 2.5em 1em 1em; margin-left: -1em; margin-right: -1em; }
     
     li {
         list-style-type: none;
@@ -403,7 +403,9 @@ figure {
     background: #fafbfc -moz-linear-gradient(#fafbfc,#f3f6f8);
     background: #fafbfc -o-linear-gradient(#fafbfc,#f3f6f8);
     background: #fafbfc -ms-linear-gradient(#fafbfc,#f3f6f8);
-    background: #fafbfc linear-gradient(#fafbfc,#f3f6f8);    
+    background: #fafbfc linear-gradient(#fafbfc,#f3f6f8);   
+    
+    @media screen and (max-width: 800px) { margin-left: -1em; margin-right: -1em; }
 }
 
 img {
@@ -438,6 +440,7 @@ blockquote {
     margin-right: -1em;
     margin-bottom: 1.5em;
     
+    @media screen and (max-width: 800px) { margin-left: -1em; margin-right: -1em; }    
 }
 
 code {
