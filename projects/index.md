@@ -35,8 +35,12 @@ title: Projects — by Pankaj Parashar
     <h2><a href="http://pankajparashar.github.io/color-stack/">Color Stack</a></h2>
     <p>A collection of awesome and ready-made color palettes featuring popular websites with ready to use hexadecimal color codes for your next front-end project.</p>
     <figure>
-        <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391875675/Color_Stack_jh8liu.png" alt="Color Stack">
-        <figcaption>Screenshot of Color Stack's homepage grabbed on November 10, 2013. Also got featured on Sideprojects Web3Canvas on Jul 13, 2013.</figcaption>
+        <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1421586084/color-stack_o0m7kn.png" alt="Color Stack v3.0">
+        <figcaption>v3.0 — Screenshot of Color Stack's homepage grabbed on January 18, 2015.</figcaption>
+    </figure>
+    <figure>
+        <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391875675/Color_Stack_jh8liu.png" alt="Color Stack v2.0">
+        <figcaption>v2.0 — Screenshot of Color Stack's homepage grabbed on November 10, 2013. Also got featured on Sideprojects Web3Canvas on Jul 13, 2013.</figcaption>
     </figure>
 </article>
 
