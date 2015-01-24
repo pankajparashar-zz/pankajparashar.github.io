@@ -45,20 +45,20 @@
 }
 
 ::selection {
-    background: lighten($brand-color, 10%); /* WebKit/Blink Browsers */
+    background: lighten($brand-color, 20%); /* WebKit/Blink Browsers */
     text-shadow: none;
     color: #000;
 }
 
 a::selection {
-    background: lighten($brand-color, 10%); /* WebKit/Blink Browsers */
+    background: lighten($brand-color, 20%); /* WebKit/Blink Browsers */
     text-shadow: none;
     color: #fff;
     outline: 0;
 }
 
 ::-moz-selection {
-    background: lighten($brand-color, 10%); /* WebKit/Blink Browsers */
+    background: lighten($brand-color, 20%); /* WebKit/Blink Browsers */
     text-shadow: none;
     color: #000;
 }
