@@ -123,4 +123,4 @@ The introduction of these selectors, gives us a lot more flexiblity while writin
 on JavaScript for trivial tasks and eventually makes CSS an extremely powerful language. If you want to keep an 
 eye on the progress of CSS Selectors Level 4 specification, then I would strongly recommend you to bookmark this link, 
 
-> [http://dev.w3.org/csswg/selectors-4/](dev.w3.org/csswg/selectors-4/)
+> [http://dev.w3.org/csswg/selectors-4/](http://dev.w3.org/csswg/selectors-4/)
