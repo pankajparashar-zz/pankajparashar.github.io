@@ -192,6 +192,17 @@ a {
 a:not([href]) {
     color: #9ab;
     
+    .svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #9ab;
+}
+
+.svg-icon circle {
+  stroke: #9ab;
+  stroke-width: 1;
+}
+    
     &:hover {
         text-decoration: none;
     }
@@ -203,12 +214,8 @@ a:not([href]) {
  **/
 
 body {
-    background: #f3f6f9;
-    background: -webkit-linear-gradient(355deg, #f3f6f9, #e6ecf1);
-    background: -moz-linear-gradient(355deg, #f3f6f9, #e6ecf1);
-    background: -o-linear-gradient(355deg, #f3f6f9, #e6ecf1);
-    background: linear-gradient(95deg, #f3f6f9, #e6ecf1);
-    font-family: 'serif', sans-serif;
+    background: lighten($brand-color, 47.5%);  
+    font-family: 'serif', serif;
     line-height: 2;
     color: #525868;
     text-shadow: 0 1px white;
@@ -347,7 +354,7 @@ article {
     background: #fff -ms-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
     background: #fff linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
     
-    border-right: 1px solid #cfd4d8;
+    _border-right: 1px solid #cfd4d8;
     
     @media screen and (max-width: 800px) { padding: 5em 1em; }
     @media screen and (min-width: 801px) { padding: 5em 1em 5em 0; }
@@ -359,9 +366,9 @@ article {
 
 time {
     letter-spacing: .5px;
-    color: #9ab;
     font-size: .85em;
     display: block;
+    color: #9ab;
 }
 
 nav {
@@ -369,7 +376,7 @@ nav {
     margin: auto;
     max-width: $breakpoint;
     
-    border-right: 1px solid #cfd4d8;
+    _border-right: 1px solid #cfd4d8;
     background-color: #fff;
     
     a {
@@ -396,15 +403,10 @@ li {
 figure {
     margin-bottom: 1.5em;
     margin-right: -1em;
-    background-color: #f5f7f9;
+    background-color: #f1f2f3;
     border-top: 1px solid #ecf0f2;
     border-left: 1px solid #ecf0f2;
-    background: #fafbfc -webkit-linear-gradient(#fafbfc,#f3f6f8);
-    background: #fafbfc -moz-linear-gradient(#fafbfc,#f3f6f8);
-    background: #fafbfc -o-linear-gradient(#fafbfc,#f3f6f8);
-    background: #fafbfc -ms-linear-gradient(#fafbfc,#f3f6f8);
-    background: #fafbfc linear-gradient(#fafbfc,#f3f6f8);   
-    
+    background: whiteSmoke;
     @media screen and (max-width: 800px) { margin-left: -1em; margin-right: -1em; }
 }
 
@@ -434,8 +436,8 @@ figcaption {
 }
 
 blockquote {
-    background: #f3f5f7;
-    color: #6f7c82;
+    background: whiteSmoke;
+    _color: #6f7c82;
     padding: 1em;
     margin-right: -1em;
     margin-bottom: 1.5em;
@@ -448,9 +450,9 @@ code {
     font-size: .85em;
     padding: 3px 5px;
     white-space: normal;
-    background: #eee;
+    background: #fff;
     text-shadow: 0 1px white;
-    color: rgba(46,48,58,0.96);
+    _color: rgba(46,48,58,0.96);
 }
 
 pre {
@@ -465,17 +467,18 @@ pre {
     padding-right: 1em;
     white-space: pre;
     white-space: pre-wrap;
-    word-wrap: break-word;    
+    word-wrap: break-word;
+    background: whiteSmoke;
 }
 
 pre, code {
-    background: rgba(242,242,245,0.96);
+     
     border-radius: 3px;    
 }
 
 pre code {    
     background: none;
-    color: rgba(46,48,58,0.96);
+    _color: rgba(46,48,58,0.96);
     text-shadow: 0 1px white;
     display: block;
     margin: 0;
