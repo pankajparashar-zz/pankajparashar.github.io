@@ -42,38 +42,9 @@
 }
 
 .adpacks-text {
-    _margin-top: -.1em;
+    font-style: italic;
     font-size: 85%;
     text-overflow: ellipsis;
     display: block;
-    height: 4.5em;
-    
-    &::after {
-        content: '..';
-    }
-}
-
-/**
- * SVG Icons
- *
- **/
-
-/* -----
-SVG Icons - svgicons.sparkk.fr
------ */
-
-.svg-icon {
-  width: 1em;
-  height: 1em;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: $brand-color;
-}
-
-.svg-icon circle {
-  stroke: $brand-color;
-  stroke-width: 1;
+    height: 4.5em;    
 }
