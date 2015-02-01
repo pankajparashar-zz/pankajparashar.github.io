@@ -1,0 +1,8 @@
+body:before { 
+                            white-space: pre; 
+                            font-family: monospace; 
+                            content: 'Sass Error: Invalid CSS after \"@import \"vars\"\": expected \"{\", was \";\" \A         on line 5 of \\Users\\pankajparashar\\GitHub\\pankajparashar.github.io\\v6\\css\\style.scss \A '; } 
+                            
+                            body * { 
+                            display: none; 
+                            } 
