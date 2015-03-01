@@ -102,12 +102,12 @@ h4 {
 a {
     color: $brand-color;
     text-decoration: none;
-	transition: all 0.3s ease-in-out 0;
+	transition: all 0.3s ease-in-out;
 }
     a:hover, a:focus {
 		background-color: #fd4;
 		text-decoration: none;
-		transition: all 0.3s ease-in-out 0;
+		transition: all 0.3s ease-in-out;
 		color: #346;
 		outline: none;
     }
@@ -182,23 +182,6 @@ input[type=checkbox] {
     &:checked + .info {
         display: block;
     }
-}
-
-path {
-    fill: $brand-color;
-}
-
-svg {
-width:25px;
-height:25px;
-}
-
-svg:hover path {
-    -webkit-transition: all 0.3s ease-in-out 0;
-       -moz-transition: all 0.3s ease-in-out 0;
-         -o-transition: all 0.3s ease-in-out 0;
-            transition: all 0.3s ease-in-out 0;
-    fill: black;
 }
 
 .info {
