@@ -3,6 +3,8 @@
 ---
 
 @import "vars";
+@import "typography";
+@import "fonts";
 @import "base";
 
 /**
@@ -15,35 +17,65 @@
 #adpacks {
     line-height: 1.75;
     display: block;
-    
-    &::before {
-        content: 'Sponsored via Adpacks';
-        color: #9ab;
-        display: block;
-        margin-bottom: 1em;
-    }
-    
-    @media screen and (max-width: 800px) { padding-top: 2em; }
+
+    @media screen and (max-width: 800px) { padding-top: 1em;  margin-bottom: 2em; }
 }
 
 .adpacks-img {
     display: inline;
     float: left;
     margin-right: 1em;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
+	background-image: none;
+	background-color: #f3f4f8;
+
+	&:hover {
+		background-color: transparent;
+	}
     
     img {
         border: 1px solid #eee;
+		margin-bottom: 0;
     }
 }
 
 .adpacks-poweredby {
-    display: none;
+    font-size: 90%;
+	display: block;
+    line-height: 1.5;
+	clear: both;
+	text-align: left;
+
+	&:hover {
+		background-color: transparent;
+	}
 }
 
 .adpacks-text {
-    font-size: 85%;
-    text-overflow: ellipsis;
-    display: block;
-    height: 4.5em;    
+    font-size: 90%;
+	display: block;
+    line-height: 1.75;
+	background-image: none;
+	word-spacing: 0;
+	color: #346;
+}
+
+	.adpacks-text:hover {
+		background-color: transparent;
+	}
+
+
+/**
+ * FOOTER
+ * ------
+ *
+ **/
+
+.footer_backToTop {
+	float: right;
+	cursor: pointer;
+
+	&:hover {
+		background-position: 0 25px;
+	}
 }

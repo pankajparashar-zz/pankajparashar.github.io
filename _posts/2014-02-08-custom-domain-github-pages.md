@@ -37,9 +37,9 @@ Create the repository `username.github.io` on Github. For reference, check my [u
 Add a CNAME file containing the custom domain name that you want to map. In my case, the [CNAME](https://github.com/pankajparashar/pankajparashar.github.io/blob/master/CNAME) file contains, `pankajparashar.com`
 
 **Step 3**  
-Login to your domain name registrar and create a `A` record that maps the domain to the Github's IP address - `204.232.175.78`
+Login to your domain name registrar and create a `A` record that maps the domain to the Github's IP address - `204.232.175.78`. (Infact, this IP Address no longer works and has been [deprecated by Github](https://github.com/blog/1925-github-pages-legacy-ip-brownout). The new IP Addresses are, `192.30.252.153` and `192.30.252.154` as mentioned in [this article](https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/).)
 
-> There is no guarantee that this IP address will remain the same forever. Indeed, github has changed its value in the past. Presumably github will notify users appropriately before any future changes. If they do change it, you'll have to adjust the configuration at your DNS registrar accordingly.
+> There is no guarantee that this IP address will remain the same forever. Indeed, Github has changed its value in the past. Presumably Github will notify users appropriately before any future changes. If they do change it, you'll have to adjust the configuration at your DNS registrar accordingly.
 
 Theoretically it can take 30 mins to 2 hours for the DNS propagation to complete, but in my experience this change took 1 full day to reflect. Once the propagation is complete, whenever you visit `pankajparashar.github.io` you will be redirected to my custom domain `pankajparashar.com`.
 

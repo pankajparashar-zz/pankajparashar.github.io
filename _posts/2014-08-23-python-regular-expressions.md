@@ -164,7 +164,7 @@ For example, lets find out all the occurences of email address from the given st
 
 <figure>
     <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1408788930/regxper_dazjby.png">
-    <figcaption>Regular Expression Visualizer - <a href="http://regexper.com">Regexper</a>. Another handy tool is <a href="http://leaverou.github.io/regexplained/">RegExplained</a> by Lea Verou.</figcaption>
+    <figcaption>Regular Expression Visualizer - <a href="http://regexper.com">Regexper</a>. Another handy tool is <a href="http://leaverou.github.io/regexplained/">RegExplained</a> by <strong>Lea Verou</strong>.</figcaption>
 </figure>
 
 `compile()` compiles the regular expression into a regular expression object that can be used later with `.search()`, `.findall()` or `.match()`. If you are using the same regex repeatedly, then it is much efficient to compile the regex first and then apply it on strings.

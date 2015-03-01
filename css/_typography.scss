@@ -1,0 +1,56 @@
+html {
+    font-size: 100%;
+	line-height: 2;
+
+	@media screen and (max-width: 1440px) { font-size: 115%; }
+	@media screen and (min-width: 1600px) { font-size: 125%; }
+    @media screen and (min-width: 1920px) { font-size: 150%; }
+}
+
+h1, .alpha,
+h2, .beta,
+h3, .gamma {
+    font-weight: bold;
+    margin: 0;
+}
+
+h1, .alpha {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h2, .beta {
+    font-size: 1.5em;
+    margin-bottom: 0.6666666666666666em;
+}
+
+h3, .gamma {
+    font-size: 1em;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+p,
+blockquote {
+    font-size: 1em;
+    margin: 0 0 1.5em;
+
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+}
+
+dl,
+ol,
+ul {
+    font-size: 1em;
+    margin: 0 0 1.5em;
+    padding: 0;
+}
+
+dd,
+dt,
+li {
+    margin: 0;
+}
