@@ -4,11 +4,11 @@ layout: default
 
 {% for post in paginator.posts %}
 <article itemscope itemtype="http://schema.org/Article">
-    <time itemprop="datePublished" content="{{ post.date | date: '%d-%b-%Y' }}" datetime="{{ post.date | date: '%d-%b-%Y' }}">{{ post.date | date: "%b %d, %Y" }}</time>
+    <time itemprop="datePublished" content="{{ post.date | date: '%d-%b-%Y' }}" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %d, %Y" }}</time>
     {% if post.type == 'post' %}
     <h2 itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
     <p class="article_postExcerpt" itemprop="articleBody">{{ post.excerpt }}</p>
-    <p><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">Permalink</a> &nbsp;•&nbsp; <a href="https://twitter.com/intent/tweet?text={{ post.title }}&url={{ post.url | prepend: site.baseurl }}&via=pankajparashar">Share</a></p>
+    <p><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">Permalink</a> &nbsp;•&nbsp; <a href="https://twitter.com/intent/tweet?text={{ post.title }}&amp;url={{ post.url | prepend: site.baseurl }}&amp;via=pankajparashar">Share</a></p>
     {% elsif post.type == 'link' %}
     <h2><a href="{{ post.link | prepend: site.baseurl }}">{{ post.title }}</a></h2>
     {{ post.content }}

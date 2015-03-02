@@ -281,9 +281,10 @@ article {
     }
 }
 
-time {
+time,
+small {
     letter-spacing: .5px;
-    font-size: .85em;
+    font-size: 90%;
     display: block;
     color: #9ab;
 }
@@ -307,12 +308,6 @@ nav {
 			color: #346;
 		}
     }
-}
-
-p:not(:last-child),
-ul,
-ol {
-    margin-bottom: 1.5em;
 }
 
 ul,
@@ -372,6 +367,10 @@ blockquote {
 	p {
 		margin-bottom: 0;
 	}
+}
+
+p:last-child {
+    margin-bottom: 0;
 }
 
 code {
