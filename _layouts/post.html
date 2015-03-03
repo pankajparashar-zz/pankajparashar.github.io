@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article>
-    <time datetime='{{ page.date | date: "%d-%B-%Y" }}'>{{ page.date | date: "%d.%b.%Y" }}</time>
+    <time itemprop="datePublished" content="{{ page.date | date: '%d-%b-%Y' }}" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %d, %Y" }}</time>
     <h2><a href="{{ post.url }}">{{ page.title }}</a></h2>
     <p style="font-size:1.1em;color:#666">{{ page.excerpt }}</p>
     
