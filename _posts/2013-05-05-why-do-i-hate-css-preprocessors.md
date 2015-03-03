@@ -7,7 +7,7 @@ excerpt: Preprocessors solves a problem that doesn’t really exist! Continue re
 
 For the past few months I have been struggling to convince myself to switch to a CSS preprocessing language like [Sass](http://sass-lang.com/) or [LESS](http://www.lesscss.org/). But on the contrary, I ended up documenting the reasons for not using a CSS preprocessor. Here’s why,
 
-> Since, the time I wrote this article, I've moved on to use SCSS as my primary pre-processing language, due to its ability to understand plain CSS as well. I don't use all the features offered by SCSS, but use only few of them like variables, mixins, nesting etc. that helps me write better CSS.<br><br><span style="text-align:left;display:block;">– November 23, 2013</span>
+> Since, the time I wrote this article, I've moved on to use SCSS as my primary pre-processing language, due to its ability to understand plain CSS as well. I don't use all the features offered by SCSS, but use only few of them like variables, mixins, nesting etc. that helps me write better CSS – **November 23, 2013**.
 
 #### Another language to write CSS?
 
