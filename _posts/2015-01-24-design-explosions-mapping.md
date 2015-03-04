@@ -10,7 +10,7 @@ review of comparing the mapping experience on iOS and Android. The article uses 
 to evaluate the user experience on both the apps with no clear winner.
 
 <figure>
-    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/c_scale,w_800/v1422785117/1-3uZbvL636moKT5pmswKuCg_sennwm.png" alt="Comparison of mapping experience on both iOS and Android">
+    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1425474413/google_maps_vs_apple_iphone_xoj414.png" alt="Comparison of mapping experience on both iOS and Android">
     <figcaption>Google on the left, Apple right. Screenshot grabbed from the original article.</figcaption>
 </figure>
 
