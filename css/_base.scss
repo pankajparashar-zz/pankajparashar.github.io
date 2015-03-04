@@ -116,7 +116,7 @@ a:not([href]) {
     color: #9ab;
 
     &:hover {
-		background-color: #f3f5f7;;
+		background-color: #f3f5f8;;
         text-decoration: none;
     }
 }
@@ -128,11 +128,10 @@ a:not([href]) {
 
 
 body {
-    background: #f3f5f7;
+    background: #f3f5f8;
 	font-family: 'serif', serif;
-
     line-height: 2;
-    color: #525868;
+    color: #666;
     text-shadow: 0 1px white;
 }
 
@@ -300,7 +299,7 @@ nav {
     
     a {
         padding: .25em 1em;
-        background: #f3f5f7;
+        background: #f3f5f8;
 		background-image: none;
 
 		&:hover {
@@ -322,7 +321,7 @@ li {
 figure {
     margin-bottom: 1.5em;
     margin-right: -1em;
-    background: #f3f5f7;
+    background: #f3f5f8;
     border-bottom: 1px solid #eee;
     border-left: 1px solid #eee;
     @media screen and (max-width: 800px) { margin-left: -1em; margin-right: -1em; }
@@ -352,7 +351,7 @@ figcaption {
 }
 
 blockquote {
-    background: #f3f5f7;
+    background: #f3f5f8;
     padding: 1em;
     margin-right: -1em;
     margin-bottom: 1.5em;
@@ -378,7 +377,7 @@ code {
     font-size: .9em;
     padding: 3px 5px;
     white-space: normal;
-    background: #f3f5f7;
+    background: #f3f5f8;
     text-shadow: 0 1px white;
 }
 
@@ -395,7 +394,7 @@ pre {
     white-space: pre;
     white-space: pre-wrap;
     word-wrap: break-word;
-    background: #f3f5f7;
+    background: #f3f5f8;
     border: 1px solid #eee;
 }
 
