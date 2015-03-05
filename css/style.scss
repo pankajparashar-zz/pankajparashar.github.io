@@ -8,27 +8,42 @@
 @import "base";
 
 /**
- * -------
- * ADPACKS
- * -------
+ * ----------
+ * Carbon Ads
+ * ----------
  *
  **/
 
-#adpacks {
+#carbonads {
     line-height: 1.75;
     display: block;
+	font-size: 90%;
+	background-color: #fff;
+	padding: 1em;
+	margin-top: .5em;
+	transition: all 0.3s ease-in-out;
+	border: 1px solid #eee;
+
+    background-color: #fcfcfc;
+
+    background: #fff -webkit-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
+    background: #fff -moz-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
+    background: #fff -o-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
+    background: #fff -ms-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
+    background: #fff linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
+
+	&:hover {
+		transition: all 0.3s ease-in-out;
+	}
 
     @media screen and (max-width: 800px) { padding-top: 1em;  margin-bottom: 2em; }
 }
 
-.adpacks-img {
+.carbon-img {
     display: inline;
     float: left;
     margin-right: 1em;
     margin-bottom: .5em;
-	margin-top: .25em;
-	background-image: none;
-	background-color: #f3f4f8;
 
 	&:hover {
 		background-color: transparent;
@@ -40,8 +55,7 @@
     }
 }
 
-.adpacks-poweredby {
-    font-size: 90%;
+.carbon-poweredby {
 	display: block;
     line-height: 1.5;
 	clear: both;
@@ -52,16 +66,16 @@
 	}
 }
 
-.adpacks-text {
-    font-size: 90%;
+.carbon-text {
 	display: block;
     line-height: 1.75;
 	background-image: none;
-	word-spacing: 0;
+	word-spacing: 1px;
 	color: #346;
+	_text-align: justify;
 }
 
-	.adpacks-text:hover {
+	.carbon-text:hover {
 		background-color: transparent;
 	}
 
