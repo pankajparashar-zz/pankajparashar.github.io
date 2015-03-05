@@ -52,7 +52,6 @@ h1 {
 	margin-top: 0;
     margin-bottom: .5em;
 	position: relative;
-	display: inline-block;
 }
 
 h2 {
@@ -282,7 +281,7 @@ time,
 small {
     letter-spacing: .5px;
     font-size: 90%;
-    display: block;
+    _display: block;
     color: #9ab;
 }
 

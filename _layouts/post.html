@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article>
-    <time itemprop="datePublished" content="{{ page.date | date: '%d-%b-%Y' }}" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %d, %Y" }}</time>
+    <time itemprop="datePublished" content="{{ page.date | date: '%d-%b-%Y' }}" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %d, %Y" }}</time> &nbsp;•&nbsp; <time>{% assign words = page.content | number_of_words %} {% if words < 360 %} Less than 1 min {% else %} Approx {{ words | divided_by: 180 }} mins {% endif %}</time>
     <h2><a href="{{ post.url }}">{{ page.title }}</a></h2>
     <p style="font-size:1.1em;color:#666">{{ page.excerpt }}</p>
     
