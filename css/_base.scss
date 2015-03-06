@@ -70,22 +70,6 @@ h2 {
     }
 }
 
-h3 {
-    a {
-        color: #346;
-		background-position: 0px 25px;
-		background-image: linear-gradient(to bottom, white 75%, currentColor 75%);
-		background-size: 2px 4px;
-		background-repeat: repeat-x;
-
-        &:hover {
-            color: $brand-color;
-            text-decoration: none;
-			background-position: 0px 26px;
-        }
-    }
-}
-
 h4 {
     font-size: 1em;
 }
@@ -144,41 +128,6 @@ footer {
 }
 
 
-label {
-	color: $brand-color;
-	padding: 10px 10px 0 10px;
-	text-transform: uppercase;
-	letter-spacing: .1em;
-	font-size: 12px;
-	color: rgba(0,0,0,0.3);
-
-	&:hover {
-		cursor: pointer;
-		text-decoration: underline;
-	}
-}
-
-hr {
-    border: 3px solid $brand-color;
-	background-color: $brand-color;
-    border-radius: 3px;
-    width: 4em;
-    display: block;
-    margin-bottom: .5em;
-    text-align: left;
-}
-
-input[type=checkbox] { 
-    display: none;
-    
-    & + .info {
-        display: none;
-    }    
-    
-    &:checked + .info {
-        display: block;
-    }
-}
 
 .info {
     border-bottom: 1px solid #ddd;
