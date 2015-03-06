@@ -56,9 +56,9 @@
 }
 
 .carbon-poweredby {
-	display: block;
+	_display: block;
     line-height: 1.5;
-	clear: both;
+	clear: left;
 	text-align: left;
 
 	&:hover {
