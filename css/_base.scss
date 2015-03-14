@@ -111,7 +111,7 @@ a:not([href]) {
 
 body {
     background: #f3f5f8;
-	font-family: 'sans-serif', serif;
+	font-family: 'sans', sans-serif;
     line-height: 2;
     color: #666;
     text-shadow: 0 1px white;
@@ -321,7 +321,7 @@ p:last-child {
 }
 
 code {
-    font-family: "mono", Consolas, Monaco, 'Andale Mono', monospace;
+    font-family: 'mono', Consolas, Monaco, 'Andale Mono', monospace;
     padding: 3px 5px;
     white-space: normal;
     background: #f3f5f8;
