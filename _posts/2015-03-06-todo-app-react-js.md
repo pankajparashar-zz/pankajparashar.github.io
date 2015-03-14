@@ -143,7 +143,7 @@ current `item` entered in the textfield and both of them are kept in sync using 
 button is pressed, the `item` is passed to its parent component and the focus is returned back to the textfield.
 
 {% highlight js %}
-/* [TODO LIST] */
+/* [TODO FORM] */
 var TodoForm = React.createClass({
 	getInitialState: function() {
 		return {item: ''};
