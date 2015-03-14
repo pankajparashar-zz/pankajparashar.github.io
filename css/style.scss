@@ -24,7 +24,7 @@
 	transition: all 0.3s ease-in-out;
 	border: 1px solid #eee;
 
-    background-color: #fcfcfc;
+    background-color: #fff;
 
     background: #fff -webkit-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
     background: #fff -moz-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
@@ -46,7 +46,7 @@
     margin-bottom: .5em;
 
 	&:hover {
-		background-color: transparent;
+		background: none;
 	}
     
     img {
@@ -64,7 +64,7 @@
 	margin-top: .5em;
 
 	&:hover {
-		background-color: transparent;
+		background-color: white;
 	}
 }
 

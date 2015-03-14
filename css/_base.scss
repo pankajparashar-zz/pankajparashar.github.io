@@ -206,7 +206,7 @@ section {
 article {
     margin: auto;
     max-width: $breakpoint;
-    background-color: #fcfcfc;
+    background-color: #fff;
 
     background: #fff -webkit-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
     background: #fff -moz-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
@@ -308,7 +308,7 @@ blockquote {
     @media screen and (max-width: 800px) { margin-left: -1em; margin-right: -1em; }
 
 	code {
-		background-color: white;
+		background-color: #fff;
 	}
 
 	p {
