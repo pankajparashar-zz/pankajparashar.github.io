@@ -190,3 +190,8 @@ These are functions that take options to modify the behavior of the pattern matc
 >>> pat.findall('Foo\nfOO\n')
 ['Foo\n', 'fOO\n']
 {% endhighlight %}
+
+
+> This article was later transformed into a full length video that can be found here on [Youtube](https://www.youtube.com/watch?v=K28U0HvkIG8), thanks
+to the awesome folks at [Webucator](https://www.webucator.com/). Needless to mention that they also offer customized
+Python courses for both public and individual students on their [website](https://www.webucator.com/programming/python.cfm).
