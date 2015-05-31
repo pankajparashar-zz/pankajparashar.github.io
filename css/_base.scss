@@ -132,13 +132,13 @@ footer {
 
 
 .info {
-    _border-bottom: 1px solid #ddd;
-	margin: 2.5em 0 0;
+    border-bottom: 1px solid #ddd;
+	margin: .5em 0 1em;
 
     border-radius: 2px;
     font-size: 100%;
     overflow: hidden;        
-    padding: 0;
+    padding-bottom: 1em;
     
     li {
         list-style-type: none;
