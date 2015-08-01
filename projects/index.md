@@ -4,7 +4,7 @@ title: Projects
 ---
 
 <article>   
-    <p>Browse through some of my side projects and experiments focused on the exploration of latest web technologies like HTML5, CSS3 and jQuery. I am available for job opportunities and you can find my resume <a href="https://www.dropbox.com/s/7qvlsqn6hl338un/Resume.pdf?dl=0">here</a>.</p>
+    <p>Browse through some of my side projects and experiments focused on the exploration of latest web technologies like HTML5, CSS3 and jQuery. I am available for job opportunities and you can find my resume <a href="https://drive.google.com/open?id=0B3mQUnXmzcmwZTVqOWZrTXBNeWc">here</a>.</p>
     <h2>Pedantic Series</h2>
     <p>A collection of style guides and best practices for popular programming languages to write perfect, performance-oriented, memory-efficient and consistent code.</p>
     <figure>
