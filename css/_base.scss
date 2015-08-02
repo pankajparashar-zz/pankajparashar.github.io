@@ -87,10 +87,10 @@ a {
 	transition: all 0.3s ease-in-out;
 }
     a:hover, a:focus {
-		background-color: #fd4;
-		text-decoration: none;
+		_background-color: #fd4;
+		text-decoration: underline;
 		transition: all 0.3s ease-in-out;
-		color: #346;
+		_color: #346;
 		outline: none;
     }
 
