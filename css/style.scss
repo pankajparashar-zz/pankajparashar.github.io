@@ -8,14 +8,13 @@
 @import "base";
 
 /**
- * ----------
- * Carbon Ads
- * ----------
+ * -------------------
+ * Carbon & AdPack Ads
+ * -------------------
  *
  **/
 
-#carbonads {
-
+#carbonads, #adpacks {
     display: block;
 	font-size: 90%;
 	background-color: #fff;
@@ -28,7 +27,6 @@
     background: #fff -o-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
     background: #fff -ms-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
     background: #fff linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
-
 	margin-bottom: 2em;
 
 	&:hover {
@@ -38,7 +36,7 @@
     @media screen and (max-width: 800px) { padding-top: 1em;  margin-bottom: 2em; }
 }
 
-.carbon-img {
+.carbon-img, .adpacks-img {
     display: inline;
     float: left;
     margin-right: 1em;
@@ -47,16 +45,15 @@
 	&:hover {
 		background: none;
 	}
-    
+
     img {
         border: 1px solid #eee;
 		margin-bottom: 0;
     }
 }
 
-.carbon-poweredby {
+.carbon-poweredby, .adpacks-poweredby {
 	display: block;
-	_min-height: 48px;
     line-height: 1.5;
 	clear: left;
 	text-align: left;
@@ -67,19 +64,17 @@
 	}
 }
 
-.carbon-text {
+.carbon-text, .adpacks-text {
 	display: block;
     line-height: 1.5;
 	background-image: none;
 	word-spacing: 1px;
 	color: #346;
-	_text-align: justify;
-}
 
-	.carbon-text:hover {
+	&:hover {
 		background-color: transparent;
 	}
-
+}
 
 /**
  * FOOTER
