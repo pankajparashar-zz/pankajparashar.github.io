@@ -10,7 +10,7 @@
 *::after {
     margin: 0;
     padding: 0;
-    
+
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -57,12 +57,12 @@ h1 {
 
 h2 {
     margin-bottom: 2.5em;
-    
+
     a {
         color: #346;
         position: relative;
 		background-image: none;
-        
+
         &:hover {
             color: $brand-color;
             text-decoration: none;
@@ -124,7 +124,7 @@ footer {
     max-width: $breakpoint;
     margin: auto;
     color: #6f7c82;
-    
+
     @media screen and (max-width: 800px) { padding: 2em 1em; }
     @media screen and (min-width: 801px) { padding: 3em 0em; }
 }
@@ -140,11 +140,11 @@ footer {
     overflow: hidden;
 	padding: 0;
     padding-bottom: 1em;
-    
+
     li {
         list-style-type: none;
         float: left;
-                
+
         @media screen and (max-width: 800px) { width: 100%; }
         @media screen and (min-width: 801px) { width: 50%; }
     }
@@ -178,7 +178,7 @@ section {
     background: -ms-linear-gradient(left, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
     background: -o-linear-gradient(left, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
     background: linear-gradient(left, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
-    
+
     &::before {
         content: '';
         border-top: 1px solid #eee;
@@ -187,7 +187,7 @@ section {
         display: block;
         position: absolute;
     }
-    
+
     &::after {
         content: '';
         border-bottom: 1px solid #eee;
@@ -196,7 +196,7 @@ section {
         display: block;
         position: absolute;
         bottom: 0;
-    }    
+    }
 }
 
 /**
@@ -215,16 +215,16 @@ article {
     background: #fff -o-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
     background: #fff -ms-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
     background: #fff linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
-    
+
     border-right: 1px solid #eee;
-    
+
     @media screen and (max-width: 800px) { padding: 5em 1em; }
     @media screen and (min-width: 801px) { padding: 5em 1em 5em 0; }
-        
+
     &:not(:last-of-type) {
         border-bottom: 1px solid #eee;
     }
-    
+
     &:first-child {
         border-top: 1px solid #eee;
     }
@@ -242,11 +242,11 @@ nav {
     overflow: hidden;
     margin: auto;
     max-width: $breakpoint;
-    
+
     border-right: 1px solid #eee;
     border-bottom: 1px solid #eee;
     background-color: #fff;
-    
+
     a {
         padding: .25em 1em;
         background: #f3f5f8;
@@ -265,7 +265,7 @@ ol {
 }
 
 li {
-    list-style-type: circle;    
+    list-style-type: circle;
 }
 
 figure {
@@ -279,7 +279,7 @@ figure {
 
 img {
     max-width: 100%;
-    margin-bottom: 1em; 
+    margin-bottom: 1em;
     border-bottom: none;
 }
 
@@ -287,7 +287,7 @@ figcaption {
     color: #6f7c82;
     word-spacing: 1px;
     padding: 0 1.5em 1em 1em;
-    
+
     &::before {
         content: '';
         display: block;
@@ -348,10 +348,10 @@ pre {
 }
 
 pre, code {
-    border-radius: 3px;    
+    border-radius: 3px;
 }
 
-pre code {    
+pre code {
     background: none;
     text-shadow: 0 1px white;
     display: block;
