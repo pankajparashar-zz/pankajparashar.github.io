@@ -307,7 +307,7 @@ figcaption {
         margin-bottom: .5em;
     }
 
-
+@media screen and (max-width: 800px) { margin-left: 1em; }
 }
 
 blockquote {
