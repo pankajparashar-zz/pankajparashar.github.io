@@ -1,5 +1,6 @@
 <footer>
 
+	<!--
 	<ul class="info">
 		<li>
 			<dl>
@@ -14,13 +15,35 @@
 			</dl>
 		</li>
 		<li>
-			<!--<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=pankajparashar" id="_carbonads_js"></script>-->
+
 			<script async type="text/javascript" src="//cdn.adpacks.com/adpacks.js?zoneid=1386&serve=C6SI42Y&placement=pankajparashar" id="_adpacks_js"></script>
 		</li>
 	</ul>
+	-->
+
+
+
+    	<nav>
+    	    {% if paginator.previous_page %}
+    	        {% if paginator.previous_page == 1 %}
+    	            <a href="/" style="float:left">← Newer Articles</a>
+    	        {% else %}
+    	            <a href="{{ paginator.previous_page_path }}" style="float:left">← Newer Articles</a>
+    	        {% endif %}
+    	    {% else %}
+    	            <a style="float:left">← Newer Articles</a>
+    	    {% endif %}
+
+
+    	    {% if paginator.next_page %}
+    	        <a href="{{ paginator.next_page_path }}" style="float:right">Older Articles →</a>
+    	    {% else %}
+    	        <a style="float:right">Older Articles →</a>
+    	    {% endif %}
+    	</nav>
 
     <p>©<script>
             document.write(new Date().getFullYear());
-        </script>
+        </script> –
         <a role="button" onClick="window.scrollTo(0,0)" href="javascript:void(0)" class="footer_backToTop">Back to top</a></p>
 </footer>

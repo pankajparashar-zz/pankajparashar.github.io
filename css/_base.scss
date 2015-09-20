@@ -45,7 +45,7 @@ h1, h2, h3 {
     color: #346;
     word-spacing: 1px;
 	letter-spacing: .5px;
-	font-weight: 400;
+	_font-weight: 400;
 }
 
 h1 {
@@ -87,10 +87,10 @@ a {
 	transition: all 0.3s ease-in-out;
 }
     a:hover, a:focus {
-		_background-color: #fd4;
-		text-decoration: underline;
+		background-color: #fd4;
+		_text-decoration: underline;
 		transition: all 0.3s ease-in-out;
-		_color: #346;
+		color: #346;
 		outline: none;
     }
 
@@ -98,7 +98,7 @@ a:not([href]) {
     color: #9ab;
 
     &:hover {
-		background-color: #f3f5f8;;
+		_background-color: #f3f5f8;;
         text-decoration: none;
     }
 }
@@ -110,7 +110,7 @@ a:not([href]) {
 
 
 body {
-    background: #f3f5f8;
+    _background: #f3f5f8;
 	font-family: 'sans', sans-serif;
     line-height: 2;
     color: #666;
@@ -128,12 +128,26 @@ footer {
     @media screen and (max-width: 800px) { padding: 2em 1em; }
     @media screen and (min-width: 801px) { padding: 3em 0em; }
 }
+footer {
+    padding-top: 2em;
+    padding-bottom: 0;
+    &:after {
+        content: '';
+        _border-bottom: .5em solid black;
+        width: 100%;
+        position: absolute;
+    }
+}
 
+footer p {
+    padding-bottom: 2em;
 
+    text-align: center;
+}
 
 .info {
-    border-bottom: 1px solid #ddd;
-	margin: .5em 0 1em;
+    _border-bottom: 1px solid #ddd;
+	margin: 2.5em 0 0em;
 
     border-radius: 2px;
     font-size: 100%;
@@ -142,6 +156,7 @@ footer {
     padding-bottom: 1em;
 
     li {
+        _border: 1px solid red;
         list-style-type: none;
         float: left;
 
@@ -172,16 +187,12 @@ footer {
 
 section {
     position: relative;
-    background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(50%, #fff), color-stop(50%, transparent), to(transparent));
-    background: -webkit-linear-gradient(left, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
-    background: -moz-linear-gradient(left, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
-    background: -ms-linear-gradient(left, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
-    background: -o-linear-gradient(left, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
-    background: linear-gradient(left, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 
     &::before {
         content: '';
-        border-top: 1px solid #eee;
+        _border-top: 1px solid #eee;
         width: 50%;
         height: 1px;
         display: block;
@@ -190,7 +201,7 @@ section {
 
     &::after {
         content: '';
-        border-bottom: 1px solid #eee;
+        _border-bottom: 1px solid #eee;
         width: 50%;
         height: 1px;
         display: block;
@@ -208,13 +219,6 @@ section {
 article {
     margin: auto;
     max-width: $breakpoint;
-    background-color: #fff;
-
-    background: #fff -webkit-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
-    background: #fff -moz-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
-    background: #fff -o-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
-    background: #fff -ms-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
-    background: #fff linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
 
     border-right: 1px solid #eee;
 
@@ -226,7 +230,7 @@ article {
     }
 
     &:first-child {
-        border-top: 1px solid #eee;
+        _border-top: 1px solid #eee;
     }
 }
 
@@ -243,19 +247,24 @@ nav {
     margin: auto;
     max-width: $breakpoint;
 
-    border-right: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    background-color: #fff;
+    _border-right: 1px solid #eee;
+    _border-bottom: 1px solid #eee;
+    margin-bottom: 2em;
+    _background-color: #fff;
 
     a {
-        padding: .25em 1em;
-        background: #f3f5f8;
+        padding: .25em 0em .5em 0;
+        _background: #f3f5f8;
 		background-image: none;
 
 		&:hover {
-			background-image: none;
+			background-color: transparent;
 			color: #346;
 		}
+    }
+
+    a:not([href]):hover {
+        color: #9ab;
     }
 }
 
@@ -271,9 +280,9 @@ li {
 figure {
     margin-bottom: 1.5em;
     margin-right: -1em;
-    background: #f3f5f8;
-    border-bottom: 1px solid #eee;
-    border-left: 1px solid #eee;
+    _background: #f3f5f8;
+    _border-bottom: 1px solid #eee;
+    _border-left: 1px solid #eee;
     @media screen and (max-width: 800px) { margin-left: -1em; margin-right: -1em; }
 }
 
@@ -281,12 +290,13 @@ img {
     max-width: 100%;
     margin-bottom: 1em;
     border-bottom: none;
+    box-shadow: 0 1px 0 #eee, -1px 0px 0 #eee;
 }
 
 figcaption {
     color: #6f7c82;
     word-spacing: 1px;
-    padding: 0 1.5em 1em 1em;
+    padding: 0 1.5em 1em 0em;
 
     &::before {
         content: '';
@@ -301,11 +311,11 @@ figcaption {
 }
 
 blockquote {
-    background: #f3f5f8;
+    background: #eee;
     padding: 1em;
     margin-right: -1em;
     margin-bottom: 1.5em;
-    border: 1px solid #eee;
+    border-left: .25em solid black;
     border-right: none;
     @media screen and (max-width: 800px) { margin-left: -1em; margin-right: -1em; }
 
@@ -328,6 +338,7 @@ code {
     white-space: normal;
     background: #f3f5f8;
     text-shadow: 0 1px white;
+    font-size: 18px;
 }
 
 pre {

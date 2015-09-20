@@ -6,9 +6,8 @@ layout: default
     <time itemprop="datePublished" content="{{ page.date | date: '%d-%b-%Y' }}" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %d, %Y" }}</time> &nbsp;•&nbsp; <time>{% assign words = page.content | number_of_words %} {% if words < 360 %} Less than 1 min {% else %} Approx {{ words | divided_by: 180 }} mins {% endif %}</time>
     <h2><a href="{{ post.url }}">{{ page.title }}</a></h2>
     <p style="font-size:1.1em;color:#666">{{ page.excerpt }}</p>
-    
+
     {{ content }}
-    
-    <p style="font-size:1.1em;color:#666">Did you enjoy reading this article? I'd love to hear your thoughts. Shoot me an <a href="mailto:email@pankajparashar.com">email</a> or send me a <a href="https://twitter.com/intent/tweet?url={{ page.url | prepend: site.url | uri_escape }}&amp;text={{ page.title }} -&amp;via=pankajparashar">tweet</a> if you've got any comments.</p>
-    <p><a href="/">‹ Back to Home</a></p>
+
+    <blockquote><p>Did you enjoy reading this article? I'd love to hear your thoughts. Shoot me an <a href="mailto:email@pankajparashar.com">email</a> or send me a <a href="https://twitter.com/intent/tweet?url={{ page.url | prepend: site.url | uri_escape }}&amp;text={{ page.title }} -&amp;via=pankajparashar">tweet</a> if you've got any comments.</p></blockquote>
 </article>

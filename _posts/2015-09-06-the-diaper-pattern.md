@@ -14,8 +14,3 @@ Its called **diaper** because it catches all the shit. In practice, it is always
 recommended to catch specific exceptions and let the code break for any runtime
 exceptions. This principle is not new and has been captured in the
 [Zen of Python - PEP20](https://www.python.org/dev/peps/pep-0020/).
-
-<figure>
-    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/c_scale,w_800/v1441528468/zen-of-python-compressor_sxgiym.png" alt=">>>import this;">
-    <figcaption>PEP20 - The Zen of Python.</figcaption>
-</figure>

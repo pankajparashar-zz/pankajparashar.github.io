@@ -17,16 +17,11 @@
 #carbonads, #adpacks {
     display: block;
 	font-size: 90%;
-	background-color: #fff;
+	background-color: #eee;
 	padding: 1em;
 	margin-top: .5em;
 	transition: all 0.3s ease-in-out;
-	border: 1px solid #eee;
-    background: #fff -webkit-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
-    background: #fff -moz-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
-    background: #fff -o-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
-    background: #fff -ms-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
-    background: #fff linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
+	_border: 1px solid #eee;
 	margin-bottom: 2em;
 
 	&:hover {
@@ -37,10 +32,10 @@
 }
 
 .carbon-img, .adpacks-img {
-    display: inline;
-    float: left;
-    margin-right: 1em;
-    margin-bottom: .5em;
+
+
+
+
 
 	&:hover {
 		background: none;
@@ -48,12 +43,13 @@
 
     img {
         border: 1px solid #eee;
-		margin-bottom: 0;
+        
+        display: block;
     }
 }
 
 .carbon-poweredby, .adpacks-poweredby {
-	display: block;
+	display: inline;
     line-height: 1.5;
 	clear: left;
 	text-align: left;
@@ -65,11 +61,16 @@
 }
 
 .carbon-text, .adpacks-text {
-	display: block;
-    line-height: 1.5;
+	_display: block;
+    line-height: 1.75;
 	background-image: none;
-	word-spacing: 1px;
+    word-spacing: 1px;
 	color: #346;
+
+    &::after {
+        content: '  ';
+    }
+
 
 	&:hover {
 		background-color: transparent;
@@ -83,7 +84,7 @@
  **/
 
 .footer_backToTop {
-	float: right;
+
 	cursor: pointer;
 
 	&:hover {

@@ -17,22 +17,3 @@ layout: default
     {% endif %}
 </article>
 {% endfor %}
-
-<nav>
-    {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-            <a href="/" style="float:left">‹ Prev</a>
-        {% else %}
-            <a href="{{ paginator.previous_page_path }}" style="float:left">‹ Prev</a>
-        {% endif %}
-    {% else %}
-            <a style="float:left">‹ Prev</a>
-    {% endif %}
-       
-       
-    {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" style="float:right">Next ›</a>
-    {% else %}
-        <a style="float:right">Next ›</a>
-    {% endif %}
-</nav>
