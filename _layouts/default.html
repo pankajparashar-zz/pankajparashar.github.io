@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<!-- Microdata markup added by Google Structured Data Markup Helper. -->
 <html lang="en">
    <head>
        {% include head.html %}
    </head>
     <body>
         {% include header.html %}
-        <section>
+        {% include contact.html %}
+        <section style="border-top: 1px solid #eee; border-bottom: 1px solid #eee; margin-bottom: 2.5em; margin-top: 3.5em;">
             {{ content }}
-        </section>        
+        </section>
+        {% include pagination.html %}
         {% include footer.html %}
     </body>
 </html>

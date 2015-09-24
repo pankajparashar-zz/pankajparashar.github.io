@@ -1,13 +1,23 @@
----
-layout: default
----
+<!DOCTYPE html>
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
+<html lang="en">
+   <head>
+       {% include head.html %}
+   </head>
+    <body>
+        {% include header.html %}
+        <section style="border-top: 1px solid #eee; border-bottom: 1px solid #eee; margin-bottom: 2.5em;">
+            <article>
+                <time itemprop="datePublished" content="{{ page.date | date: '%d-%b-%Y' }}" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %d, %Y" }}</time> &nbsp;•&nbsp; <time>{% assign words = page.content | number_of_words %} {% if words < 360 %} Less than 1 min {% else %} Approx {{ words | divided_by: 180 }} mins {% endif %}</time>
+                <h2><a href="{{ post.url }}">{{ page.title }}</a></h2>
+                <p style="font-size:1.1em;color:#666">{{ page.excerpt }}</p>
 
-<article>
-    <time itemprop="datePublished" content="{{ page.date | date: '%d-%b-%Y' }}" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %d, %Y" }}</time> &nbsp;•&nbsp; <time>{% assign words = page.content | number_of_words %} {% if words < 360 %} Less than 1 min {% else %} Approx {{ words | divided_by: 180 }} mins {% endif %}</time>
-    <h2><a href="{{ post.url }}">{{ page.title }}</a></h2>
-    <p style="font-size:1.1em;color:#666">{{ page.excerpt }}</p>
+                {{ content }}
 
-    {{ content }}
-
-    <blockquote><p>Did you enjoy reading this article? I'd love to hear your thoughts. Shoot me an <a href="mailto:email@pankajparashar.com">email</a> or send me a <a href="https://twitter.com/intent/tweet?url={{ page.url | prepend: site.url | uri_escape }}&amp;text={{ page.title }} -&amp;via=pankajparashar">tweet</a> if you've got any comments.</p></blockquote>
-</article>
+                <blockquote><p>Did you enjoy reading this article? I'd love to hear your thoughts. Shoot me an <a href="mailto:email@pankajparashar.com">email</a> or send me a <a href="https://twitter.com/intent/tweet?url={{ page.url | prepend: site.url | uri_escape }}&amp;text={{ page.title }} -&amp;via=pankajparashar">tweet</a> if you've got any comments.</p></blockquote>
+            </article>
+        </section>
+        {% include contact.html %}
+        {% include footer.html %}
+    </body>
+</html>

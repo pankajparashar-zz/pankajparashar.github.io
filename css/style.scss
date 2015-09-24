@@ -35,7 +35,8 @@
 
 
 
-
+    float:left;
+    margin-right: 1em;
 
 	&:hover {
 		background: none;
@@ -43,14 +44,14 @@
 
     img {
         border: 1px solid #eee;
-        
+        margin-bottom: 0;
         display: block;
     }
 }
 
 .carbon-poweredby, .adpacks-poweredby {
 	display: inline;
-    line-height: 1.5;
+    line-height: 1;
 	clear: left;
 	text-align: left;
 	margin-top: .5em;
@@ -62,10 +63,11 @@
 
 .carbon-text, .adpacks-text {
 	_display: block;
-    line-height: 1.75;
+    line-height: 1;
 	background-image: none;
     word-spacing: 1px;
 	color: #346;
+    border-bottom: none;
 
     &::after {
         content: '  ';
@@ -74,20 +76,5 @@
 
 	&:hover {
 		background-color: transparent;
-	}
-}
-
-/**
- * FOOTER
- * ------
- *
- **/
-
-.footer_backToTop {
-
-	cursor: pointer;
-
-	&:hover {
-		background-position: 0 25px;
 	}
 }

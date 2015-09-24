@@ -1,4 +1,6 @@
 
+
+
 /**
  * Rest all the margins, paddings and use border-box model.
  * Apply margins only in one direction. Preferable is margin-bottom.
@@ -44,13 +46,11 @@ a::selection {
 h1, h2, h3 {
     color: #346;
     word-spacing: 1px;
-	letter-spacing: .5px;
-	_font-weight: 400;
 }
 
 h1 {
-	margin-top: 0;
-    margin-bottom: .5em;
+	_margin-top: 0;
+    _margin-bottom: .5em;
 	position: relative;
 
 }
@@ -62,6 +62,7 @@ h2 {
         color: #346;
         position: relative;
 		background-image: none;
+        border-bottom: none;
 
         &:hover {
             color: $brand-color;
@@ -84,13 +85,14 @@ h4 {
 a {
     color: $brand-color;
     text-decoration: none;
+
 	transition: all 0.3s ease-in-out;
 }
     a:hover, a:focus {
-		background-color: #fd4;
+		_background-color: #fd4;
 		_text-decoration: underline;
 		transition: all 0.3s ease-in-out;
-		color: #346;
+		color: #000;
 		outline: none;
     }
 
@@ -112,103 +114,12 @@ a:not([href]) {
 body {
     _background: #f3f5f8;
 	font-family: 'sans', sans-serif;
-    line-height: 2;
-    color: #666;
+    color: #6f7c82;
     text-shadow: 0 1px white;
 	font-weight: 400;
 }
 
-header,
-footer {
-	position: relative;
-    max-width: $breakpoint;
-    margin: auto;
-    color: #6f7c82;
 
-    @media screen and (max-width: 800px) { padding: 2em 1em; }
-    @media screen and (min-width: 801px) { padding: 3em 0em; }
-}
-footer {
-    padding-top: 2em;
-    padding-bottom: 0;
-    &:after {
-        content: '';
-        _border-bottom: .5em solid black;
-        width: 100%;
-        position: absolute;
-    }
-}
-
-footer p {
-    padding-bottom: 2em;
-
-    text-align: center;
-}
-
-.info {
-    _border-bottom: 1px solid #ddd;
-	margin: 2.5em 0 0em;
-
-    border-radius: 2px;
-    font-size: 100%;
-    overflow: hidden;
-	padding: 0;
-    padding-bottom: 1em;
-
-    li {
-        _border: 1px solid red;
-        list-style-type: none;
-        float: left;
-
-        @media screen and (max-width: 800px) { width: 100%; }
-        @media screen and (min-width: 801px) { width: 50%; }
-    }
-
-    dt {
-        color: #9ab;
-        letter-spacing: .5px;
-        line-height: 1;
-
-    }
-
-    dd a {
-		color: #346;
-
-
-		&:hover {
-			color: $brand-color;
-		}
-    }
-
-    dd:not(:last-child) {
-        margin-bottom: 1em;
-    }
-}
-
-section {
-    position: relative;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-
-    &::before {
-        content: '';
-        _border-top: 1px solid #eee;
-        width: 50%;
-        height: 1px;
-        display: block;
-        position: absolute;
-    }
-
-    &::after {
-        content: '';
-        _border-bottom: 1px solid #eee;
-        width: 50%;
-        height: 1px;
-        display: block;
-        position: absolute;
-        bottom: 0;
-    }
-}
 
 /**
  * ARTICLE
@@ -221,9 +132,7 @@ article {
     max-width: $breakpoint;
 
     border-right: 1px solid #eee;
-
-    @media screen and (max-width: 800px) { padding: 5em 1em; }
-    @media screen and (min-width: 801px) { padding: 5em 1em 5em 0; }
+    padding: 5em 1em;
 
     &:not(:last-of-type) {
         border-bottom: 1px solid #eee;
@@ -234,8 +143,7 @@ article {
     }
 }
 
-time,
-small {
+time {
     letter-spacing: .5px;
     font-size: 90%;
     _display: block;
@@ -247,14 +155,10 @@ nav {
     margin: auto;
     max-width: $breakpoint;
 
-    _border-right: 1px solid #eee;
-    _border-bottom: 1px solid #eee;
-    margin-bottom: 2em;
-    _background-color: #fff;
-
     a {
         padding: .25em 0em .5em 0;
         _background: #f3f5f8;
+        border-bottom: none;
 		background-image: none;
 
 		&:hover {
@@ -280,34 +184,28 @@ li {
 figure {
     margin-bottom: 1.5em;
     margin-right: -1em;
-    _background: #f3f5f8;
-    _border-bottom: 1px solid #eee;
-    _border-left: 1px solid #eee;
-    @media screen and (max-width: 800px) { margin-left: -1em; margin-right: -1em; }
+    margin-left: -1em;
+}
+
+
+strong {
+    color: #346;
 }
 
 img {
     max-width: 100%;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
     border-bottom: none;
-    box-shadow: 0 1px 0 #eee, -1px 0px 0 #eee;
+    border: 1px solid #ddd;
+    display: block;
 }
 
 figcaption {
     color: #6f7c82;
     word-spacing: 1px;
-    padding: 0 1.5em 1em 0em;
+    padding: 1em 1.5em 1em 1em;
+    background-color: #eee;
 
-    &::before {
-        content: '';
-        display: block;
-        width: 3em;
-        border-radius: 3px;
-        border-top: 3px solid #171d25;
-        margin-bottom: .5em;
-    }
-
-@media screen and (max-width: 800px) { margin-left: 1em; }
 }
 
 blockquote {
@@ -336,9 +234,10 @@ code {
     font-family: 'mono', Consolas, Monaco, 'Andale Mono', monospace;
     padding: 3px 5px;
     white-space: normal;
-    background: #f3f5f8;
+    background: #eee;
     text-shadow: 0 1px white;
     font-size: 18px;
+    color: #346;
 }
 
 pre {
@@ -354,8 +253,8 @@ pre {
     white-space: pre;
     white-space: pre-wrap;
     word-wrap: break-word;
-    background: #f3f5f8;
-    border: 1px solid #eee;
+    background: #eee;
+    border: 1px solid #ddd;
 }
 
 pre, code {
