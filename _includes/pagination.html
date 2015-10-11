@@ -1,18 +1,18 @@
 <nav style="margin-bottom: 2.5em; outline: 0px solid red; padding-left: 1em; padding-right: 1em;">
     {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-            <a href="/" style="float:left">Newer Articles</a>
+            <a href="/" style="float:left">‹ Newer</a>
         {% else %}
-            <a href="{{ paginator.previous_page_path }}" style="float:left">Newer Articles</a>
+            <a href="{{ paginator.previous_page_path }}" style="float:left">‹ Newer</a>
         {% endif %}
     {% else %}
-            <a style="float:left">Newer Articles</a>
+            <a style="float:left">‹ Newer</a>
     {% endif %}
 
 
     {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" style="float:right">Older Articles</a>
+        <a href="{{ paginator.next_page_path }}" style="float:right">Older ›</a>
     {% else %}
-        <a style="float:right">Older Articles</a>
+        <a style="float:right">Older ›</a>
     {% endif %}
 </nav>
