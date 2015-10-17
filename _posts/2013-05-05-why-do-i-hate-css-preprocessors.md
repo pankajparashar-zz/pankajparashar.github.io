@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Do I hate CSS preprocessors? Why?
+title: Why do I hate CSS preprocessors?
 type: post
 excerpt: Preprocessors solves a problem that doesn’t really exist! Continue reading my musings about using a pre-processing tool for a language like CSS.
 ---

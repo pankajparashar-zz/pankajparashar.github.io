@@ -63,6 +63,7 @@ h2 {
         position: relative;
 		background-image: none;
         border-bottom: none;
+        text-decoration: none;
 
         &:hover {
             color: $brand-color;
@@ -84,7 +85,7 @@ h4 {
 
 a {
     color: $brand-color;
-    text-decoration: none;
+    text-decoration: underline;
 
 	transition: all 0.3s ease-in-out;
 }
@@ -131,7 +132,7 @@ article {
     margin: auto;
     max-width: $breakpoint;
 
-    border-right: 1px solid #eee;
+    border-right: 0px solid #eee;
     padding: 5em 1em;
 
     &:not(:last-of-type) {
@@ -201,15 +202,14 @@ img {
 }
 
 figcaption {
-    color: #6f7c82;
+    color: #333;
     word-spacing: 1px;
     padding: 1em 1.5em 1em 1em;
-    background-color: #eee;
-
+    background-color: #fafafa;
 }
 
 blockquote {
-    background: #eee;
+    background: #fafafa;
     padding: 1em;
     margin-right: -1em;
     margin-bottom: 1.5em;

@@ -2,7 +2,7 @@
 layout: post
 title: Magic methods
 type: post
-excerpt: Apart from __init__, Python's got a bunch of very useful magic methods that most of us do not use in day-to-day practice. This article is all about the dunder methods that can add magic to your python code.
+excerpt: Python's got a bunch of very useful magic methods that most of us do not use in day-to-day practice. This article is all about the dunder methods that can add magic to your python code.
 ---
 
 Python's collection of magic methods can broadly be classified into the following
@@ -279,7 +279,7 @@ manager is determined by two magic methods,
 
 `__enter__(self)` - Defines what the context manager should do at the beginning of the
 block created by the with statement. Note that the return value of `__enter__`
-is bound to the target of the `with` statement, or the name after the `as`.
+is bound to the target of the `with` statement, or the name after the `as`.  
 `__exit__(self, exception_type, exception_value, traceback)` - Defines what the
 context manager should do after its block has been executed (or terminates).
 
