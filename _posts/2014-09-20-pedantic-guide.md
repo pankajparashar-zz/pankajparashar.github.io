@@ -1,5 +1,5 @@
 ---
-title: Pdeantic Guide
+title: Pedantic Guide
 type: project
 link: /
 ---
