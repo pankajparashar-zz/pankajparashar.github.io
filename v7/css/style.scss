@@ -1,0 +1,99 @@
+---
+# Front matter comment to ensure Jekyll properly reads file
+---
+
+@import "vars";
+@import "typography";
+@import "fonts";
+@import "base";
+
+/**
+ * ----------
+ * Carbon Ads
+ * ----------
+ *
+ **/
+
+#carbonads {
+
+    display: block;
+	font-size: 90%;
+	background-color: #fff;
+	padding: 1em;
+	margin-top: .5em;
+	transition: all 0.3s ease-in-out;
+	border: 1px solid #eee;
+
+    background-color: #fff;
+    background: #fff -webkit-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
+    background: #fff -moz-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
+    background: #fff -o-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
+    background: #fff -ms-linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
+    background: #fff linear-gradient(left, rgba(0,58,91,0),rgba(0,58,91,0.02));
+
+	margin-bottom: 2em;
+
+	&:hover {
+		transition: all 0.3s ease-in-out;
+	}
+
+    @media screen and (max-width: 800px) { padding-top: 1em;  margin-bottom: 2em; }
+}
+
+.carbon-img {
+    display: inline;
+    float: left;
+    margin-right: 1em;
+    margin-bottom: .5em;
+
+	&:hover {
+		background: none;
+	}
+    
+    img {
+        border: 1px solid #eee;
+		margin-bottom: 0;
+    }
+}
+
+.carbon-poweredby {
+	display: block;
+	_min-height: 48px;
+    line-height: 1.5;
+	clear: left;
+	text-align: left;
+	margin-top: .5em;
+
+	&:hover {
+		background-color: white;
+	}
+}
+
+.carbon-text {
+	display: block;
+    line-height: 1.5;
+	background-image: none;
+	word-spacing: 1px;
+	color: #346;
+	_text-align: justify;
+}
+
+	.carbon-text:hover {
+		background-color: transparent;
+	}
+
+
+/**
+ * FOOTER
+ * ------
+ *
+ **/
+
+.footer_backToTop {
+	float: right;
+	cursor: pointer;
+
+	&:hover {
+		background-position: 0 25px;
+	}
+}

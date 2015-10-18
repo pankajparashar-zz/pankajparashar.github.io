@@ -1,0 +1,59 @@
+html {
+    font-size: 100%;
+	line-height: 2;
+
+	 -webkit-font-smoothing: antialiased;
+
+	@media screen and (max-width:  800px) { line-height: 1.75; }
+	@media screen and (max-width: 1440px) { font-size: 110%; }
+	@media screen and (min-width: 1600px) { font-size: 135%; }
+}
+
+h1,
+h2,
+h3 {
+    _font-weight: bold;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.6666666666666666em;
+	line-height: 1.75;
+}
+
+h3 {
+    font-size: 1em;
+    _line-height: 1;
+    margin-bottom: 1em;
+}
+
+p,
+blockquote {
+    font-size: 1em;
+    margin: 0 0 1.5em;
+
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+}
+
+dl,
+ol,
+ul {
+    font-size: 1em;
+    margin: 0 0 1.5em;
+    padding: 0;
+}
+
+dd,
+dt,
+li {
+    margin: 0;
+}

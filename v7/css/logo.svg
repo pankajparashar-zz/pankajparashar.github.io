@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="919px" height="1084px" viewBox="0 0 919 1084" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0 (7574) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <description>Created with Sketch.</description>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="5" dy="5" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.7 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="logo" sketch:type="MSLayerGroup" transform="translate(2.000000, 2.000000)" filter="url(#filter-1)" fill="#4A6293">
+            <g id="Page-1" sketch:type="MSShapeGroup">
+                <g id="logo">
+                    <g id="Page-1">
+                        <g id="Slice-1">
+                            <g id="Page-1">
+                                <g id="Layer_1">
+                                    <g id="switch3069" transform="translate(0.436290, 0.187000)">
+                                        <g id="g3073">
+                                            <path d="M610.519,172.357 C626.711,281.084 584.84,387.665 561.008,438.664 C496.473,576.777 394.423,652.258 383.196,785.562 C373.582,899.757 427.399,961.666 466.943,990.445 C439.502,980.084 381.443,951.494 338.835,863.191 C320.078,824.32 303.915,746.972 333.949,665.722 C353.105,613.9 416.832,462.169 434.239,398.1 C458.971,307.064 455.463,225.679 386.003,170.954 C353.744,145.537 294.092,116.315 205.105,136.858 C122.617,155.901 55.338,215.379 26.173,294.855 C-30.365,448.922 3.191,628.573 126.866,752.25 L458.804,1084.188 L791.379,751.614 C960.785,582.208 960.785,307.549 791.379,138.145 L786.048,132.814 C708,54.764 609.005,10.449 507.158,-0.187 C560.744,32.139 597.66,86.01 610.519,172.357 Z" id="path3075"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

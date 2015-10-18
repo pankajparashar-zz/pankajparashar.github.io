@@ -1,0 +1,29 @@
+# Site settings
+title: Pankaj Parashar — Developer. Designer. Writer.
+email: email@pankajparashar.com
+description: > # this means to ignore newlines until "baseurl:"
+  Hello. I am Pankaj Parashar, 25yo frontend designer and web
+  developer from Mumbai, India. I make things for the web and
+  write about them on my blog here.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://pankajparashar.com" # the base hostname & protocol for your site
+twitter_username: pankajparashar
+github_username:  pankajparashar
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Pagination
+paginate: 15
+permalink: /posts/:title
+paginate_path: 'page/:num'
+
+# Sass
+sass:
+  sass_dir: css
+  style: :compressed
+  
+# Plugins
+gems:
+  - jekyll-sitemap
