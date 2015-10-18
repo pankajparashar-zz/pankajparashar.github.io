@@ -69,6 +69,11 @@ h2 {
             color: $brand-color;
             text-decoration: none;
 			background-image: none;
+
+            svg {
+                fill: $brand-color;
+            }
+
         }
     }
 }
@@ -91,11 +96,13 @@ a {
     background: none;
     background-image: linear-gradient(to top, rgba(0,0,0,0),rgba(0,0,0,0) 1px,currentColor 2px,currentColor 2px,rgba(0,0,0,0) 2px);
 
+
 }
     a:hover, a:focus {
         color: #000;
         outline: none;
         background-image: linear-gradient(to top, rgba(0,0,0,0),rgba(0,0,0,0) 1px,#173061 2px,#173061 2px,rgba(0,0,0,0) 2px);
+
     }
 
 a:not([href]) {
@@ -211,11 +218,11 @@ figcaption {
 blockquote {
     background: rgba(238, 242, 245, 1);
     padding: 1em;
-    margin-right: -1em;
+
     margin-bottom: 1.5em;
     border-left: .25em solid $beta-font-color;
     border-right: none;
-    @media screen and (max-width: 800px) { margin-left: -1em; margin-right: -1em; }
+    margin-left: -1em; margin-right: -1em;
 
 	code {
 		background-color: #fff;

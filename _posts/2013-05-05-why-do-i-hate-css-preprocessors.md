@@ -48,4 +48,4 @@ Debugging is even harder; when you know that the developer tool of the browser s
 
 I do understand the advantages and the benefits that these preprocessors bring to the plate, but with an additional cost. There are counter-arguments probably to every point that I have made in this article. But that still wouldn’t change my opinion and the way I feel about CSS Preprocessors.
 
-> I don’t hate them but I don’t like them either!
+I don’t hate them but I don’t like them either!
