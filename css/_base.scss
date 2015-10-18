@@ -44,7 +44,7 @@ a::selection {
  **/
 
 h1, h2, h3 {
-    color: #346;
+    color: $beta-font-color;
     word-spacing: 1px;
 }
 
@@ -56,7 +56,7 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 2.5em;
+    margin-bottom: 0em;
 
     a {
         color: #346;
@@ -85,20 +85,21 @@ h4 {
 
 a {
     color: $brand-color;
-    text-decoration: underline;
+    text-decoration: none;
+    position: relative;
+    text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;
+    background: none;
+    background-image: linear-gradient(to top, rgba(0,0,0,0),rgba(0,0,0,0) 1px,currentColor 2px,currentColor 2px,rgba(0,0,0,0) 2px);
 
-	transition: all 0.3s ease-in-out;
 }
     a:hover, a:focus {
-		_background-color: #fd4;
-		_text-decoration: underline;
-		transition: all 0.3s ease-in-out;
-		color: #000;
-		outline: none;
+        color: #000;
+        outline: none;
+        background-image: linear-gradient(to top, rgba(0,0,0,0),rgba(0,0,0,0) 1px,#173061 2px,#173061 2px,rgba(0,0,0,0) 2px);
     }
 
 a:not([href]) {
-    color: #9ab;
+    color: $gamma-font-color;
 
     &:hover {
 		_background-color: #f3f5f8;;
@@ -113,9 +114,8 @@ a:not([href]) {
 
 
 body {
-    _background: #f3f5f8;
 	font-family: 'sans', sans-serif;
-    color: #333;
+    color: $alpha-font-color;
     text-shadow: 0 1px white;
 	font-weight: 400;
 }
@@ -131,24 +131,19 @@ body {
 article {
     margin: auto;
     max-width: $breakpoint;
-
-    border-right: 0px solid #eee;
     padding: 5em 1em;
 
     &:not(:last-of-type) {
-        border-bottom: 1px solid #eee;
-    }
-
-    &:first-child {
-        _border-top: 1px solid #eee;
+        padding-bottom: 0;
     }
 }
 
 time {
     letter-spacing: .5px;
     font-size: 90%;
-    _display: block;
-    color: #9ab;
+    color: $gamma-font-color;
+    margin-bottom: 1.5em;
+    display: block;
 }
 
 nav {
@@ -165,11 +160,12 @@ nav {
 		&:hover {
 			background-color: transparent;
 			color: #346;
+            background-image: none;
 		}
     }
 
     a:not([href]):hover {
-        color: #9ab;
+        color: $gamma-font-color;
     }
 }
 
@@ -186,6 +182,10 @@ figure {
     margin-bottom: 1.5em;
     margin-right: -1em;
     margin-left: -1em;
+
+    & > img {
+        border:none;
+    }
 }
 
 
@@ -202,18 +202,18 @@ img {
 }
 
 figcaption {
-    color: #333;
+
     word-spacing: 1px;
     padding: 1em 1.5em 1em 1em;
-    background-color: #fafafa;
+    background: rgba(238, 242, 245, 1);
 }
 
 blockquote {
-    background: #fafafa;
+    background: rgba(238, 242, 245, 1);
     padding: 1em;
     margin-right: -1em;
     margin-bottom: 1.5em;
-    border-left: .25em solid black;
+    border-left: .25em solid $beta-font-color;
     border-right: none;
     @media screen and (max-width: 800px) { margin-left: -1em; margin-right: -1em; }
 
@@ -224,6 +224,15 @@ blockquote {
 	p {
 		margin-bottom: 0;
 	}
+}
+
+p {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
 }
 
 p:last-child {
@@ -286,4 +295,21 @@ pre code {
 iframe {
     max-width: 100%;
     margin-bottom: 1em;
+}
+
+small {
+    color: $gamma-font-color;
+}
+
+
+header, header > * {
+    outline: 0px solid red !important;
+}
+
+section {
+    outline: 0px solid blue !important;
+}
+
+section * {
+    outline: 0px solid green !important;
 }

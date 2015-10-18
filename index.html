@@ -2,24 +2,37 @@
 layout: default
 ---
 
+<style media="screen">
+.shape-link {
+fill: #346;
+_vertical-align: bottom;
+width: 24px;
+height: 24px;
+position: relative;
+top: 3px;
+}
+</style>
+
 {% for post in paginator.posts %}
 	{% if post.type == 'post' %}
 		<article itemscope itemtype="http://schema.org/Article">
-			<time itemprop="datePublished" content="{{ post.date | date: '%d-%b-%Y' }}" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %d, %Y" }}</time> &nbsp;•&nbsp; <time>{% assign words = post.content | number_of_words %} {% if words < 360 %} Less than a min {% else %} Approx {{ words | divided_by: 180 }} mins {% endif %}</time>
 			<h2 itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-			<p class="article_postExcerpt" itemprop="articleBody">{{ post.excerpt }}</p>
-			<p><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">Permalink</a> &nbsp;•&nbsp; <a href="https://twitter.com/intent/tweet?url={{ post.url | prepend: site.url | uri_escape }}&amp;text={{ post.title }} -&amp;via=pankajparashar">Share</a></p>
+			<time itemprop="datePublished" content="{{ post.date | date: '%d-%b-%Y' }}" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %d, %Y" }}</time>
+
+			<p class="article_postExcerpt" itemprop="articleBody">{{ post.excerpt }} <a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">Continue reading..</a></p>
 		</article>
     {% elsif post.type == 'link' %}
 	    <article itemscope itemtype="http://schema.org/Article">
-			<time itemprop="datePublished" content="{{ post.date | date: '%d-%b-%Y' }}" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %d, %Y" }}</time> &nbsp;•&nbsp; <small>External link</small>
-			<h2><a href="{{ post.link | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+			<h2 style="margin-bottom: 1.5em;"><svg viewBox="0 0 100 52" class="shape-link">
+        <path id="shape-link" d="M74.957.955h-15.139c-1.307 0-2.59.1-3.844.293l-.811.151c4.645 2.666 8.469 6.605 10.986 11.343h9.584c7.322 0 13.258 5.937 13.258 13.259 0 7.321-5.938 13.258-13.258 13.258h-16.555c-3.305 0-6.324-1.212-8.645-3.212l-.004.003-.002-.003c-.494-.414-.886-.802-1.206-1.148-.7-.764-1.011-1.303-1.011-1.303l.002-.003-.002-.003c-1.505-2.15-2.389-4.766-2.389-7.589 0-2.746.834-5.296 2.263-7.413l.127-.176c-1.736-1.473-3.978-2.367-6.429-2.367h-5.041c-1.325 3.052-2.067 6.416-2.067 9.956 0 3.538.737 6.903 2.061 9.955.244.562.509 1.11.792 1.651.237.449.482.896.746 1.332l.054.088.147.23c2.792 4.463 6.948 7.98 11.888 9.973.608.246 1.225.473 1.856.67l.104.031.318.09c.27.08.541.162.814.232l.01.003c2 .513 4.096.787 6.254.787h15.137c13.832.001 25.045-11.212 25.045-25.043s-11.211-25.045-25.043-25.045zM25.542 51.045h15.137c1.308 0 2.592-.102 3.846-.294l.811-.151c-4.646-2.664-8.47-6.604-10.987-11.342h-9.585c-7.322 0-13.257-5.936-13.257-13.259 0-7.322 5.935-13.257 13.257-13.257h16.555c3.304 0 6.323 1.212 8.645 3.212l.002-.003.002.003c.495.413.888.801 1.206 1.148.701.762 1.012 1.302 1.012 1.302l-.002.003.002.003c1.506 2.15 2.391 4.766 2.391 7.588 0 2.746-.835 5.297-2.264 7.412l-.127.176c1.735 1.475 3.979 2.369 6.428 2.369h5.043c1.324-3.053 2.064-6.417 2.064-9.957 0-3.539-.736-6.903-2.061-9.955-.244-.561-.51-1.111-.792-1.651-.237-.451-.481-.898-.746-1.332l-.054-.089-.146-.23c-2.792-4.463-6.949-7.981-11.888-9.973-.608-.245-1.226-.471-1.856-.67l-.103-.032-.318-.089c-.27-.081-.541-.162-.816-.232l-.009-.002c-2-.515-4.095-.788-6.255-.788h-15.135c-13.832 0-25.044 11.212-25.044 25.044 0 13.833 11.212 25.046 25.044 25.046z"></path>
+      </svg> <a href="{{ post.link | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+
 			{{ post.content }}
 			<p><a href="{{ post.link }}">Read more</a></p>
 	    </article>
 	{% elsif post.type == 'project' %}
-        <article style="padding-bottom: 0; background-color: #fafafa; color: #346; border-top: .25em solid black">
-    		<h2><a href="{{ post.link }}">{{ post.title }}</a></h2>
+        <article style="margin-top: 5em; padding-top:2em; background-color: rgba(238, 242, 245, 1); color: #346; border: 0px solid #ddd; border-top: 0em solid black">
+    		<h2 style="margin-bottom: 1.5em; "><a href="{{ post.link }}">{{ post.title }}</a></h2>
     		{{ post.content }}
         </article>
     {% endif %}
