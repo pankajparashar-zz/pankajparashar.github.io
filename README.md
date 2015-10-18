@@ -1,6 +1,10 @@
 [Personal Website](http://pankajparashar.com) - Design Chronicle
 ------------------
 
+**v8 - October 15, 2015**
+
+[![Pankaj Parashar](http://res.cloudinary.com/dw9fem4ki/image/upload/v1445184203/Personal_Website_v8_woxhvi.png "Personal Website v8")](https://github.com/pankajparashar/pankajparashar.github.io/tree/slave/v8)
+
 **v7 - March 23, 2015**
 
 [![Pankaj Parashar](http://res.cloudinary.com/dw9fem4ki/image/upload/v1442569835/Personal_Website_v7_tn8iuq.png "Personal Website v7")](https://github.com/pankajparashar/pankajparashar.github.io/tree/slave/v7)
