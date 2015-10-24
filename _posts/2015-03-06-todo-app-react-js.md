@@ -2,17 +2,20 @@
 layout: post
 title: Building a Todo app with React.js
 type: post
-excerpt: This is my very first attempt with React.js to build a basic ToDo app. Off late, React has gained massive traction as a JavaScript library for building user interfaces largely because it is built by Facebook and the engineers have challenged the age-old best practice for separation of concerns. We'll learn how.
+excerpt: This is my first attempt with React.js to build a basic Todo app. React has gained massive traction as a JavaScript library for building user interfaces largely because it is built by Facebook and their engineers have challenged the age-old best practice for separation of concerns. We'll learn how.
 ---
 
 In this article, we'll build an extremely simple app using Facebook's [react.js](http://facebook.github.io/react/). If you are
 unfamiliar with this library, then I would strongly recommend reading the complete tutorial on building a [Comment system](http://facebook.github.io/react/docs/tutorial.html) using React.
 
+> This article has been updated several times in the past few months, to prevent it
+from becoming outdated in lieu with the rapid changes in the react.js library
+
 ### Thinking in components
 
 The fundamental way of building a React.js app is to break down your app into bunch of useful components and then work your
-way backwards to build them separately. Once the individual compoenents are ready, we can wire them up to exchange data
-between the components. For instance, our ToDo app can be decomposed into the following components and hierarchies,
+way backwards to build them separately. Once the individual components are ready, we can wire them up to exchange data
+between the components. For instance, our Todo app can be decomposed into the following components and hierarchies,
 
 {% highlight sh %}
 - TODO APP
@@ -21,7 +24,7 @@ between the components. For instance, our ToDo app can be decomposed into the fo
     	- TODO LIST ITEM #1
 		- TODO LIST ITEM #2
 		  ...
-		- TODO LIST ITEM #N
+		- TODO LIST ITEM #n
 	- TODO FORM
 {% endhighlight %}
 
@@ -32,8 +35,8 @@ into the `head` of our document.
 
 {% highlight html %}
 <head>
-	<script src="//fb.me/react-0.12.2.min.js"></script>
-	<script src="//fb.me/JSXTransformer-0.12.2.js"></script>
+	<script src="https://fb.me/react-0.12.2.min.js"></script>
+	<script src="https://fb.me/JSXTransformer-0.12.2.js"></script>
 </head>
 <body>
 	<script type="text/jsx">
@@ -47,14 +50,14 @@ into the `head` of our document.
 {% highlight js %}
 /* [TODO APP] */
 var TodoApp = React.createClass({ ... });
-	
+
 	/* [TODO BANNER] && [TODO LIST] */
 	var TodoBanner = React.createClass({ ... });
 	var TodoList = React.createClass({ ... });
-	
+
 		/* [TODO LIST ITEM] */
 		var TodoListItem = React.createClass({ ... });
-	
+
 	/* [TODO FORM] */
 	var TodoForm = React.createClass({ ... });
 
@@ -138,7 +141,7 @@ var TodoListItem = React.createClass({
 
 ### Component 5 - TodoForm
 
-It contains a text field followed by a button to trigger the addition of item in the Todo list. This component will hold the 
+It contains a text field followed by a button to trigger the addition of item in the Todo list. This component will hold the
 current `item` entered in the textfield and both of them are kept in sync using the `onChange` event. As soon as the submit
 button is pressed, the `item` is passed to its parent component and the focus is returned back to the textfield.
 
@@ -171,5 +174,5 @@ var TodoForm = React.createClass({
 });
 {% endhighlight %}
 
-The complete working demo can be found [here](http://codepen.io/pankajparashar/full/MYzgyW/) on Codepen. Ofcourse there's lot 
+The complete working demo can be found [here](http://codepen.io/pankajparashar/full/MYzgyW/) on Codepen. Ofcourse there's lot
 to improve but the code is modular enough to handle any kind of enhancement.
