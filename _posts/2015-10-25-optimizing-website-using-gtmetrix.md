@@ -18,8 +18,3 @@ loading under half-a-second and significantly smaller payload.
     <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/q_100/v1445765582/gtmetrix_o6ggcw.png" alt="GTmetrix report">
     <figcaption>Latest performance report by GTmetrix for pankajparashar.com</figcaption>
 </figure>
-
-The video is kinda boring, because the site loads incredibly fast. Infact I would
-recommend reducing the playback speed to slow down the rendering.
-
-<iframe src="https://gtmetrix.com/reports/pankajparashar.com/A698oWN7/video" width="800" height="670" frameborder="0" scrolling="no" allowfullscreen></iframe>
