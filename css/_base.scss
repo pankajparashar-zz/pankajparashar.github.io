@@ -43,17 +43,11 @@ a::selection {
  *
  **/
 
-h1, h2, h3 {
+h2, h3 {
     color: $beta-font-color;
     word-spacing: 1px;
 }
 
-h1 {
-	_margin-top: 0;
-    _margin-bottom: .5em;
-	position: relative;
-
-}
 
 h2 {
     margin-bottom: 0em;
@@ -76,10 +70,6 @@ h2 {
 
         }
     }
-}
-
-h4 {
-    font-size: 1em;
 }
 
 /**
