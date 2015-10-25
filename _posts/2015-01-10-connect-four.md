@@ -9,5 +9,5 @@ consecutive blocks in any direction, wins. Built using HTML5, CSS3 and JavaScrip
 with bonus unit test cases written in Qunit.
 
 <figure>
-    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1418907523/connect-four_ikpadu.png" alt="Connect Four" style="margin-bottom: -1.5em;">
+    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/c_scale,w_800/v1418907523/connect_four.png" alt="Connect Four" style="margin-bottom: -1.5em;">
 </figure>
