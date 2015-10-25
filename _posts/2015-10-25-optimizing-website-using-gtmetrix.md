@@ -1,0 +1,25 @@
+---
+layout: link
+title: Optimizing website using GTmetrix
+type: link
+link: https://gtmetrix.com/reports/pankajparashar.com/A698oWN7
+---
+
+Recently, I've started using [GTmetrix](https://gtmetrix.com/) to analyze and
+improve the performance of my personal website. It allows you to audit your
+website against industry benchmarks like [PageSpeed](https://developers.google.com/speed/pagespeed/?hl=en),
+[YSlow](http://yslow.org/) etc. and also provides a video and a filmstrip to
+demonstrate the perceived rendering of your website.
+
+I'm very happy about the results with benchmarks running close to 100%, page
+loading under half-a-second and significantly smaller payload.
+
+<figure>
+    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/q_100/v1445765582/gtmetrix_o6ggcw.png" alt="GTmetrix report">
+    <figcaption>Latest performance report by GTmetrix for pankajparashar.com</figcaption>
+</figure>
+
+The video is kinda boring, because the site loads incredibly fast. Infact I would
+recommend reducing the playback speed to slow down the rendering.
+
+<iframe src="https://gtmetrix.com/reports/pankajparashar.com/A698oWN7/video" width="800" height="670" frameborder="0" scrolling="no" allowfullscreen></iframe>
