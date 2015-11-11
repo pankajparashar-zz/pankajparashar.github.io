@@ -13,8 +13,3 @@ demonstrate the perceived rendering of your website.
 
 I'm very happy about the results with benchmarks running close to 100%, page
 loading under half-a-second and significantly smaller payload.
-
-<figure>
-    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/q_100/v1445765582/gtmetrix_o6ggcw.png" alt="GTmetrix report">
-    <figcaption>Latest performance report by GTmetrix for pankajparashar.com</figcaption>
-</figure>
