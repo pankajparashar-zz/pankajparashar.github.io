@@ -81,9 +81,11 @@ var TodoApp = React.createClass({
 	},
 	render: function(){
 		return (
-			<TodoBanner/>
-			<TodoList items={this.state.items}/>
-			<TodoForm onFormSubmit={this.updateItems}/>
+			<div>
+				<TodoBanner/>
+				<TodoList items={this.state.items}/>
+				<TodoForm onFormSubmit={this.updateItems}/>
+			</div>
 		);
 	}
 });
