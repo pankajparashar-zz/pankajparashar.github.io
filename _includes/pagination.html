@@ -1,4 +1,20 @@
-<nav style="padding: 1em 1em; margin-top: 2.5em">
+<style media="screen">
+    nav {
+    }
+    nav a {
+        float: right;
+        padding: 0 1em;
+    }
+</style>
+
+<nav style="padding: 3.5em 1em 1em; border-left: 1px solid #eee;">
+
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" style="padding-right:0">Older ›</a>
+    {% else %}
+        <a style="padding-right:0">Older ›</a>
+    {% endif %}
+
     {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
             <a href="/">‹ Newer</a>
@@ -10,9 +26,4 @@
     {% endif %}
 
 
-    {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" style="float:right">Older ›</a>
-    {% else %}
-        <a style="float:right">Older ›</a>
-    {% endif %}
 </nav>

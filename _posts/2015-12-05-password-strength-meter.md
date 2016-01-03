@@ -11,7 +11,7 @@ to create a password strength meter, indicating the user how easy or difficult
 is to crack the password.
 
 <figure>
-    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/password-strength-meters_trp34k.png" style="border: 1px solid #eee">
+    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/password-strength-meters_trp34k.png">
     <figcaption>Illustrating the password strength indicators from eBay(Top), Gmail(Middle) and Dropbox(Bottom)
     in varying forms, essentially representing the same information.</figcaption>
 </figure>

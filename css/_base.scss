@@ -82,11 +82,21 @@ a {
     color: $brand-color;
     text-decoration: underline;
     position: relative;
-    _text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;
-    background: none;
-    _background-image: linear-gradient(to top, rgba(0,0,0,0),rgba(0,0,0,0) 1px,currentColor 2px,currentColor 2px,rgba(0,0,0,0) 2px);
+
+background-image: -webkit-linear-gradient(#4671fb, #4671fb);
+background-image: -moz-linear-gradient(#4671fb, #4671fb);
+background-image: -ms-linear-gradient(#4671fb, #4671fb);
+background-image: linear-gradient(#4671fb, #4671fb);
+background-position: 0 1.1em;
+background-size: 1px 1px;
+background-repeat: repeat-x;
+text-decoration: none;
 
 
+}
+
+.is-commenting a {
+    background-image: none;
 }
     a:hover, a:focus {
         color: #000;
@@ -128,21 +138,15 @@ body {
 article {
     margin: auto;
     max-width: $breakpoint;
-    padding: 5em 1em 5em 1em;
+    padding: 3.5em 1em 3.5em 3.5em;
+    border-left: 1px solid #eee;
 
     &:last-of-type {
         padding-bottom: 0;
-        margin-bottom: 3.5em;
-    }
 
-    h2, p, ul, ol, h3 {
-        max-width: 640px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     time {
-        max-width: 640px;
         display: block;
         margin: auto;
         margin-bottom: 2.5em;
@@ -163,7 +167,7 @@ time {
 
 nav {
     overflow: hidden;
-    margin: auto;
+    margin: 0 auto 0;
     max-width: $breakpoint;
 
     a {
@@ -196,7 +200,7 @@ li {
 figure {
     margin-bottom: 1.5em;
     margin-right: -1em;
-    margin-left: -1em;
+    margin-left: -3.5em;
 
     & > img {
         border:none;
@@ -212,7 +216,7 @@ img {
     max-width: 100%;
     margin-bottom: 0em;
     border-bottom: none;
-    border: 1px solid #ddd;
+    _border: 1px solid #ddd;
     display: block;
 }
 
@@ -320,17 +324,4 @@ iframe {
 
 small {
     color: $gamma-font-color;
-}
-
-
-header, header > * {
-    outline: 0px solid red !important;
-}
-
-section {
-    outline: 0px solid blue !important;
-}
-
-section * {
-    outline: 0px solid green !important;
 }

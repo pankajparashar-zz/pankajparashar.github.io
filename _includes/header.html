@@ -1,33 +1,42 @@
+
 <style media="screen">
 	header {
-		margin: 0em auto 0;
-		padding: 5em 0;
-		background-color: #eef2f5;
-	    padding: 120px 0;
-	    text-align: center;
-
+		margin: 5em auto 0;
+		padding: 0 1em 3.5em 3.5em;
+		max-width: 800px;
+		border-left: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+		position: relative;
 	}
 
+	header img {
+		border-radius: 100%;
+		width: 4em;
+		height: 4em;
+		margin-left: -2em;
+		background-color: #fff;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	header h1 {
+		display: inline-block;
+		margin-bottom: 1em;
+		color: #346;
+	}
 
 	header a {
-		color: #000;
-		text-decoration: underline;
-	}
-	@media screen and (max-width: 800px) {
-		header {
-			padding: 2em 1em;
-			margin: 0;
-		}
-
-		header img {
-			margin-right: 1em !important;
-		}
 	}
 </style>
 
 <header>
-	<div style="max-width: 800px; padding: 0em;margin:0 auto; text-shadow: none;">
-		<a href="/"><img src="https://cdn-images-1.medium.com/fit/c/240/240/1*2y4U5nB-Y9sWZExF4D6LYg.jpeg" style="float: left; margin-right: 1.5em; margin-bottom: -.25em; margin-top: .2em; width: 7.5em; height: 7.5em; border-radius: 100%;"></a>
-		<p>I'm <strong style="">Pankaj Parashar</strong>, a 26yo frontend designer, web developer &amp; writer from Mumbai, India. <br>I make things for the web and write about them on my blog here. <a href="#">Send me an email</a> or <a href="#">fol­low me on Twit­ter</a> to get in touch with me.</p>
-	</div>
+
+		<img src="https://cdn-images-1.medium.com/fit/c/240/240/1*2y4U5nB-Y9sWZExF4D6LYg.jpeg" alt="Pankaj Parashar's Face">
+	
+	<h1>Pankaj Parashar</h1>
+	<p>
+		Hello. I'm 26yo frontend designer, web developer and writer from <strong>Mumbai, India</strong>.
+		I <strong>make things</strong> for the web and <strong>write</strong> about them on my blog here.
+	</p>
 </header>

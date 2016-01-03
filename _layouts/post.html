@@ -30,11 +30,6 @@
         </script>
         {% include footer.html %}
 
-        <script type="text/javascript">
-        var elem = document.getElementById("moot-logo");
-        elem.parentElement.removeChild(elem);
-        </script>
-
         <style media="screen">
         .is-commenting {
             font-size: 100%;
@@ -46,5 +41,16 @@
 
         #moot-logo{height: 0 !important;}
         </style>
+
+        <script type="text/javascript">
+            setTimeout(function() {
+                var elem = document.getElementById("moot-logo");
+                elem.parentElement.removeChild(elem);
+                document.getElementById( 'moot-logo' ).style.display = 'none';
+            }, 5000);
+
+
+        </script>
+
     </body>
 </html>
