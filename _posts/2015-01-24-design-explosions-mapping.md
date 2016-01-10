@@ -11,7 +11,7 @@ to evaluate the user experience on both the apps with no clear winner.
 
 <figure>
     <img src="https://res.cloudinary.com/dw9fem4ki/image/upload/c_scale,w_800/v1445760469/google_maps_vs_apple_iphone.png" alt="Comparison of mapping experience on both iOS and Android">
-    <figcaption>Google on the left, Apple right. Screenshot grabbed from the original article.</figcaption>
+    <figcaption style="text-align: center">Google Maps (left) v/s Apple Maps (right)</figcaption>
 </figure>
 
 The idea behind this article is to teach rather than judge, with just a bunch of design lessons inspired from studying two
