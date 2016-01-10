@@ -5,7 +5,7 @@ link: https://codelab-io.herokuapp.com/
 ---
 
 Over the weekend, I dished out a realtime in-browser code editor, perfect for
-collaborating online with other developers. It can also be used to as a whiteboard
+collaborating online with other developers. It can also be used as a whiteboard
 to interview candidates distanced by geographical location. As far as the technology
 stack is concerned,
 
