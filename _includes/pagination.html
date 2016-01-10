@@ -1,13 +1,24 @@
 <style media="screen">
     nav {
+        padding-top: 3.5em;
+        border-left: 1px solid #eee;
+    }
+    div {
+        background-color: #eee;
+        overflow: hidden;
+        padding: 1em 1em 1em;
+
     }
     nav a {
         float: right;
         padding: 0 1em;
+
     }
 </style>
 
-<nav style="padding: 3.5em 1em 1em; border-left: 1px solid #eee;">
+<nav>
+    <div class="">
+
 
     {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path }}" style="padding-right:0">Older ›</a>
@@ -25,5 +36,5 @@
             <a>‹ Newer</a>
     {% endif %}
 
-
+</div>
 </nav>
