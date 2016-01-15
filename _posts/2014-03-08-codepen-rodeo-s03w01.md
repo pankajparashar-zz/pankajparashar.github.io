@@ -8,7 +8,7 @@ link: http://codepen.io/pankajparashar/full/plcLh
 My entry for this week's [Codepen rodeo challenge](http://blog.codepen.io/rodeo/season-three/) titled the "The Chili recipe".
 
 <figure>
-    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1394273533/codepen-rodeo-s03w01_bogrzy.png" alt="Codepen Rode challenge">
+    <img src="https://res.cloudinary.com/dw9fem4ki/image/upload/v1394273533/codepen-rodeo-s03w01_bogrzy.png" alt="Codepen Rode challenge">
     <figcaption>Codepen Rodeo S03W01 Challenge - The Chili Recipe. Demo <a href="http://codepen.io/pankajparashar/full/plcLh">here</a>.</figcaption>
 </figure>
 

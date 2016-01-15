@@ -12,6 +12,6 @@ Thanks to [Chris](http://chriscoyier.net/), I once again got the amazing opportu
 - [Marcin Pietrzak](https://profiles.wordpress.org/iworks/) later alson converted this into a [Wordpress plugin](https://wordpress.org/plugins/reading-position-indicator/).
 
 <figure>
-    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1398621227/examples_dglnrr.png" style="border:1px solid #ddd">
+    <img src="https://res.cloudinary.com/dw9fem4ki/image/upload/v1398621227/examples_dglnrr.png" style="border:1px solid #ddd">
     <figcaption>a. <a href="http://paulstamatiou.com/">Stammy's</a> blog uses a red color progress bar b. <a href="http://benfrain.com/">Ben Frain's</a> website displays the number of words left c. <a href="http://ia.net/">Information Architects</a> show "minutes left" to indicate the current reading position.</figcaption>
 </figure>
