@@ -11,6 +11,6 @@ Thanks to Chris Coyier, for offering me the opportunity to write for [CSS-Tricks
 - CSS Weekly : [Issue #87](css-weekly.com/issue-87/) by Zoran Jambor.
 
 <figure>
-    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1391875666/OSX_Style_Disk_Usage_qevows.png">
+    <img src="https://res.cloudinary.com/dw9fem4ki/image/upload/v1391875666/OSX_Style_Disk_Usage_qevows.png">
     <figcaption>OSX-style disk usage experiment created exclusively for the <a href="http://css-tricks.com/html5-meter-element/">CSS-Tricks article</a>. Fullscreen demo can be on Codepen can be found <a href="http://codepen.io/pankajparashar/full/LceIj">here</a>.</figcaption>
 </figure>

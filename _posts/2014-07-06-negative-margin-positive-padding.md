@@ -12,7 +12,7 @@ Ever wondered, how you can stretch the background of the container beyond the vi
 The idea stems from the [box model technique](http://css-tricks.com/the-css-box-model/), in which you can apply negative margins on block child container for them to stretch outside the parent container. We use this idea of negative margins to stretch the background of the container to the entire width of the webpage. For example, `margin-left: -999em` will stretch the left margin of the box to far left, which in this case is outside the viewport (`-999em` is the magic number).
 
 <figure>
-    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1404648677/https_dl_kraken_io_7e3eb546529ff3421622655117b4bd51_negative-positive_s1vuna.png" alt="Experiment">
+    <img src="https://res.cloudinary.com/dw9fem4ki/image/upload/v1404648677/https_dl_kraken_io_7e3eb546529ff3421622655117b4bd51_negative-positive_s1vuna.png" alt="Experiment">
     <figcaption>Negative Margin, Positve Padding – <a href="http://codepen.io/pankajparashar/full/rEvIJ/">Codepen Experiment</a></figcaption>
 </figure>
 

@@ -41,7 +41,7 @@ Match ordinary characters like `iii`
 >>> match = re.search(r'iii', 'piiig')
 'iii'
 {% endhighlight %}
-  
+
 Match a single character using `.`
 {% highlight python %}
 >>> match = re.search(r'i.i', 'pirig')
@@ -163,7 +163,7 @@ For example, lets find out all the occurences of email address from the given st
 {% endhighlight %}
 
 <figure>
-    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1408788930/regxper_dazjby.png">
+    <img src="https://res.cloudinary.com/dw9fem4ki/image/upload/v1408788930/regxper_dazjby.png">
     <figcaption>Regular Expression Visualizer - <a href="http://regexper.com">Regexper</a>. Another handy tool is <a href="http://leaverou.github.io/regexplained/">RegExplained</a> by <strong>Lea Verou</strong>.</figcaption>
 </figure>
 

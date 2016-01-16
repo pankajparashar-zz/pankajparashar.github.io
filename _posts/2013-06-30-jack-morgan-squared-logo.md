@@ -11,13 +11,13 @@ through the brainstorming process of designing a logo with great depth in an att
 yet tastefully inspriing and instantly recognisable.
 
 <figure>
-    <img src="http://jackwmorgan.com/wp-content/uploads/2013/06/SQUARED-Typographic-Frame.png" alt="">
+    <img src="https://jackwmorgan.com/wp-content/uploads/2013/06/SQUARED-Typographic-Frame.png" alt="">
     <figcaption>The awesome Square logo hanging by the wall created by Jack Morgan.</figcaption>
 </figure>
 
 Almost a year after publishing this case study, Jack [rebranded](http://jackwmorgan.com/rebranding-google-squared/) the Google Squared logo with a completely different approach by incorporating the nuances cultivated by the students at the Square center.
 
 <figure>
-    <img src="http://jackwmorgan.com/wp-content/uploads/2014/11/Google-Squared-Hip-to-be-Squared-T-Shirt.jpg" alt="">
+    <img src="https://jackwmorgan.com/wp-content/uploads/2014/11/Google-Squared-Hip-to-be-Squared-T-Shirt.jpg" alt="">
     <figcaption>It's hip to be Squared potrayed by a woman with the new Square logo.</figcaption>
 </figure>

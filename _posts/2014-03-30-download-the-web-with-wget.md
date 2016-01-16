@@ -63,6 +63,6 @@ $ wget ftp://cdn.pankajparashar.com/file.txt
 $ wget --ftp-user=USERNAME --ftp-password=PASSWORD ftp://cdn.pankajparashar.com/file.txt{% endhighlight %}
 
 <figure>
-    <img src="http://img.labnol.org/di/wget-mirror-site.png" title="WGET Cheatsheet">
+    <img src="https://img.labnol.org/di/wget-mirror-site.png" title="WGET Cheatsheet">
     <figcaption>WGET cheatsheet via @labnol - <a href="http://www.labnol.org/software/wget-command-examples/28750/">All the Wget Commands You Should Know</a></figcaption>
 </figure>

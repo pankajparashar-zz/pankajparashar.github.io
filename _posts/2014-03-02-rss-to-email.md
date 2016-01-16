@@ -9,7 +9,7 @@ excerpt: Debuting today, is the new RSS-to-Email feature that I have enabled on 
 [Campaign Monitor](http://www.campaignmonitor.com/) is the slickest, [Mailchimp](http://mailchimp.com/) has the most features and [Sendicate](https://www.sendicate.net/) is the easiest to setup. And I chose Sendicate, here's why?
 
 <figure>
-    <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/v1393778080/sendicate_mu2vp6.jpg">
+    <img src="https://res.cloudinary.com/dw9fem4ki/image/upload/v1393778080/sendicate_mu2vp6.jpg">
     <figcaption>Sendicate - The email marketing app for smart businesses.</figcaption>
 </figure>
 
