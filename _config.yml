@@ -16,7 +16,7 @@ permalink: pretty
 
 # Pagination
 paginate: 15
-permalink: /posts/:title
+permalink: /posts/:title/
 paginate_path: 'page/:num'
 
 # Sass
