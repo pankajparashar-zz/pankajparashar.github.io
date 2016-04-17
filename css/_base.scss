@@ -202,8 +202,6 @@ li {
 
 figure {
     margin-bottom: 1.5em;
-    margin-right: -1em;
-    margin-left: -3.5em;
 
     & > img {
         border:none;
@@ -217,17 +215,17 @@ strong {
 
 img {
     max-width: 100%;
-    margin-bottom: 0em;
+    margin-bottom:1.5em;
     border-bottom: none;
-    _border: 1px solid #ddd;
     display: block;
 }
 
 figcaption {
-
+    
     word-spacing: 1px;
-    padding: 1em 1.5em 1em 1em;
-    background: #eee;
+    color: #9ab;
+    font-size: .9em;
+    
 }
 
 blockquote {

@@ -18,6 +18,6 @@ left and you'll get the Atomic CSS output on your right.
 - A preview window, to design in your browser.  
 - Ability to copy output to your clipboard, thanks to [clipboard.js](https://clipboardjs.com).  
 
-<figure style="margin-right: -3.5em;">
+<figure>
     <img src="http://res.cloudinary.com/dw9fem4ki/image/upload/c_scale,w_800/v1457773327/Screen_Shot_2016-03-12_at_2.30.05_PM_imla7l.png" style="margin-bottom: -1.5em;" alt="Screenshot for Atomizer Web app">
 </figure>
