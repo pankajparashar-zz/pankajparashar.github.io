@@ -12,7 +12,7 @@ The latest version also has the ability to specify configuration to generate
 custom classes based on the configuration file. Simply copy-paste the markup on the
 left and you'll get the Atomic CSS output on your right.
 
-**v2 of Atomic CSS has,**  
+v2 of Atomic CSS has,
 
 - A shiny new editor, thanks to [CodeMirror](http://codemirror.net/)!  
 - A preview window, to design in your browser.  
