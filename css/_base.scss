@@ -90,12 +90,12 @@ a {
     background-image: -moz-linear-gradient(gray, gray);
     background-image: -ms-linear-gradient(gray, gray);
     background-image: linear-gradient(gray, gray);
-    background-position: 0 1.2em;
-    background-size: 2px 2px;
+    background-position: 0 1.25em;
+    background-size: 2px 3px;
     background-repeat: repeat-x;
 }
     a:hover, a:focus {				
-        color: #ff6d5b;
+        color: $brand-color;
 		transition: all 0.3s ease-in-out;		
 		outline: none;
         text-shadow: 0.04545em 0 0 #fff,0.09091em 0 0 #fff,0.13636em 0 0 #fff,-0.04545em 0 0 #fff,-0.09091em 0 0 #fff,-0.13636em 0 0 #fff,0 0.04545em 0 #fff,0 0.09091em 0 #fff,0 -0.04545em 0 #fff,0 -0.09091em 0 #fff;
@@ -103,8 +103,8 @@ a {
         background-image: -moz-linear-gradient(#ff6d5b, #ff6d5b);
         background-image: -ms-linear-gradient(#ff6d5b, #ff6d5b);
         background-image: linear-gradient(#ff6d5b, #ff6d5b);
-        background-position: 0 1.2em;
-        background-size: 2px 2px;
+        
+        
         background-repeat: repeat-x;
     }
 
