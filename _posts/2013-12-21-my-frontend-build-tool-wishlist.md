@@ -1,8 +1,11 @@
 ---
-layout: post
 title: Frontend build tool wishlist
+date: 2013-12-21 00:00:00 Z
+layout: post
 type: post
-excerpt: For quite a long time now, I have been toying around an idea of a perfect build tool to deploy front-end projects. This article is all about my wishlist from such a tool.
+excerpt: For quite a long time now, I have been toying around an idea of a perfect
+  build tool to deploy front-end projects. This article is all about my wishlist from
+  such a tool.
 ---
 
 Assuming, you have completed the development work on the frontend of your next web project and are ready to deploy it in production. A typical project involves concatenating and minifying the assets, checking the code for errors, compressing the images and testing it across different combination and breed of browsers, devices and operating system. So, here goes my wishlist,

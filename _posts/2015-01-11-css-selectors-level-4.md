@@ -1,8 +1,11 @@
 ---
-layout: post
 title: CSS Selectors Level 4
+date: 2015-01-11 00:00:00 Z
+layout: post
 type: post
-excerpt: Not-so long ago I remember writing about CSS Selectors Level 3. Fast-forward 14 months, I'm now writing about the next specification of CSS that aims to improve and enhance CSS3 by introducing wide-range of new selectors and pseudo-classes.
+excerpt: Not-so long ago I remember writing about CSS Selectors Level 3. Fast-forward
+  14 months, I'm now writing about the next specification of CSS that aims to improve
+  and enhance CSS3 by introducing wide-range of new selectors and pseudo-classes.
 ---
 
 > There's no such thing as CSS4, as pointed out by Tab Atkins on [his blog](http://www.xanthir.com/b4Ko0). 

@@ -1,6 +1,7 @@
 ---
-layout: link
 title: The Apple FBI saga
+date: 2016-03-05 00:00:00 Z
+layout: link
 type: link
 link: http://blog.trailofbits.com/2016/02/17/apple-can-comply-with-the-fbi-court-order/
 ---

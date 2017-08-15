@@ -1,6 +1,7 @@
 ---
-layout: link
 title: Serving from a cookieless domain?
+date: 2014-12-28 00:00:00 Z
+layout: link
 type: link
 link: http://www.jonathanklein.net/2014/02/revisiting-cookieless-domain.html
 ---

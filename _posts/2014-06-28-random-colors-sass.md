@@ -1,9 +1,11 @@
 ---
-layout: post
 title: Random Colors in Sass
+date: 2014-06-28 00:00:00 Z
+layout: post
 type: post
-excerpt: Randomly generating numbers in Sass is easy using the random() function that was released in v3.3. Interestingly, we can extend this concept to randomly generate colors as well.
-
+excerpt: Randomly generating numbers in Sass is easy using the random() function that
+  was released in v3.3. Interestingly, we can extend this concept to randomly generate
+  colors as well.
 ---
 
 I have been working on a soon-to-be released project for which I needed a bunch of randomly generated colors. Ofcourse, I could have taken the JavaScript route to accomplish this, but I wanted to keep my setup light, as the project itself was completely CSS-based. This brought me to the idea of using Sass to randomly generate colors for the CSS. Ofcourse, I knew that we could use [Sass to randomly generate numbers](https://github.com/sass/sass/blob/master/doc-src/SASS_CHANGELOG.md#330-7-march-2014), I was keen to extend this concept for colors as well. 

@@ -1,6 +1,7 @@
 ---
-layout: link
 title: Mistakes in the Design of CSS by W3C
+date: 2014-03-22 00:00:00 Z
+layout: link
 type: link
 link: http://wiki.csswg.org/ideas/mistakes
 ---

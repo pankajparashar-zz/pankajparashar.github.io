@@ -1,8 +1,11 @@
 ---
-layout: post
 title: Magic methods
+date: 2015-09-23 00:00:00 Z
+layout: post
 type: post
-excerpt: Python's got a bunch of very useful magic methods that most of us do not use in day-to-day practice. This article is all about the dunder methods that can add magic to your python code.
+excerpt: Python's got a bunch of very useful magic methods that most of us do not
+  use in day-to-day practice. This article is all about the dunder methods that can
+  add magic to your python code.
 ---
 
 Python's collection of magic methods can broadly be classified into the following

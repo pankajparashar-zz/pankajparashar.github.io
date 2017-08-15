@@ -1,6 +1,7 @@
 ---
-layout: link
 title: Freelance writing Infographics
+date: 2014-06-08 00:00:00 Z
+layout: link
 type: link
 link: http://www.expand2web.com/blog/copywriting-infographic/
 ---

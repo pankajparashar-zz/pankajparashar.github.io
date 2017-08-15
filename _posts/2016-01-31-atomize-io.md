@@ -1,5 +1,6 @@
 ---
 title: Atomize IO
+date: 2016-01-31 00:00:00 Z
 type: project
 link: https://atomize-io.herokuapp.com/
 ---

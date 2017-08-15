@@ -1,6 +1,7 @@
 ---
-layout: link
 title: Offline Web Applications
+date: 2016-01-23 00:00:00 Z
+layout: link
 type: link
 link: https://www.udacity.com/course/offline-web-applications--ud899
 ---

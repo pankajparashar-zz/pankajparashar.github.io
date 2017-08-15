@@ -1,5 +1,6 @@
 ---
 title: Pedantic Guide
+date: 2014-09-20 00:00:00 Z
 type: project
 link: https://pedantic-python.readme.io
 ---

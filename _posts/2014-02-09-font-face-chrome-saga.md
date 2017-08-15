@@ -1,9 +1,9 @@
 ---
-layout: link
 title: Font-face saga of Chrome
+date: 2014-02-09 00:00:00 Z
+layout: link
 type: link
 link: https://code.google.com/p/chromium/issues/detail?id=236298
-
 ---
 
 Apparently, Google Chrome has been infected with a wierd bug that causes web fonts to randomly disappear and fallback to the default system fonts. Initially, I thought I was the only one facing this problem, becuase either hovering the text or reloading the page solved the issue.

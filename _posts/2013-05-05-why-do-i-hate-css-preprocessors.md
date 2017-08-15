@@ -1,8 +1,10 @@
 ---
-layout: post
 title: Why do I hate CSS preprocessors?
+date: 2013-05-05 00:00:00 Z
+layout: post
 type: post
-excerpt: Preprocessors solves a problem that doesn’t really exist! Continue reading my musings about using a pre-processing tool for a language like CSS.
+excerpt: Preprocessors solves a problem that doesn’t really exist! Continue reading
+  my musings about using a pre-processing tool for a language like CSS.
 ---
 
 For the past few months I have been struggling to convince myself to switch to a CSS preprocessing language like [Sass](http://sass-lang.com/) or [LESS](http://www.lesscss.org/). But on the contrary, I ended up documenting the reasons for not using a CSS preprocessor. Here’s why,

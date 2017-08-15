@@ -1,6 +1,7 @@
 ---
-layout: link
 title: Mapping on iOS and Android
+date: 2015-01-24 00:00:00 Z
+layout: link
 type: link
 link: https://medium.com/design-explosion/design-explosions-mapping-on-ios-ad4ec6ba5c59
 ---

@@ -1,8 +1,11 @@
 ---
-layout: post
 title: Negative Margin, Positive Padding
+date: 2014-07-06 00:00:00 Z
+layout: post
 type: post
-excerpt: Neat little trick I learned from Joshua Hibbert's website, where he has effectively used this technique to design backgrounds stretching infinitely on either directions but the content respects the width.
+excerpt: Neat little trick I learned from Joshua Hibbert's website, where he has effectively
+  used this technique to design backgrounds stretching infinitely on either directions
+  but the content respects the width.
 ---
 
 Ever wondered, how you can stretch the background of the container beyond the viewport but the content should not exceed the defined width? Well, if you are looking closely, then the answer is all over the place on this website. As I have used this technique, to design the `blockquotes`, `pre`, and `code` blocks on my website.

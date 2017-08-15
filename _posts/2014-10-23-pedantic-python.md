@@ -1,6 +1,7 @@
 ---
-layout: link
 title: Introducing Pedantic Python
+date: 2014-10-23 00:00:00 Z
+layout: link
 type: link
 link: http://pedantic-python.readme.io/
 ---

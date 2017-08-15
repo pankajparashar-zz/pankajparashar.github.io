@@ -1,8 +1,10 @@
 ---
-layout: post
 title: Introducing Pandas
+date: 2015-11-08 00:00:00 Z
+layout: post
 type: post
-excerpt: The intent of this post is to introduce you to the Pandas library by performing common tasks like reading, writing files and manipulating data.
+excerpt: The intent of this post is to introduce you to the Pandas library by performing
+  common tasks like reading, writing files and manipulating data.
 ---
 
 [Pandas](http://pandas.pydata.org/) is an open source Python library that provides

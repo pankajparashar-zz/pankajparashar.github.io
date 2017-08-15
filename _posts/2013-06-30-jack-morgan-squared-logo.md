@@ -1,6 +1,7 @@
 ---
-layout: link
 title: Jack Morgan on Squared logo
+date: 2013-06-30 00:00:00 Z
+layout: link
 type: link
 link: http://jackwmorgan.com/squared/
 ---

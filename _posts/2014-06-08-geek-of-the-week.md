@@ -1,6 +1,7 @@
 ---
-layout: link
 title: Got featured as Geek of the Week
+date: 2014-06-08 00:00:00 Z
+layout: link
 type: link
 link: http://www.geekpause.com/geek-of-the-week/geek-week-pankaj-parashar/
 ---

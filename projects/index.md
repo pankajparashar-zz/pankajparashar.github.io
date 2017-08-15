@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Projects
+layout: default
 ---
 
 <article>   

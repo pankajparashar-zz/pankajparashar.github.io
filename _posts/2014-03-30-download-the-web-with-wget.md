@@ -1,9 +1,11 @@
 ---
-layout: post
 title: Download the web with WGET
+date: 2014-03-30 00:00:00 Z
+layout: post
 type: post
-excerpt: Having recently discovered the power of wget command, I have written this article to remind myself the various ways we could use this command to download the world wide web.
-
+excerpt: Having recently discovered the power of wget command, I have written this
+  article to remind myself the various ways we could use this command to download
+  the world wide web.
 ---
 
 The name `wget` is derived from the amalgamation of `World Wide Web` and `Get`. The UNIX [manual page](http://unixhelp.ed.ac.uk/CGI/man-cgi?wget) describes it as,

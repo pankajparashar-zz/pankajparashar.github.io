@@ -1,5 +1,6 @@
 ---
 title: Codelab IO
+date: 2016-01-10 00:00:00 Z
 type: project
 link: https://codelab-io.herokuapp.com/
 ---

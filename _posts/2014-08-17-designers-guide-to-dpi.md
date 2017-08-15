@@ -1,6 +1,7 @@
 ---
-layout: link
 title: Designers Guide to DPI
+date: 2014-08-17 00:00:00 Z
+layout: link
 type: link
 link: http://sebastien-gabriel.com/designers-guide-to-dpi/home
 ---

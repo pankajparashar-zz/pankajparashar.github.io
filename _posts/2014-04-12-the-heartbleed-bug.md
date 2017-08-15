@@ -1,8 +1,10 @@
 ---
-layout: post
 title: The HeartBleed Bug
+date: 2014-04-12 00:00:00 Z
+layout: post
 type: post
-excerpt: The encryption flaw that punctured the heart of the Internet and has left almost two-thirds of the world's websites vulnerable to attack by hackers.
+excerpt: The encryption flaw that punctured the heart of the Internet and has left
+  almost two-thirds of the world's websites vulnerable to attack by hackers.
 ---
 
 This [bug](http://heartbleed.com/) was discovered on April 07, 2014, by Neel Mehta from Google Security and the team of security engineers (Riku, Antti and Matti) from Codenomicon and has affacted v1.0.1 and 1.0.2-beta releases of OpenSSL including 1.0.1f and 1.0.2-beta1.

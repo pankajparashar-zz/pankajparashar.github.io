@@ -1,5 +1,6 @@
 ---
 title: Atomizer Web
+date: 2015-09-22 00:00:00 Z
 type: project
 link: http://pankajparashar.com/atomizer-web/
 ---

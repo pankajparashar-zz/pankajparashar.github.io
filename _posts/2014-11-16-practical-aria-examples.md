@@ -1,6 +1,7 @@
 ---
-layout: link
 title: Practical Aria Examples
+date: 2014-11-16 00:00:00 Z
+layout: link
 type: link
 link: http://heydonworks.com/practical_aria_examples/
 ---

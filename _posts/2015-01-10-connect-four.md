@@ -1,5 +1,6 @@
 ---
 title: Connect Four
+date: 2015-01-10 00:00:00 Z
 type: project
 link: http://pankajparashar.com/connect-four/
 ---

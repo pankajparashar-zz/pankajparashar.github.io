@@ -1,8 +1,11 @@
 ---
-layout: post
 title: Beautify CSS code using Codepen
+date: 2015-01-17 00:00:00 Z
+layout: post
 type: post
-excerpt: Few would argue that Codepen has been an indispensable tool for the Frontend developer community. Although, I have been using Codepen for a long time, only recently, I realised that it can also be used to beautify your compressed CSS code.
+excerpt: Few would argue that Codepen has been an indispensable tool for the Frontend
+  developer community. Although, I have been using Codepen for a long time, only recently,
+  I realised that it can also be used to beautify your compressed CSS code.
 ---
 
 Recently, I [tweeted](https://twitter.com/pankajparashar/status/554256377841844224) about using 

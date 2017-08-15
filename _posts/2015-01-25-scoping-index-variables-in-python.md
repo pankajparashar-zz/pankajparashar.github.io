@@ -1,8 +1,11 @@
 ---
-layout: post
 title: Scoping of index variables in Python
+date: 2015-01-25 00:00:00 Z
+layout: post
 type: post
-excerpt: The way scoping of index variables work in Python might surprise a few! This article is all about dealing with them by considering few scenarios and understanding the behavior.
+excerpt: The way scoping of index variables work in Python might surprise a few! This
+  article is all about dealing with them by considering few scenarios and understanding
+  the behavior.
 ---
 
 Thanks to [Eli Bendersky](http://eli.thegreenplace.net/) for bringing this to my attention by [writing about](http://eli.thegreenplace.net/2015/the-scope-of-index-variables-in-pythons-for-loops/) it on his blog. Let's

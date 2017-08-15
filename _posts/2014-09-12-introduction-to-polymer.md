@@ -1,6 +1,7 @@
 ---
-layout: link
 title: Introduction to Polymer
+date: 2014-09-12 00:00:00 Z
+layout: link
 type: link
 link: http://www.sitepoint.com/introduction-to-web-components-and-polymer-tutorial/
 ---

@@ -1,5 +1,6 @@
 ---
 title: Color Stack
+date: 2014-01-19 00:00:00 Z
 type: project
 link: http://pankajparashar.com/color-stack/
 ---

@@ -1,6 +1,7 @@
 ---
-layout: link
 title: Webucator - Python Training
+date: 2015-05-31 00:00:00 Z
+layout: link
 type: link
 link: https://www.webucator.com/programming/python.cfm
 ---

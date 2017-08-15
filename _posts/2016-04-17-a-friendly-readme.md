@@ -1,6 +1,7 @@
 ---
-layout: link
 title: A friendly Readme
+date: 2016-04-17 00:00:00 Z
+layout: link
 type: link
 link: http://rowanmanning.com/posts/writing-a-friendly-readme
 ---

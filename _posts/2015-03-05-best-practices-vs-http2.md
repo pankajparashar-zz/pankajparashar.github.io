@@ -1,8 +1,11 @@
 ---
-layout: post
 title: Best practices vs HTTP 2.0
+date: 2015-03-05 00:00:00 Z
+layout: post
 type: post
-excerpt: This post is all about the introduction of HTTP 2.0 into the mainstream by putting it side-to-side with some of the best practices that we have engineered and cultivated over the years.
+excerpt: This post is all about the introduction of HTTP 2.0 into the mainstream by
+  putting it side-to-side with some of the best practices that we have engineered
+  and cultivated over the years.
 ---
 
 ### Best practice 1 - Concatenation of assets

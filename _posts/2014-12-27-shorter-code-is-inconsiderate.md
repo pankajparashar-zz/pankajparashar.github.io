@@ -1,6 +1,7 @@
 ---
-layout: link
 title: Shorter code is inconsiderate
+date: 2014-12-27 00:00:00 Z
+layout: link
 type: link
 link: https://medium.com/on-coding/shorter-code-is-inconsiderate-41cce917b51b
 ---

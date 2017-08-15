@@ -1,6 +1,7 @@
 ---
-layout: link
 title: CSS Selectors Level 3
+date: 2013-12-20 00:00:00 Z
+layout: link
 type: link
 link: http://www.w3.org/TR/css3-selectors/#selectors
 ---
